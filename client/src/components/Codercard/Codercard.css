@@ -43,7 +43,7 @@
   width: 80px;
   height: 80px;
   margin-top: 10px;
-  background-image: url("../../assets/profile.jpg");
+  background-image: url("/public/assets/profile-pics/profile.jpg");
   background-size: cover;
   background-position: center;
   background-color: #ccc;
