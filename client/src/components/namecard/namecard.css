@@ -1,0 +1,170 @@
+* {
+    font-family: "Chakra Petch";
+    font-size: 1rem;
+}
+
+.namecard-mini,
+.namecard-horz,
+.namecard-vert {
+    background: linear-gradient(136deg, #d9d9d929, #d9d9d900);
+}
+
+span {
+    font-size: inherit;
+    font-weight: inherit;
+    margin-right: 0.5ch;
+}
+.namecard-mini {
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 0.5rem 3rem 0.5rem 2rem;
+    border-radius: 10px;
+    border: 1px solid hsl(0, 0%, 50%);
+}
+
+.profile-info {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+.profile-info .profile-name {
+    font-weight: 900;
+    flex-grow: 1;
+    font-size: 1.3em;
+    line-height: 1.2em;
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.namecard-mini .profile-info .profile-post,
+.namecard-horz .profile-horz .profile-info .profile-codeiiest,
+.namecard-horz .profile-horz .profile-info .profile-gdsc {
+    color: hsl(0, 0%, 70%);
+}
+
+.profile-codeiiest,
+.profile-gdsc {
+    margin-left: 0.5em;
+}
+
+.profile-codeiiest::before,
+.profile-gdsc::before {
+    content: url("./assets/codeiiest.png");
+    position: relative;
+    top: 0.3em;
+    right: 0.4em;
+}
+.profile-gdsc::before {
+    content: url("./assets/gdsc.png");
+}
+
+.nm-profile-pic-pic {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    border: 1.5px solid hsl(0, 0%, 100%);
+}
+
+.namecard-horz,
+.namecard-vert {
+    border: 1px solid hsl(0, 0%, 50%);
+    border-radius: 10px;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: max-content;
+}
+
+.descrip {
+    padding-top: 1rem;
+    font-style: italic;
+    margin-top: 1rem;
+    width: 30ch;
+    border-top: 1px solid hsl(0, 0%, 70%);
+    font-weight: 100;
+}
+
+.namecard-horz .profile-horz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hex-mask {
+    position: relative;
+    transform: scale(3.2);
+    top: -3px;
+    left: -73px;
+    background-image: url("./assets/mask.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.hex-mask .nm-profile-pic-pic {
+    mask-image: url("./assets/mask.svg");
+    mask-size: contain;
+    transform: scale(0.985);
+    border-radius: 0%;
+    border: none;
+}
+
+.namecard-vert {
+    width: 15rem;
+    padding: 1rem;
+}
+
+.namecard-vert .descrip {
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.namecard-vert .profile-horz {
+    flex-direction: column;
+    align-self: start;
+}
+
+.namecard-vert .hex-mask {
+    top: -2.8rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: scale(2.8);
+    justify-self: center;
+}
+
+.namecard-mini .profile-name .ext-link {
+    position: relative;
+    top: 0.2em;
+    right: -0.2em;
+}
+
+.namecard-horz .profile-name .ext-link {
+    position: relative;
+    top: 0.3em;
+    right: -0.2em;
+}
+
+.namecard-vert .profile-name .ext-link {
+    position: relative;
+    top: 0.35em;
+}
+
+.namecard-vert .descrip {
+    margin-top: 1rem;
+}
+
+.namecard-vert .profile-codeiiest {
+    margin-top: 1em;
+}
