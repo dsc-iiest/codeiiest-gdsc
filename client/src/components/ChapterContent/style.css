@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+*::-webkit-scrollbar {
+  width: 5px;
+  background-color: #f5f5f500;
+}
+
+*::-webkit-scrollbar-thumb {
+  width: 3px !important;
+  background: var(--brand);
+}
+*::-webkit-scrollbar-button,
+*::-webkit-scrollbar-corner {
+  display: none;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  --brand: hsl(23, 100%, 45%);
+  --dark: #151515;
+  --text1: hsl(0, 0%, 100%);
+  --text3: hsl(0, 0%, 75%);
+  --text2: hsla(0, 0%, 100%, 0.804);
+  color: var(--text1);
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: var(--dark);
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  flex-direction: column;
+}
+
+.section-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.8px solid rgb(129, 129, 129);
+}
+
+.icon-wrapper {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.icon-wrapper p {
+  font-size: 0.5rem;
+  font-family: "Chakra Petch";
+  width: 11ch;
+  text-align: center;
+}
+
+.icon-wrapper img{
+  width: 3.5rem;
+}
+
+.section-2 {
+  font-family: "Chakra Petch";
+  font-weight: 800;
+  font-size: 2.5rem;
+  align-self: flex-start;
+}
+
+.section-3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.section-3 .image {
+  font-family: "Chakra Petch";
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  border-left: 1px solid rgb(179, 179, 179);
+  padding-left: 0.4rem;
+}
+
+.section-3 .image h5 {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.section-3 .image img {
+  width: 4rem;
+}
+
+.section-3 .image p {
+  width: 15ch;
+  text-align: center;
+  font-family: "Chakra Petch";
+  font-weight: 400;
+  font-size: 0.7rem;
+}
+
+.section-3 .typography {
+  font-family: "Chakra Petch";
+}
+
+.section-3 .typography .heading {
+  font-weight: bold;
+  font-size: 1.4rem;
+  padding-bottom: 0.5rem;
+}
+
+.section-3 .typography p {
+  font-family: "Chakra Petch";
+  font-weight: 400;
+  height: 100%;
+  justify-self: center;
+  width: 20ch;
+  /* padding-top: 0.5rem; */
+}
+
+.section-4 {
+  padding-top: 1rem;
+  font-family: "Chakra Petch";
+  font-weight: 400;
+  font-size: 0.8rem;
+  width: 40ch;
+}
+
+.section-4 p{
+  font-weight: 100;
+}
+
+.section-4 :nth-child(2) {
+  font-size: 0.7rem;
+  padding-top: 1rem;
+  font-weight: 100;
+}
+
+.original {
+  width: 10rem;
+}
+
+.pic-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 500px){
+
+  .section-2{
+    align-self: center;
+    font-size:2.2rem;
+  }
+
+  .section-1{
+    justify-content: space-around;
+    width: 90%;
+  }
+
+  .section-3 .image{
+    border: none;
+  }
+
+  .section-3 .typography .heading{
+    padding: 0;
+  }
+
+  .section-3 .typography p{
+    width: 70%;
+    font-size: 1.2rem;
+  }
+
+  .section-3 .image img{
+    width: 7rem;
+  }
+
+  .section-3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    /* padding-top: 1.3rem; */
+  }
+
+  .section-3 .typography{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .section-4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .section-4 p{
+    text-align: center;
+    width: 90%;
+    font-size: 0.9rem;
+  }
+}
+
+
+
