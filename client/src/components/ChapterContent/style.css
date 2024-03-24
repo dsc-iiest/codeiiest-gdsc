@@ -42,7 +42,7 @@ body {
   align-items: center;
 }
 
-html,
+/* html,
 body {
   height: 100%;
   margin: 0;
@@ -50,8 +50,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 2rem;
-}
+} */
 
 .wrapper {
   display: flex;
@@ -236,6 +235,3 @@ body {
     font-size: 0.9rem;
   }
 }
-
-
-

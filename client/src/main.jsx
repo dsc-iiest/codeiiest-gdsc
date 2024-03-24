@@ -1,8 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import Leaderboard from './components/leaderboard/leaderboard.jsx'
-import Namecard from './components/namecard/namecard.jsx'
 
 import ChapterContent from './components/ChapterContent/ChapterContent'
 
@@ -29,6 +27,7 @@ const Development = {
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <ChapterContent Content = {Development} />
+    <img src={"./assets/mainrect.png"} alt="mainrect" className='main-rect'/>
+    <div className="root-content"><ChapterContent Content = {Development} /></div>
   </React.StrictMode>,
 )
