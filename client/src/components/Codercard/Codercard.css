@@ -1,0 +1,169 @@
+.coder-card {
+  width: 338px;
+  height: 300px;
+  margin: 20px;
+  border-radius: 20px;
+  border: 1px solid #d0cfcf;
+  background-color: #3f3c3c;
+  padding: 1px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.chakra-petch-regular {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.top-section {
+  display: flex;
+  background: linear-gradient(135deg, #1a1919, #2d2c2c);
+  justify-content: space-around;
+  padding: 5px;
+  border-radius: 20px;
+  height: 40%;
+  font-size: large;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.top-section .left-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-section .left-section-experience-text {
+  font-size: 25px;
+  font-weight: bold;
+  color: #c4bfbf;
+}
+
+.top-section .coder-profile-image {
+  width: 80px;
+  height: 80px;
+  margin-top: 10px;
+  background-image: url("/public/assets/profile-pics/profile.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #fff;
+}
+
+.top-section .right-section-text {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 5px;
+  color: #f6a200;
+}
+
+/* Mid Section */
+.mid-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.mid-section .mid-section-container {
+  background-color: #3f3c3c;
+  border-radius: 20px;
+  color: #ffffff;
+}
+
+.mid-section .mid-section-container .coder-name-text {
+  font-size: 20px;
+  text-align: left;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.bottom-section {
+  display: flex;
+  border-radius: 20px;
+  background-color: #3f3c3c;
+  justify-content: space-between;
+}
+
+.contests-given,
+.change-in-rating,
+.questions-solved,
+.highest-rating {
+  flex: 1;
+  font-size: 30px;
+  font-weight: bold;
+  height: 46px;
+  text-align: center;
+}
+
+.contests-given h4,
+.change-in-rating h4,
+.questions-solved h4,
+.highest-rating h4 {
+  margin: 5px;
+  font-size: 12px;
+  font-weight: normal;
+  color: #ffffff;
+  flex-wrap: wrap;
+}
+
+.red {
+  font-weight: bold;
+  color: #ff5c5c;
+}
+
+.green {
+  color: green;
+}
+
+@media (max-width: 768px) {
+  .coder-card {
+    width: 100%;
+    height: auto;
+  }
+
+  .top-section {
+    height: auto;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .top-section .coder-profile-image {
+    width: 120px;
+    height: 120px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .top-section .right-section-text {
+    font-size: 20px;
+  }
+
+  .mid-section .mid-section-container .coder-name-text {
+    font-size: 16px;
+  }
+
+  .bottom-section {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contests-given,
+  .change-in-rating,
+  .questions-solved,
+  .highest-rating {
+    font-size: 20px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .contests-given h4,
+  .change-in-rating h4,
+  .questions-solved h4,
+  .highest-rating h4 {
+    font-size: 10px;
+  }
+}
