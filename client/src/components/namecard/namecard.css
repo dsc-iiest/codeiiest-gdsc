@@ -58,13 +58,13 @@ span {
 
 .profile-codeiiest::before,
 .profile-gdsc::before {
-    content: url("./assets/codeiiest.png");
+    content: url("/assets/codeiiest.png");
     position: relative;
     top: 0.3em;
     right: 0.4em;
 }
 .profile-gdsc::before {
-    content: url("./assets/gdsc.png");
+    content: url("/assets/gdsc.png");
 }
 
 .nm-profile-pic-pic {
@@ -101,18 +101,22 @@ span {
     align-items: center;
 }
 
+.namecard-horz {
+    margin-top: 2rem;
+}
+
 .hex-mask {
     position: relative;
-    transform: scale(3.2);
+    transform: scale(2.8);
     top: -3px;
     left: -73px;
-    background-image: url("./assets/mask.svg");
+    background-image: url("/assets/mask.svg");
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .hex-mask .nm-profile-pic-pic {
-    mask-image: url("./assets/mask.svg");
+    mask-image: url("/assets/mask.svg");
     mask-size: contain;
     transform: scale(0.985);
     border-radius: 0%;
