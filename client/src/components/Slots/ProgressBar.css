@@ -1,0 +1,40 @@
+.progress-bar{
+	background: transparent;
+	height: 50px;
+	padding: 0 10px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+	/* mix-blend-mode:soft-light; */
+}
+.progress-bar .slot{
+	position: relative;
+	border: 2px solid white;
+	width: 20px;
+	min-width: 20px;
+	height: 30px;
+	transform: skewX(-30deg);
+	background-color: transparent;
+	border: 2px solid var(--gradient1);
+	background: var(--gradient1);
+	mix-blend-mode: screen;
+	/* padding: 2px; */
+	z-index: 2;
+}
+.progress-bar .slot.outlined::after{
+	content: "";
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 26px;
+	width: 16px;
+	background-color: black;
+	/* mix-blend-mode: screen; */
+	z-index: 1;
+}
+.progress-bar .slot.filled{
+	background-color: white;
+	background: var(--gradient1);
+	/* mix-blend-mode: ; */
+}

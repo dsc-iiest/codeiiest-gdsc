@@ -1,0 +1,114 @@
+.home{
+	/* height: ; */
+	overflow: hidden;
+}
+.home .heading{
+	margin: auto;
+	margin-top: 20vh;
+	/* transform: translateY(-80%); */
+	width: fit-content;
+	border: 0px solid red;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.home .heading .title{
+	
+	font-size: 4rem;
+	font-weight: 400;
+	line-height: 4rem;
+	display: flex;
+	flex-direction: column;
+	text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.433);
+}
+.home .heading .title .line{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+}
+.home .heading .title .line.line1{
+	padding-right: 10rem;
+}
+.home .heading .title .line.line2{
+	padding-left: 10rem;
+}
+.home .heading .title .line .red{
+	font-size: 3rem;
+	color: var(--red);
+	
+}
+.home .heading .tagline{
+	font-size: 1.2rem;
+	margin-top: 1rem;
+}
+.home .heading .logos{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+	font-size: 1.5rem;
+	font-weight: 300;
+	margin-top: 2rem;
+}
+.home .heading .logos .item{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+.home .heading .logos .item img{
+	width: 50px;
+}
+.home .row{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	justify-content: space-between;
+	padding: 0 2rem;
+}
+.home .events-progress{
+	border: 0px solid yellow;
+	width: fit-content;
+	/* padding: 0rem 2rem; */
+}
+.home .events-progress .name{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 1rem;
+}
+.home .events-progress .name .progress{
+	font-size: 1.5rem;
+}
+.home .new-events{
+	/* background: var(--gradient1); */
+	/* background: linear-gradient(to right, var(--red), var(--blue)); */
+	
+	padding: 10px 30px;
+	transform: skew();
+	position: relative;
+	border: 0px solid yellow;
+}
+.home .new-events::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 120%;
+	height: 100%;
+	background: linear-gradient(to right, var(--red), var(--blue));
+	background-size: 200%;
+	background-position: center;
+	z-index: -1;
+	transform: skewX(-30deg);
+}
+.home .new-events .line{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.home .new-events .line .name{
+	font-size: 1.5rem;
+}
