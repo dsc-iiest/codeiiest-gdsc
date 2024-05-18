@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Home.css";
-import ProgressBar from "../../components/Slots/ProgressBar";
+import ProgressBar from "../../components/ProgressBar/ProgressBar";
 import News from "../../components/News/News";
 
 const EventsProgress = () => {
