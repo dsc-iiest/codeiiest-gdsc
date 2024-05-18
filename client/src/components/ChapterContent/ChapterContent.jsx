@@ -1,10 +1,10 @@
 import React from "react";
-import "./style.css";
+import "./Chaptercontent.css";
 
 const Icon = ({ iconName, byline }) => {
   return (
     <div className="icon-wrapper">
-      <img src= {`./assets/icons/${iconName}.png`} />
+      <img src= {`/assets/icons/${iconName}.png`} />
       <p>{byline}</p>
     </div>
   );
@@ -12,7 +12,7 @@ const Icon = ({ iconName, byline }) => {
 
 const ChapterContent = ({Content}) => {
   return (
-    <div className="wrapper">
+    <div className="chapter-content">
       <div className="section-1">
         <Icon iconName={Content.iconset[0].icon} byline={Content.iconset[0].byline} />
         <Icon iconName={Content.iconset[1].icon} byline={Content.iconset[1].byline} />
@@ -23,10 +23,10 @@ const ChapterContent = ({Content}) => {
       <div className="section-3">
         <div className="typography">
           <div className="heading">{Content.highlight.heading}</div>
-          <p>{Content.highlight.byline}</p>
+          <p style = {Content.highlight.bylineProps}>{Content.highlight.byline}</p>
         </div>
         <div className="image">
-          <img src={`./assets/icons/${Content.highlight.icon}.png`} />
+          <img style = {Content.highlight.imageProps} src={`/assets/icons/${Content.highlight.icon}.png`} />
           <h5>{Content.highlight.iconheading}</h5>
           <p>{Content.highlight.iconbyline}</p>
         </div>

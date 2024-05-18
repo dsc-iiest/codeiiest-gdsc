@@ -1,0 +1,100 @@
+.parent-section {
+  display: flex;
+  justify-content: center;
+  width: 85vw;
+  /* background-color: green; */
+}
+
+.parent-section .section-left {
+  display: flex;
+  align-items: start;
+  /* justify-content: center; */
+  flex-direction: column;
+  flex-grow: 1;
+  /* background-color: antiquewhite; */
+}
+
+.section-left .heading {
+  font-size: 3rem;
+  font-weight: 900;
+  display: flex;
+  align-self: start;
+  justify-self: start;
+}
+
+.section-left .heading span {
+  color: red;
+  font-size: 1.5rem;
+  align-self: center;
+}
+
+.section-body {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  align-items: start;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.section-body .body-label {
+  font-size: 1rem;
+  /* font-weight: 900; */
+}
+
+.section-body .body-value {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.section-body .card {
+  border: 1px solid rgb(148, 148, 148);
+  border-radius: 5px;
+  padding: 1rem;
+  backdrop-filter: blur(4px);
+}
+
+.bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40rem;
+  height: 40rem;
+  z-index: -1;
+}
+
+.development-bg {
+  background: url("../public/assets/bg/development.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.cybersecurity-bg {
+  background: url("../public/assets/bg/cybersecurity.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.aiml-bg {
+  background: url("../public/assets/bg/aiml.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.uiux-bg {
+  background: url("../public/assets/bg/uiux.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.cpdsa-bg {
+  background: url("../public/assets/bg/cpdsa.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.media-bg {
+  background: url("../public/assets/bg/media.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.diversity-bg {
+  background: url("../public/assets/bg/diversity.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}

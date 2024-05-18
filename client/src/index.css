@@ -1,3 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+*::-webkit-scrollbar {
+  width: 5px;
+  background-color: #f5f5f500;
+}
+
+*::-webkit-scrollbar-thumb {
+  width: 3px !important;
+  background: var(--brand);
+}
+*::-webkit-scrollbar-button,
+*::-webkit-scrollbar-corner {
+  display: none;
+}
+
+div::-webkit-scrollbar {
+  display: none;
+}
+
 *,
 *::before,
 *::after {
