@@ -53,13 +53,13 @@
 
 .profile-codeiiest::before,
 .profile-gdsc::before {
-    content: url("/assets/codeiiest.png");
+    content: url("/assets/logo/codeiiest.png");
     position: relative;
     top: 0.3em;
     right: 0.4em;
 }
 .profile-gdsc::before {
-    content: url("/assets/gdsc.png");
+    content: url("/assets/logo/gdsc.png");
 }
 
 .nm-profile-pic-pic {
