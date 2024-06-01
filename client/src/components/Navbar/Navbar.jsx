@@ -160,7 +160,7 @@ const Navbar = ({
 							</NavLink>
 
 							<NavLink
-								to="/sponsorship"
+								to="/team"
 								id="nav-sponsorship"
 								className={"item"}
 							>
@@ -168,7 +168,7 @@ const Navbar = ({
 							</NavLink>
 							<NavLink
 								id="nav-team"
-								to="/team"
+								to="/leaderboard"
 								className={"item"}
 							>
 								Leaderboards

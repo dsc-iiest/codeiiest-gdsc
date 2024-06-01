@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "./screens/Home/Home";
+import About from "./screens/AboutUs/about";
+import {NameCard} from "./components/namecard/namecard"
 
 const AllRoutes = () => {
 	const location = useLocation();
@@ -14,7 +16,13 @@ const AllRoutes = () => {
 			<Route
 				exact
 				path="/"
-				element={<Home></Home>}
+				element={<NameCard />}
+			>
+			</Route>
+			<Route
+				exact
+				path="/team"
+				element={<About />}
 			>
 			</Route>
 		</Routes>
