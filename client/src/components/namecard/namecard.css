@@ -1,7 +1,9 @@
 .namecard-mini,
 .namecard-horz,
 .namecard-vert {
-    background: linear-gradient(136deg, #d9d9d929, #d9d9d900);
+    background: linear-gradient(136deg, #b7b7b710, #b9b9b900);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
 }
 
 .namecard-vert span {
@@ -41,13 +43,16 @@
 .namecard-vert .profile .profile-info .profile-name {
     font-weight: 900;
     flex-grow: 1;
-    font-size: 1.3em;
-    line-height: 1.2em;
+    font-size: 1.5rem;
+    /* line-height: 1.2em; */
     position: relative;
     display: flex;
-    justify-content: start;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
+    border: 0px solid red;
+    gap: 10px;
 }
 
 .namecard-vert .profile .profile-info .profile-name {
@@ -94,9 +99,9 @@
 
 .namecard-horz,
 .namecard-vert {
-    border: 1px solid hsl(0, 0%, 50%);
+    border: 1px solid rgb(162, 162, 162);
     border-radius: 10px;
-    padding: 0.5rem 3rem 0.5rem 3rem;
+    padding: 1rem 2rem 1rem 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,9 +112,9 @@
 .namecard-horz .descrip {
     padding-top: 1rem;
     font-style: italic;
-    margin-top: 1rem;
+    margin-top: 0.75rem;
     width: 30ch;
-    border-top: 1px solid hsl(0, 0%, 70%);
+    border-top: 1px solid rgb(179, 179, 179);
     font-weight: 100;
 }
 
