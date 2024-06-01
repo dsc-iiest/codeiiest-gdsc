@@ -1,0 +1,20 @@
+.chaptercard-wrapper {
+
+}
+
+.chaptercard-wrapper:hover{
+    transform :scale(1.05);
+}
+
+.chaptercard-wrapper .name {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    font-size: 1.2rem;
+    z-index: 1;
+    transition: all ease 0.2s
+}
+
+.chaptercard-wrapper .name:hover{
+    color: gold;
+}

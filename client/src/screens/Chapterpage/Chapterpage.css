@@ -1,11 +1,11 @@
-.parent-section {
+.chapterpage-content .parent-section {
   display: flex;
   justify-content: center;
   width: 85vw;
   /* background-color: green; */
 }
 
-.parent-section .section-left {
+.chapterpage-content .parent-section .section-left {
   display: flex;
   align-items: start;
   /* justify-content: center; */
@@ -14,7 +14,7 @@
   /* background-color: antiquewhite; */
 }
 
-.section-left .heading {
+.chapterpage-content .section-left .heading {
   font-size: 3rem;
   font-weight: 900;
   display: flex;
@@ -22,13 +22,13 @@
   justify-self: start;
 }
 
-.section-left .heading span {
+.chapterpage-content .section-left .heading span {
   color: red;
   font-size: 1.5rem;
   align-self: center;
 }
 
-.section-body {
+.chapterpage-content .section-body {
   display: flex;
   justify-content: start;
   flex-wrap: wrap;
@@ -37,24 +37,24 @@
   margin-top: 2rem;
 }
 
-.section-body .body-label {
+.chapterpage-content .section-body .body-label {
   font-size: 1rem;
   /* font-weight: 900; */
 }
 
-.section-body .body-value {
+.chapterpage-content .section-body .body-value {
   font-size: 1.5rem;
   font-weight: 900;
 }
 
-.section-body .card {
+.chapterpage-content .section-body .card {
   border: 1px solid rgb(148, 148, 148);
   border-radius: 5px;
   padding: 1rem;
   backdrop-filter: blur(4px);
 }
 
-.bg-image {
+.chapterpage-content .bg-image {
   position: absolute;
   top: 0;
   left: 0;
@@ -63,37 +63,37 @@
   z-index: -1;
 }
 
-.development-bg {
+.chapterpage-content .development-bg {
   background: url("../public/assets/bg/development.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
-.cybersecurity-bg {
+.chapterpage-content .cybersecurity-bg {
   background: url("../public/assets/bg/cybersecurity.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
-.aiml-bg {
+.chapterpage-content .aiml-bg {
   background: url("../public/assets/bg/aiml.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
-.uiux-bg {
+.chapterpage-content .uiux-bg {
   background: url("../public/assets/bg/uiux.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
-.cpdsa-bg {
+.chapterpage-content .cpdsa-bg {
   background: url("../public/assets/bg/cpdsa.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
-.media-bg {
+.chapterpage-content .media-bg {
   background: url("../public/assets/bg/media.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
-.diversity-bg {
+.chapterpage-content .diversity-bg {
   background: url("../public/assets/bg/diversity.png");
   background-size: contain;
   background-repeat: no-repeat;

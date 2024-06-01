@@ -33,8 +33,16 @@
 	border: 0px solid red;
 }
 .page{
-	border: 0px solid red;
+	border: 2px solid red;
 	margin: 110px 20px 20px 20px;
 	width: calc(100% - 40px);
 	min-height: calc(100vh - 130px);
+}
+
+.button-icon {
+	transition: all ease 0.3s;
+}
+
+.button-icon:hover{
+	fill: white;
 }

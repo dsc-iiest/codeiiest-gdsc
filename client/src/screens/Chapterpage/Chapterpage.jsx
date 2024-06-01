@@ -176,9 +176,8 @@ const Chapterpage = () => {
 
   return (
     <>
-      <img src={"/assets/mainrect.png"} alt="mainrect" className="main-rect" />
       <div className={id + "-bg " + "bg-image"}></div>
-      <div className="root-content">
+      <div className="chapterpage-content">
         <div className="parent-section">
           <div className="section-left">
             <div className="heading">
