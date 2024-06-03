@@ -3,6 +3,7 @@
 	height: 100vh;
 	position: absolute;
 	top: 0;
+	left: 0;
 	overflow: hidden;
 	z-index: -20;
 	position: fixed;
@@ -12,6 +13,10 @@
 	height: 100%;
 	object-fit: cover;
 	object-position: center;
+}
+.bg.chapter{
+	width: 55%;
+	height: 100vh;
 }
 .frame{
 	width: 100vw;
@@ -33,8 +38,9 @@
 	border: 0px solid red;
 }
 .page{
-	border: 0px solid red;
+	border: 1px solid red;
 	margin: 110px 20px 20px 20px;
 	width: calc(100% - 40px);
 	min-height: calc(100vh - 130px);
+	max-height: calc(100vh - 130px);
 }

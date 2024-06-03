@@ -73,11 +73,11 @@ var rowsInfo = [
 
 function DeltaMove({ sign }) {
     return sign < 0 ? (
-        <img src={"./assets/negative.png"} />
+        <img src={"/assets/negative.png"} />
     ) : sign > 0 ? (
-        <img src={"./assets/positive.png"} />
+        <img src={"/assets/positive.png"} />
     ) : (
-        <img src={"./assets/zero.png"} />
+        <img src={"/assets/zero.png"} />
     );
 }
 
@@ -99,7 +99,7 @@ function Header() {
 function ProfilePic({ path }) {
     return (
         <div className="profile-pic">
-            <img className="profile-pic-pic" src={`./assets/profilepic/${path}.png`} alt={path} />
+            <img className="profile-pic-pic" src={`/assets/profilepic/${path}.png`} alt={path} />
         </div>
     );
 }

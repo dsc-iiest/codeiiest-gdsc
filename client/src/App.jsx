@@ -9,12 +9,7 @@ const App = () => {
 	return (
 		<div className="app">
 			<Router>
-				<div className="bg">
-					<img src="/assets/bg/home_bg.png" alt="" />
-					{/* <video autoPlay>
-						<source src="/assets/bg/home_bg.mp4" type="video/mp4"></source>
-					</video> */}
-				</div>
+				
 
 				<Navbar></Navbar>
 				<div className="frame">

@@ -1,85 +1,82 @@
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 
-
-* {
+/* .leaderboard * {
     font-family: "Chakra Petch";
     color: #fff;
-}
+} */
 
 .leaderboard {
-    width: 45rem;
+  width: 45rem;
 }
 
 .leaderboard .row-data {
-    height: 400px;
-    overflow-y: auto;
+  height: 400px;
+  overflow-y: auto;
 }
 
 .lb-rows {
-    border: 1px solid hsl(0, 0%, 50%);
-    border-radius: 8px;
-    background: hsl(0, 0%, 5%);
-    display: grid;
-    gap: 1em;
-    grid-template-columns: 1fr 7fr 2fr 2fr 2fr 2fr 2fr 1fr;
-    padding: 10px;
-    margin: 10px;
+  border: 1px solid hsl(0, 0%, 50%);
+  border-radius: 8px;
+  background: hsl(0, 0%, 5%);
+  display: grid;
+  gap: 1em;
+  grid-template-columns: 1fr 7fr 2fr 2fr 2fr 2fr 2fr 1fr;
+  padding: 10px;
+  margin: 10px;
 }
 
 .lb-rows .lb-header,
 .lb-rows .lb-rowdata-bold,
 .lb-rows .lb-rowdata-light,
 .lb-rows .lb-left {
-    font-size: 1.1rem;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 600;
+  font-size: 1.1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
 }
 
 .lb-rows .lb-rowdata-light {
-    color: hsl(0, 0%, 70%);
-    font-weight: 400;
+  color: hsl(0, 0%, 70%);
+  font-weight: 400;
 }
 
 .lb-rows .lb-header {
-    font-size: 0.8rem;
-    color: hsl(0, 0%, 80%);
-    font-weight: 800;
+  font-size: 0.8rem;
+  color: hsl(0, 0%, 80%);
+  font-weight: 800;
 }
 
-
 .profile-pic {
-    width: 2.5em;
-    height: 2.5em;
-    border-radius: 50%;
-    margin-right: 1.5ch;
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  margin-right: 1.5ch;
 }
 
 .profile-pic-pic {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    border: 1px solid #ffffff;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
 }
 
 .row-data::-webkit-scrollbar-track,
 .row-data::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
-
 .lb-rows .lb-left span {
-    justify-self: start;
-    text-align: left;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    width: 15ch;
+  justify-self: start;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 15ch;
 }
 
 .lb-rows .lb-left span:hover {
-    text-overflow: none;
-    overflow: visible;
+  text-overflow: none;
+  overflow: visible;
 }

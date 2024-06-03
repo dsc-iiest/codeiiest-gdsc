@@ -30,6 +30,7 @@ div::-webkit-scrollbar {
 	font-family: "Chakra Petch", sans-serif;
 	font-optical-sizing: auto;
 	line-height: 1.5;
+	/* font-size: calc(1vw); */
 	font-weight: 400;
 	font-style: normal;
 	font-synthesis: none;
@@ -54,6 +55,9 @@ div::-webkit-scrollbar {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+body{
+	/* font-size: calc(0.5vw + 0.5rem); */
 }
 
 a{
