@@ -3,6 +3,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "./screens/Home/Home";
 import Chapterpage from "./screens/Chapterpage/Chapterpage";
 import Chapters from "./screens/Chapters/Chapters";
+import About from "./screens/AboutUs/about";
 
 const AllRoutes = () => {
 	const location = useLocation();
@@ -18,6 +19,7 @@ const AllRoutes = () => {
 				<Route path=":id" element={<Chapterpage></Chapterpage>}></Route>
 				<Route path="" element={<Chapters></Chapters>}></Route>
 			</Route>
+			<Route exact path="/team" element={<About></About>}></Route>
 		</Routes>
 	);
 };

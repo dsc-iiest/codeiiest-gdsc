@@ -1,0 +1,54 @@
+.about {
+    /* border: 1px solid #fff; */
+    padding: 10px;
+    overflow: hidden;
+}
+
+.about .heading {
+    font-size: 4rem;
+    /* font-weight: 600; */
+}
+
+.about .heading span {
+    color: var(--red);
+}
+
+.about .members {
+    margin: 0px 42px 0px 42px;
+    width: 94.5%;
+}
+
+.about .members .team-carousel {
+    height: 450px !important;
+    width: 100% !important;
+    /* padding-top: 50px; */
+    /* background-color: green; */
+    position: relative;
+}
+
+.about .members .team-carousel a {
+    cursor: default
+}
+
+.about .members .team-carousel .namecard-vert {
+    margin-top: 80px;
+    margin-left: 1px;
+}
+
+.about .members .team-carousel button {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    border: none;
+    top: 92%;
+    right: 160%;
+    cursor: pointer;
+    margin: 10px;
+    background: url("/public/assets/icons/right-arrow.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.about .members .team-carousel button[data-direction="left"] {
+    transform: rotate(180deg) translateX(-80vw);
+}
