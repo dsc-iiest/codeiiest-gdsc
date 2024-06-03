@@ -3,6 +3,8 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "./screens/Home/Home";
 import Chapters from "./screens/Chapters/Chapters";
 import Chapterpage from "./screens/Chapterpage/Chapterpage";
+import About from "./screens/AboutUs/about";
+import {NameCard} from "./components/namecard/namecard"
 
 const AllRoutes = () => {
 	const location = useLocation();
@@ -16,7 +18,13 @@ const AllRoutes = () => {
 			<Route
 				exact
 				path="/"
-				element={<Home></Home>}
+				element={<Home />}
+			>
+			</Route>
+			<Route
+				exact
+				path="/team"
+				element={<About />}
 			>
 			</Route>
 			<Route

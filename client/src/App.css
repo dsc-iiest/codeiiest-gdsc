@@ -30,7 +30,7 @@
 	height: 100%;
 	object-fit: fill;
 	object-position: center;
-	border: 0px solid red;
+	border: 1px solid green;
 }
 .page{
 	border: 2px solid red;

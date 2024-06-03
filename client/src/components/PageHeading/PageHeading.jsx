@@ -13,7 +13,6 @@ const PageHeading = ({text}) => {
         alignItems :"center",
         gap: "5px",
         alignSelf: "start",
-        marginLeft: "5rem"
     }}>
         <Box sx = {{color :"var(--red)"}}>{"<"}</Box>
         {text}
@@ -26,4 +25,4 @@ PageHeading.propTypes = {
     text: PropTypes.string.isRequired,
 };
 
-export default PageHeading
+export default PageHeading;

@@ -1,0 +1,114 @@
+.home{
+	/* height: ; */
+	overflow: hidden;
+}
+.home .heading{
+	margin: auto;
+	margin-top: 20vh;
+	/* transform: translateY(-80%); */
+	width: fit-content;
+	border: 0px solid red;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.home .heading .title{
+	
+	font-size: 8.75vh;
+	font-weight: 400;
+	line-height: 8.75vh;
+	display: flex;
+	flex-direction: column;
+	text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.433);
+}
+.home .heading .title .line{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+}
+.home .heading .title .line.line1{
+	padding-right: 21.85vh;
+}
+.home .heading .title .line.line2{
+	padding-left: 21.85vh;
+}
+.home .heading .title .line .red{
+	font-size: 6.5vh;
+	color: var(--red);
+	
+}
+.home .heading .tagline{
+	font-size: 2.6vh;
+	margin-top: 2.2vh;
+}
+.home .heading .logos{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+	font-size: 3.28vh;
+	font-weight: 300;
+	margin-top: 4.4vh;
+}
+.home .heading .logos .item{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+	font-size: 3.28vh;
+	font-weight: 400;
+}
+.home .heading .logos .item img{
+	width: 50px;
+}
+.home .row{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	justify-content: space-between;
+	padding: 0 4.4vh;
+}
+.home .events-progress{
+	border: 0px solid yellow;
+	width: fit-content;
+	/* padding: 0rem 4.4vh; */
+}
+.home .events-progress .name{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 2.2vh;
+}
+.home .events-progress .name .progress{
+	font-size: 3.28vh;
+}
+.home .new-events{
+	/* background: var(--gradient1); */
+	/* background: linear-gradient(to right, var(--red), var(--blue)); */
+	
+	padding: 10px 30px;
+	transform: skew();
+	position: relative;
+	border: 0px solid yellow;
+}
+.home .new-events::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 120%;
+	height: 100%;
+	background: linear-gradient(to right, var(--red), var(--blue));
+	background-size: 200%;
+	background-position: center;
+	z-index: -1;
+	transform: skewX(-30deg);
+}
+.home .new-events .line{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.home .new-events .line .name{
+	font-size: 3.28vh;
+}

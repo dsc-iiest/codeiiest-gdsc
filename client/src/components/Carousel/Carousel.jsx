@@ -67,8 +67,9 @@ const Previousicon = () => {
 
 const Carousel = ({ items, show, cardWidth }) => {
     const [Margin, setMargin] = useState(0)
-    const delta = cardWidth+2;
-    const CarouselWidth = 2*show + (show*cardWidth);
+    const gap = 32;
+    const delta = cardWidth+gap;
+    const CarouselWidth = gap*show + (show*cardWidth);
 
     const maxNext = delta * (items.length - show)
 
@@ -103,7 +104,7 @@ const Carousel = ({ items, show, cardWidth }) => {
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "start",
-                    width: `${CarouselWidth}rem`,
+                    width: `${CarouselWidth}px`,
                     overflowX: "hidden",
                 }}
             >
@@ -113,15 +114,15 @@ const Carousel = ({ items, show, cardWidth }) => {
                         display: "flex",
                         alignItems: "center",
                         justifyContent: "center",
-                        gap: "2rem",
-                        marginLeft: `${Margin}rem`,
+                        gap: `${gap}px`,
+                        marginLeft: `${Margin}px`,
                         transition: "all ease 0.5s",
                         padding: "1rem"
                     }}
                 >
                     {items.map(((item, index)=>{
                         return (
-                            <Box key={index} className={"carousel-items"+getVisibilityClass(index)} >
+                            <Box key={index} className={"carousel-items"+getVisibilityClass(index)}>
                                 {item}
                             </Box>
                         )
@@ -137,7 +138,7 @@ const Carousel = ({ items, show, cardWidth }) => {
                 <IconButton onClick={handleNext}>
                     <Nexticon />
                 </IconButton>
-            <ProgressBar progress={show-(Margin/delta)} total={7} />
+            <ProgressBar progress={show-(Margin/delta)} total={items.length} />
             </ButtonGroup>
         </Box>
     );
