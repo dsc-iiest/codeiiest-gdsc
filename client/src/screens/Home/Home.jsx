@@ -18,6 +18,7 @@ const EventsProgress = () => {
 	];
 	return (
 		<div className="events-progress">
+
 			{events.map((event, index) => (
 				<div className="event" key={index}>
 					<ProgressBar
@@ -53,6 +54,9 @@ const NewEvents = () => {
 const Home = () => {
 	return (
 		<div className="home page">
+			<div className="bg">
+				<img src="/assets/bg/home_bg.png" alt="" />
+			</div>
 			<div className="heading">
 				<div className="title">
 					<div className="line line1">
