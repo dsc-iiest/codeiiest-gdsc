@@ -4,20 +4,14 @@
   margin: 20px;
   border-radius: 20px;
   border: 1px solid #d0cfcf;
-  background-color: #3f3c3c;
+  background: rgba(63, 60, 60, 0.5);
   padding: 1px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.chakra-petch-regular {
-  font-family: "Chakra Petch", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
 .top-section {
   display: flex;
-  background: linear-gradient(135deg, #1a1919, #2d2c2c);
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(26, 26, 26, 0.8));
   justify-content: space-around;
   padding: 5px;
   border-radius: 20px;
@@ -34,16 +28,17 @@
 }
 
 .top-section .left-section-experience-text {
-  font-size: 25px;
-  font-weight: bold;
+  margin-top: 3.5rem;
+  font-size: 1.5rem;
+  font-weight: medium;
   color: #c4bfbf;
 }
 
 .top-section .coder-profile-image {
+  margin-top: 5px;
   width: 80px;
   height: 80px;
-  margin-top: 10px;
-  background-image: url("/public/assets/profile-pics/profile.jpg");
+  background-image: url("/assets/profile-pics/profile.jpg");
   background-size: cover;
   background-position: center;
   background-color: #ccc;
@@ -58,7 +53,7 @@
 .top-section .right-section-text {
   font-size: 25px;
   font-weight: bold;
-  margin: 5px;
+  margin-left: 55px;
   color: #f6a200;
 }
 
@@ -69,22 +64,23 @@
 }
 
 .mid-section .mid-section-container {
-  background-color: #3f3c3c;
+  background: inherit;
   border-radius: 20px;
   color: #ffffff;
 }
 
 .mid-section .mid-section-container .coder-name-text {
+  margin-top: 2rem;
   font-size: 20px;
   text-align: left;
-  font-weight: bold;
+  font-weight: medium;
   padding-left: 20px;
 }
 
 .bottom-section {
   display: flex;
   border-radius: 20px;
-  background-color: #3f3c3c;
+  background: transparent;
   justify-content: space-between;
 }
 
@@ -94,7 +90,7 @@
 .highest-rating {
   flex: 1;
   font-size: 30px;
-  font-weight: bold;
+  font-weight: medium;
   height: 46px;
   text-align: center;
 }
@@ -111,12 +107,11 @@
 }
 
 .red {
-  font-weight: bold;
   color: #ff5c5c;
 }
 
 .green {
-  color: green;
+  color: rgb(82, 255, 82);
 }
 
 @media (max-width: 768px) {

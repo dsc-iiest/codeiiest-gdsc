@@ -1,199 +1,174 @@
 .namecard-mini,
 .namecard-horz,
 .namecard-vert {
-    background: linear-gradient(136deg, #b7b7b710, #b9b9b900);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
+  font-family: "Chakra Petch";
+  font-size: 1rem;
+  background: linear-gradient(136deg, #d9d9d929, #d9d9d900);
 }
 
+.namecard-mini span,
+.namecard-horz span,
 .namecard-vert span {
-    font-size: inherit;
-    font-weight: inherit;
-    margin-right: 0.5ch;
+  font-size: inherit;
+  font-weight: inherit;
+  margin-right: 0.5ch;
 }
 
 .namecard-mini {
-    width: max-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1em;
-    padding: 0.5rem 2rem 0.5rem 1rem;
-    border-radius: 10px;
-    border: 1px solid hsl(0, 0%, 50%);
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  padding: 0.5rem 3rem 0.5rem 2rem;
+  border-radius: 10px;
+  border: 1px solid hsl(0, 0%, 50%);
 }
 
-.namecard-mini .profile-info,
-.namecard-horz .profile .profile-info {
-    display: flex;
-    flex-direction: column;
-    /* background-color: red; */
-    width: max-content;
+.profile-info {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
 }
 
-.namecard-horz .profile .profile-info {
-    width: 300px;
-    position: relative;
-    left: 1rem;
-    text-wrap: wrap;
-}
-
-.namecard-mini .profile-info .profile-name,
-.namecard-horz .profile .profile-info .profile-name,
-.namecard-vert .profile .profile-info .profile-name {
-    font-weight: 900;
-    flex-grow: 1;
-    font-size: 1.5rem;
-    /* line-height: 1.2em; */
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-    border: 0px solid red;
-    gap: 10px;
-}
-
-.namecard-vert .profile .profile-info .profile-name {
-    align-items: start;
-    margin-top: 60px;
+.profile-info .profile-name {
+  font-weight: 900;
+  flex-grow: 1;
+  font-size: 1.3em;
+  line-height: 1.2em;
+  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .namecard-mini .profile-info .profile-post,
-.namecard-horz .profile .profile-info .profile-codeiiest,
-.namecard-horz .profile .profile-info .profile-gdsc,
-.namecard-vert .profile .profile-info .profile-codeiiest,
-.namecard-vert .profile .profile-info .profile-gdsc {
-    color: hsl(0, 0%, 90%);
-    margin-left: 0.5em;
+.namecard-horz .profile-horz .profile-info .profile-codeiiest,
+.namecard-horz .profile-horz .profile-info .profile-gdsc {
+  color: hsl(0, 0%, 70%);
 }
 
-.namecard-horz .profile .profile-info .profile-codeiiest::before,
-.namecard-horz .profile .profile-info .profile-gdsc::before, 
-.namecard-vert .profile .profile-info .profile-codeiiest::before,
-.namecard-vert .profile .profile-info .profile-gdsc::before
-
-{
-    content: url("/assets/logo/codeiiest.png");
-    position: relative;
-    top: 0.3em;
-    right: 0.4em;
+.profile-codeiiest,
+.profile-gdsc {
+  margin-left: 0.5em;
 }
-.namecard-horz .profile .profile-info .profile-gdsc::before,
-.namecard-vert .profile .profile-info .profile-gdsc::before {
-    content: url("/assets/logo/gdsc.png");
+
+.profile-codeiiest::before,
+.profile-gdsc::before {
+  content: url("/assets/codeiiest.png");
+  position: relative;
+  top: 0.3em;
+  right: 0.4em;
+}
+.profile-gdsc::before {
+  content: url("/assets/gdsc.png");
 }
 
 .nm-profile-pic-pic {
-    width: 3em;
-    height: 3em;
-    border-radius: 50%;
-    border: 1.5px solid hsl(0, 0%, 100%);
-    mask-image: url("/assets/mask.svg");
-    mask-size: contain;
-    transform: scale(0.985);
-    border-radius: 0%;
-    border: none;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  border: 1.5px solid hsl(0, 0%, 100%);
 }
 
 .namecard-horz,
 .namecard-vert {
-    border: 1px solid rgb(162, 162, 162);
-    border-radius: 10px;
-    padding: 1rem 2rem 1rem 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: max-content;
+  border: 1px solid hsl(0, 0%, 50%);
+  border-radius: 10px;
+  padding: 0.5rem 3rem 0.5rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: max-content;
 }
 
-.namecard-horz .descrip {
-    padding-top: 1rem;
-    font-style: italic;
-    margin-top: 0.75rem;
-    width: 30ch;
-    border-top: 1px solid rgb(179, 179, 179);
-    font-weight: 100;
+.descrip {
+  padding-top: 1rem;
+  font-style: italic;
+  margin-top: 1rem;
+  width: 30ch;
+  border-top: 1px solid hsl(0, 0%, 70%);
+  font-weight: 100;
 }
 
-.namecard-horz .profile {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.namecard-horz .profile-horz {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .namecard-horz {
-    margin-top: 2rem;
-    /* background-color: green; */
-    width: 400px
+  margin-top: 2rem;
 }
 
-.namecard-horz .profile .hex-mask,
-.namecard-vert .hex-mask {
-    position: absolute;
-    transform: scale(2.8);
-    background-image: url("/assets/mask.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
+.hex-mask {
+  position: relative;
+  transform: scale(2.8);
+  top: -3px;
+  left: -73px;
+  background-image: url("/assets/mask.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-.namecard-horz .profile .hex-mask {
-    top: 0;
-    left: -75px;
+.hex-mask .nm-profile-pic-pic {
+  mask-image: url("/assets/mask.svg");
+  mask-size: contain;
+  transform: scale(0.985);
+  border-radius: 0%;
+  border: none;
 }
 
+.namecard-horz,
 .namecard-vert {
-    width: 250px;
-    padding: 1rem;
-    position: relative;
-    margin-top: 55px;
+  width: 15rem;
+  padding: 1rem;
 }
 
 .namecard-vert .descrip {
-    width: 100%;
-    text-align: center;
-    margin-top: 1rem;
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
 }
 
-.namecard-vert .profile {
-    flex-direction: column;
-    align-self: start;
+.namecard-vert .profile-horz {
+  flex-direction: column;
+  align-self: start;
 }
 
 .namecard-vert .hex-mask {
-    top: -20px;
+  top: -2.8rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: scale(2.8);
+  justify-self: center;
 }
 
 .namecard-mini .profile-name .ext-link {
-    position: relative;
-    top: 0.2em;
-    right: -0.2em;
+  position: relative;
+  top: 0.2em;
+  right: -0.2em;
 }
 
 .namecard-horz .profile-name .ext-link {
-    position: relative;
-    top: 0.07em;
-    right: -0.2em;
+  position: relative;
+  top: 0.3em;
+  right: -0.2em;
 }
 
 .namecard-vert .profile-name .ext-link {
-    position: relative;
-    top: 0.1em;
-    left: -0.5ch;
+  position: relative;
+  top: 0.35em;
 }
 
-.namecard-vert .profile .profile-info .profile-codeiiest {
-    margin-top: 1em;
+.namecard-vert .descrip {
+  margin-top: 1rem;
 }
 
-.bugfixer {
-    padding: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 1rem
+.namecard-vert .profile-codeiiest {
+  margin-top: 1em;
 }
