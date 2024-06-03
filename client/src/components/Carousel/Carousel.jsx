@@ -95,7 +95,8 @@ const Carousel = ({ items, show, cardWidth }) => {
             justifyContent: "center",
             alignItems: "center",
             flexDirection: "column",
-            width: "min-content"
+            width: "min-content",
+            gap: "1rem"
         }}>
             <Box
                 sx={{
@@ -120,7 +121,7 @@ const Carousel = ({ items, show, cardWidth }) => {
                 >
                     {items.map(((item, index)=>{
                         return (
-                            <Box className={"carousel-items"+getVisibilityClass(index)} >
+                            <Box key={index} className={"carousel-items"+getVisibilityClass(index)} >
                                 {item}
                             </Box>
                         )

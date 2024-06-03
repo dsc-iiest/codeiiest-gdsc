@@ -243,11 +243,11 @@ const Navbar = ({
 				className="drawer"
 			>
 				<div className="bg">
-					<img src="/assets/imgs/menu.webp" alt="" />
+					<img src="" alt="" />
 				</div>
 				<Link to="/" className="logo">
 					<div>
-						<img src="/assets/logo/logo_white.webp" alt="" />
+						<img src="" alt="" />
 						{/* REBECA */}
 					</div>
 				</Link>

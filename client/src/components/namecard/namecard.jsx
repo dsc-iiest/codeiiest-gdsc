@@ -42,7 +42,7 @@ export function NamecardMini({ name, post, profilepic }) {
 			<div className="profile-info">
 				<div className="profile-name">
 					{name}
-					<ExtLink />
+					<span className="material-icons">open_in_new</span>
 				</div>
 				<div className="profile-post">{post}</div>
 			</div>
@@ -67,10 +67,10 @@ export function NamecardHorizontal({
 				<div className="profile-info">
 					<div
 						className="profile-name"
-						style={{ fontSize: "1.5rem" }}
+						// style={{ fontSize: "1.5rem" }}
 					>
 						{name}
-						<ExtLink />
+						<span className="material-icons">open_in_new</span>
 					</div>
 					<div className="profile-codeiiest">{codeiiest}</div>
 					<div className="profile-gdsc">{gdsc}</div>

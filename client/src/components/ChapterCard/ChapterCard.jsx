@@ -4,7 +4,7 @@ import "./ChapterCard.css";
 import { Box } from "@mui/material";
 
 const styles = (variant) => ({
-    background: `url("../../../public/assets/thumbnail/${variant}.png")`,
+    background: `url("/assets/thumbnail/${variant}.png")`,
     backgroundSize: `contain`,
     backgroundRepeat: `no-repeat`,
     position: `absolute`,
@@ -29,7 +29,6 @@ const ChapterCard = ({ name }) => {
 
         if (width < 1150) {
             setCardsize(12);
-            console.log("Changed!");
         }
     }, [])
 

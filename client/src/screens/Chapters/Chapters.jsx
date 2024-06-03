@@ -31,6 +31,9 @@ const variants = [
 
 const Chapters = () => {
 
+    // const [width, setWidth] = useState(15)
+
+
     return (
         <div className="chapters-wrapper">
             <PageHeading text = {"CHAPTERS"} />
