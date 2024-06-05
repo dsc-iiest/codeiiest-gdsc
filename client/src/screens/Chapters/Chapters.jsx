@@ -1,9 +1,11 @@
-import { React } from "react";
+import { React, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Chapters.css";
 import ChapterCard from "../../components/ChapterCard/ChapterCard";
 import Carousel from "../../components/Carousel/Carousel";
 import PageHeading from "../../components/PageHeading/PageHeading";
+import ProgressBar from "../../components/ProgressBar/ProgressBar";
+import { Box } from "@mui/material";
 
 const variants = [
     <Link key="development" to="/chapters/development">
@@ -30,14 +32,24 @@ const variants = [
 ];
 
 const Chapters = () => {
-
-    // const [width, setWidth] = useState(15)
-
+    const [Margin, setMargin] = useState(0);
+    const gap = 32;
+    const cardWidth = window.innerWidth < 1100 ? 192 : 240;
+    const delta = cardWidth + gap;
+    const show = window.innerWidth < 1100 ? 3 : 4;
 
     return (
         <div className="chapters-wrapper page">
-            <PageHeading text = {"CHAPTERS"} />
-            <Carousel items={variants} show={window.innerWidth<1100?3:4} cardWidth={window.innerWidth<1100?192:240} />
+            <PageHeading text={"CHAPTERS"} />
+            <Carousel Margin={Margin} setMargin={setMargin} items={variants} show={show} cardWidth={cardWidth} />
+            <Box sx = {{
+                // background: "green",
+                position: "absolute",
+                bottom: "20px",
+                right: "125px"
+            }}>
+                <ProgressBar progress={show - Margin / delta} total={variants.length} />
+            </Box>
         </div>
     );
 };

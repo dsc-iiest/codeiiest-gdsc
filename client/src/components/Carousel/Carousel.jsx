@@ -2,13 +2,12 @@ import React, { useState } from "react";
 import "./Carousel.css";
 import { Box, ButtonGroup, IconButton } from "@mui/material";
 import PropTypes from "prop-types";
-import ProgressBar from "../ProgressBar/ProgressBar";
 
 
 const Nexticon = () => {
     return (
         <svg
-            fill="rgb(255, 170, 0)"
+            fill="#fff"
             className="button-icon"
             height="30px"
             width="30px"
@@ -39,7 +38,7 @@ const Previousicon = () => {
     return (
         <svg
             className="button-icon"
-            fill="rgb(255, 170, 0)"
+            fill="#fff"
             height="30px"
             width="30px"
             version="1.1"
@@ -65,8 +64,8 @@ const Previousicon = () => {
     );
 };
 
-const Carousel = ({ items, show, cardWidth }) => {
-    const [Margin, setMargin] = useState(0)
+const Carousel = ({ Margin, setMargin, items, show, cardWidth }) => {
+    // const [Margin, setMargin] = useState(0)
     const gap = 32;
     const delta = cardWidth+gap;
     const CarouselWidth = gap*show + (show*cardWidth);
@@ -130,7 +129,9 @@ const Carousel = ({ items, show, cardWidth }) => {
                 </Box>
             </Box>
             <ButtonGroup sx = {{
-                alignSelf: "end"
+                position: "absolute",
+                bottom: "22px",
+                right: "30px"
             }}>
                 <IconButton onClick={handlePrev}>
                     <Previousicon />
@@ -138,7 +139,7 @@ const Carousel = ({ items, show, cardWidth }) => {
                 <IconButton onClick={handleNext}>
                     <Nexticon />
                 </IconButton>
-            <ProgressBar progress={show-(Margin/delta)} total={items.length} />
+            
             </ButtonGroup>
         </Box>
     );
