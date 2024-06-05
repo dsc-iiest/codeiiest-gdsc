@@ -2,73 +2,72 @@ import React from "react";
 import "./leaderboard.css";
 
 var rowsInfo = [
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: 1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: 1 },
     {
         name: "Nafis AdnanAdnan Mondal",
         year: "3rd",
-        rating: 1234,
-        contests: 100,
-        maxdelta: 100,
-        bestRank: 3223,
+        rating: 1234, highestRating: 1409,
+        
+        
         deltasign: -1,
     },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: 0 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
-    { name: "Rishab Dugar", year: "3rd", rating: 1234, contests: 100, maxdelta: 100, bestRank: 3223, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: 0 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
+    { name: "Rishab Dugar", year: "3rd", rating: 1234, highestRating: 1409, deltasign: -1 },
 ];
 
 function DeltaMove({ sign }) {
@@ -87,10 +86,8 @@ function Header() {
             <div className="lb-header">Rank</div>
             <div className="lb-header">Name</div>
             <div className="lb-header">Year</div>
+            <div className="lb-header">Rating</div>
             <div className="lb-header">Highest Rating</div>
-            <div className="lb-header">Contests Given</div>
-            <div className="lb-header">Maximum Delta</div>
-            <div className="lb-header">Best Rank</div>
             <div className="lb-header"></div>
         </div>
     );
@@ -114,9 +111,7 @@ function Rows() {
             </div>
             <div className="lb-rowdata-light">{row.year}</div>
             <div className="lb-rowdata-bold">{row.rating}</div>
-            <div className="lb-rowdata-bold">{row.contests}</div>
-            <div className="lb-rowdata-bold">{row.maxdelta}</div>
-            <div className="lb-rowdata-bold">{row.bestRank}</div>
+            <div className="lb-rowdata-bold">{row.highestRating}</div>
             <div className="lb-rowdata-bold"><DeltaMove sign={row.deltasign} /></div>
         </div>
     ));

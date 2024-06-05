@@ -4,17 +4,15 @@
 	justify-content: space-between;
 	align-items: center;
 
-	padding: 10px 4rem;
-	
+	padding: 1.8rem;
 	background-color: rgba(255, 255, 255, 0.05);
-	
-	margin: 20px;
+	margin: 15px;
 	/* backdrop-filter: blur(20px); */
 	/* filter: hue-rotate(90deg); */
 	/* box-shadow: 0px 4px 83px 0px rgba(59, 59, 59, 0.14); */
 	
-	width: calc(100% - 40px);
-	height: 70px;
+	width: calc(100% - 20px);
+	height: 40px;
 	position: fixed;
 	top: 0;
 	z-index: 100;
@@ -43,6 +41,7 @@
 	gap: 10px;
 	color: white;
 	text-decoration: none;
+
 }
 .navbar .left-col .logo img{
 	width: 40px;
@@ -53,27 +52,30 @@
 .navbar .nav-items{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
-	gap: 40px;
+	width: 100%;
+	gap: 30px;
 	/* color: var(--purple); */
 	color: white;
 	transition: 0.25s all;
 	/* padding-top: 30px; */
 	height: 100%;
 	border: 0px solid red;
+
 }
 .navbar .nav-items .item{
 	transition: 0.25s all;
 	cursor: pointer;
 	font-weight: 400;
-	
-	font-size: 20px;
+
+	font-size: 1rem;
+	font-weight: bold;
 	/* color: var(--purple); */
 	color: rgba(255, 255, 255, 0.5);
 	position: relative;
 	border: 0px solid green;
-	height: 100%;
+	/* height: 100%; */
 	transition: 0.25s all;
 	display: flex;
 	flex-direction: row;
@@ -85,8 +87,24 @@
 	color: var(--accent);
 	content: "";
 	transition: 0.25s all;
-	font-weight: 600;
+	/* font-weight: 600; */
 }
+
+.navbar .nav-items .item::before{
+	content: "";
+	position:absolute;
+	bottom: 0;
+	height: 1px;
+	width: 100%;
+	background-color: cyan;
+	transform: scaleX(0);
+	transform-origin: center;
+	transition :all ease 0.25s;
+}
+.navbar .nav-items .item.active::before{
+	transform: scaleX(1);
+}
+
 .MuiDrawer-root .MuiPaper-root{
 	width: 100% !important;
 	max-width: 100% !important;

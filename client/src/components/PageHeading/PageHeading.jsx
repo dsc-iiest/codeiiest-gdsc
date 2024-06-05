@@ -12,7 +12,12 @@ const PageHeading = ({text}) => {
         justifyContent: "center",
         alignItems :"center",
         gap: "5px",
-        alignSelf: "start",
+        background: "#242424",
+        padding: "5px",
+        borderRadius: "5px",
+        border: "1px solid rgba(217, 217, 217, 0.5)"
+        // alignSelf: "start",
+        // justifySelf: "center"
     }}>
         <Box sx = {{color :"var(--red)"}}>{"<"}</Box>
         {text}

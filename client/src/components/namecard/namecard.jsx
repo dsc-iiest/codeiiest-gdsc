@@ -11,8 +11,8 @@ function ExtLink() {
         <svg
             viewBox="0 0 24 24"
             fill="none"
-            height="15px"
-            width="15px"
+            height="16px"
+            width="16px"
             xmlns="http://www.w3.org/2000/svg"
         >
             <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
@@ -78,16 +78,13 @@ export function NamecardVertical({ profilepic, name, codeiiest, gdsc, descrip })
                 <div className="profile-info">
                     <div className="profile-name" style={{ fontSize: "1.5rem", lineHeight: "1rem" }}>
                         {name.map((word, i) => {
-                            return <span key={i}>{word} </span>;
+                            return <div className="fullname" key={i}>{word}</div>;
                         })}
                         <IconButton
                             sx={{
                                 m: 0,
                                 p: 0,
                                 outline: 0,
-                                position: "relative",
-                                top: "-5px",
-                                left: "-7px",
                             }}
                         >
                             <ExtLink />

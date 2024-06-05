@@ -1,36 +1,41 @@
-@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
-
-
-* {
-    font-family: "Chakra Petch";
-    color: #fff;
-}
 
 .leaderboard {
-    width: 45rem;
+    width: 27rem;
+    position: relative;
+}
+
+.leaderboard::after{
+    content:"";
+    position:absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background: linear-gradient(transparent, #242424)
 }
 
 .leaderboard .row-data {
-    height: 400px;
+    height: 300px;
     overflow-y: auto;
 }
 
 .lb-rows {
     border: 1px solid hsl(0, 0%, 50%);
-    border-radius: 8px;
+    border-radius: 5px;
     background: hsl(0, 0%, 5%);
     display: grid;
     gap: 1em;
-    grid-template-columns: 1fr 7fr 2fr 2fr 2fr 2fr 2fr 1fr;
+    grid-template-columns: 2fr 7fr 5fr 5fr 5fr 1fr;
     padding: 10px;
-    margin: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 5px;
 }
 
 .lb-rows .lb-header,
 .lb-rows .lb-rowdata-bold,
 .lb-rows .lb-rowdata-light,
 .lb-rows .lb-left {
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -47,6 +52,13 @@
     font-size: 0.8rem;
     color: hsl(0, 0%, 80%);
     font-weight: 800;
+}
+
+.lb-rows .lb-header:nth-child(2){
+    width: 9rem
+}
+.lb-rows .lb-header:nth-child(3){
+    width: 2rem
 }
 
 

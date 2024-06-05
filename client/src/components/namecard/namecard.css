@@ -6,11 +6,15 @@
     -webkit-backdrop-filter: blur(4px);
 }
 
-/* .namecard-vert span {
-    font-size: inherit;
+.namecard-vert .fullname {
+    /* font-size: inherit;
     font-weight: inherit;
-    margin-right: 0.5ch;
-} */
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* gap: 1px */
+    /* margin-right: 0ch; */
+}
 
 .namecard-mini {
     width: max-content;
@@ -58,6 +62,9 @@
 .namecard-vert .profile .profile-info .profile-name {
     align-items: start;
     margin-top: 60px;
+    /* background-color: green; */
+    font-size: 1.5rem !important;
+    gap: 5px;
 }
 
 .namecard-mini .profile-info .profile-post,
@@ -157,6 +164,8 @@
     width: 100%;
     text-align: center;
     margin-top: 1rem;
+    font-size: 0.8rem;
+    font-style: italic;
 }
 
 .namecard-vert .profile {

@@ -1,0 +1,15 @@
+.leaderboard-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 1rem;
+    flex-direction: column;
+}
+
+.leaderboard-wrapper .content-area {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+
+}

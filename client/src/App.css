@@ -1,11 +1,12 @@
 .bg{
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow: hidden;
 	width: 100vw;
 	height: 100vh;
-	position: absolute;
-	top: 0;
-	overflow: hidden;
+	/* position: absolute; */
 	z-index: -20;
-	position: fixed;
 }
 .bg img{
 	width: 100%;
@@ -15,14 +16,15 @@
 }
 .frame{
 	width: 100vw;
-	height: calc(100vh - 90px);
+	height: calc(100vh - 80px);
 	position: absolute;
-	top: 90px;
-	left: 0;
+	top: 75px;
+	/* left: 0; */
 	border: 0px solid red;
-	padding: 20px;
+	padding: 10px;
 	position: fixed;
 	z-index: -10;
+	/* overflow: hidden; */
 }
 .frame img{
 	width: 100%;
@@ -33,9 +35,9 @@
 	border: 1px solid green;
 }
 .page{
-	border: 2px solid red;
-	margin: 110px 20px 20px 20px;
-	width: calc(100% - 40px);
+	border: 1px solid red;
+	margin: 90px 10.5px 10px 10.5px;
+	width: 100%;
 	min-height: calc(100vh - 130px);
 }
 
@@ -45,4 +47,10 @@
 
 .button-icon:hover{
 	fill: white;
+}
+
+.app{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }

@@ -5,6 +5,10 @@ import Chapters from "./screens/Chapters/Chapters";
 import Chapterpage from "./screens/Chapterpage/Chapterpage";
 import About from "./screens/AboutUs/about";
 import {NameCard} from "./components/namecard/namecard"
+import Leaderboard from "./screens/Leaderboard/Leaderboard";
+
+// import Leaderboard from "./components/leaderboard/leaderboard";
+// import CP_Leaderboard2 from "./screens/CP_Leaderboard/CP_Leaderboard2";
 
 const AllRoutes = () => {
 	const location = useLocation();
@@ -37,6 +41,12 @@ const AllRoutes = () => {
 				exact
 				path="/chapters/:id"
 				element={<Chapterpage />}
+			>
+			</Route>
+			<Route
+				exact
+				path="/leaderboard"
+				element={<Leaderboard />}
 			>
 			</Route>
 		</Routes>

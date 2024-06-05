@@ -1,100 +1,81 @@
-.chapterpage-content .parent-section {
-  display: flex;
-  justify-content: center;
-  width: 85vw;
-  /* background-color: green; */
-}
+.chapter-page {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 
-.chapterpage-content .parent-section .section-left {
-  display: flex;
-  align-items: start;
-  /* justify-content: center; */
-  flex-direction: column;
-  flex-grow: 1;
-  /* background-color: antiquewhite; */
+	padding: 0 50px;
+	border: 0px solid green;
 }
-
-.chapterpage-content .section-left .heading {
-  font-size: 3rem;
-  font-weight: 900;
-  display: flex;
-  align-self: start;
-  justify-self: start;
+.chapter-page .left-col {
+	border: 0px solid yellow;
+	width: 65%;
+	/* height: 100%; */
+	/* overflow: hidden; */
 }
-
-.chapterpage-content .section-left .heading span {
-  color: red;
-  font-size: 1.5rem;
-  align-self: center;
+.chapter-page .left-col .heading {
+	font-size: 3rem;
+	border: 0px solid red;
 }
-
-.chapterpage-content .section-body {
-  display: flex;
-  justify-content: start;
-  flex-wrap: wrap;
-  align-items: start;
-  gap: 2rem;
-  margin-top: 2rem;
+.chapter-page .left-col .body {
+	border: 0px solid greenyellow;
+	margin-top: 20px;
+	padding: 0 0 0 50px;
+	display: flex;
+	flex-direction: row;
+	flex-flow: row nowrap;
+	height: inherit;
+	gap: 10px;
+	width: 100%;
 }
-
-.chapterpage-content .section-body .body-label {
-  font-size: 1rem;
-  /* font-weight: 900; */
+.chapter-page .left-col .body .left-body,
+.chapter-page .left-col .body .right-body {
+	width: calc(50% - 25px);
+	border: 0px solid red;
 }
-
-.chapterpage-content .section-body .body-value {
-  font-size: 1.5rem;
-  font-weight: 900;
+.chapter-page .left-col .body .right-body .container {
+	/* width: fit-content; */
+	height: fit-content;
+	background-color: #d9d9d905;
+	border: 1px solid #ffffff50;
+	padding: 20px 40px;
+	border-radius: 20px;
+	margin-top: 2rem;
 }
-
-.chapterpage-content .section-body .card {
-  border: 1px solid rgb(148, 148, 148);
-  border-radius: 5px;
-  padding: 1rem;
-  backdrop-filter: blur(4px);
+.chapter-page .left-col .container .sub-heading {
+	font-size: 2rem;
+	font-weight: 600;
+	position: relative;
+	width: fit-content;
 }
-
-.chapterpage-content .bg-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 40rem;
-  height: 40rem;
-  z-index: -1;
+/* .chapter-page .left-col .container .sub-heading::before {
+	width: 100%;
+	height: 5px;
+	transform: skewX(-45deg);
+	background: var(--gradient1);
+	bottom: -5px;
+	content: "";
+	position: absolute;
+} */
+.chapter-page .right-col {
+	border: 0px solid red;
+	width: 35%;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
-
-.chapterpage-content .development-bg {
-  background: url("../public/assets/bg/development.png");
-  background-size: contain;
-  background-repeat: no-repeat;
+.chapter-page .events-progress{
+	border: 0px solid yellow;
+	width: fit-content;
+	/* padding: 0rem 2rem; */
 }
-.chapterpage-content .cybersecurity-bg {
-  background: url("../public/assets/bg/cybersecurity.png");
-  background-size: contain;
-  background-repeat: no-repeat;
+.chapter-page .events-progress .name{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 1rem;
 }
-.chapterpage-content .aiml-bg {
-  background: url("../public/assets/bg/aiml.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.chapterpage-content .uiux-bg {
-  background: url("../public/assets/bg/uiux.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.chapterpage-content .cpdsa-bg {
-  background: url("../public/assets/bg/cpdsa.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.chapterpage-content .media-bg {
-  background: url("../public/assets/bg/media.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.chapterpage-content .diversity-bg {
-  background: url("../public/assets/bg/diversity.png");
-  background-size: contain;
-  background-repeat: no-repeat;
+.chapter-page .events-progress .name .progress{
+	font-size: 1.5rem;
 }

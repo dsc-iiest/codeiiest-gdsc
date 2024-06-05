@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import Leaderboard from '../../components/leaderboard/leaderboard';
 import Codercard from '../../components/Codercard/Codercard';
-import arrow from '/assets/arrow-right.png'
+import arrow from '/assets/button-icons/right.svg'
 import './CP_Leaderboard2.css';
 
 const CP_Leaderboard2 = () => {
