@@ -16,12 +16,17 @@ const AllRoutes = () => {
 	return (
 		<Routes>
 			<Route exact path="/" element={<Home></Home>}></Route>
-			<Route exact path='/cp_leaderboard_page' element={<CP_Leaderboard2 />}></Route>
+			<Route
+				exact
+				path="/cp_leaderboard_page"
+				element={<CP_Leaderboard2 />}
+			></Route>
 			<Route exact path="/chapters">
 				<Route path=":id" element={<Chapterpage></Chapterpage>}></Route>
 				<Route path="" element={<Chapters></Chapters>}></Route>
 			</Route>
 			<Route exact path="/team" element={<About></About>}></Route>
+			<Route exact path="/leaderboard" element={<CP_Leaderboard2></CP_Leaderboard2>}></Route>
 		</Routes>
 	);
 };
