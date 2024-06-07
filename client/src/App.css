@@ -47,16 +47,16 @@
 }
 .inner-content{
 	border: 1px solid yellow;
-	width: calc(100% - 80px);
-	height: calc(100vh - 130px);
-	margin: 80px 40px;
+	width: calc(100% - 6vw);
+	height: calc(100vh - 130px - 10vh - 12vh);
+	margin: 6vh 3vw;
 	/* margin-bottom: 80px; */
 }
 .outer-content{
 	border: 1px solid greenyellow;
-	width: calc(100% - 80px);
-	height: calc(100vh - 130px);
-	margin: 40px 40px;
+	width: calc(100% - 5.5vw);
+	height: calc(100vh - 130px - 10vh);
+	margin: 5vh 2.7vw 5vh 2.5vw;
 	/* margin-bottom: 80px; */
 }
 .top-left{

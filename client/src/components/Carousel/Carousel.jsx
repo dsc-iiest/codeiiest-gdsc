@@ -113,11 +113,11 @@ const Carousel = ({ items }) => {
 		}
 	}, [carouselRef]);
 
-	useEffect(() => {
-		if (childRef.current && childRef.current.children) {
-			setCardWidth(childRef.current.children[0].offsetWidth);
-		}
-	}, [childRef]);
+    useEffect(() => {
+        if (childRef.current && childRef.current.children) {
+            setCardWidth(childRef.current.children[0].offsetWidth);
+        }
+    }, [childRef]);
 
 	useEffect(() => {
 		setContainerWidth(delta * numOfCards);
@@ -161,7 +161,7 @@ const Carousel = ({ items }) => {
 						transition: "all ease 0.5s",
 						padding: "1rem",
 
-						border: "1px solid red",
+						border: "1px solid pink",
 					}}
 					ref={childRef}
 				>

@@ -15,6 +15,13 @@ const App = () => {
 				<div className="frame">
 					<img src="/assets/frame.png" alt="" />
 				</div>
+				{/* <div className="page">
+					<div className="outer-content">
+						<div className="inner-content">
+							
+						</div>
+					</div>
+				</div> */}
 				<AllRoutes></AllRoutes>
 			</Router>
 		</div>

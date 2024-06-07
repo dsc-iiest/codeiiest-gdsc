@@ -96,8 +96,10 @@ const About = () => {
 				<img src="/assets/bg/home_bg.png" alt="" />
 			</div>
 			<PageHeading text="THE TEAM" />
-			<div className="carousel-wrapper inner-content">
-				<Carousel items={members} />
+			<div className="outer-content">
+				<div className="carousel-wrapper inner-content">
+					<Carousel items={members} />
+				</div>
 			</div>
 		</div>
 	);

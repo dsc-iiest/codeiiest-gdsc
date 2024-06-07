@@ -2,7 +2,7 @@
 	width: 100%;
 }
 .carousel-container .carousel {
-	width: 100%;
+	/* width: 100%; */
 }
 .carousel-container .carousel .carousel-items {
 	transition: all ease 0.3s;
