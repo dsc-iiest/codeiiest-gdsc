@@ -17,7 +17,7 @@ const EventsProgress = () => {
 		},
 	];
 	return (
-		<div className="events-progress">
+		<div className="events-progress bottom-left">
 
 			{events.map((event, index) => (
 				<div className="event" key={index}>
@@ -39,7 +39,7 @@ const EventsProgress = () => {
 
 const NewEvents = () => {
 	return (
-		<div className="new-events">
+		<div className="new-events bottom-right">
 			<div className="line">
 				<strong>New Event Alert</strong>
 			</div>
@@ -84,10 +84,9 @@ const Home = () => {
 					</div>
 				</div>
 			</div>
-			<div className="row">
-				<EventsProgress></EventsProgress>
-				<NewEvents></NewEvents>
-			</div>
+			<EventsProgress></EventsProgress>
+			<NewEvents></NewEvents>
+			
 		</div>
 	);
 };

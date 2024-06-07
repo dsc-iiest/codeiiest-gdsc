@@ -71,6 +71,7 @@
 .home .events-progress{
 	border: 0px solid yellow;
 	width: fit-content;
+	padding: 10px;
 	/* padding: 0rem 2rem; */
 }
 .home .events-progress .name{
@@ -88,8 +89,9 @@
 	
 	padding: 10px 30px;
 	transform: skew();
-	position: relative;
+	/* position: relative; */
 	border: 0px solid yellow;
+	width: fit-content;
 }
 .home .new-events::before{
 	content: "";
