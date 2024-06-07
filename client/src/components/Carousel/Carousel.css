@@ -1,0 +1,16 @@
+.carousel-container {
+	width: 100%;
+}
+.carousel-container .carousel {
+	width: 100%;
+}
+.carousel-container .carousel .carousel-items {
+	transition: all ease 0.3s;
+}
+.carousel-container .progress-container .text .progress{
+    font-size: 1.5rem;
+}
+.fade-out {
+	opacity: 0;
+	transform: scale(0);
+}
