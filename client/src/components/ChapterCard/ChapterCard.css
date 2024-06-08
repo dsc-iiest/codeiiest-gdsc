@@ -1,0 +1,37 @@
+.chaptercard-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    width: 40vh;
+    height: 40vh;
+    text-decoration: none;
+    position: relative;
+    transition: all ease 0.3s;
+    z-index: 4;
+    border-radius: 10px;
+}
+
+.chaptercard-wrapper:hover{
+    transform :scale(1.05);
+}
+
+.chaptercard-wrapper .name {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    font-size: 1.2rem;
+    z-index: 1;
+    transition: all ease 0.2s
+}
+
+.chaptercard-wrapper .name:hover{
+    color: gold;
+}
+
+@media only screen and (max-widt: 1150px){
+    .chaptercard-wrapper {
+        width :26.2vh;
+        height: 26.2vh
+    }
+}

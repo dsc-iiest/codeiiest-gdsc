@@ -6,7 +6,7 @@ const PageHeading = ({ text }) => {
 	return (
 		<Box
 			sx={{
-				fontSize: "2.5rem",
+				fontSize: "4.4vh",
 				color: "var(--white)",
 				display: "flex",
 				justifyContent: "center",

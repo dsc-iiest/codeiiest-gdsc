@@ -9,12 +9,13 @@
 	background-color: rgba(255, 255, 255, 0.05);
 	
 	margin: 20px;
+	margin-top: 10px;
 	/* backdrop-filter: blur(20px); */
 	/* filter: hue-rotate(90deg); */
 	/* box-shadow: 0px 4px 83px 0px rgba(59, 59, 59, 0.14); */
 	
 	width: calc(100% - 40px);
-	height: 70px;
+	height: 60px;
 	position: fixed;
 	top: 0;
 	z-index: 100;
@@ -37,7 +38,7 @@
 	/* width: 150px; */
 	/* padding: 1rem; */
 	width: 150px;
-	border: 0px solid yellow;
+	border: 1px solid yellow;
 	display: flex;
 	align-items: center;
 	gap: 10px;
@@ -45,7 +46,7 @@
 	text-decoration: none;
 }
 .navbar .left-col .logo img{
-	width: 3rem;
+	width: 2.5rem;
 	height: 100%;
 	object-fit: contain;
 	object-position: center;
@@ -68,7 +69,7 @@
 	cursor: pointer;
 	font-weight: 400;
 	
-	font-size: 1.2rem;
+	font-size: 1rem;
 	/* color: var(--purple); */
 	color: rgba(255, 255, 255, 0.5);
 	position: relative;
@@ -85,7 +86,7 @@
 	color: var(--accent);
 	content: "";
 	transition: 0.25s all;
-	font-weight: 600;
+	/* font-weight: 600; */
 }
 .MuiDrawer-root .MuiPaper-root{
 	width: 100% !important;

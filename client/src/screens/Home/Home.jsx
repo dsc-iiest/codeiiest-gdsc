@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Home.css";
+import "./Home-v.css";
 import ProgressBar from "../../components/ProgressBar/ProgressBar";
 import News from "../../components/News/News";
 

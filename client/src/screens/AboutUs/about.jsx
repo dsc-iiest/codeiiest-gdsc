@@ -12,43 +12,43 @@ const members = [
 		gdsc={"Development Lead"}
 		profilepic={"profilepic"}
 		descrip={
-			"lorem ipsum doler sith lorem ipsum doler sith lorem ipsum doler sith"
+			"Building the future, one component at a time"
 		}
 	/>,
 	<NamecardVertical
-		name={"Nafis Adnan Mondal 1"}
+		name={"Nafis Adnan"}
 		codeiiest={"Development Lead"}
 		gdsc={"Development Lead"}
 		profilepic={"profilepic"}
 		descrip={
-			"lorem ipsum doler sith lorem ipsum doler sith lorem ipsum doler sith"
+			"Building the future, one component at a time"
 		}
 	/>,
 	<NamecardVertical
-		name={"Nafis Adnan Mondal 2"}
+		name={"Nafis Adnan Mondal 2000"}
 		codeiiest={"Development Lead"}
 		gdsc={"Development Lead"}
 		profilepic={"profilepic"}
 		descrip={
-			"lorem ipsum doler sith lorem ipsum doler sith lorem ipsum doler sith"
+			"Building the future, one component at a time"
 		}
 	/>,
 	<NamecardVertical
-		name={"Nafis Adnan Mondal 5"}
+		name={"Nafi"}
 		codeiiest={"Development Lead"}
 		gdsc={"Development Lead"}
 		profilepic={"profilepic"}
 		descrip={
-			"lorem ipsum doler sith lorem ipsum doler sith lorem ipsum doler sith"
+			"Building the future, one component at a time"
 		}
 	/>,
 	<NamecardVertical
-		name={"Nafis Adnan Mondal 6"}
+		name={"Nafis Mondal 6"}
 		codeiiest={"Development Lead"}
 		gdsc={"Development Lead"}
 		profilepic={"profilepic"}
 		descrip={
-			"lorem ipsum doler sith lorem ipsum doler sith lorem ipsum doler sith"
+			"Building the future, one component at a time"
 		}
 	/>,
 	<NamecardVertical
@@ -57,7 +57,7 @@ const members = [
 		gdsc={"Development Lead"}
 		profilepic={"profilepic"}
 		descrip={
-			"lorem ipsum doler sith lorem ipsum doler sith lorem ipsum doler sith"
+			"Building the future, one component at a time"
 		}
 	/>,
 	<NamecardVertical
@@ -66,7 +66,7 @@ const members = [
 		gdsc={"Development Lead"}
 		profilepic={"profilepic"}
 		descrip={
-			"lorem ipsum doler sith lorem ipsum doler sith lorem ipsum doler sith"
+			"Building the future, one component at a time"
 		}
 	/>,
 	<NamecardVertical
@@ -75,7 +75,7 @@ const members = [
 		gdsc={"Development Lead"}
 		profilepic={"profilepic"}
 		descrip={
-			"lorem ipsum doler sith lorem ipsum doler sith lorem ipsum doler sith"
+			"Building the future, one component at a time"
 		}
 	/>,
 	<NamecardVertical
@@ -84,7 +84,7 @@ const members = [
 		gdsc={"Development Lead"}
 		profilepic={"profilepic"}
 		descrip={
-			"lorem ipsum doler sith lorem ipsum doler sith lorem ipsum doler sith"
+			"Building the future, one component at a time"
 		}
 	/>,
 ];
