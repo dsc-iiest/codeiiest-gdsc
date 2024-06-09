@@ -15,17 +15,17 @@
 	object-position: center;
 }
 .bg.chapter{
-	width: 55%;
-	height: 100vh;
+	width: 50%;
+	height: 100%;
 }
 .frame{
 	width: 100vw;
-	height: calc(100vh - 70px);
+	height: calc(100vh - 6rem);
 	position: absolute;
-	top: 70px;
+	top: 6rem;
 	left: 0;
 	border: 0px solid red;
-	padding: 20px;
+	padding: 1.4rem;
 	position: fixed;
 	z-index: -10;
 }
@@ -40,10 +40,10 @@
 .page{
 	border: 1px solid rgb(30, 242, 7);
 	/* background-color: green; */
-	margin: 85px 20px 20px 20px;
-	width: calc(100% - 40px);
-	min-height: calc(100vh - 110px);
-	max-height: calc(100vh - 130px);
+	margin: 7.2rem 1rem 1rem 1.55rem;
+	width: calc(100% - 3.2rem);
+	min-height: calc(100vh - 9rem);
+	max-height: calc(100vh - 7rem);
 	position: relative;
 	top: 0;
 }
