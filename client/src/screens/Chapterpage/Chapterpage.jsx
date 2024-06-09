@@ -4,6 +4,7 @@ import "./Chapterpage.css";
 import { useParams } from "react-router-dom";
 import { NamecardHorizontal, NamecardMini } from "../../components/namecard/namecard";
 import ProgressBar from "../../components/ProgressBar/ProgressBar";
+import PageHeading from "../../components/PageHeading/PageHeading"
 
 const Chapterdata = {
 	development: {
@@ -129,7 +130,7 @@ const Chapterdata = {
 			iconbyline: "Sleep less, send more",
 		},
 		description:
-			"The Media Team at CodeIIEST is the creative powerhouse behind the scenes, weaving digital enchantment through pixels and prose. From crafting captivating social media campaigns to capturing the essence of our events in stunning visuals, they breathe life into our digital presence. Whether it's spreading the word about our latest innovations or immortalizing moments of camaraderie, the Media Team ensures that our story shines brightly across screens, inspiring, engaging, and connecting with our audience in ways that transcend the ordinary.",
+			"The Media Team at CodeIIEST is our behind-the-scenes creative powerhouse, transforming pixels and prose into digital enchantment. They craft eye-catching social media campaigns, capture our events in stunning visuals, and breathe life into our online presence. Whether promoting our latest innovations or immortalizing moments of camaraderie, the Media Team ensures our story shines brightly, inspiring, engaging, and connecting with our audience in extraordinary ways.",
 
 		byline: "Social media is not our leisure, its our work!",
 	},
@@ -212,12 +213,8 @@ const Chapterpage = () => {
 			<div className="bg chapter">
 				<img src={`/assets/bg/${id}.png`} alt="" />
 			</div>
-			<div className="left-col">
-				<div className="heading">
-					<span>{"< "}</span>
-					{idMap[id]}
-					<span>{" />"}</span>
-				</div>
+			<div className="left-col inner-content">
+				<PageHeading text = {idMap[id]} />
 				<div className="body">
 					<div className="left-body">
 						<NamecardHorizontal

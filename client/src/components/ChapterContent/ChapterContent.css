@@ -1,186 +1,187 @@
 .chapter-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: max-content;
-  flex-direction: column;
-  border: 0px solid white;
-  width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30rem;
+    flex-direction: column;
+    border: 1px solid white;
 }
 
 .chapter-content .section-1 {
-  display: flex;
-  align-items: start;
-  justify-content: space-evenly;
-  width: 100%;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 0.8px solid rgb(129, 129, 129);
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 0.5em;
+    /* padding-bottom: 0.5rem; */
+    border-bottom: 0.8px solid rgb(129, 129, 129);
+    background:rgb(0, 64, 29)
 }
 
 .icon-wrapper {
-  display: grid;
-  grid-template-rows: auto auto;
-  grid-template-columns: 1fr;
-  justify-items: center;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    justify-items: center;
 }
 
 .icon-wrapper p {
-  font-size: 0.8rem;
-  font-family: "Chakra Petch";
-  width: 11ch;
-  text-align: center;
+    font-size: 0.9em;
+    line-height: 1.2em;
+    width: 11ch;
+    text-align: center;
 }
 
-.icon-wrapper img{
-  width: 3.5rem;
+.icon-wrapper img {
+    width: 4.4em;
 }
 
 .chapter-content .section-2 {
-  font-family: "Chakra Petch";
-  font-weight: 800;
-  font-size: 2.7rem;
-  align-self: flex-start;
-  padding: 0 1rem;
+    font-weight: 800;
+    font-size: 2.8em;
+    background:rgb(54, 0, 64);
+    align-self: start;
+    /* padding-left: 1rem */
 }
 
 .chapter-content .section-3 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
+    display: flex;
+    background:rgb(0, 49, 64);
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .chapter-content .section-3 .image {
-  font-family: "Chakra Petch";
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-  border-left: 1px solid rgb(179, 179, 179);
-
-  padding: 0 1rem;
-
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border-left: 1px solid rgb(179, 179, 179);
 }
 
-.chapter-content .section-3 .image h5 {
-  font-size: 1.2rem;
-  font-weight: 900;
-  width: 10ch;
-  text-align:center;
+.chapter-content .section-3 .image .image-label {
+    font-size: 1.3em;
+    font-weight: 900;
+    width: 10ch;
+    text-align: center;
 }
 
 .chapter-content .section-3 .image img {
-  width: 4rem;
-  flex-grow: 1;
+    /* flex-grow: 1; */
+    /* background: blue */
+    /* width: 5em; */
 }
 
 .chapter-content .section-3 .image p {
-  width: 15ch;
-  text-align: center;
-  font-family: "Chakra Petch";
-  font-weight: 400;
-  font-size: 0.9rem;
-  /* padding-top: 0.5rem; */
+    width: 15ch;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1em;
 }
 
 .chapter-content .section-3 .typography {
-  font-family: "Chakra Petch";
-  padding: 0 0.5rem;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .chapter-content .section-3 .typography .heading {
-  font-weight: bold;
-  font-size: 1.5rem;
-  /* padding-bottom: 0.5rem; */
+    font-weight: bold;
+    font-size: 2em;
+    /* padding-bottom: 0.5rem; */
 }
 
 .chapter-content .section-3 .typography p {
-  font-family: "Chakra Petch";
-  font-weight: 400;
-  height: 100%;
-  justify-self: center;
-  width: 20ch;
-  /* padding-top: 0.5rem; */
-  font-size: 1.2rem;
+    font-size: 1.3em;
+    line-height: 1.2em;
+    background: rgb(87, 3, 3)
 }
 
 .chapter-content .section-4 {
-  padding-top: 1rem;
-  font-family: "Chakra Petch";
-  font-weight: 400;
-  font-size: 1rem;
-  /* width: 45ch; */
+    padding-top: 1.5em;
+    font-weight: 400;
+    background:rgb(62, 64, 0)
+    /* width: 45ch; */
 }
 
-.chapter-content .section-4 p{
-  font-weight: 100;
-  font-size: 0.9rem;
-  text-align: justify;
+.chapter-content .section-4 p {
+    font-weight: 100;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    text-align: justify;
 }
 
 .chapter-content .section-4 :nth-child(2) {
-  font-size: 0.8rem;
-  padding-top: 1.5rem;
-  font-weight: 100;
+    font-size: 1em;
+    padding-top: 1em;
+    font-weight: 100;
 }
 
-@media only screen and (max-width: 500px){
-
-  .chapter-content .section-2{
-    align-self: center;
-    font-size:2.2rem;
-  }
-
-  .chapter-content .section-1{
-    justify-content: space-around;
-    width: 90%;
-  }
-
-  .chapter-content .section-3 .image{
-    border: none;
-  }
-
-  .chapter-content .section-3 .typography .heading{
-    padding: 0;
-  }
-
-  .chapter-content .section-3 .typography p{
-    width: 70%;
-    font-size: 1.2rem;
-  }
-
-  .chapter-content .section-3 .image img{
-    width: 7rem;
-  }
-
-  .chapter-content .section-3{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 1rem;
-    /* padding-top: 1.3rem; */
-  }
-
-  .chapter-content .section-3 .typography{
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  .chapter-content .section-4{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  .chapter-content .section-4 p{
-    text-align: center;
-    width: 90%;
-    font-size: 0.9rem;
-  }
+@media only screen and (max-width: 1280px){
+    .chapter-content{
+        width: 28rem;
+        font-size: 0.9rem;
+    }
 }
+
+/* @media only screen and (max-width: 500px) {
+    .chapter-content .section-2 {
+        align-self: center;
+        font-size: 2.2rem;
+    }
+
+    .chapter-content .section-1 {
+        justify-content: space-around;
+        width: 90%;
+    }
+
+    .chapter-content .section-3 .image {
+        border: none;
+    }
+
+    .chapter-content .section-3 .typography .heading {
+        padding: 0;
+    }
+
+    .chapter-content .section-3 .typography p {
+        width: 70%;
+        font-size: 1.2rem;
+    }
+
+    .chapter-content .section-3 .image img {
+        width: 7rem;
+    }
+
+    .chapter-content .section-3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .chapter-content .section-3 .typography {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .chapter-content .section-4 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .chapter-content .section-4 p {
+        text-align: center;
+        width: 90%;
+        font-size: 0.9rem;
+    }
+} */
+

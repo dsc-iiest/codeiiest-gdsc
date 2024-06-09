@@ -12,34 +12,48 @@
 	/* height: 100%; */
 	/* overflow: hidden; */
 }
-.chapter-page .left-col .heading {
+/* .chapter-page .left-col .heading {
 	font-size: 3rem;
-	border: 0px solid red;
-}
+	border: 1px solid red;
+} */
 .chapter-page .left-col .body {
-	border: 0px solid greenyellow;
+	border: 1px solid greenyellow;
 	margin-top: 20px;
 	padding: 0 0 0 50px;
 	display: flex;
 	flex-direction: row;
 	flex-flow: row nowrap;
-	height: inherit;
+	/* height: inherit; */
+	align-items: center;
+	justify-content: space-around;
 	gap: 10px;
 	width: 100%;
 }
 .chapter-page .left-col .body .left-body,
 .chapter-page .left-col .body .right-body {
-	width: calc(50% - 25px);
+	/* width: calc(50% - 25px); */
 	border: 0px solid red;
+	background: brown;
+	/* display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-direction: column; */
+	/* height: 80vh; */
+
 }
 .chapter-page .left-col .body .right-body .container {
 	/* width: fit-content; */
 	height: fit-content;
 	background-color: #d9d9d905;
 	border: 1px solid #ffffff50;
-	padding: 20px 40px;
-	border-radius: 20px;
-	margin-top: 2rem;
+	padding: 15px 30px;
+	border-radius: 10px;
+	/* margin-top: 2rem; */
+	background: rgb(17, 17, 17);
+	font-size: 16px;
+
+	/* position: absolute; */
+
 }
 .chapter-page .left-col .container .sub-heading {
 	font-size: 2rem;
@@ -57,16 +71,16 @@
 	position: absolute;
 } */
 .chapter-page .right-col {
-	border: 0px solid red;
+	border: 1px solid red;
 	width: 35%;
-	padding: 20px;
+	/* padding: 20px; */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
 .chapter-page .events-progress{
-	border: 0px solid yellow;
+	border: 1px solid yellow;
 	width: fit-content;
 	/* padding: 0rem 2rem; */
 }
