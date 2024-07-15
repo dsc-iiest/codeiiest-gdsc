@@ -1,0 +1,136 @@
+.experience-area{
+  width: 100%;
+  height: auto; 
+  display: grid; 
+  place-items: center;
+  padding: 50px 0px; 
+
+}
+
+.experience-area .experience-area-heading{
+  margin: auto;
+  font-size: 27px; 
+  font-weight: 500; 
+  color: rgba(18, 6, 246, 0.607); 
+  position: relative; 
+  margin-bottom: 80px;
+}
+
+.experience-area-heading::after{
+  position: absolute; 
+  content: " "; 
+  width: 50%; 
+  height: 4px;
+  left: 50%; 
+  bottom: -5px;
+  transform: translateX(-50%);
+}
+
+
+.experience-area .container{
+  position: relative; 
+  width: 70%; 
+  height: auto;
+  margin: 0; 
+  padding: 0;
+}
+
+.container::after{
+  position: absolute; 
+  content: '';
+  width: 2px;
+  height: 100%; 
+  background-image: linear-gradient(to bottom, #3f0ebb, #5844ea);
+}
+
+.experience-area .container ul{
+  list-style: none;
+}
+
+.experience-area .container li{
+  z-index: 1;
+  position: relative;
+  width: 50%;
+  height: auto; 
+  padding: 20px 15px;
+  background-color: #fff;
+  box-shadow: 1px 1px 25px #000;
+  margin-bottom: 30px;
+}
+
+.container ul li:nth-child(odd){
+  float: left; 
+  clear: right;
+  transform: translateX(-30px);
+  text-align: right;
+}
+
+.container ul li:nth-child(even){
+  float: right; 
+  clear: left;
+  transform: translateX(30px);
+}
+
+
+.container ul li .title{
+  font-size: 1.2rem;
+  font-weight: 500;
+  color:rgb(40, 91, 212);
+}
+
+.container ul li .circle-bullet{
+  width: 30px;
+  height: 30px;
+  background-color: rgb(110, 87, 224, 0.56);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+}
+
+/* /this is the most tricky part i have seen/ */
+.container ul li .circle-bullet::after{
+  position: absolute;
+  content: ' ';
+  width: 15px;
+  height: 15px;
+  background-color: #3f0ebb;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container ul li:nth-child(odd) .circle-bullet{
+  right: -30px;
+  transform: translate(50%, -50%);
+}
+
+.container ul li:nth-child(even) .circle-bullet{
+  left: -30px;
+  transform: translate(-50%, -50%);
+}
+ul li p{
+  font-size: 15px;
+  color: #444;
+  margin: 7px 0;
+}
+
+ul li a{
+  font-size: 15px;
+  color: #03a3e3de;
+  text-decoration: none;
+}
+
+ul li .date{
+  position: absolute;
+  top: -40px;
+  left: 20px;
+  width: 135px;
+  height: 35px;
+  border-radius: 20px;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-size: 0.8rem;
+  background-image: linear-gradient(to right, rgb(106, 6, 236), rgb(20, 0, 240));
+}
