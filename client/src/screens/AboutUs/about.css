@@ -1,10 +1,9 @@
 .about-wrapper{
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
+    padding: 1rem;
     flex-direction: column;
-    /* padding: 1rem; */
-    /* background-color: black; */
 }
 
 /* .about .heading {

@@ -2,11 +2,11 @@ import React from "react";
 import "./namecard.css";
 import { IconButton } from "@mui/material";
 
-function ProfilePic({ path }) {
+export function ProfilePic({ path }) {
     return <img className={"nm-profile-pic-pic "} src={`/assets/profilepic/${path}.png`} alt="" />;
 }
 
-function ExtLink() {
+export function ExtLink() {
     return (
         <svg
             viewBox="0 0 24 24"

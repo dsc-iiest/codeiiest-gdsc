@@ -3,8 +3,8 @@
     align-items: center;
     justify-content: center;
     background: transparent;
-    width: 20rem;
-    height: 20rem;
+    width: 18rem;
+    height: 18rem;
     text-decoration: none;
     position: relative;
     transition: all ease 0.3s;
@@ -27,11 +27,4 @@
 
 .chaptercard-wrapper .name:hover{
     color: gold;
-}
-
-@media only screen and (max-widt: 1150px){
-    .chaptercard-wrapper {
-        width :26.2vh;
-        height: 26.2vh
-    }
 }

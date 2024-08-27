@@ -8,7 +8,7 @@
 
 .namecard-vert .fullname {
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .namecard-mini {
@@ -31,9 +31,9 @@
 }
 
 .namecard-horz .profile .profile-info {
-    width: 250px;
+    width: 27ch;
     position: relative;
-    left: 1rem;
+    /* left: 1rem; */
     text-wrap: wrap;
 }
 
@@ -55,7 +55,7 @@
 }
 
 .namecard-vert .profile .profile-info .profile-name {
-    margin-top: 60px;
+    margin-top: 4rem;
     /* background-color: green; */
     align-items: start;
     font-size: 1.4rem;
@@ -72,6 +72,11 @@
 .namecard-vert .profile .profile-info .profile-gdsc {
     color: hsl(0, 0%, 90%);
     margin-left: 0.5em;
+}
+
+.namecard-horz .profile .profile-info .profile-codeiiest,
+.namecard-horz .profile .profile-info .profile-gdsc{
+    font-size: 0.8rem
 }
 
 .namecard-horz .profile .profile-info .profile-codeiiest::before,
@@ -106,22 +111,24 @@
 .namecard-vert {
     border: 1px solid rgb(162, 162, 162);
     border-radius: 10px;
-    padding: 1rem 2rem 1rem 3rem;
+    /* padding: 1rem 2rem 1rem 3rem; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: max-content;
+    /* width: max-content; */
 }
 
-.namecard-horz .descrip {
-    padding-top: 1rem;
+/* .namecard-horz .descrip {
     font-style: italic;
-    margin-top: 0.75rem;
+    font-size: 0.8rem;
     width: 30ch;
     border-top: 1px solid rgb(179, 179, 179);
     font-weight: 100;
-}
+    position: absolute;
+    top: 110px;
+    left: 20px
+} */
 
 .namecard-horz .profile {
     position: relative;
@@ -131,42 +138,48 @@
 }
 
 .namecard-horz {
-    margin-top: 2rem;
+    margin-top: 10px;
+    padding: 15px;
+    padding-left: 60px;
+    padding-bottom: 60px;
     /* background-color: green; */
-    width: 400px
+    /* width: 350px */
 }
 
 .namecard-horz .profile .hex-mask,
 .namecard-vert .hex-mask {
     position: absolute;
-    transform: scale(2.5);
+    transform: scale(3.5);
     background-image: url("/assets/mask.svg");
     background-size: contain;
     background-repeat: no-repeat;
 }
 
+.namecard-vert .hex-mask {
+    transform: scale(3);
+}
+
 .namecard-horz .profile .hex-mask {
-    top: 0;
-    left: -75px;
+    top: 20px;
+    left: -85px;
 }
 
 .namecard-vert {
-    width: 200px;
-    padding: 0.8rem;
+    width: 15rem;
+    padding: 1rem;
     position: relative;
-    margin-top: 55px;
+    /* margin-top: 2rem; */
     /* transform: scale(0.8); */
 }
 
 .namecard-vert .descrip {
     width: 100%;
     text-align: center;
-    margin-top: 0.5rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-style: italic;
     border-top: 1px solid rgb(95, 95, 95);
-    margin-top: 0.8rem;
-    padding-top: 0.3rem;
+    margin-top: 1rem;
+    padding-top: 0.8rem;
     line-height: 0.9rem;
     color: rgb(215, 215, 215)
 }
@@ -177,7 +190,7 @@
 }
 
 .namecard-vert .hex-mask {
-    top: -20px;
+    top: -1.5rem;
 }
 
 .namecard-mini .profile-name .ext-link {
@@ -186,11 +199,11 @@
     right: -0.2em;
 }
 
-.namecard-horz .profile-name .ext-link {
+/* .namecard-horz .profile-name .ext-link {
     position: relative;
     top: 0.07em;
     right: -0.2em;
-}
+} */
 
 /* .namecard-vert .profile-name .ext-link {
     position: relative;
@@ -199,7 +212,7 @@
 } */
 
 .namecard-vert .profile .profile-info .profile-codeiiest {
-    margin-top: 0.4rem;
+    margin-top: 1rem;
 }
 
 .bugfixer {
@@ -213,7 +226,7 @@
 
 .namecard-vert .profile .profile-info .profile-codeiiest,
 .namecard-vert .profile .profile-info .profile-gdsc {
-    font-size: 0.8rem
+    font-size: 1rem
 }
 
 .namecard-vert .profile .profile-info .profile-codeiiest::before,

@@ -20,12 +20,12 @@
 }
 .frame{
 	width: 100vw;
-	height: calc(100vh - 6rem);
+	height: calc(100vh - 80px);
 	position: absolute;
-	top: 6rem;
+	top: 90px;
 	left: 0;
 	border: 0px solid red;
-	padding: 1.4rem;
+	padding: 20px;
 	position: fixed;
 	z-index: -10;
 }
@@ -35,36 +35,35 @@
 	height: 100%;
 	object-fit: fill;
 	object-position: center;
-	border: 0px solid red;
+	/* border: 1px solid red; */
 }
 .page{
-	border: 1px solid rgb(30, 242, 7);
-	/* background-color: green; */
-	margin: 7.2rem 1rem 1rem 1.55rem;
-	width: calc(100% - 3.2rem);
-	min-height: calc(100vh - 9rem);
-	max-height: calc(100vh - 7rem);
+	border: 1px solid rgb(0, 255, 255);
+	/* margin: 110px 20px 3px 20px; */
+	margin-top: 110px;
+	margin-left: 23px;
+	width: calc(100% - 46px);
+	height: calc(100vh - 125px);
+	/* min-height: calc(100vh - 120px); */
 	position: relative;
-	top: 0;
 }
 .inner-content{
 	border: 1px solid yellow;
 	width: calc(100% - 6vw);
 	height: calc(100vh - 130px - 10vh - 12vh);
 	margin: 6vh 3vw;
-	/* margin-bottom: 80px; */
 }
 .outer-content{
 	border: 1px solid greenyellow;
 	width: calc(100% - 5.5vw);
 	height: calc(100vh - 130px - 10vh);
 	margin: 5vh 2.7vw 5vh 2.5vw;
-	/* margin-bottom: 80px; */
+	position:absolute
 }
 .top-left{
 	border: 1px solid pink;
 	position: absolute;
-	top: 10px;
+	top: 5px;
 	left: 10px;
 }
 .top-right{
@@ -76,7 +75,7 @@
 .bottom-right{
 	border: 1px solid pink;
 	position: absolute;
-	bottom: 10px;
+	bottom: 0px;
 	right: 10px;
 }
 .bottom-left{
@@ -84,4 +83,10 @@
 	position: absolute;
 	bottom: 10px;
 	left: 10px;
+}
+
+.cls {
+	width: 15px;
+	height: 15px;
+	background-color: green;
 }
