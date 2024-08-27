@@ -1,0 +1,96 @@
+.logo-wrapper {
+    background: #202020;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    animation: fadeout 1s ease-out forwards;
+
+    animation-delay: 3s;
+
+    position: fixed;
+    z-Index: 200;
+    top: 0;
+    left: 0;
+    bottom: 0;
+
+    --easein: cubic-bezier(0.8,0,1,1);
+    --easeout: cubic-bezier(0,0,0,0.8)
+}
+
+@keyframes fadeout {
+    to {
+        opacity: 0;
+        transform: scale(2);
+        display: none;
+    }
+}
+
+@keyframes horiz {
+    from {
+        /* opacity: 0; */
+        transform: scaleX(0)
+    } to {
+        /* opacity: 1; */
+        transform: scaleX(1)
+    }
+}
+@keyframes vert {
+    from {
+        /* opacity: 0; */
+        transform: scaleY(0)
+    } to {
+        /* opacity: 1; */
+        transform: scaleY(1)
+    }
+}
+
+#r-46, #r-49_2, #r-48, #r-49{
+    animation: horiz 1s var(--easein) forwards;
+    transform-origin: right;
+}
+
+#r-49 {
+    animation-delay: 1s;
+    transform: scaleX(0);
+    animation-timing-function: var(--easeout);
+}
+
+#r-123 {
+    animation: vert 1s var(--easeout) forwards;
+    transform-origin: top;
+    animation-delay: 1s;
+    transform: scaleY(0)
+}
+#r-126 {
+    animation: vert 1s var(--easeout) forwards;
+    transform-origin: bottom;
+    animation-delay: 1s;
+    transform: scaleY(0)
+}
+
+#r-129 {
+    animation: vert-129 1s var(--easeout) forwards;
+    height: 0;
+    animation-delay: 1s;
+}
+
+@keyframes vert-129 {
+    from {
+        height:0;
+    } to {
+        height: 380px;
+    }
+}
+
+#ri-121, #ri-122, #ri-123 {
+    animation: vert 1s ease-out forwards;
+    animation-delay: 1s;
+    transform: scaleY(0);
+}
+
+#ri-122 {
+    transform-origin: bottom;
+}

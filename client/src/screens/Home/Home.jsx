@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./Home-v.css";
+import "./Home.css";
 import ProgressBar from "../../components/ProgressBar/ProgressBar";
 import News from "../../components/News/News";
 
@@ -18,7 +18,6 @@ const EventsProgress = () => {
 	];
 	return (
 		<div className="events-progress bottom-left">
-
 			{events.map((event, index) => (
 				<div className="event" key={index}>
 					<ProgressBar

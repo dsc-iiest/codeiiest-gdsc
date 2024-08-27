@@ -159,8 +159,9 @@ const Carousel = ({ items }) => {
 						gap: `${gap}px`,
 						marginLeft: `${margin}px`,
 						transition: "all ease 0.5s",
-						padding: "1rem",
-
+						paddingLeft: "16px",
+						paddingRight: "16px",
+						// overflowX: "hidden",
 						border: "1px solid pink",
 					}}
 					ref={childRef}
@@ -179,7 +180,7 @@ const Carousel = ({ items }) => {
 					})}
 				</Box>
 			</Box>
-			<Stack className="bottom-right" direction={"row"} gap="20px">
+			<Stack className="bottom-right" direction={"row"} gap="5px">
 				<Stack className="progress-container" direction="column">
 					<ProgressBar
 						progress={numOfCards - margin / delta}
