@@ -14,6 +14,7 @@ import {
 import { Link, NavLink } from "react-router-dom";
 import Button from "../Button/Button";
 import "./Navbar.css";
+import { Menuicon } from "../../../public/assets/svgvectors";
 
 
 const Navbar = ({
@@ -124,7 +125,7 @@ const Navbar = ({
 								id="drawer-open-btn"
 								onClick={handleDrawerOpen}
 								variant="filled"
-								color="black"
+								color="white"
 								innerText={
 									<span
 										className="material-icons"
@@ -151,35 +152,35 @@ const Navbar = ({
 							>
 								Chapters
 							</NavLink>
-							<NavLink
+							{/* <NavLink
 								id="nav-events"
 								className={"item"}
 								to="/events"
 							>
 								Events
-							</NavLink>
+							</NavLink> */}
 
 							<NavLink
-								to="/sponsorship"
+								to="/about"
 								id="nav-sponsorship"
 								className={"item"}
 							>
 								About Us
 							</NavLink>
 							<NavLink
-								id="nav-team"
-								to="/team"
+								id="nav-leaderboard"
+								to="/leaderboard"
 								className={"item"}
 							>
 								Leaderboards
 							</NavLink>
-							<NavLink
-								id="nav-merchandise"
-								to="/merchandise"
+							{/* <NavLink
+								id="nav-projects"
+								to="/projects"
 								className={"item"}
 							>
 								Projects
-							</NavLink>
+							</NavLink> */}
 
 							{/* {user ? (
 								<div
@@ -243,7 +244,7 @@ const Navbar = ({
 				className="drawer"
 			>
 				<div className="bg">
-					<img src="/assets/imgs/menu.webp" alt="" />
+					<img src={<Menuicon cls={'cls'} />} alt="" />
 				</div>
 				<Link to="/" className="logo">
 					<div>
@@ -285,7 +286,7 @@ const Navbar = ({
 						Sponsorship
 					</NavLink>
 					<NavLink
-						to="/team"
+						to="/about"
 						onClick={handleLinkClick}
 						className={"item"}
 					>

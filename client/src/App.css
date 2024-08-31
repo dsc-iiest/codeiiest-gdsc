@@ -1,3 +1,7 @@
+* {
+	--bw: 0px;
+}
+
 .bg{
 	width: 100vw;
 	height: 100vh;
@@ -24,7 +28,7 @@
 	position: absolute;
 	top: 90px;
 	left: 0;
-	border: 0px solid red;
+	border: var(--bw) solid red;
 	padding: 20px;
 	position: fixed;
 	z-index: -10;
@@ -35,10 +39,10 @@
 	height: 100%;
 	object-fit: fill;
 	object-position: center;
-	/* border: 1px solid red; */
+	/* border: var(--bw) solid red; */
 }
 .page{
-	border: 1px solid rgb(0, 255, 255);
+	border: var(--bw) solid rgb(0, 255, 255);
 	/* margin: 110px 20px 3px 20px; */
 	margin-top: 110px;
 	margin-left: 23px;
@@ -46,47 +50,66 @@
 	height: calc(100vh - 125px);
 	/* min-height: calc(100vh - 120px); */
 	position: relative;
+	overflow: hidden;
 }
 .inner-content{
-	border: 1px solid yellow;
+	border: var(--bw) solid yellow;
 	width: calc(100% - 6vw);
 	height: calc(100vh - 130px - 10vh - 12vh);
 	margin: 6vh 3vw;
 }
 .outer-content{
-	border: 1px solid greenyellow;
+	border: var(--bw) solid greenyellow;
 	width: calc(100% - 5.5vw);
 	height: calc(100vh - 130px - 10vh);
 	margin: 5vh 2.7vw 5vh 2.5vw;
 	position:absolute
 }
 .top-left{
-	border: 1px solid pink;
+	border: var(--bw) solid pink;
 	position: absolute;
 	top: 5px;
 	left: 10px;
 }
 .top-right{
-	border: 1px solid pink;
+	border: var(--bw) solid pink;
 	position: absolute;
 	top: 10px;
 	right: 10px;
 }
 .bottom-right{
-	border: 1px solid pink;
+	border: var(--bw) solid pink;
 	position: absolute;
 	bottom: 0px;
 	right: 10px;
 }
 .bottom-left{
-	border: 1px solid pink;
+	border: var(--bw) solid pink;
 	position: absolute;
 	bottom: 10px;
 	left: 10px;
 }
 
 .cls {
-	width: 15px;
-	height: 15px;
-	background-color: green;
+	width: 27px;
+	height: 27px;
+}
+
+@media only screen and (max-width: 900px) {
+	.frame {
+		display: none
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.page {
+		margin-top: 0px;
+		padding-top: 70px;
+		width: 100vw;
+		margin-left: 0;
+		min-height: 100vh;
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+
 }

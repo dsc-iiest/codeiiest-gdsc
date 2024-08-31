@@ -40,6 +40,7 @@
 .home .heading .tagline{
 	font-size: 1.2rem;
 	margin-top: 1rem;
+	text-align: center;
 }
 .home .heading .logos{
 	display: flex;
@@ -58,8 +59,14 @@
 	font-size: 1.5rem;
 	font-weight: 400;
 }
+.home .heading .logos .minified {
+	display: none;
+}
 .home .heading .logos .item img{
 	width: 50px;
+}
+.home .heading .logos .minified img {
+	width: 70px;
 }
 .home .row{
 	display: flex;
@@ -113,4 +120,41 @@
 }
 .home .new-events .line .name{
 	font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 900px){
+	.home .heading {
+		margin-top: 2rem;
+	}
+
+	.home .heading .title .line.line1 {
+		padding-right: 0;
+	}
+	.home .heading .title .line.line2 {
+		padding-left: 0;
+	}
+	.home .heading .title  {
+		font-size: 2.5rem
+	}
+	.home .heading .logos .minified{
+		display: flex;
+		gap: 3rem;
+		border: 0px solid red;
+		flex-wrap: wrap;
+		margin-top: 3rem;
+	}
+	.home .heading .logos .item, 
+	.home .heading .logos .x {
+		display: none;
+	}
+
+	.home .heading .tagline {
+		padding-top: 3rem;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.home .new-events {
+		display: none;
+	}
 }

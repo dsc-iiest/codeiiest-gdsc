@@ -1,0 +1,70 @@
+.navlink {
+	position: relative;
+    text-decoration: none;
+    border:0;
+}
+
+.brand {
+	width: 50px;
+	height: 50px;
+}
+
+.menu-drawer .item {
+    transition: 0.25s all;
+    cursor: pointer;
+    font-weight: 600;
+
+    font-size: 1.5rem;
+    /* color: var(--purple); */
+    color: #fff;
+    text-shadow: 0 0 5px black;
+    position: relative;
+    transition: 0.25s all;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+	margin-left: 2rem;
+}
+.item:hover,
+.item.active {
+    color: red;
+    content: "";
+    transition: 0.25s all;
+}
+
+.navlink.active{
+    border:0;
+}
+
+.navlink::after {
+	content: "";
+	height: 2px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+    background: linear-gradient(120deg, var(--text-gradient-1), var(--text-gradient-2));
+	transform: scale(0);
+	transition: all ease 0.3s;
+}
+
+.navlink.active::after {
+	transform: scale(1);
+    text-decoration: 0;
+}
+
+.navlink.active{
+	color: rgb(0, 255, 191);
+}
+
+.small-header {
+	display: none;
+}
+
+@media only screen and (max-width: 720px), 
+only screen and (max-device-width: 720px){
+	.small-header {
+		display: contents;
+	}
+}

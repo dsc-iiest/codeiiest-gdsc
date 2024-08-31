@@ -5,6 +5,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import News from "./components/News/News.jsx";
 import IconLoader from "./components/iconloader/IconLoader.jsx"
+import Header from "./components/header/Header.jsx";
 
 const App = () => {
 	return (
@@ -13,6 +14,7 @@ const App = () => {
 				
 				{/* <IconLoader /> */}
 				<Navbar></Navbar>
+				<Header />
 				<div className="frame">
 					<img src="/assets/frame.png" alt="" />
 				</div>
