@@ -135,7 +135,7 @@ const Carousel = ({ items }) => {
                     justifyContent: "start",
                     // width: `${CarouselWidth}px`,
                     overflowX: "hidden",
-                    border: "1px solid red",
+                    border: "var(--bw) solid red",
                     height: "100%",
                     width: containerWidth || "100%",
                 }}
@@ -154,7 +154,7 @@ const Carousel = ({ items }) => {
                         paddingLeft: "16px",
                         paddingRight: "16px",
                         // overflowX: "hidden",
-                        border: "1px solid pink",
+                        border: "var(--bw) solid pink",
                     }}
                     ref={childRef}
                 >

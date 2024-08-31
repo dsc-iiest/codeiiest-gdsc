@@ -1,0 +1,54 @@
+.coderinfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24rem;
+    border: 1px solid green;
+    flex-direction: column;
+}
+
+.coderinfo .coder-name {
+    font-size: 2rem;
+    align-self: start;
+    padding-left: 5px;
+    padding-top: 50px
+}
+
+.coderinfo .head-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 10px;
+    position: relative;
+    padding-bottom: 50px;
+    background-color: rgba(0, 0, 255, 0.224);
+}
+
+.coderinfo .head-section img {
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+}
+
+.stats-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid red
+}
+
+.stats-box .number {
+    font-size: 2rem;
+}
+
+.coderinfo .body-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 5px;
+}

@@ -1,67 +1,44 @@
 .chapter-page {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
-
+	justify-content: center;
 	padding: 0 50px;
-	border: 0px solid green;
 }
-.chapter-page .left-col {
-	border: 0px solid yellow;
-	width: 65%;
-	/* height: 100%; */
-	/* overflow: hidden; */
-}
-/* .chapter-page .left-col .heading {
-	font-size: 3rem;
-	border: 1px solid red;
-} */
-.chapter-page .left-col .body {
-	border: 1px solid greenyellow;
-	margin-top: 20px;
-	padding: 0 0 0 50px;
+.chapter-page .content {
+	/* background: rgb(78, 13, 13); */
 	display: flex;
 	flex-direction: row;
-	flex-flow: row nowrap;
-	/* height: inherit; */
 	align-items: center;
-	justify-content: space-around;
-	gap: 10px;
-	width: 100%;
+	justify-content: space-between;
+	/* padding-top: 2rem; */
 }
-.chapter-page .left-col .body .left-body,
-.chapter-page .left-col .body .right-body {
+.chapter-page .content .body {
 	/* width: calc(50% - 25px); */
-	border: 0px solid red;
-	background: brown;
-	/* display: flex;
+	/* border: 1px solid red; */
+	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
-	flex-direction: column; */
-	/* height: 80vh; */
+	flex-direction: column;
 
 }
-.chapter-page .left-col .body .right-body .container {
-	/* width: fit-content; */
-	height: fit-content;
-	background-color: #d9d9d905;
-	border: 1px solid #ffffff50;
-	padding: 15px 30px;
+.chapter-page .center .container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	border: 1px solid rgb(128, 128, 128);
+	padding: 10px;
 	border-radius: 10px;
-	/* margin-top: 2rem; */
-	background: rgb(17, 17, 17);
-	font-size: 16px;
-
-	/* position: absolute; */
+	background: rgb(34, 34, 34)
 
 }
-.chapter-page .left-col .container .sub-heading {
+.chapter-page .center .container .sub-heading {
 	font-size: 2rem;
 	font-weight: 600;
 	position: relative;
 	width: fit-content;
 }
-/* .chapter-page .left-col .container .sub-heading::before {
+/* .chapter-page .content .container .sub-heading::before {
 	width: 100%;
 	height: 5px;
 	transform: skewX(-45deg);
@@ -70,9 +47,9 @@
 	content: "";
 	position: absolute;
 } */
-.chapter-page .right-col {
-	border: 1px solid red;
-	width: 35%;
+.chapter-page .center {
+	/* border: 1px solid red; */
+	/* width: 35%; */
 	/* padding: 20px; */
 	display: flex;
 	flex-direction: column;
@@ -80,7 +57,7 @@
 	justify-content: center;
 }
 .chapter-page .events-progress{
-	border: 1px solid yellow;
+	/* border: 1px solid yellow; */
 	width: fit-content;
 	/* padding: 0rem 2rem; */
 }
@@ -92,4 +69,10 @@
 }
 .chapter-page .events-progress .name .progress{
 	font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 1150px) {
+	.chapter-page .center {
+		display: none
+	}
 }
