@@ -2,7 +2,7 @@
 
 Divide this among yourselves. A list of all these components is in the Final section in the Figma file.
 
-- [ ] Navbar
+- [x] Navbar
     > Navbar is a very important component. All important functionalities will be through the Navbar.
 - [x] MemberCard
     > Both the variants should be in a single Component
