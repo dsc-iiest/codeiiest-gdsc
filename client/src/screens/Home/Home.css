@@ -150,6 +150,8 @@
 
 	.home .heading .tagline {
 		padding-top: 3rem;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 }
 
