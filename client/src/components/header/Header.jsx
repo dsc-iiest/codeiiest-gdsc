@@ -19,7 +19,7 @@ import { useState } from "react";
 import { Menuicon } from "../../../public/assets/svgvectors";
 import { Close } from "../../../public/assets/svgvectors";
 import "./Header.css";
-import CodeIIEST from "../../../public/assets/logo/codeiiest-logo.png";
+import CodeIIEST from "/assets/logo/codeiiest-logo.png";
 
 import { Link, NavLink } from "react-router-dom";
 
@@ -150,7 +150,7 @@ const MenuDrawer = () => {
         <Box sx={{ 
             width: "100%",  
             height: "100vh",
-            background: `url("../../../public/assets/life.webp")`,
+            background: `url("/assets/life.webp")`,
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
             backgroundSize: "cover",

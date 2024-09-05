@@ -1,5 +1,5 @@
 import Codercard from '../../components/Codercard/Codercard';
-import upward from '../../../public/assets/upward-icon.png';
+import upward from '/assets/upward-icon.png';
 import { useNavigate, Link } from 'react-router-dom';
 import './CP_Leaderboard.css';
 

@@ -248,7 +248,7 @@ const Navbar = ({
 				</div>
 				<Link to="/" className="logo">
 					<div>
-						<img src="/assets/logo/logo_white.webp" alt="" />
+						<img src="/assets/logo/codeiiest-logo.png" alt="" />
 						{/* REBECA */}
 					</div>
 				</Link>
