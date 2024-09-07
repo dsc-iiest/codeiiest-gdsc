@@ -4,8 +4,8 @@ import "./Chapters.css";
 import ChapterCard from "../../components/ChapterCard/ChapterCard";
 import Carousel from "../../components/Carousel/Carousel";
 import PageHeading from "../../components/PageHeading/PageHeading";
-import ProgressBar from "../../components/ProgressBar/ProgressBar";
-import { Box } from "@mui/material";
+// import ProgressBar from "../../components/ProgressBar/ProgressBar";
+// import { Box } from "@mui/material";
 
 const variants = [
     <Link key="development" to="/chapters/development">

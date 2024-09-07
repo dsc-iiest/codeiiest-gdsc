@@ -3,7 +3,7 @@ import "./about.css";
 import { NamecardVertical } from "../../components/namecard/namecard";
 import Carousel from "../../components/Carousel/Carousel";
 import PageHeading from "../../components/PageHeading/PageHeading";
-import { Box } from "@mui/material";
+// import { Box } from "@mui/material";
 
 const members = [
 	<NamecardVertical

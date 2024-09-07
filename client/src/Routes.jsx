@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "./screens/Home/Home";
-import Chapterpage from "./screens/Chapterpage/Chapterpage";
-import CP_Leaderboard2 from "./screens/CP_Leaderboard/CP_Leaderboard2";
-import Chapters from "./screens/Chapters/Chapters";
-import About from "./screens/AboutUs/about";
-import Coder from "./components/Codercard/coder";
+// import Chapterpage from "./screens/Chapterpage/Chapterpage";
+// import CP_Leaderboard2 from "./screens/CP_Leaderboard/CP_Leaderboard2";
+// import Chapters from "./screens/Chapters/Chapters";
+// import About from "./screens/AboutUs/about";
+// import Coder from "./components/Codercard/coder";
 import ComingSoon from "./screens/comingsoon/ComingSoon";
 
 const AllRoutes = () => {

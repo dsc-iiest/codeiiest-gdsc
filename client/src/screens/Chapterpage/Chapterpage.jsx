@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 import NamecardHorizontal from "../../components/namecard/NameCardHorizontal";
 import ProgressBar from "../../components/ProgressBar/ProgressBar";
 import PageHeading from "../../components/PageHeading/PageHeading";
-import { NamecardMini } from "../../components/namecard/namecard";
+// import { NamecardMini } from "../../components/namecard/namecard";
 
 const Chapterdata = {
     development: {
