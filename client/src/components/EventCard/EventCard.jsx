@@ -109,7 +109,7 @@ const Detail = ({ text1, text2, text3 }) => {
     <div className="detail">
       <h5>{text1}</h5>
       <h4>{text2}</h4>
-      {text3 && <h5>{text1}</h5>}
+      {text3 && <h5>{text3}</h5>}
     </div>
   );
 };
