@@ -1,5 +1,5 @@
 import React from "react";
-import "./Chaptercontent.css";
+import "./ChapterContent.css";
 
 const Icon = ({ iconName, byline }) => {
     return (
@@ -26,6 +26,7 @@ const ChapterContent = ({ Content }) => {
                     <div className="heading">{Content.highlight.heading}</div>
                     <p style={Content.highlight.bylineProps}>{Content.highlight.byline}</p>
                 </div>
+               
                 <div className="image">
                     <img style = {{width: width+"em"}} src={`/assets/icons/${Content.highlight.icon}.png`} />
                     <div className="image-label">{Content.highlight.iconheading}</div>
