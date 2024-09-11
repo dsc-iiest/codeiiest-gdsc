@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+	@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 *::-webkit-scrollbar {
   width: 5px;
@@ -51,7 +51,7 @@ div::-webkit-scrollbar {
 	--accent: var(--teal);
 	--bg: #171717;
 	--gradient1: linear-gradient(to left, var(--red), var(--blue));
-
+	--gradient2: linear-gradient(to right, var(--red), var(--blue));
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;

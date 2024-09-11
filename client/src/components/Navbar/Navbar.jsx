@@ -146,6 +146,11 @@ const Navbar = ({
 								Home
 							</NavLink>
 							<NavLink
+								id="nav-event"
+								className={"item"}
+								to="/events"
+							>Events</NavLink>
+							<NavLink
 								id="nav-chapters"
 								className={"item"}
 								to="/chapters"

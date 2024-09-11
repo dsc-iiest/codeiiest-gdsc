@@ -1,138 +1,128 @@
 .chapter-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 30rem;
-  flex-direction: column;
-  margin-right: 5rem;
-  gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30rem;
+    flex-direction: column;
+    border: 1px solid white;
 }
 
 .chapter-content .section-1 {
-  display: flex;
-  align-items: start;
-  justify-content: space-between;
-  width: 100%;
-  padding: 0.5em 0rem 1rem 0;
-  /* padding-bottom: 0.5rem; */
-  border-bottom: 0.8px solid rgb(129, 129, 129);
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 0.5em;
+    /* padding-bottom: 0.5rem; */
+    border-bottom: 0.8px solid rgb(129, 129, 129);
+    background:rgb(0, 64, 29)
 }
 
 .icon-wrapper {
-  display: grid;
-  grid-template-rows: auto auto;
-  grid-template-columns: 1fr;
-  justify-items: center;
-  gap: 0.6rem;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    justify-items: center;
 }
 
 .icon-wrapper p {
-  font-size: 0.8em;
-  line-height: 1.2em;
-  width: 11ch;
-  text-align: center;
+    font-size: 0.8em;
+    line-height: 1.2em;
+    width: 11ch;
+    text-align: center;
 }
 
 .icon-wrapper img {
-  width: 4.2em;
+    width: 4.2em;
 }
 
 .chapter-content .section-2 {
-  font-weight: 800;
-  font-size: 3.7em;
-
-  align-self: start;
-  /* padding-left: 1rem */
+    font-weight: 800;
+    font-size: 2.8em;
+    background:rgb(54, 0, 64);
+    align-self: start;
+    /* padding-left: 1rem */
 }
 
 .chapter-content .section-3 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 20%;
+    display: flex;
+    background:rgb(0, 49, 64);
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .chapter-content .section-3 .image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 0.2rem;
-  padding-left: 2rem;
-  border-left: 0.8px solid white;
-  height: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border-left: 1px solid rgb(179, 179, 179);
 }
 
-
 .chapter-content .section-3 .image .image-label {
-  font-size: 1.3em;
-  font-weight: 900;
-  width: 10ch;
-  text-align: center;
+    font-size: 1.3em;
+    font-weight: 900;
+    width: 10ch;
+    text-align: center;
 }
 
 .chapter-content .section-3 .image img {
-  flex-grow: 1;
-  width: 5em;
+    /* flex-grow: 1; */
+    /* background: blue */
+    /* width: 5em; */
 }
 
 .chapter-content .section-3 .image p {
-  width: 15ch;
-  text-align: center;
-  font-weight: 400;
-  font-size: 1em;
-  gap: 2rem;
-  line-height: 1em;
+    width: 15ch;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1em;
 }
 
 .chapter-content .section-3 .typography {
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  flex-direction: column;
-  height: 100% !important;
-  padding-right: 2rem;
-  
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .chapter-content .section-3 .typography .heading {
-  font-weight: bold;
-  font-size: 2em;
-  /* padding-bottom: 0.5rem; */
-  flex: 1;
+    font-weight: bold;
+    font-size: 2em;
+    /* padding-bottom: 0.5rem; */
 }
 
 .chapter-content .section-3 .typography p {
-  font-size: 1.3em;
-  line-height: 1.2em;
-  height: 100% !important;
-  flex: 1;
+    font-size: 1.3em;
+    line-height: 1.2em;
+    background: rgb(87, 3, 3)
 }
 
 .chapter-content .section-4 {
-  padding-top: 1em;
-  font-weight: 400;
-
-  /* width: 45ch; */
+    padding-top: 1em;
+    font-weight: 400;
+    background:rgb(62, 64, 0)
+    /* width: 45ch; */
 }
 
 .chapter-content .section-4 p {
-  font-weight: 100;
-  font-size: 1.2em;
-  line-height: 1.2em;
-  text-align: justify;
+    font-weight: 100;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    text-align: justify;
 }
 
 .chapter-content .section-4 :nth-child(2) {
-  font-size: 1em;
-  padding-top: 1em;
-  font-weight: 100;
+    font-size: 1em;
+    padding-top: 1em;
+    font-weight: 100;
 }
 
-@media only screen and (max-width: 1280px) {
-  .chapter-content {
-    width: 28rem;
-    font-size: 0.9rem;
-  }
+@media only screen and (max-width: 1280px){
+    .chapter-content{
+        width: 28rem;
+        font-size: 0.9rem;
+    }
 }

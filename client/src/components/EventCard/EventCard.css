@@ -1,0 +1,147 @@
+.complete-event-card .EventCard-wrapper {
+  background-color: var(--gradient2);
+  border: 1px solid rgba(242, 186, 255, 0.428);
+  width: 34rem;
+  height: 28rem;
+  border-radius: 0.7rem;
+  clip-path: polygon(0 0, 62% 0, 80% 20%, 99% 19%, 100% 20%, 100% 100%, 0 100%);
+}
+
+.complete-event-card .parentDiv {
+  background-color: transparent;
+  position: relative;
+}
+
+.complete-event-card .EventCard-wrapper .section1 {
+  background-color: transparent;
+  border: 2px solid var(--gradient2);
+  background: var(--gradient2);
+  mix-blend-mode: screen;
+  position: relative;
+  width: 100%;
+  height: 35%;
+
+  border-radius: 0.7rem;
+}
+
+.complete-event-card .EventCard-wrapper .section1 .title {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 1rem;
+}
+ 
+.complete-event-card .EventCard-wrapper .section2 {
+  background: linear-gradient(36deg, #2b2a2ac3, rgba(49, 48, 48, 0.826));
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0.7rem;
+}
+
+.complete-event-card .EventCard-wrapper .section2 .upper {
+  display: flex;
+  width: 100%;
+  height: 40%;
+  background-color: transparent;
+}
+
+.complete-event-card .EventCard-wrapper .section2 .upper .left {
+  width: 70%;
+  height: 100%;
+}
+
+.complete-event-card .EventCard-wrapper .section2 .upper .right {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.complete-event-card .EventCard-wrapper .section2 .upper .right .detail {
+  background: linear-gradient(136deg, #73727264, rgba(210, 210, 210, 0.378));
+  backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(100px);
+  border: 1px solid hsl(0, 0%, 50%);
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  width: 100%;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  padding: 0.4rem 1rem;
+  justify-content: center;
+  align-items: start;
+}
+.complete-event-card .EventCard-wrapper .section2 .upper .left .description {
+  padding: 0.5rem 0.6rem;
+  line-height: 1.8rem;
+}
+
+.complete-event-card .EventCard-wrapper .section2 .upper .left .TagWrapper {
+  display: flex;
+  gap: 0.6rem;
+  padding: 0.5rem 0.6rem;
+}
+
+.complete-event-card .EventCard-wrapper .section2 .upper .left .TagWrapper .tag {
+  font-weight: 300 !important;
+  font-size: smaller;
+  border-radius: 0.4rem;
+  background-color: white;
+  color: black;
+  padding: 0.2rem 0.8rem;
+}
+
+ .lower {
+  display: flex;
+  height: 25%;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom:  1px solid rgba(242, 186, 255, 0.428);
+  border-bottom-left-radius:1px solid rgba(242, 186, 255, 0.428) ;
+  border-bottom-right-radius: 1px solid rgba(242, 186, 255, 0.428);
+}
+
+.complete-event-card img {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  position: relative;
+  top: 22%;
+  left: 64%;
+  z-index: 10;
+}
+
+
+.complete-event-card .EventCard-wrapper .section2 .lower-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    gap: 0.4rem;
+
+}
+
+
+.complete-event-card .EventCard-wrapper .section2 .lower-left {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+.complete-event-card .EventCard-wrapper .section2 .lower .progressDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
