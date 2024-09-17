@@ -1,5 +1,44 @@
-.Event-wrapper{
+.eventsBox{
+ 
     display: flex;
-    justify-content: center;
-    
+    width: 100%;
+    height: 100%;
+}
+
+.eventsBox .eventCard {
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.eventsBox .eventLabels {
+
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+ 
+.eventsBox .eventLabels .eventLabelsBoxes{
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+    width: 85%;
+    justify-content: start;
+    align-items: center;
+    overflow: scroll;
+  
+}
+
+
+
+.eventsBox .eventLabels .eventLabelsSlider{
+    height: 85%;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
 }

@@ -5,48 +5,23 @@ import GroupAvatars from "./GroupAvatars/GroupAvatars";
 
 const EventCard = (
   {
-    // title,
-    // miniTitle,
-    // description,
-    // imageVariant,
-    // AvatarSampleData,
-    // TagsList,
-    // sideDetails1,
-    // sideDetails2
+    title,
+    miniTitle,
+    description,
+    imageVariant,
+    AvatarSampleData,
+    TagsList,
+    sideDetails1,
+    sideDetails2
   }
 ) => {
 
   //taking sample values for datas which we willl get via props
-  
-  const title = "Dev Camp";
-  const miniTitle = "Complete Development Bootcamp";
-  const description =
-    "gear up for an exciting full stack web development bootcamp, featuring some of the best web developers of our college  ";
-  const imageVariant = "uiux";
-  const AvatarSampleData = [
-    { name: "Rishab dugar bhaiya", img: "profile.jpg" },
-    { name: "Rishab dugar bhaiya", img: "profile.jpg" },
-    { name: "Rishab dugar bhaiya", img: "profile.jpg" },
-    { name: "Rishab dugar bhaiya", img: "profile.jpg" },
-    { name: "Rishab dugar bhaiya", img: "profile.jpg" },
-    { name: "Rishab dugar bhaiya", img: "profile.jpg" },
-  ];
-  const TagsList = ["full stack development", "ui/ux", "react", ];
 
-  const sideDetails1 = {
-    text1: "date & time",
-    text2: "10th june",
-    text3: "06:00-07:45 pm",
-  };
-
-  const sideDetails2 = {
-    text1: "venue",
-    text2: "ONLINE",
-    text3: null,
-  };
 
   let percentageValue;
 
+  console.log(title)
   const AvatarLen = AvatarSampleData.length;
   if (AvatarLen <= 3) percentageValue = 100;
   else percentageValue = Math.floor(parseFloat(3 / AvatarLen) * 100);
