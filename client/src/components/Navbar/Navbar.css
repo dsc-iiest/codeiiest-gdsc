@@ -79,12 +79,16 @@
     justify-content: flex-start;
     align-items: center;
 }
-.navbar .nav-items .item:hover,
+
 .navbar .nav-items .item.active {
     color: var(--accent);
     content: "";
     transition: 0.25s all;
-    font-weight: 600;
+    /* font-weight: 600; */
+}
+.navbar .nav-items .item:hover {
+    text-shadow: 0 0 2px var(--accent);
+    color: var(--accent);
 }
 .MuiDrawer-root .MuiPaper-root {
     width: 100% !important;
@@ -244,10 +248,15 @@
         align-items: center;
         height: 80px;
         border: 0px solid red;
-        display: none;
     }
     .navbar .left-col {
         justify-content: space-between;
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 900px), only screen and (max-device-width: 900px) {
+    .navbar {
+        display: none;
     }
 }

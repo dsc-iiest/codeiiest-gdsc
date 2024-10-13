@@ -147,54 +147,52 @@ const MenuDrawer = () => {
     ];
 
     const list = () => (
-        <Box sx={{ 
-            width: "100%",  
-            height: "100vh",
-            background: `url("/assets/life.webp")`,
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-            '&::before': {
-            content: '""',
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            backgroundColor: "rgba(0, 0, 0, 0.5)", // Adjust the opacity (0.5) as needed
-            zIndex: 1,
-        },
-        // Ensure that any children elements are on top of the overlay
-        '& > *': {
-            position: "relative",
-            zIndex: 2,
-        }
-            }} 
-            role="presentation" 
-            onClick={toggleDrawer(false)} 
+        <Box
+            sx={{
+                width: "100%",
+                height: "100vh",
+                background: `url("/assets/life.webp")`,
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "bottom",
+                backgroundSize: "contain",
+                "&::before": {
+                    content: '""',
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    width: "100%",
+                    height: "100%",
+                    background: "linear-gradient(0deg, rgba(20,20,112,0) 10%, rgba(30, 30, 30,1) 35%)",
+                    zIndex: 1,
+                },
+                // Ensure that any children elements are on top of the overlay
+                "& > *": {
+                    position: "relative",
+                    zIndex: 2,
+                },
+            }}
+            role="presentation"
+            onClick={toggleDrawer(false)}
             onKeyDown={toggleDrawer(false)}
             className="menu-drawer"
-            >
-            <Box sx={{ display: "flex", justifyContent: "space-between", margin: "2rem", alignItems: "center"}}>
+        >
+            <Box sx={{ display: "flex", justifyContent: "space-between", margin: "2rem", alignItems: "center" }}>
                 <img src={CodeIIEST} className="brand" />
-                <IconButton
-                    edge="start"
-                    color="inherit"
-                    aria-label="menu"
-                    onClick={toggleDrawer(false)}
-                >
+                <IconButton edge="start" color="inherit" aria-label="menu" onClick={toggleDrawer(false)}>
                     <Close cls={"cls"} color={"#fff"} />
                 </IconButton>
             </Box>
-            <Box sx = {{
-                display: "flex",
-                flexDirection: "column",
-                gap: "1rem",
-                fontSize: "1.2rem",
-                marginTop: "3rem"
-            }} >
+            <Box
+                sx={{
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "2rem",
+                    fontSize: "1.2rem",
+                    marginTop: "5rem",
+                }}
+            >
                 {menuItems.map((item, index) => (
-                    <NavLink className={"item"} key={index} to = {item.link}>
+                    <NavLink className={"item"} key={index} to={item.link}>
                         {item.text}
                     </NavLink>
                 ))}
@@ -254,11 +252,9 @@ const Header = () => {
                             sx={{
                                 color: "white",
                                 fontWeight: 400,
-                                fontFamily: "Chakra Petch"
+                                fontFamily: "Chakra Petch",
                             }}
-                        >
-                            
-                        </Typography>
+                        ></Typography>
                     </Link>
                 </Box>
                 <MenuDrawer />

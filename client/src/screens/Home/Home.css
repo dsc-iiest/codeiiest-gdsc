@@ -99,6 +99,7 @@
 	/* position: relative; */
 	border: 0px solid yellow;
 	width: fit-content;
+	margin-bottom: 1rem
 }
 .home .new-events::before{
 	content: "";
