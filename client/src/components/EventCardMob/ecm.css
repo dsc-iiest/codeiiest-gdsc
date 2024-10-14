@@ -1,0 +1,117 @@
+/* App Container */
+.app-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+  }
+  
+  /* Content Container */
+  .content-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 90%;
+    padding: 20px;
+  }
+  
+  /* Intersect Image */
+  .intersect-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Text Section */
+  .text-section {
+    text-align: right;
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+  .percentage-text {
+    color: white;
+    font-size: 17px;
+    font-weight: 100;
+    font-family: 'Chakra Petch', sans-serif;
+    position: absolute;
+    top: -30px;
+    right: 0;
+    z-index: 15;
+  }
+  
+  .title-text {
+    color: white;
+    font-size: 30px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 700;
+    word-wrap: break-word;
+  }
+  
+  .divider {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  /* Loader Image */
+  .loader-image {
+    position: absolute;
+    top: -60px;
+    left: -15px;
+    width: 100%;
+    height: 50%;
+    z-index: 10;
+  }
+  
+  /* Icon Text Container */
+  .icon-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+  }
+  
+  .icon {
+    width: 30px;
+    height: auto;
+  }
+  
+  .info-text {
+    color: white;
+    font-size: 18px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  
+  .calendar {
+    justify-content: right;
+  }
+  
+  .calendar-icon {
+    width: 30px;
+    height: 20px;
+  }
+  
+  /* Know More Button */
+  .know-more-button {
+    background: #D54A5A;
+    border-radius: 21.97px;
+    margin-top: 10px;
+    padding: 2px 30px;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .button-text {
+    color: white;
+    font-size: 20px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 700;
+    word-wrap: break-word;
+  }
