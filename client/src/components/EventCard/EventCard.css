@@ -1,23 +1,20 @@
-.complete-event-card {
-  width: fit-content;
-  height: 30rem;
-}
-.complete-event-card .EventCard-wrapper {
+.parentDiv .EventCard-wrapper {
   background-color: var(--gradient1);
-  width: 34rem;
-  height: 30rem;
+  width: 24rem;
+  height: 20rem;
   border-radius: 0.7rem;
   clip-path: polygon(0 0, 62% 0, 80% 20%, 98.5% 18.8%, 100% 20%, 100% 100%, 0 100%);
 }
 
 
-.complete-event-card .parentDiv {
+ .parentDiv {
   background-color: transparent;
   position: relative;
-  
+ 
+  margin-bottom:10rem ;
 }
 
-.complete-event-card .EventCard-wrapper .section1 {
+.parentDiv .EventCard-wrapper .section1 {
  
   border: 0.15rem solid rgb(157, 151, 151);
   background: var(--gradient1);
@@ -26,9 +23,10 @@
   width: 100%;
   height: 35%;
   border-radius: 0.7rem;
+  font-size: 12px;
 }
 
-.complete-event-card .EventCard-wrapper .section1 .title {
+.parentDiv .EventCard-wrapper .section1 .title {
   width: 55%;
   height: 100%;
   display: flex;
@@ -36,10 +34,39 @@
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  padding: 1rem 1.5rem;
+  padding: 1rem 0.5rem;
+  
+}
+
+.parentDiv .EventCard-wrapper .section1 .title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  width: 100%;
+  translate: rotate(180deg);
+  background: var(--gradient1);
+  animation: animateTitle 1s forwards;
+  z-index: 2; /* Make sure the pseudo-element is below the title */
+}
+
+@keyframes animateTitle {
+  0% {
+    left: 100%;
+    opacity: 1;
+ 
+  }
+  100% {
+    left: 0%;
+    opacity: 0;
+    
+  }
 }
  
-.complete-event-card .EventCard-wrapper .section2 {
+.parentDiv .EventCard-wrapper .section2 {
+  font-size: 8px;
   background: linear-gradient(36deg, #342f2f72, rgba(76, 69, 69, 0.696));
   backdrop-filter: blur(36px);
   -webkit-backdrop-filter: blur(36px);
@@ -50,7 +77,7 @@
   border-top: 0px !important;
 }
 
-.complete-event-card .EventCard-wrapper .section2::before {
+.parentDiv .EventCard-wrapper .section2::before {
   content: "";
   position: absolute;
   border: 0.179rem solid rgb(157, 151, 151);
@@ -59,7 +86,7 @@
   height: 1rem;
 }
 
-.complete-event-card .EventCard-wrapper .section2::after {
+.parentDiv .EventCard-wrapper .section2::after {
   content: "";
   position: absolute;
   border: 0.179rem solid rgb(157, 151, 151);
@@ -68,19 +95,19 @@
   height: 1rem;
 }
 
-.complete-event-card .EventCard-wrapper .section2 .upper {
+.parentDiv .EventCard-wrapper .section2 .upper {
   display: flex;
   width: 100%;
   height: 40%;
   background-color: transparent;
 }
 
-.complete-event-card .EventCard-wrapper .section2 .upper .left {
+.parentDiv .EventCard-wrapper .section2 .upper .left {
   width: 70%;
   height: 100%;
 }
 
-.complete-event-card .EventCard-wrapper .section2 .upper .right {
+.parentDiv .EventCard-wrapper .section2 .upper .right {
   display: flex;
   flex-direction: column;
   width: 30%;
@@ -91,33 +118,34 @@
 }
 
 
-.complete-event-card .EventCard-wrapper .section2 .upper .right .detail {
+.parentDiv .EventCard-wrapper .section2 .upper .right .detail {
   background: linear-gradient(36deg, #928b8b3e, rgba(183, 177, 177, 0.326));
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
   border: 1px solid hsl(0, 0%, 50%);
   display: flex;
   flex-direction: column;
-  gap: 0.2rem;
+  gap: 0.1rem;
   width: 100%;
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
-  padding: 0.4rem 1rem;
+  padding: 0.4rem 0.5rem;
   justify-content: center;
   align-items: start;
+  font-size: xx-small !important;
 }
 
-.complete-event-card .EventCard-wrapper .section2 .upper .right .detail .label {
+.parentDiv .EventCard-wrapper .section2 .upper .right .detail .label {
   font-weight: 300;
-  font-size: 14.2px;
+  font-size: 10.2px ;
 }
 
-.complete-event-card .EventCard-wrapper .section2 .upper .left .description  {
-  padding: 0rem 1.5rem 0rem 1.5rem;
+.parentDiv .EventCard-wrapper .section2 .upper .left .description  {
+  padding: 0rem 1.5rem 0rem 0.5rem;
    display: -webkit-box;
-   font-size: medium;
-      -webkit-line-clamp: 4; /* Number of lines to show */
-      line-clamp: 4;
+   font-size: 12.5px;
+      -webkit-line-clamp: 3; /* Number of lines to show */
+      line-clamp: 3;
       -webkit-box-orient: vertical;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -126,24 +154,24 @@
   
 }
 
-.complete-event-card .EventCard-wrapper .section2 .upper .left .TagWrapper {
+.parentDiv .EventCard-wrapper .section2 .upper .left .TagWrapper {
   display: flex;
-  gap: 0.75rem;
-  padding: 1.5rem 1.5rem 1rem 1.5rem;
+  gap: 0.35rem;
+  padding: 0.5rem;
   max-width: 100%;
   overflow-x: scroll;
 }
 
-.complete-event-card .EventCard-wrapper .section2 .upper .left .TagWrapper .tag {
+.parentDiv .EventCard-wrapper .section2 .upper .left .TagWrapper .tag {
   font-weight: 300 !important;
-  font-size: smaller;
+  font-size: 8px;
   border-radius: 0.4rem;
   background-color: white;
   color: black;
   padding: 0.2rem 0.8rem;
 }
 
-.complete-event-card .EventCard-wrapper .section2 .lower {
+.parentDiv .EventCard-wrapper .section2 .lower {
   display: flex;
   height: 25%;
   justify-content: space-around;
@@ -151,50 +179,95 @@
   border-bottom: 0.1rem solid rgb(157, 151, 151);
 }
 
-.complete-event-card img {
-  width: 12rem;
-  height: 12rem;
+.parentDiv .image-container {
+  width: 8.6rem;
+  height:8.6rem;
   border-radius: 50%;
   position: relative;
-  top: 30%;
-  left: 65%;
+  top: 22%;
+  left: 64%;
   z-index: 10;
+  overflow: hidden;
+}
+
+@keyframes animateImg {
+  from {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  to{
+    transform: rotate(240deg);
+    opacity: 0;
+  }
 }
 
 
-.complete-event-card .EventCard-wrapper .section2 .lower-right {
+.parentDiv .image-container::before {
+  content: "asfd";
+  position: absolute;
+  top:30%;
+  left: -10%;
+  right: -10%;
+  height: 30%;
+  background-color: yellow;
+  z-index: -1;
+  animation: animateImg 1s forwards ;
+}
+
+
+
+
+.parentDiv .image-container img {
+  width: 8.5rem;
+  height:8.5rem;
+  border-radius: 50%;
+  animation: animateImg2 1s forwards;
+}
+
+
+@keyframes animateImg2 {
+  from {
+    scale: 0.9;
+  }
+  to{
+    scale: 1;
+  }
+}
+
+.parentDiv .EventCard-wrapper .section2 .lower-right {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: end;
-    gap: 0.4rem;
     height: 100%;
-    padding-right:1.5rem;
+  
+    padding:1rem 1rem 0.5rem 0.2rem;
 
 }
 
 
-.complete-event-card .EventCard-wrapper .section2 .lower-left {
+.parentDiv .EventCard-wrapper .section2 .lower-left {
     display: flex;
     gap: 0.5rem;
     height: 50%;
-    justify-content: start ;
+    justify-content: start;
     align-items: end;
     width: 100%;
-    padding-left:1.5rem ;
-
-   
+    padding-left: 1.5rem;
 }
 
 
-.complete-event-card .EventCard-wrapper .section2 .lower .progressDiv{
+
+
+.parentDiv .EventCard-wrapper .section2 .lower .progressDiv{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    
 }
  
-.complete-event-card .EventCard-wrapper .section2 .lower img {  
+.parentDiv .EventCard-wrapper .section2 .lower img {  
   height: 100%;
   z-index: 10;
   position: relative;
@@ -203,3 +276,19 @@
   bottom: 0;
   right: 0;
 }
+
+
+.parentDiv .know-more{
+  background-color: var(--red);
+  border: 0.1px solid;
+  border-radius: 0.2rem;
+  padding: 0.5rem 0.4rem;
+  width: 6rem;
+  cursor: pointer;
+  transition: 100ms ease all;
+}
+
+.parentDiv .know-more:hover {
+  background-color: rgb(236, 86, 86);
+  color: rgb(255, 255, 255);
+  }

@@ -19,7 +19,7 @@ const Events = ({
             title: "Dev Meetup",
             miniTitle: "Meet our best web developers",
             description:
-                "gear up for an exciting full stack web development meetup, featuring some of the best web developers of our college  ",
+                "gear up for an exciting full stack web development meetup, featuring some of the best web developers of our college kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk k k k k k k   ",
             imageVariant : "uiux",
             AvatarSampleData: [
                 { name: "Rishab dugar bhaiya", img: "profile.jpg" },
@@ -196,8 +196,9 @@ const Events = ({
                     <PageHeading text={"EVENTS"} />
                 </div>
                 <EventCard
-                {...EventArr[clickedImage-1]}
+                    {...EventArr[clickedImage - 1]}
                 />
+                
             </div>
 
             <div className="eventLabels" >
