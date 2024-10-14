@@ -1,42 +1,40 @@
 .chapter-page {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	padding: 0 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 50px;
 }
 .chapter-page .content {
-	/* background: rgb(78, 13, 13); */
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
-	/* padding-top: 2rem; */
+    /* background: rgb(78, 13, 13); */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* padding-top: 2rem; */
 }
 .chapter-page .content .body {
-	/* width: calc(50% - 25px); */
-	/* border: 1px solid red; */
-	display: flex;
-	align-items: center;
-	justify-content: space-evenly;
-	flex-direction: column;
-
+    /* width: calc(50% - 25px); */
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
 }
 .chapter-page .center .container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	border: 1px solid rgb(128, 128, 128);
-	padding: 10px;
-	border-radius: 10px;
-	background: rgb(34, 34, 34)
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid rgb(128, 128, 128);
+    padding: 10px;
+    border-radius: 10px;
+    background: rgb(34, 34, 34);
 }
 .chapter-page .center .container .sub-heading {
-	font-size: 2rem;
-	font-weight: 600;
-	position: relative;
-	width: fit-content;
+    font-size: 2rem;
+    font-weight: 600;
+    position: relative;
+    width: fit-content;
 }
 /* .chapter-page .content .container .sub-heading::before {
 	width: 100%;
@@ -48,31 +46,89 @@
 	position: absolute;
 } */
 .chapter-page .center {
-	/* border: 1px solid red; */
-	/* width: 35%; */
-	/* padding: 20px; */
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+    /* border: 1px solid red; */
+    /* width: 35%; */
+    /* padding: 20px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.chapter-page .events-progress{
-	/* border: 1px solid yellow; */
-	width: fit-content;
-	/* padding: 0rem 2rem; */
+.chapter-page .events-progress {
+    /* border: 1px solid yellow; */
+    width: fit-content;
+    /* padding: 0rem 2rem; */
 }
-.chapter-page .events-progress .name{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	gap: 1rem;
+.chapter-page .events-progress .name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
 }
-.chapter-page .events-progress .name .progress{
-	font-size: 1.5rem;
+.chapter-page .events-progress .name .progress {
+    font-size: 1.5rem;
+}
+
+.chapter-page .content .chapter-leads,
+.chapter-page .chapter-ev {
+    display: none;
+}
+
+.chapter-page .chapter-ev {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.chapter-page .chapter-ev .sub-heading {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+    width: 100%;
 }
 
 @media only screen and (max-width: 1150px) {
-	.chapter-page .center {
-		display: none
-	}
+    .chapter-page .center {
+        display: none;
+    }
 }
+
+@media only screen and (max-width: 900px) {
+    .chapter-page .content {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .chapter-page .content .body {
+        display: none;
+    }
+    .chapter-page .content .chapter-leads {
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 7rem;
+    }
+
+    .chapter-content .section-3 .typography {
+        margin: 2em 0em;
+    }
+
+    .chapter-page .content .chapter-leads > .heading {
+        font-size: 3rem;
+    }
+
+    .chapter-page .chapter-ev {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+/* 
+@media only screen and (max-width: 480px) {
+
+} */

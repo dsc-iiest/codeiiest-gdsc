@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import NamecardHorizontal from "../../components/namecard/NameCardHorizontal";
 import ProgressBar from "../../components/ProgressBar/ProgressBar";
 import PageHeading from "../../components/PageHeading/PageHeading";
+import { NamecardVertical } from "../../components/namecard/namecard";
 // import { NamecardMini } from "../../components/namecard/namecard";
 
 const Chapterdata = {
@@ -201,10 +202,11 @@ const EventsProgress = () => {
 const Chapterpage = () => {
     const { id } = useParams();
     const data = Chapterdata[id];
+    const {innerWidth} = window;
 
     return (
         <div className="chapter-page page">
-            <PageHeading text={idMap[id]} />
+            {innerWidth>900 && <PageHeading text={idMap[id]} />}
 
             <div className="bg chapter">
                 <img src={`/assets/bg/${id}.png`} alt="" />
@@ -233,6 +235,33 @@ const Chapterpage = () => {
                     />
                 </div>
                 <ChapterContent Content={data} />
+                <div className="chapter-leads">
+                    <div className="heading">Leads</div>
+                    <NamecardVertical
+                        name={"Rishab Dugar"}
+                        codeiiest={"Development Lead & Treasurer"}
+                        gdsc={"Development Lead & Treasurer"}
+                        profilepic={"profilepic"}
+                        descrip={"lorem ipsum doler sith lorem ipsum doler sith lorem ipsum doler sith"}
+                        customCSS={{
+                            transform: "scale(1)",
+                        }}
+                    />
+                    <NamecardVertical
+                        name={"Rishab Dugar"}
+                        codeiiest={"Development Lead & Treasurer"}
+                        gdsc={"Development Lead & Treasurer"}
+                        profilepic={"profilepic"}
+                        descrip={"lorem ipsum doler sith lorem ipsum doler sith lorem ipsum doler sith"}
+                        customCSS={{
+                            transform: "scale(1)",
+                        }}
+                    />
+                </div>
+                <div className="chapter-ev">
+                    <div className="sub-heading">Events</div>
+                    <EventsProgress></EventsProgress>
+                </div>
             </div>
             <div className="center">
                 <div className="container">

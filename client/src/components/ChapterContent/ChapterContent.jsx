@@ -11,7 +11,7 @@ const Icon = ({ iconName, byline }) => {
 };
 
 const ChapterContent = ({ Content }) => {
-    const width = Content.title==="FUSION FORCE"?9:4.5
+    const width = Content.title === "FUSION FORCE" ? 9 : 4.5;
     return (
         <div className="chapter-content">
             <div className="section-1">
@@ -27,7 +27,7 @@ const ChapterContent = ({ Content }) => {
                     <p style={Content.highlight.bylineProps}>{Content.highlight.byline}</p>
                 </div>
                 <div className="image">
-                    <img style = {{width: width+"em"}} src={`/assets/icons/${Content.highlight.icon}.png`} />
+                    <img style={{ width: width + "em" }} src={`/assets/icons/${Content.highlight.icon}.png`} />
                     <div className="image-label">{Content.highlight.iconheading}</div>
                     <p>{Content.highlight.iconbyline}</p>
                 </div>
@@ -35,6 +35,11 @@ const ChapterContent = ({ Content }) => {
             <div className="section-4">
                 <p>{Content.description}</p>
                 <p>{Content.byline}</p>
+            </div>
+            <div className="image">
+                <img style={{ width: width + "em" }} src={`/assets/icons/${Content.highlight.icon}.png`} />
+                <div className="image-label">{Content.highlight.iconheading}</div>
+                <p>{Content.highlight.iconbyline}</p>
             </div>
         </div>
     );
