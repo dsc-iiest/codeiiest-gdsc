@@ -1,8 +1,10 @@
 .outerDivTab .tabLabels-wrapper {
+  cursor: pointer;
+  font-size: 9px !important;
   position: relative;
-  width: 28rem;
-  height: 10rem;
-  border-radius: 0.7rem;
+  width: 19rem;
+  height: 6.5rem;
+  border-radius: 0.5rem;
   clip-path: polygon(0 0, 56% 0, 80% 40%, 98% 42%, 100% 46%, 100% 100%, 0 100%);
 }
 
@@ -15,7 +17,7 @@
   position: relative;
   width: 100%;
   height: 100%;
-  border-radius: 0.7rem;
+  border-radius: 0.5rem;
 }
 
  .outerDivTab .tabLabels-wrapper .section1 .title {
@@ -30,12 +32,12 @@
 } 
 
 .outerDivTab img {
-    width: 11rem;
+    width: 7rem;
     aspect-ratio: 1;
     background-color: white;
     border-radius: 50%;
     position: absolute;
-    top: -25%;
+    top: -22%;
     right: 3%;
     z-index: 5 !important;
 }
@@ -43,7 +45,7 @@
 
 
 .outerDivTab {
-    margin: 2.5rem 0rem;
+    margin: 2rem 0rem;
     width: fit-content;
     position: relative;
 }

@@ -2,7 +2,7 @@ export default function EventTabSlider({ imageNumber, totalImages }) {
 
   const heightOfEachSlider = 90/totalImages;
   const smallSliderStyle = {
-    width: "1rem",
+    width: "0.8rem",
     height: `${heightOfEachSlider}%`,
     cursor: "pointer",
     borderRadius: "1rem"

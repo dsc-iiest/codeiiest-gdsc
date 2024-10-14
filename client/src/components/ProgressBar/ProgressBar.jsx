@@ -1,7 +1,8 @@
 import PropTypes from "prop-types";
 import "./ProgressBar.css";
 
-const Slots = ({ filled, total }) => {
+const Slots = ({ filled, total, size="normal"}) => {
+
 	const slots = [];
 	const backgroundSize = (total * 30 + 10) + 50;
 
@@ -13,6 +14,8 @@ const Slots = ({ filled, total }) => {
 				style={{
 					backgroundSize,
 					backgroundPosition: 10 + 30 * i + 25 + "px", 
+					height: `${size === "small" ? "20px" : "30px"}`,
+					width: `${size === "small" ? "12px" : "20px"}`
 				}}
 			></div>
 		);
@@ -21,10 +24,13 @@ const Slots = ({ filled, total }) => {
 	while (i <= total) {
 		slots.push(
 			<div
+				
 				className="slot outlined"
 				style={{
 					backgroundSize,
 					backgroundPosition: 10 + 30 * i + "px",
+					height: `${size==="small"? "20px" : "30px"}`,
+					width: `${size === "small" ? "12px" : "20px"}`
 				}}
 			></div>
 		);
@@ -33,15 +39,17 @@ const Slots = ({ filled, total }) => {
 	return slots;
 };
 
-const ProgressBar = ({ total, progress }) => {
+const ProgressBar = ({ total, progress, size="normal" }) => {
 	return (
 		<div
 			className="progress-bar"
 			style={{
-				width: total * 30 + 10 + "px",
+				height: `${size==="small"? 30 : 40}px`,
+				width: `${size==="small"? total*22 + 8 : total*30 + 10}px`
+				
 			}}
 		>
-			<Slots filled={progress} total={total}></Slots>
+			<Slots filled={progress} total={total} size={size} ></Slots>
 		</div>
 	);
 };

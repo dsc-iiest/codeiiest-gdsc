@@ -1,6 +1,5 @@
 .progress-bar{
 	background: transparent;
-	height: 40px;
 	padding: 0 10px;
 	display: flex;
 	flex-direction: row;
@@ -11,9 +10,9 @@
 .progress-bar .slot{
 	position: relative;
 	border: 2px solid white;
-	width: 20px;
-	min-width: 20px;
-	height: 30px;
+	/* width: 20px; */
+	/* min-width: 20px; */
+	/* height: 30px; */
 	transform: skewX(-30deg);
 	background-color: transparent;
 	border: 2px solid var(--gradient1);
@@ -25,10 +24,10 @@
 .progress-bar .slot.outlined::after{
 	content: "";
 	position: absolute;
-	top: 2px;
-	left: 2px;
-	height: 26px;
-	width: 16px;
+	top: 8%;
+	left: 10%;
+	height: 84%;
+	width: 80%;
 	background-color: black;
 	/* mix-blend-mode: screen; */
 	z-index: 1;
