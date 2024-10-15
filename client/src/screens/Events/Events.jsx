@@ -185,6 +185,10 @@ const Events = ({
         }
     ]
 
+    const handleClick = (val) => {
+        setClickedImage(val)
+    }
+
     return (<div className="Event-wrapper page">
         <div className="bg">
             <img src="/assets/bg/home_bg.png" alt="" />
@@ -214,7 +218,7 @@ const Events = ({
                 </div>
 
                 <div className="eventLabelsSlider" >
-                    <EventTabSlider imageNumber={clickedImage} totalImages={EventArr.length} />
+                    <EventTabSlider onClick={handleClick} imageNumber={clickedImage} totalImages={EventArr.length} />
                 </div>
 
 
