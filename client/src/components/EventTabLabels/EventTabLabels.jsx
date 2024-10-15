@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import "./EventTabLabels.css";
 
 export default function EventTabLabels(
@@ -12,12 +13,17 @@ export default function EventTabLabels(
 
     //taking sample values for datas which we willl get via props
 
-
+    const outerDivRef = useRef()
     const imageVariant = 'uiux';
+    useEffect(() => {
+        if (isClicked && outerDivRef.current) {
+            outerDivRef.current.scrollIntoView({ behaviour: "smooth", block: "end" })
+        }
+    }, [isClicked])
     // const isClicked = true;
 
     return (
-        <div onClick={onClick} className="outerDivTab">
+        <div onClick={onClick} ref={outerDivRef} className="outerDivTab">
 
             <img src={`/assets/thumbnail/${imageVariant}.png`} />
 
