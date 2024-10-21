@@ -14,6 +14,33 @@
   position: relative;
 }
 
+
+@keyframes animateTitle {
+  0% {
+    left: 0%;
+    opacity: 1;
+    right: 0%;
+ 
+  }
+  100% {
+    left: 40%;
+    opacity: 0;
+    right: -140%;
+    
+  }
+}
+
+.EventCardMain .tabLabels-wrapper .section1::after{
+  content: "";
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  background: var(--gradient1);
+  animation: animateTitle 1s forwards;
+}
+
 .EventCardMain .tabLabels-wrapper .section1 {
   backdrop-filter: blur(19px);
   mix-blend-mode: screen;
@@ -86,19 +113,6 @@
   background-color: lightgreen;
   z-index: 10 !important;
   animation: animateImg 1s forwards ;
-}
-
-@keyframes animateTitle {
-  0% {
-    left: 100%;
-    opacity: 1;
- 
-  }
-  100% {
-    left: 0%;
-    opacity: 0;
-    
-  }
 }
  
 .EventCardMain .section2 {
