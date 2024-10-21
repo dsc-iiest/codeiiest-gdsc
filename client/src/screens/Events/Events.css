@@ -29,6 +29,7 @@
     justify-content: start;
     align-items: center;
     overflow: scroll;
+    gap:1rem;
   
 }
 

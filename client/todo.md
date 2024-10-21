@@ -30,8 +30,8 @@ Divide this among yourselves. A list of all these components is in the Final sec
 - [ ] Use only the full picture, with css clip-path. 
 
 * Abhijit
-- [ ] Make the leaderboard frontend
-- [ ] Fixing the namecard design to make it bigger for mobile views
+- [x] Make the leaderboard frontend
+- [x] Fixing the namecard design to make it bigger for mobile views
 - [ ] Make the full leaderboard page
 
 * Soumyajit
