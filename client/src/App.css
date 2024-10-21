@@ -37,7 +37,7 @@
 	position: absolute;
 	top: 90px;
 	left: 0;
-	border: var(--bw) solid red;
+	/* border: var(--bw) solid red; */
 	padding: 20px;
 	position: fixed;
 	z-index: -10;
@@ -48,7 +48,7 @@
 	height: 100%;
 	object-fit: fill;
 	object-position: center;
-	/* border: var(--bw) solid red; */
+	border: var(--bw) solid red;
 }
 .page{
 	border: var(--bw) solid rgb(0, 255, 255);
@@ -63,8 +63,8 @@
 }
 .inner-content{
 	border: var(--bw) solid yellow;
-	width: calc(100% - 6vw);
-	height: calc(100vh - 130px - 10vh - 12vh);
+	width: calc(100% - 7vw);
+	height: calc(100vh - 60px - 10vh - 12vh);
 	margin: 6vh 3vw;
 }
 .outer-content{
