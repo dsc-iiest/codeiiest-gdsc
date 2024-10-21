@@ -1,5 +1,5 @@
 import React from "react";
-import "./Chaptercontent.css";
+import "./ChapterContent.css";
 
 const Icon = ({ iconName, byline }) => {
     return (
