@@ -1,5 +1,5 @@
 import Codercard from '../../components/Codercard/Codercard';
-import upward from '/assets/upward-icon.png';
+// import upward from '/assets/upward-icon.png';
 import { useNavigate, Link } from 'react-router-dom';
 import './CP_Leaderboard.css';
 
@@ -66,7 +66,7 @@ const CP_Leaderboard = () => {
         </div>
         <div className="transition-section">
                 <Link to="/cp_leaderboard2">
-                  <img src={upward} alt="up-icon" style={{width: 20, height: 20}}/>
+                  {/* <img src={upward} alt="up-icon" style={{width: 20, height: 20}}/> */}
                 </Link>
                 <div>leaderboard</div>
         </div>

@@ -1,0 +1,171 @@
+.lb-page {
+    /* margin-top: 4rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: min-content;
+    /* gap: 1rem; */
+    /* padding: 2rem; */
+}
+
+.lb-page .notification {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    /* border-radius: 10px; */
+    /* animation-duration: 5s; */
+    background-color: var(--text-gradient-1);
+    
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    animation: peeking 2s linear forwards;
+    animation-duration: 5s;
+
+    width: min(100%, min-content);
+    text-align: right;
+    z-index: 100;
+}
+
+@keyframes peeking {
+    10%{
+        top: 60px;
+    }90%{
+        top: 60px;
+        opacity: 1;
+    }100%{
+        top: 0px;
+        opacity: 0;
+    }
+}
+
+.lb-page .leaderboard p,
+.lb-page .leaderboard svg {
+    color: #fff !important;
+}
+
+.lb-page .leaderboard {
+    width: max-content;
+}
+
+.lb-page .heading {
+    font-size: 3.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.lb-page .content {
+    width: min(40ch, 100%);
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.4em;
+    color: var(--normal-text);
+}
+
+.lc, .cf {
+    padding: 0.6rem;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+
+.id, .year, .contests, .solves, .rating, .maxrating {
+    text-align: center !important;
+}
+
+.year {
+    color: var(--normal-text)
+}
+
+.rating,
+.maxrating {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.lb {
+    /* height: 35px !important; */
+    font-size: 1rem;
+}
+
+.leaderboard .lb-header {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    background-color: #333b41;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.handle {
+    position: relative;
+    display: flex;
+}
+
+.name {
+    cursor: pointer;
+}
+
+.tooltip {
+    position: absolute;
+    z-index: 10000;
+    background-color: green;
+    padding: 0.4rem;
+    top: 20px;
+}
+
+.usr_name {
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+}
+
+.lb-page .button-group .table-swap {
+    color: var(--text-gradient-2);
+    border: 1.5px solid rgb(14, 133, 231);
+}
+.lb-page .button-group .active {
+    background-color: rgba(14, 133, 231, 0.23);
+}
+
+/* tooltip css */
+.q-stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.q-stats .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.q-stats .row .easy {
+    color: #00b8a3;
+}
+.q-stats .row .med {
+    color: #FFC01E;
+}
+.q-stats .row .hard {
+    color: #FF375F;
+}
+
+.lb-page .datagrid-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: min-content;
+}
+
+.usr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}

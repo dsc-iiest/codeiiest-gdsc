@@ -1,0 +1,18 @@
+.error-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30ch;
+}
+
+.error-container .error-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.error-container .error-card h3, .error-container .error-card p{
+    color: var(--normal-text);
+    text-align: center
+}

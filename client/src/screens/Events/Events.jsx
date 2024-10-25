@@ -7,20 +7,14 @@ import EventTabLabels from "../../components/EventTabLabels/EventTabLabels";
 import "./Events.css"
 import EventTabSlider from "../../components/EventTabLabels/EventTabSlider/EventTabSlider";
 const Events = ({
-    //eventArr,
+    EventArr = [
 
-}) => {
-
-    const [clickedImage, setClickedImage] = useState(1)
-
-    const EventArr = [
-        
-           {
+        {
             title: "Dev Meetup",
             miniTitle: "Meet our best web developers",
             description:
-                "gear up for an exciting full stack web development meetup, featuring some of the best web developers of our college  ",
-            imageVariant : "uiux",
+                "gear up for an exciting full stack web development meetup, featuring some of the best web developers of our college kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk k k k k k k   ",
+            imageVariant: "uiux",
             AvatarSampleData: [
                 { name: "Rishab dugar bhaiya", img: "profile.jpg" },
                 { name: "Rishab dugar bhaiya", img: "profile.jpg" },
@@ -43,12 +37,12 @@ const Events = ({
                 text3: null,
             },
         },
-           {
+        {
             title: "Blockchain",
             miniTitle: "Complete Rust Bootcamp",
             description:
                 "gear up for an exciting full stack web development bootcamp, featuring some of the best web developers of our college  ",
-            imageVariant : "uiux",
+            imageVariant: "uiux",
             AvatarSampleData: [
                 { name: "Rishab dugar bhaiya", img: "profile.jpg" },
                 { name: "Rishab dugar bhaiya", img: "profile.jpg" },
@@ -184,22 +178,26 @@ const Events = ({
             }
         }
     ]
+}) => {
+
+    const [clickedImage, setClickedImage] = useState(1)
+    const handleClick = (val) => {
+        setClickedImage(val)
+    }
 
     return (<div className="Event-wrapper page">
         <div className="bg">
             <img src="/assets/bg/home_bg.png" alt="" />
         </div>
         <div className="eventsBox" >
-
             <div className="eventCard">
                 <div className="event-header">
                     <PageHeading text={"EVENTS"} />
                 </div>
                 <EventCard
-                {...EventArr[clickedImage-1]}
+                    {...EventArr[clickedImage - 1]}
                 />
             </div>
-
             <div className="eventLabels" >
                 <div className="eventLabelsBoxes" >
                     {EventArr.map((e, i) =>
@@ -211,15 +209,11 @@ const Events = ({
                         />
                     )}
                 </div>
-
                 <div className="eventLabelsSlider" >
-                    <EventTabSlider imageNumber={clickedImage} totalImages={EventArr.length} />
+                    <EventTabSlider onClick={handleClick} imageNumber={clickedImage} totalImages={EventArr.length} />
                 </div>
-
-
             </div>
         </div>
-
     </div>)
 };
 

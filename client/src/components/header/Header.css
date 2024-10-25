@@ -26,8 +26,10 @@
     align-items: center;
 	margin-left: 2rem;
 }
-.item:hover,
-.item.active {
+.menu-drawer .item:hover{
+    text-shadow: 0 0 2px gold;
+}
+.menu-drawer .item.active {
     color: red;
     content: "";
     transition: 0.25s all;
@@ -62,8 +64,8 @@
 	display: none;
 }
 
-@media only screen and (max-width: 720px), 
-only screen and (max-device-width: 720px){
+@media only screen and (max-width: 900px), 
+only screen and (max-device-width: 900px){
 	.small-header {
 		display: contents;
 	}

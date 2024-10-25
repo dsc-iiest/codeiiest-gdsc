@@ -10,7 +10,7 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
 }
 
@@ -29,6 +29,7 @@
     justify-content: start;
     align-items: center;
     overflow: scroll;
+    gap:1rem;
   
 }
 

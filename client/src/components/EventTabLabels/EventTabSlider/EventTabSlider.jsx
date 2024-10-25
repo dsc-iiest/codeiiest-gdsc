@@ -1,8 +1,8 @@
-export default function EventTabSlider({ imageNumber, totalImages }) {
+export default function EventTabSlider({ imageNumber, totalImages, onClick }) {
 
   const heightOfEachSlider = 90/totalImages;
   const smallSliderStyle = {
-    width: "1rem",
+    width: "0.4rem",
     height: `${heightOfEachSlider}%`,
     cursor: "pointer",
     borderRadius: "1rem"
@@ -13,8 +13,8 @@ export default function EventTabSlider({ imageNumber, totalImages }) {
 
   return (
     <>
-      {imagesRender.map((cnt) => (
-        <div className="test" key={cnt} 
+      {imagesRender.map((cnt ) => (
+        <div onClick={() => onClick(cnt)} className="test" key={cnt} 
               style={{ ...smallSliderStyle, backgroundColor: `${cnt === imageNumber? "blue": "white"}`, }}>
         </div>
       ))}

@@ -221,7 +221,7 @@ const Navbar = ({
 				</div>
 				<div className="left-col">
 					<Link to="/" className="logo">
-						GDSC IIESTS
+						GDG IIESTS
 						<img src={"/assets/logo/gdsc-logo.png"} />
 					</Link>
 					{width <= 720 && (

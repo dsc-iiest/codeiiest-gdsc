@@ -4,7 +4,8 @@
     justify-content: center;
     width: 30rem;
     flex-direction: column;
-    border: 1px solid white;
+    text-shadow: 0 0 5px black;
+    /* border: 1px solid white; */
 }
 
 .chapter-content .section-1 {
@@ -15,7 +16,7 @@
     padding-top: 0.5em;
     /* padding-bottom: 0.5rem; */
     border-bottom: 0.8px solid rgb(129, 129, 129);
-    background:rgb(0, 64, 29)
+    /* background:rgb(0, 64, 29) */
 }
 
 .icon-wrapper {
@@ -39,20 +40,21 @@
 .chapter-content .section-2 {
     font-weight: 800;
     font-size: 2.8em;
-    background:rgb(54, 0, 64);
+    /* background:rgb(54, 0, 64); */
     align-self: start;
     /* padding-left: 1rem */
 }
 
 .chapter-content .section-3 {
     display: flex;
-    background:rgb(0, 49, 64);
+    /* background:rgb(0, 49, 64); */
     align-items: center;
     justify-content: space-between;
     width: 100%;
 }
 
-.chapter-content .section-3 .image {
+.chapter-content .section-3 .image,
+.chapter-content .image {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -60,7 +62,8 @@
     border-left: 1px solid rgb(179, 179, 179);
 }
 
-.chapter-content .section-3 .image .image-label {
+.chapter-content .section-3 .image .image-label,
+.chapter-content .image .image-label {
     font-size: 1.3em;
     font-weight: 900;
     width: 10ch;
@@ -73,7 +76,8 @@
     /* width: 5em; */
 }
 
-.chapter-content .section-3 .image p {
+.chapter-content .section-3 .image p ,
+.chapter-content .image p {
     width: 15ch;
     text-align: center;
     font-weight: 400;
@@ -97,13 +101,13 @@
 .chapter-content .section-3 .typography p {
     font-size: 1.3em;
     line-height: 1.2em;
-    background: rgb(87, 3, 3)
+    /* background: rgb(87, 3, 3) */
 }
 
 .chapter-content .section-4 {
     padding-top: 1em;
     font-weight: 400;
-    background:rgb(62, 64, 0)
+    /* background:rgb(62, 64, 0) */
     /* width: 45ch; */
 }
 
@@ -120,9 +124,74 @@
     font-weight: 100;
 }
 
+.chapter-content .image {
+    display: none;
+}
+
 @media only screen and (max-width: 1280px){
     .chapter-content{
         width: 28rem;
         font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .chapter-content {
+        width: min(95vw, 30rem);
+    }
+
+    .icon-wrapper img {
+        width: 5em;
+    }
+
+    .chapter-content .section-2 {
+        align-self: center;
+        font-size: 3em
+    }
+
+    .chapter-content .section-3 {
+        flex-direction: column;
+    }
+
+    .chapter-content .section-3 .typography {
+        align-items: center
+    }
+
+    .chapter-content .section-3 .image {
+        display: none;
+    }
+
+    .chapter-content .image {
+        display: flex;
+        border: none;
+        margin: 3em 0rem;
+    }
+
+    .chapter-content .image img {
+        width: 8em !important;
+    }
+
+    .chapter-content .image .image-label {
+        font-size: 1.8em;
+    }
+
+    .chapter-content .image p {
+        font-size: 1.2em
+    }
+
+    .chapter-content .section-3 .typography p {
+        font-size: 1.8em;
+        text-align: center;
+        width: 80%;
+    }
+
+    .chapter-content .section-4 p {
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: 400
+    }
+
+    .chapter-content .section-4 :nth-child(2) {
+        font-size: 1.2em
     }
 }

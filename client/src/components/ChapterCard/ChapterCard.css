@@ -4,7 +4,7 @@
     justify-content: center;
     background: transparent;
     width: 18rem;
-    height: 18rem;
+    aspect-ratio: 1/1;
     text-decoration: none;
     position: relative;
     transition: all ease 0.3s;
@@ -27,4 +27,10 @@
 
 .chaptercard-wrapper .name:hover{
     color: gold;
+}
+
+@media only screen and (max-width: 480px) {
+    .chaptercard-wrapper {
+        width: calc(80vw - 24px);
+    }
 }
