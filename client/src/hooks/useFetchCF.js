@@ -2,6 +2,8 @@
 import { useState, useEffect } from "react";
 import { fetchData } from "../api/apiservice";
 
+import Mockup from "../../src/assets/data/cptable.json"
+
 const getContests = async (handles) => {
     const contests = (handle) => `https://codeforces.com/api/user.rating?handle=${handle}`;
     var prunedResult = {};
@@ -73,7 +75,7 @@ const getBasic = async (handles) => {
 const INTERVAL = 5000;
 
 const useFetchCF = (endpoint) => {
-    const [data, setData] = useState(null);
+    const [data, setData] = useState(Mockup);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const [isCached, setIsCached] = useState("Data fetch successful");
@@ -88,7 +90,7 @@ const useFetchCF = (endpoint) => {
         const cacheAvailable = cache !== null && lastLoadCF !== null;
         // if (lastLoadCF + INTERVAL > currLoad && cacheAvailable) {
         if (true){
-            setData(JSON.parse(cache));
+            // setData(JSON.parse(cache));
             setLoading(false);
             setIsCached("Too frequent loading. Showing cached result");
             return;

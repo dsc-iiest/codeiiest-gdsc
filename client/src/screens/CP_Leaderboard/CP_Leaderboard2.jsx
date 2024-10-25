@@ -17,8 +17,6 @@ const CP_Leaderboard2 = () => {
     }, [])
     
 
-    
-
     return (
         <div className="cp-leaderboard-2 page">
             <PageHeading text="CP Stats" />

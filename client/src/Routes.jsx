@@ -4,7 +4,7 @@ import Home from "./screens/Home/Home";
 import Chapterpage from "./screens/Chapterpage/Chapterpage";
 // import LeaderboardMUI from "./components/leaderboard/LeaderboardMUI";
 import Chapters from "./screens/Chapters/Chapters";
-// import About from "./screens/AboutUs/about";
+import About from "./screens/AboutUs/about";
 // import Coder from "./components/Codercard/coder";
 import Codercard from "./components/Codercard/Codercard";
 import Events from "./screens/Events/Events";
@@ -27,7 +27,7 @@ const AllRoutes = () => {
                 <Route path="" element={<Chapters />}></Route>
             </Route>
             <Route exact path="/events" element={<Events />}></Route>
-            <Route exact path="/about" element={<ComingSoon />}></Route>
+            <Route exact path="/about" element={<About />}></Route>
             <Route exact path="/leaderboard" element={<CP_Leaderboard2 /> }></Route>
         </Routes>
     );
