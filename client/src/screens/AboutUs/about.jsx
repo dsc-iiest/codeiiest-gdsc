@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import "./about.css";
-import { NamecardVertical } from "../../components/namecard/namecard";
+import NamecardV from "../../components/namecard/NameCardV";
 import Carousel from "../../components/Carousel/Carousel";
 import PageHeading from "../../components/PageHeading/PageHeading";
 // import { Box } from "@mui/material";
 
 const members = [
-	<NamecardVertical
+	<NamecardV
 		name={"Nafis Adnan Mondal"}
 		codeiiest={"Development Lead"}
 		gdsc={"Development Lead"}
@@ -15,7 +15,7 @@ const members = [
 			"Building the future, one component at a time"
 		}
 	/>,
-	<NamecardVertical
+	<NamecardV
 		name={"Nafis Adnan"}
 		codeiiest={"Development Lead"}
 		gdsc={"Development Lead"}
@@ -24,7 +24,7 @@ const members = [
 			"Building the future, one component at a time"
 		}
 	/>,
-	<NamecardVertical
+	<NamecardV
 		name={"Nafis Adnan Mondal 2000"}
 		codeiiest={"Development Lead"}
 		gdsc={"Development Lead"}
@@ -33,7 +33,7 @@ const members = [
 			"Building the future, one component at a time"
 		}
 	/>,
-	<NamecardVertical
+	<NamecardV
 		name={"Nafi"}
 		codeiiest={"Development Lead"}
 		gdsc={"Development Lead"}
@@ -42,7 +42,7 @@ const members = [
 			"Building the future, one component at a time"
 		}
 	/>,
-	<NamecardVertical
+	<NamecardV
 		name={"Nafis Mondal 6"}
 		codeiiest={"Development Lead"}
 		gdsc={"Development Lead"}
@@ -51,7 +51,7 @@ const members = [
 			"Building the future, one component at a time"
 		}
 	/>,
-	<NamecardVertical
+	<NamecardV
 		name={"Nafis Adnan Mondal 7"}
 		codeiiest={"Development Lead"}
 		gdsc={"Development Lead"}
@@ -60,7 +60,7 @@ const members = [
 			"Building the future, one component at a time"
 		}
 	/>,
-	<NamecardVertical
+	<NamecardV
 		name={"Nafis Adnan Mondal 8"}
 		codeiiest={"Development Lead"}
 		gdsc={"Development Lead"}
@@ -69,7 +69,7 @@ const members = [
 			"Building the future, one component at a time"
 		}
 	/>,
-	<NamecardVertical
+	<NamecardV
 		name={"Nafis Adnan Mondal 9"}
 		codeiiest={"Development Lead"}
 		gdsc={"Development Lead"}
@@ -78,7 +78,7 @@ const members = [
 			"Building the future, one component at a time"
 		}
 	/>,
-	<NamecardVertical
+	<NamecardV
 		name={"Nafis Adnan Mondal 10"}
 		codeiiest={"Development Lead"}
 		gdsc={"Development Lead"}
