@@ -97,7 +97,7 @@ const About = () => {
 			</div>
 			<PageHeading text="THE TEAM" />
 			{/* <div className="outer-content"> */}
-			{/* <div className="carousel-wrapper"> */}
+			{/* <div className="inner-content"> */}
 				<Carousel items={members} />
 			{/* </div> */}
 			{/* </div> */}
