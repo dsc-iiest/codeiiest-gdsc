@@ -1,19 +1,16 @@
-/* Content Container */
 .content-container {
   display: flex;
   align-items: center;
   gap: 20px;
-  max-width: 90%;
+  max-width: 300px;
   padding: 20px;
 }
 
-/* Intersect Image */
 .intersect-image {
   width: 60%;
   height: auto;
 }
 
-/* Text Section */
 .text-section {
   text-align: right;
   position: relative;
@@ -52,8 +49,6 @@
   margin-bottom: 5px;
 }
 
-
-/* Icon Text Container */
 .icon-text-container {
   display: flex;
   align-items: end;
@@ -79,7 +74,6 @@
   height: 20px;
 }
 
-/* Know More Button */
 .know-more-button {
   background: #D54A5A !important;
   color: white !important;
