@@ -9,6 +9,8 @@
     background: linear-gradient(125deg, hsla(0, 0%, 85%, 20%), transparent);
     gap: 0.5rem;
     padding-top: 0.7rem;
+    margin-top: 2.8rem;
+    margin-left: 4rem;
 }
 
 .namecard-h .intro .details .divider {
@@ -53,7 +55,7 @@
 .namecard-h .desc {
     /* border: 2px solid green; */
     width: 100%;
-    padding: 0 1rem 1rem 1rem;
+    padding: 0 0.7rem 0.7rem 0.7rem;
     font-weight: 300;
     font-style: italic;
     text-align: center;
@@ -61,7 +63,7 @@
 }
 
 .namecard-h .intro .details .name {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 .namecard-h .intro .details .post {
     font-size: 1rem;

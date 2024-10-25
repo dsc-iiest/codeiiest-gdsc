@@ -1,6 +1,5 @@
 import React from "react";
 import "./NameCardH.css";
-import { Divider, Icon } from "@mui/material";
 
 export default function NamecardH({ profilepic, name, codeiiest, gdsc, descrip }) {
     return (
