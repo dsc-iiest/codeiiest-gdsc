@@ -35,7 +35,9 @@ const Chapters = () => {
     return (
         <div className="chapters-wrapper page">
             <PageHeading text={"CHAPTERS"} />
-            <Carousel className="inner-content" items={variants} />
+            <div className="inner-content">
+                <Carousel items={variants} />
+            </div>
         </div>
     );
 };

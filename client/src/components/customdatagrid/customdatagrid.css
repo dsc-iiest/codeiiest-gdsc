@@ -1,0 +1,137 @@
+.row {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.leaderboard {
+    /* position: relative;
+    top: 0;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 100% !important; */
+}
+
+.leaderboard .handleinput {
+    background-color: #c2c2c200;
+}
+
+.MuiInputBase-input {
+    color: red
+}
+
+.MuiSelect-select {
+    color: #fff !important; 
+}
+
+.f-wrapper {
+    width: 100%;
+    overflow: scroll;
+}
+
+.leaderboard .search-button {
+    width: 3rem;
+    height: 3rem;
+}
+
+.finder {
+    font-size: 1rem;
+    display: grid;
+    background-color: rgba(91, 91, 91, 0.247);
+    grid-template-columns: 1fr 4fr 1fr 2fr 2fr;
+    width: 100%;
+    padding: 0.2rem;
+    border-radius: 10px;
+    border: 2px solid rgb(77, 77, 77);
+    gap: 0.5rem;
+    margin-top: 1rem;
+    min-width: 380px;
+}
+
+.finder * {
+    padding: 1rem 0.5rem 0.5rem 0.5rem; 
+    width: 100%;
+    position: relative;
+    justify-self: center;
+    align-self: center;
+    font-weight: 500;
+    text-align: center;
+    /* background-color: red; */
+}
+
+.finder *::before {
+    width: 100%;
+    text-align: center;
+    top: 0;
+}
+.finder .finder-rank::before {
+    width: 100%;
+    font-weight: 500;
+    content: "Rank";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.7rem;
+    color: var(--newbie)
+}
+.finder .finder-name {
+    text-align: left;
+}
+.finder .finder-name::before {
+    width: 100%;
+    font-weight: 500;
+    content: "Handle";
+    position: absolute;
+    top: 0;
+    font-size: 0.7rem;
+    color: var(--newbie);
+    text-align: left;
+}
+.finder .finder-year::before {
+    width: 100%;
+    font-weight: 500;
+    content: "Year";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.7rem;
+    color: var(--newbie)
+}
+.finder .finder-rating::before {
+    width: 100%;
+    font-weight: 500;
+    content: "Rating";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.7rem;
+    color: var(--newbie);
+}
+.finder .finder-maxrating::before {
+    width: 100%;
+    font-weight: 500;
+    content: "Best Rating";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.7rem;
+    color: var(--newbie);
+    width: 100%;
+}
+
+.finder .finder-rating,
+.finder .finder-maxrating {
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.finder .finder-rating .lb,
+.finder .finder-maxrating .lb {
+    width: 60px;
+    padding: 0
+}

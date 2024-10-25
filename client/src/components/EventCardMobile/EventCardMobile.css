@@ -1,0 +1,88 @@
+.content-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 300px;
+  padding: 20px;
+}
+
+.intersect-image {
+  width: 60%;
+  height: auto;
+}
+
+.text-section {
+  text-align: right;
+  position: relative;
+  width: 100%;
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;     
+}
+
+.percentage-text {
+  color: white;
+  font-size: 17px;
+  font-weight: 100;
+  font-family: 'Chakra Petch', sans-serif;
+  align-self: end;
+  z-index: 15;
+  padding-top: 10px;
+}
+
+.title-text {
+  color: white;
+  font-size: 25px;
+  font-family: 'Chakra Petch', sans-serif;
+  font-weight: 700;
+  word-wrap: break-word;
+  line-height: 1.5em;
+}
+
+.divider {
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.icon-text-container {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  margin-top: 5px;
+}
+
+.icon {
+  width: 30px;
+  height: auto;
+}
+
+.info-text {
+  color: white;
+  font-size: 15px;
+  font-family: 'Chakra Petch', sans-serif;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.calendar-icon {
+  width: 30px;
+  height: 20px;
+}
+
+.know-more-button {
+  background: #D54A5A !important;
+  color: white !important;
+  font-family: 'Chakra Petch', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 19px !important;
+  border-radius: 21.97px;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 150px !important;
+  height: 20px;
+}
