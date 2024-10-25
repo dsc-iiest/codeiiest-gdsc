@@ -1,0 +1,77 @@
+.namecard-h {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    border: 1.5px solid hsl(0, 0%, 50%);
+    border-radius: 10px;
+    width: 25rem;
+    background: linear-gradient(125deg, hsla(0, 0%, 85%, 20%), transparent);
+    gap: 0.5rem;
+    padding-top: 0.7rem;
+}
+
+.namecard-h .intro .details .divider {
+    border: 1px solid hsl(0, 0%, 50%);
+    height: 0;
+    width: 100%;
+    margin: 0.2rem
+}
+
+.namecard-h .intro {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    /* border: 1px solid #fff; */
+    position: relative;
+    margin-left: 5rem;
+}
+
+.namecard-h .intro .profile-pic {
+    width: 9rem;
+    height: 9rem;
+    position: absolute;
+    left: -9.5rem;
+    top: -3rem;
+}
+
+.namecard-h .intro .profile-pic .fakeborder {
+    width: 9rem;
+    height: 9rem;
+    position: absolute;
+    transform: scale(1.03);
+    opacity: 0.5;
+}
+
+.namecard-h .intro .profile-pic .hexagon {
+    width: 100%;
+    height: 100%;
+    mask-image: url("/assets/mask.svg");
+    mask-size: contain;
+}
+
+.namecard-h .desc {
+    /* border: 2px solid green; */
+    width: 100%;
+    padding: 0 1rem 1rem 1rem;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.namecard-h .intro .details .name {
+    font-size: 1.8rem;
+}
+.namecard-h .intro .details .post {
+    font-size: 1rem;
+    font-weight: 300;
+    position: relative;
+}
+.namecard-h .intro .details .post .post-icon {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 5px;
+    position: relative;
+    top: 3px
+}
