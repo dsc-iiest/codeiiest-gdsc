@@ -1,0 +1,29 @@
+.namecard-m {
+    border: 1px solid hsl(0, 0%, 50%);
+    border-radius: 8px;
+    width: 25rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.8rem 1.6rem 0.8rem 0.8rem;
+    position: relative;
+}
+.namecard-m .fakeborder {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: hsl(0, 0%, 50%);
+    transform: scale(1.05);
+}
+
+.namecard-m .intro .name {
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+}
+.namecard-m .intro .post {
+    font-size: 1rem;
+    font-weight: 300;
+}
