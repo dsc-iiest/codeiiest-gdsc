@@ -4,12 +4,13 @@ import Home from "./screens/Home/Home";
 import Chapterpage from "./screens/Chapterpage/Chapterpage";
 // import LeaderboardMUI from "./components/leaderboard/LeaderboardMUI";
 import Chapters from "./screens/Chapters/Chapters";
-import About from "./screens/AboutUs/about";
+import Team from "./screens/Team/Team";
 // import Coder from "./components/Codercard/coder";
 import Codercard from "./components/Codercard/Codercard";
 import Events from "./screens/Events/Events";
 import ComingSoon from "./screens/comingsoon/ComingSoon";
 import CP_Leaderboard2 from "./screens/CP_Leaderboard/CP_Leaderboard2";
+import About from "./screens/About/About";
 
 const AllRoutes = () => {
     const location = useLocation();

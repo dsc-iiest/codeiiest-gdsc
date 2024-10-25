@@ -50,7 +50,11 @@ div::-webkit-scrollbar {
 	--secondary: var(--blue);
 	--accent: var(--teal);
 	--bg: #171717;
+	
+	--g-red: #D5495A;
+	--g-blue: #26326F;
 	--gradient1: linear-gradient(to left, var(--red), var(--blue));
+	--gradient2: linear-gradient(to left, var(--g-red), var(--g-blue));
 
 	margin: 0;
 	padding: 0;
