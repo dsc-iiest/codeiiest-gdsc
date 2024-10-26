@@ -9,6 +9,12 @@
   align-items: start;
   margin-top: 2rem;
 }
+
+.cp-leaderboard-2 .content-container .top-coders {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .cp-leaderboard-2 .title .title-container {
   margin-top: 30px;
   display: flex;
