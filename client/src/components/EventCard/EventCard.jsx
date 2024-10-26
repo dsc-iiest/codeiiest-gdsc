@@ -17,7 +17,7 @@ const EventCard = ({
 
     let percentageValue;
 
-    console.log(title);
+    // console.log(title);
     const AvatarLen = AvatarSampleData.length;
     if (AvatarLen <= 3) percentageValue = 100;
     else percentageValue = Math.floor(parseFloat(3 / AvatarLen) * 100);
@@ -74,7 +74,7 @@ const EventCard = ({
                     <div className="lower-right">
                         <GroupAvatars peopleDataArray={AvatarSampleData} />
                         <div className="progressDiv">
-                            <ProgressBar total={Math.min(AvatarLen, 6)} progress={3} size="small" />
+                            <ProgressBar total={5} progress={2} size="small" />
                             <motion.p
                                 initial={{ opacity: 0.6, y: -20 }}
                                 animate={{ opacity: 1, y: 0 }}

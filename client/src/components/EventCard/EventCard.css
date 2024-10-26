@@ -58,8 +58,10 @@
 }
 
 .EventCardMain .tabLabels-wrapper .section1 .title h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 400;
+    line-height: 1em;
+    padding-bottom: 5px
 }
 
 .EventCardMain .tabLabels-wrapper .section1 .title h4 {
@@ -124,9 +126,9 @@
     padding-top: 30px;
     top: -25px;
     font-size: 8px;
-    background: linear-gradient(36deg, #342f2f72, rgba(76, 69, 69, 0.696));
-    backdrop-filter: blur(36px);
-    -webkit-backdrop-filter: blur(36px);
+    background: rgba(255, 255, 255, 0.1);
+    /* backdrop-filter: blur(36px); */
+    /* -webkit-backdrop-filter: blur(36px); */
     width: 100%;
     border-radius: 0.7rem;
     border: 1px solid rgb(157, 151, 151);
@@ -148,7 +150,7 @@
     display: flex;
     gap: 0.5rem;
     flex-direction: column;
-    width: 30%;
+    width: 40%;
     height: 100%;
     justify-content: space-around;
     align-items: center;
@@ -181,7 +183,8 @@
 
 .EventCardMain .section2 .upper .right .detail h4 {
     font-weight: 400;
-    font-size: 1rem
+    font-size: 0.8rem;
+    line-height: 1em;
 }
 
 .EventCardMain .section2 .upper .right .detail .time {
@@ -244,9 +247,11 @@
     gap: 0.5rem;
     height: 50%;
     justify-content: start;
-    align-items: end;
+    align-self: end;
     width: 100%;
+    height: 100%;
     padding-left: 0.5rem;
+    padding-bottom: 1rem;
 }
 
 .EventCardMain .section2 .lower .progressDiv {
