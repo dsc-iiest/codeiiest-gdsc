@@ -39,3 +39,42 @@
     /* background: var(--gradient2); */
     opacity: 1;
 }
+
+.about-box .content-area {
+    border: 1px solid green;
+    width: 70vw;
+    min-height: 60vh;
+    padding: 1rem;
+    border: 1px solid grey;
+    background: rgba(122, 122, 122, 0.20);
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    position:absolute;
+}
+
+.about-box .appear {
+    animation: in 0.5s linear forwards;
+}
+.about-box .hide {
+    animation: out 0s linear forwards;
+}
+
+@keyframes in {
+    from{
+        opacity: 0
+    }to{
+        opacity:1
+    }
+}
+
+@keyframes out {
+    from{
+        opacity:1;
+    }to{
+        opacity: 0;
+    }
+}

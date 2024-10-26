@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./About.css";
 import PageHeading from "../../components/PageHeading/PageHeading";
 import { Box, Button } from "@mui/material";
 
-// import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const codeIIEST =
     "CodeIIEST is one of the newest clubs of Indian Institute of Engineering Science and Technology, Shibpur. Formed in Nov’14 , the club has been actively involved in cultivating comprehensive skills in computer science among the students. The club consists of various enthusiasts and is a wonderful hub for a plethora of informative and interactive sessions. The students keep themselves updated with the emerging technologies, which further help them strengthen their skills and enhance creativity and innovation.";
@@ -13,6 +13,11 @@ const IIESTS =
 
 const AboutBox = () => {
     const [choice, setChoice] = useState(true);
+    const displayRef = useRef(null);
+    const [contentWidth, setContentWidth] = useState(0);
+    useEffect(()=>{
+        setContentWidth(displayRef.current.offsetWidth)
+    }, [])
     return (
         <Box
             sx={{
@@ -20,7 +25,7 @@ const AboutBox = () => {
                 alignItems: "center",
                 justifyContent: "center",
 
-                // gap: "10px"
+                gap: `${contentWidth}px`
             }}
             className="about-box"
         >
@@ -35,30 +40,19 @@ const AboutBox = () => {
             >
                 CodeIIEST
             </Box>
-            {/* <motion.div
-                initial={{ opacity: 0, scale: 0.5 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5 }}
-            > */}
-                <Box
-                    sx={{
-                        border: "1px solid green",
-                        maxWidth: "800px",
-                        minHeight: "60vh",
-                        padding: "1rem",
-                        border: "1px solid grey",
-                        background: "rgba(122, 122, 122, 0.20)",
-                        fontSize: "1.2rem",
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        textAlign: "center"
-
-                    }}
-                >
-                    {choice ? codeIIEST : IIESTS}
-                </Box>
-            {/* </motion.div> */}
+            <Box
+                ref={displayRef}
+                className={"content-area" + (choice?" appear":" hide")}
+            >
+                {codeIIEST}
+            </Box>
+            <Box
+            ref = {displayRef}
+                className={"content-area" + (!choice?" appear":" hide")}
+            >
+                {IIESTS}
+            </Box>
+            
             <Box
                 className={"tab" + (!choice ? " tabselected" : "")}
                 sx={{

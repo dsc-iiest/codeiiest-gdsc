@@ -10,15 +10,15 @@ export default function EventTabLabels(
         onClick
     }
 ) {
-    const outerDivRef = useRef()
-    useEffect(() => {
-        if (isClicked && outerDivRef.current) {
-            outerDivRef.current.scrollIntoView({ behaviour: "smooth", block: "end" })
-        }
-    }, [isClicked])
+    // const outerDivRef = useRef()
+    // useEffect(() => {
+    //     if (isClicked && outerDivRef.current) {
+    //         outerDivRef.current.scrollIntoView({ behaviour: "smooth", block: "end" })
+    //     }
+    // }, [isClicked])
 
     return (
-        <div onClick={onClick} ref={outerDivRef} className="outerDivTab">
+        <div onClick={onClick} className="outerDivTab">
             <img src={`/assets/thumbnail/${imageVariant}.png`} />
             <div className="tabLabels-wrapper">
                 <div

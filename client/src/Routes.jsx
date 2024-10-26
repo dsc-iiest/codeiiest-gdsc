@@ -28,7 +28,7 @@ const AllRoutes = () => {
                 <Route path="" element={<Chapters />}></Route>
             </Route>
             <Route exact path="/events" element={<Events />}></Route>
-            <Route exact path="/about" element={<Team />}></Route>
+            <Route exact path="/about" element={<About />}></Route>
             <Route exact path="/leaderboard" element={<CP_Leaderboard2 /> }></Route>
         </Routes>
     );
