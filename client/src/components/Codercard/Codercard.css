@@ -1,6 +1,6 @@
 .coder-card {
-  width: 338px;
-  height: 300px;
+  width: 295px;
+  height: 250px;
   /* margin: 20px; */
   border-radius: 20px;
   border: 1px solid #d0cfcf;
@@ -11,10 +11,14 @@
 
 .top-section {
   display: flex;
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(26, 26, 26, 0.8));
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.8),
+    rgba(26, 26, 26, 0.8)
+  );
   justify-content: space-around;
-  padding: 5px;
-  border-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   height: 40%;
   font-size: large;
   align-items: center;
@@ -25,12 +29,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-left: 0.8rem;
 }
 
 .top-section .left-section-experience-text {
-  margin-top: 3.5rem;
-  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
   font-weight: medium;
+
   color: #c4bfbf;
 }
 
@@ -51,9 +57,9 @@
 }
 
 .top-section .right-section-text {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
-  margin-left: 55px;
+  margin-left: 4.8rem;
   color: #f6a200;
 }
 
@@ -70,18 +76,18 @@
 }
 
 .mid-section .mid-section-container .coder-name-text {
-  margin-top: 2rem;
+  margin-top: 1.8rem;
   font-size: 20px;
   text-align: left;
-  font-weight: medium;
-  padding-left: 20px;
+  font-weight: normal;
+  padding-left: 10px;
 }
 
 .bottom-section {
   display: flex;
   border-radius: 20px;
   background: transparent;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .contests-given,
@@ -89,9 +95,8 @@
 .questions-solved,
 .highest-rating {
   flex: 1;
-  font-size: 30px;
-  font-weight: medium;
-  height: 46px;
+  font-size: 22px;
+  font-weight: bold;
   text-align: center;
 }
 
@@ -99,9 +104,9 @@
 .change-in-rating h4,
 .questions-solved h4,
 .highest-rating h4 {
-  margin: 5px;
+  margin: 3.5px;
   font-size: 12px;
-  font-weight: normal;
+  font-weight: lighter;
   color: #ffffff;
   flex-wrap: wrap;
 }
@@ -116,42 +121,44 @@
 
 @media (max-width: 768px) {
   .coder-card {
-    width: 100%;
-    height: auto;
+    width: 270px; /* Reduced width while maintaining aspect ratio */
+    height: 230px; /* Proportional height */
   }
 
   .top-section {
-    height: auto;
-    flex-direction: column;
-    padding: 20px;
+    height: 35%; /* Keep proportional height */
+    padding: 5px;
   }
 
   .top-section .coder-profile-image {
-    width: 120px;
-    height: 120px;
+    width: 60px; /* Smaller but proportional profile image */
+    height: 60px;
     margin-top: 0;
-    margin-bottom: 10px;
+  }
+
+  .top-section .right-section {
+    margin-left: 1.2rem;
   }
 
   .top-section .right-section-text {
-    font-size: 20px;
+    font-size: 20px; /* Proportional font size */
   }
 
   .mid-section .mid-section-container .coder-name-text {
-    font-size: 16px;
+    font-size: 18px; /* Reduced font size for smaller screen */
   }
 
   .bottom-section {
-    flex-wrap: wrap;
     justify-content: center;
+    margin: 5px;
   }
 
   .contests-given,
   .change-in-rating,
   .questions-solved,
   .highest-rating {
-    font-size: 20px;
-    height: auto;
+    font-size: 20px; /* Proportional scaling */
+    height: 20px;
     margin-bottom: 10px;
   }
 
@@ -159,6 +166,6 @@
   .change-in-rating h4,
   .questions-solved h4,
   .highest-rating h4 {
-    font-size: 10px;
+    font-size: 12px; /* Reduced h4 size */
   }
 }
