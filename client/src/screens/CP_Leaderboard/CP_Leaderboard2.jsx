@@ -15,13 +15,13 @@ const CP_Leaderboard2 = () => {
         setHeight(contentRef.current.offsetHeight);
 
     }, [])
-    
+    const scaling = (height/520) <= 1? (height/520): 1;
 
     return (
         <div className="cp-leaderboard-2 page">
             <PageHeading text="CP Stats" />
             <div ref={contentRef} className="content-container inner-content">
-                <div className="top-coders">
+                <div className="top-coders" style={{transform: `scale(${scaling})`}}>
                     <div className="grid-card">
                         <Codercard
                             coderData={{
@@ -32,6 +32,7 @@ const CP_Leaderboard2 = () => {
                                 contestsGiven: 97,
                                 experience: "Senior",
                             }}
+                            height={height}
                         />
                     </div>
                     <div className="grid-card">
@@ -44,6 +45,7 @@ const CP_Leaderboard2 = () => {
                                 contestsGiven: 97,
                                 experience: "Senior",
                             }}
+                            height={height}
                         />
                     </div>
                     <div className="grid-card">
@@ -56,6 +58,7 @@ const CP_Leaderboard2 = () => {
                                 contestsGiven: 97,
                                 experience: "Junior",
                             }}
+                            height={height}
                         />
                     </div>
                     <div className="grid-card">
@@ -68,6 +71,7 @@ const CP_Leaderboard2 = () => {
                                 contestsGiven: 97,
                                 experience: "Senior",
                             }}
+                            height={height}
                         />
                     </div>
                 </div>

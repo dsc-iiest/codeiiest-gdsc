@@ -1,5 +1,5 @@
 .coder-card {
-  width: 295px;
+  width: 320px;
   height: 250px;
   /* margin: 20px; */
   border-radius: 20px;
@@ -117,6 +117,10 @@
 
 .green {
   color: rgb(82, 255, 82);
+}
+
+.bottom-section * {
+  line-height: 1em;
 }
 
 @media (max-width: 768px) {
