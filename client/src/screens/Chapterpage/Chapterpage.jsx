@@ -2,11 +2,11 @@ import React from "react";
 import ChapterContent from "../../components/ChapterContent/ChapterContent";
 import "./Chapterpage.css";
 import { useParams } from "react-router-dom";
-import NamecardHorizontal from "../../components/namecard/NameCardHorizontal";
 import ProgressBar from "../../components/ProgressBar/ProgressBar";
 import PageHeading from "../../components/PageHeading/PageHeading";
-import { NamecardVertical } from "../../components/namecard/namecard";
-// import { NamecardMini } from "../../components/namecard/namecard";
+import NameCardM from "../../components/namecard/NameCardM";
+import NameCardH from "../../components/namecard/NameCardH";
+import NameCardV from "../../components/namecard/NameCardV";
 
 const Chapterdata = {
     development: {
@@ -213,7 +213,7 @@ const Chapterpage = () => {
             </div>
             <div className="content outer-content">
                 <div className="body">
-                    <NamecardHorizontal
+                    <NameCardH
                         name={"Rishab Dugar"}
                         codeiiest={"Development Lead & Treasurer"}
                         gdsc={"Development Lead & Treasurer"}
@@ -223,7 +223,7 @@ const Chapterpage = () => {
                             transform: "scale(1)",
                         }}
                     />
-                    <NamecardHorizontal
+                    <NameCardH
                         name={"Nafis Adnan Mondal"}
                         codeiiest={"Development Lead & Treasurer"}
                         gdsc={"Development Lead & Treasurer"}
@@ -237,7 +237,7 @@ const Chapterpage = () => {
                 <ChapterContent Content={data} />
                 <div className="chapter-leads">
                     <div className="heading">Leads</div>
-                    <NamecardVertical
+                    <NameCardV
                         name={"Rishab Dugar"}
                         codeiiest={"Development Lead & Treasurer"}
                         gdsc={"Development Lead & Treasurer"}
@@ -247,7 +247,7 @@ const Chapterpage = () => {
                             transform: "scale(1)",
                         }}
                     />
-                    <NamecardVertical
+                    <NameCardV
                         name={"Rishab Dugar"}
                         codeiiest={"Development Lead & Treasurer"}
                         gdsc={"Development Lead & Treasurer"}

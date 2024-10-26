@@ -1,0 +1,82 @@
+.namecard-v {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1.5px solid hsl(0, 0%, 50%);
+    border-radius: 10px;
+    width: 15rem;
+    background: linear-gradient(125deg, hsla(0, 0%, 85%, 20%), transparent);
+    gap: 0.5rem;
+    padding: 0.7rem;
+}
+
+.namecard-v .divider {
+    border: 1px solid hsl(0, 0%, 50%);
+    height: 0;
+    width: 80%;
+    margin: 0.2rem
+}
+
+.namecard-v .intro {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    /* border: 1px solid #fff; */
+    position: relative;
+    margin-top: 5rem;
+    width: 100%
+}
+
+.namecard-v .intro .profile-pic {
+    width: 9rem;
+    height: 9rem;
+    position: absolute;
+    top: -10rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.namecard-v .intro .profile-pic .fakeborder {
+    width: 9rem;
+    height: 9rem;
+    position: absolute;
+    transform: scale(1.03);
+    opacity: 0.5;
+}
+
+.namecard-v .intro .profile-pic .hexagon {
+    width: 100%;
+    height: 100%;
+    mask-image: url("/assets/mask.svg");
+    mask-size: contain;
+}
+
+.namecard-v .desc {
+    /* border: 2px solid green; */
+    width: 100%;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.namecard-v .intro .details .name {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    padding-bottom: 0.3rem;
+    height: 3.5rem;
+}
+.namecard-v .intro .details .post {
+    font-size: 1rem;
+    font-weight: 300;
+    position: relative;
+}
+.namecard-v .intro .details .post .post-icon {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 5px;
+    position: relative;
+    top: 3px
+}
