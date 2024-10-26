@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: start;
     flex-direction: column;
-    border: 1.5px solid hsl(0, 0%, 50%);
+    border: 1.5px solid hsla(0, 0%, 100%, 50%);
     border-radius: 10px;
     width: 25rem;
     background: linear-gradient(125deg, hsla(0, 0%, 85%, 20%), transparent);
@@ -14,7 +14,7 @@
 }
 
 .namecard-h .intro .details .divider {
-    border: 1px solid hsl(0, 0%, 50%);
+    border: 1px solid hsla(0, 0%, 100%, 50%);
     height: 0;
     width: 100%;
     margin: 0.2rem
@@ -64,6 +64,8 @@
 
 .namecard-h .intro .details .name {
     font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 .namecard-h .intro .details .post {
     font-size: 1rem;

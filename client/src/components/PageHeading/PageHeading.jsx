@@ -14,7 +14,7 @@ const PageHeading = ({ text }) => {
 				gap: "5px",
 				// background: "#242424",
 				padding: "5px",
-				width: 'fit-content'
+				width: 'max-content'
 				// borderRadius: "5px",
 				// border: "1px solid rgba(217, 217, 217, 0.5)",
 				// alignSelf: "start",

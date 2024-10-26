@@ -215,20 +215,20 @@ const Chapterpage = () => {
                 <div className="body">
                     <NameCardH
                         name={"Rishab Dugar"}
-                        codeiiest={"Development Lead & Treasurer"}
-                        gdsc={"Development Lead & Treasurer"}
+                        codeiiest={"Dev Lead & Treasurer"}
+                        gdsc={"Dev Lead & Treasurer"}
                         profilepic={"profilepic"}
-                        descrip={"lorem ipsum doler sith lorem ipsum doler sith lorem ipsum doler sith"}
+                        descrip={"Building the future, one component at a time"}
                         customCSS={{
                             transform: "scale(1)",
                         }}
                     />
                     <NameCardH
                         name={"Nafis Adnan Mondal"}
-                        codeiiest={"Development Lead & Treasurer"}
-                        gdsc={"Development Lead & Treasurer"}
+                        codeiiest={"Dev Lead & Treasurer"}
+                        gdsc={"Dev Lead & Treasurer"}
                         profilepic={"profilepic"}
-                        descrip={"lorem ipsum doler sith lorem ipsum doler sith lorem ipsum doler sith"}
+                        descrip={"Building the future, one component at a time"}
                         customCSS={{
                             transform: "scale(1)",
                         }}
@@ -239,20 +239,20 @@ const Chapterpage = () => {
                     <div className="heading">Leads</div>
                     <NameCardV
                         name={"Rishab Dugar"}
-                        codeiiest={"Development Lead & Treasurer"}
-                        gdsc={"Development Lead & Treasurer"}
+                        codeiiest={"Dev Lead & Treasurer"}
+                        gdsc={"Dev Lead & Treasurer"}
                         profilepic={"profilepic"}
-                        descrip={"lorem ipsum doler sith lorem ipsum doler sith lorem ipsum doler sith"}
+                        descrip={"Building the future, one component at a time"}
                         customCSS={{
                             transform: "scale(1)",
                         }}
                     />
                     <NameCardV
                         name={"Rishab Dugar"}
-                        codeiiest={"Development Lead & Treasurer"}
-                        gdsc={"Development Lead & Treasurer"}
+                        codeiiest={"Dev Lead & Treasurer"}
+                        gdsc={"Dev Lead & Treasurer"}
                         profilepic={"profilepic"}
-                        descrip={"lorem ipsum doler sith lorem ipsum doler sith lorem ipsum doler sith"}
+                        descrip={"Building the future, one component at a time"}
                         customCSS={{
                             transform: "scale(1)",
                         }}
