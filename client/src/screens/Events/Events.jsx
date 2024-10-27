@@ -52,6 +52,7 @@ const Events = () => {
     useEffect(() => {
         setIndicators(() => Math.ceil(EventsData.length / tabNum));
         console.log(indicators);
+        // setClickedImage(1)
     }, [tabNum, containerRef.current]);
 
     return (
@@ -64,7 +65,7 @@ const Events = () => {
             <div className="eventsBox inner-content">
                 <MobileEvents />
                 <div className="eventCard">
-                    <EventCard {...EventsData[clickedImage - 1]} />
+                    <EventCard {...EventsData[tabDelta + clickedImage - 1]} />
                 </div>
                 <div ref={containerRef} className="eventLabels">
                     <div
@@ -97,7 +98,10 @@ const Events = () => {
                                     className={
                                         "indicator-bar" + (Math.floor(tabDelta / tabNum) === index ? " selected" : "")
                                     }
-                                    onClick={() => setTabDelta(index * tabNum)}
+                                    onClick={() => {
+                                        setTabDelta(index * tabNum)
+                                        setClickedImage(1)
+                                    }}
                                     key={index}
                                 ></div>
                             ))}
