@@ -6,18 +6,18 @@ import { Box, Button } from "@mui/material";
 import { motion } from "framer-motion";
 
 const codeIIEST =
-    "CodeIIEST is one of the newest clubs of Indian Institute of Engineering Science and Technology, Shibpur. Formed in Nov’14 , the club has been actively involved in cultivating comprehensive skills in computer science among the students. The club consists of various enthusiasts and is a wonderful hub for a plethora of informative and interactive sessions. The students keep themselves updated with the emerging technologies, which further help them strengthen their skills and enhance creativity and innovation.";
+    "CodeIIEST is one of the newest clubs of Indian Institute of Engineering Science and Technology, Shibpur. Formed in Nov'14 , the club has been actively involved in cultivating comprehensive skills in computer science among the students. The club consists of various enthusiasts and is a wonderful hub for a plethora of informative and interactive sessions. The students keep themselves updated with the emerging technologies, which further help them strengthen their skills and enhance creativity and innovation.";
 
 const IIESTS =
-    "Indian Institute of Engineering Science and Technology, Shibpur (IIEST Shibpur), erstwhile Bengal Engineering College (also known as B.E. College), formerly Bengal Engineering and Science University , is a public research university also a National Institute of Technology located at Shibpur, Howrah, West Bengal. Founded in 1856,it is one of the oldest public research university. It is recognized as an Institute of National Importance under MHRD by the Government of India. IIEST serves as a center for advanced learning and research. The primary activities are the creation and dissemination of knowledge, the production of high-quality engineers, scientists, and entrepreneurs equipped with cutting-edge technology, and the development of innovative technology solutions for the benefit of society.";
+    "Indian Institute of Engineering Science and Technology, Shibpur (IIEST Shibpur), formerly Bengal Engineering College, is a premier public research university and National Institute of Technology in Howrah, West Bengal. Established in 1856, IIEST is among India's oldest institutions and is recognized as an Institute of National Importance by the Government of India. The university focuses on advanced research, producing skilled engineers, scientists, and entrepreneurs, and developing innovative solutions for societal benefit.";
 
 const AboutBox = () => {
     const [choice, setChoice] = useState(true);
     const displayRef = useRef(null);
     const [contentWidth, setContentWidth] = useState(0);
-    useEffect(()=>{
-        setContentWidth(displayRef.current.offsetWidth)
-    }, [])
+    useEffect(() => {
+        setContentWidth(displayRef.current.offsetWidth);
+    }, []);
     return (
         <Box
             sx={{
@@ -25,7 +25,7 @@ const AboutBox = () => {
                 alignItems: "center",
                 justifyContent: "center",
 
-                gap: `${contentWidth}px`
+                gap: `${contentWidth}px`,
             }}
             className="about-box"
         >
@@ -40,19 +40,13 @@ const AboutBox = () => {
             >
                 CodeIIEST
             </Box>
-            <Box
-                ref={displayRef}
-                className={"content-area" + (choice?" appear":" hide")}
-            >
+            <Box ref={displayRef} className={"content-area" + (choice ? " appear" : " hide")}>
                 {codeIIEST}
             </Box>
-            <Box
-            ref = {displayRef}
-                className={"content-area" + (!choice?" appear":" hide")}
-            >
+            <Box ref={displayRef} className={"content-area" + (!choice ? " appear" : " hide")}>
                 {IIESTS}
             </Box>
-            
+
             <Box
                 className={"tab" + (!choice ? " tabselected" : "")}
                 sx={{
@@ -66,8 +60,53 @@ const AboutBox = () => {
         </Box>
     );
 };
+const AboutBoxMobile = () => {
+    const [choice, setChoice] = useState(true);
+
+    return (
+        <Box
+            sx={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                flexDirection: "column",
+            }}
+            className="about-box-mobile"
+        >
+            <Box className="tabgroup">
+                <Box
+                    className={"tab" + (choice ? " tabselected" : "")}
+                    onClick={() => setChoice(true)}
+                    sx={{
+                        borderTopRightRadius: "0px !important",
+                        "&:after": {
+                            borderTopRightRadius: "0px !important",
+                        },
+                    }}
+                >
+                    CodeIIEST
+                </Box>
+                <Box
+                    className={"tab" + (!choice ? " tabselected" : "")}
+                    onClick={() => setChoice(false)}
+                    sx={{
+                        borderTopLeftRadius: "0px !important",
+                        "&:after": {
+                            borderTopLeftRadius: "0px !important",
+                        },
+                    }}
+                >
+                    IIEST Shibpur
+                </Box>
+            </Box>
+            <Box className={"content-area" + (choice ? " appear" : " hide")}>{codeIIEST}</Box>
+            <Box className={"content-area" + (!choice ? " appear" : " hide")}>{IIESTS}</Box>
+        </Box>
+    );
+};
 
 const about = () => {
+    const { innerWidth } = window;
     return (
         <div className="about page">
             <div className="bg">
@@ -75,15 +114,15 @@ const about = () => {
             </div>
             <PageHeading text="About Us" />
             <Box
-                className="inner-content"
                 sx={{
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",
                     justifyContent: "center",
                 }}
+                className="inner-content"
             >
-                <AboutBox />
+                {innerWidth >= 900 ? <AboutBox /> : <AboutBoxMobile />}
             </Box>
         </div>
     );
