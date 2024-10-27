@@ -12,9 +12,9 @@ const darkTheme = createTheme({
 });
 
 function getRank(val) {
-    var rank =  ["🥇", "🥈", "🥉"]
-    if (val-1 < 3) return rank[val-1]
-    return val
+    var rank = ["🥇", "🥈", "🥉"];
+    if (val - 1 < 3) return rank[val - 1];
+    return val;
 }
 
 function CFTag(rating) {
@@ -45,7 +45,7 @@ function UserFound({ user }) {
         return <></>;
     }
     if (!user) {
-        return <></>
+        return <></>;
     }
     return (
         <div className="f-wrapper">
@@ -69,12 +69,11 @@ function CustomDataGrid({ rows, columns, toshow, provideSearch, parentHeight }) 
         row.id = index + 1;
     });
 
-    
-    const numRows = Math.ceil(parentHeight/40) - 3;
+    const numRows = Math.ceil(parentHeight / 40) - 3;
     // console.log(height);
-    
+
     const [idx, setIdx] = useState(-1);
-    const [successfulFind, setSuccessfulFind] = useState(1)
+    const [successfulFind, setSuccessfulFind] = useState(1);
     // const [handle, setHandle] = useState("");
 
     function ShowResult() {
@@ -82,45 +81,58 @@ function CustomDataGrid({ rows, columns, toshow, provideSearch, parentHeight }) 
         for (let i = 0; i < rows.length; i++) {
             if (rows[i].handle.toLowerCase() === handle.toLowerCase()) {
                 setIdx(i);
-                setSuccessfulFind(true)
+                setSuccessfulFind(true);
                 return;
             }
         }
-        setSuccessfulFind(false)
+        setSuccessfulFind(false);
         setIdx(null);
     }
 
     function handleKeyDown(event) {
-        if (event.key === 'Enter') {
-            ShowResult()
+        if (event.key === "Enter") {
+            ShowResult();
         }
     }
 
     const hide = { zIndex: "-1", opacity: 0, position: "absolute" };
     const display = { zIndex: "100", opacity: 1 };
+    const getRowSpacing = React.useCallback((params) => {
+        return {
+            top: params.isFirstVisible ? 0 : 2,
+            bottom: params.isLastVisible ? 0 : 2,
+        };
+    }, []);
     return (
         <Box className="leaderboard" sx={toshow ? display : hide}>
-            {provideSearch && (<ThemeProvider theme={darkTheme}>
-                <Box sx={{ display: "flex", width: "100%" }}>
-                    <TextField
-                        error={!successfulFind}
-                        id="filled-basic"
-                        label="search userhandle"
-                        variant="filled"
-                        className="handleinput"
-                        fullWidth
-                        helperText={successfulFind===1?"":successfulFind ? "User found successfully" : "User handle doeesn't exist."}
-                        // onChange={(e) => setHandle(e.target.value)}
-                        onKeyDown={(e) => handleKeyDown(e)}
-                        color={successfulFind !== 1 ? "success":""}
-                        
-                    />
-                    <IconButton variant="outlined" onClick={() => ShowResult()} className="search-button">
-                        <GridSearchIcon />
-                    </IconButton>
-                </Box>
-                <UserFound user={idx >= 0 ? rows[idx] : -1} />
-            </ThemeProvider>)}
+            {provideSearch && (
+                <ThemeProvider theme={darkTheme}>
+                    <Box sx={{ display: "flex", width: "100%" }}>
+                        <TextField
+                            error={!successfulFind}
+                            id="filled-basic"
+                            label="search userhandle"
+                            variant="filled"
+                            className="handleinput"
+                            fullWidth
+                            helperText={
+                                successfulFind === 1
+                                    ? ""
+                                    : successfulFind
+                                    ? "User found successfully"
+                                    : "User handle doeesn't exist."
+                            }
+                            // onChange={(e) => setHandle(e.target.value)}
+                            onKeyDown={(e) => handleKeyDown(e)}
+                            color={successfulFind !== 1 ? "success" : ""}
+                        />
+                        <IconButton variant="outlined" onClick={() => ShowResult()} className="search-button">
+                            <GridSearchIcon />
+                        </IconButton>
+                    </Box>
+                    <UserFound user={idx >= 0 ? rows[idx] : -1} />
+                </ThemeProvider>
+            )}
             <DataGrid
                 sx={{
                     "& .MuiDataGrid-cell:": {
@@ -148,7 +160,6 @@ function CustomDataGrid({ rows, columns, toshow, provideSearch, parentHeight }) 
                     },
                 }}
                 disableRowSelectionOnClick
-                autoHeight
                 pageSizeOptions={[5]}
                 disableColumnMenu
                 disableColumnFilter
@@ -165,6 +176,8 @@ function CustomDataGrid({ rows, columns, toshow, provideSearch, parentHeight }) 
                 }}
                 // density="compact"
                 rowHeight={40}
+                getRowSpacing={getRowSpacing}
+                columnHeaderHeight={40}
             />
         </Box>
     );

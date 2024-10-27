@@ -7,7 +7,6 @@ import userData from "../../../public/assets/data/data.json";
 import { useState, useEffect } from "react";
 import Loading from "../../components/loading/Loading";
 import Error from "../../components/error/Error";
-import { GridLoadIcon } from "@mui/x-data-grid";
 import useFetchCF from "../../hooks/useFetchCF";
 
 // 🥇🥈🥉
@@ -99,7 +98,9 @@ const cfcolumns = [
             <Tooltip title={<Msg msg={`${params.row.rank}, ${params.row.name}`} />} arrow placement="right">
                 <a className="usr_name" href={`https://codeforces.com/profile/${params.value}`}>
                     <div className="usr">
-                        <Avatar sx={{ width: 28, height: 28, bgcolor: 'var(--text-gradient-1)' }} src={`${params.row.avatar}`}>{params.value[0].toUpperCase()}</Avatar>
+                        <Avatar sx={{ width: 28, height: 28, bgcolor: "#653D63" }} src={`${params.row.avatar}`}>
+                            {params.value[0].toUpperCase()}
+                        </Avatar>
                         {params.value}
                     </div>
                     {/* {params.value} */}
@@ -141,13 +142,12 @@ const cfcolumns = [
     },
 ];
 
-const LeaderboardMUI = ({parentHeight}) => {
+const LeaderboardMUI = ({ parentHeight }) => {
     const [show, setShow] = useState(1);
     const [reload, setReload] = useState(false);
     const cfUsers = {};
 
     const width = window.innerWidth;
-    
 
     var res = 0;
     for (let user of userData) {
@@ -215,9 +215,19 @@ const LeaderboardMUI = ({parentHeight}) => {
                         error_code={error.response?.request.status}
                     />
                 ) : (
-                    <CustomDataGrid rows={data} columns={cfcolumns} toshow={show} provideSearch={false} parentHeight={parentHeight} />
+                    <CustomDataGrid
+                        rows={data}
+                        columns={cfcolumns}
+                        toshow={show}
+                        provideSearch={false}
+                        parentHeight={parentHeight}
+                    />
                 )}
-                {!loading && <Typography sx={{textAlign: "right"}} variant="body1">{isCached}</Typography>}
+                {!loading && (
+                    <Typography sx={{ textAlign: "right" }} variant="body1">
+                        {isCached}
+                    </Typography>
+                )}
             </Box>
         </div>
     );

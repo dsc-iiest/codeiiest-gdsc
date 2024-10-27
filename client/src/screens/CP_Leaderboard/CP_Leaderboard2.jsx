@@ -21,8 +21,8 @@ const CP_Leaderboard2 = () => {
         <div className="cp-leaderboard-2 page">
             <PageHeading text="CP Stats" />
             <div ref={contentRef} className="content-container inner-content">
-                <div>
-                    {/* <div className="grid-card">
+                <div className="top-coders">
+                    <div className="grid-card">
                         <Codercard
                             coderData={{
                                 name: "Rishabh Dugar",
@@ -33,8 +33,8 @@ const CP_Leaderboard2 = () => {
                                 experience: "Senior",
                             }}
                         />
-                    </div> */}
-                    {/* <div className="grid-card">
+                    </div>
+                    <div className="grid-card">
                         <Codercard
                             coderData={{
                                 name: "Nafis Adnan Mondal",
@@ -45,8 +45,8 @@ const CP_Leaderboard2 = () => {
                                 experience: "Senior",
                             }}
                         />
-                    </div> */}
-                    {/* <div className="grid-card">
+                    </div>
+                    <div className="grid-card">
                         <Codercard
                             coderData={{
                                 name: "Abhijit Karmakar",
@@ -57,7 +57,7 @@ const CP_Leaderboard2 = () => {
                                 experience: "Junior",
                             }}
                         />
-                    </div> */}
+                    </div>
                     <div className="grid-card">
                         <Codercard
                             coderData={{
