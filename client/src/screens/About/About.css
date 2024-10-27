@@ -1,0 +1,123 @@
+.about-box .tab,
+.about-box-mobile .tab {
+    /* transform: rotate(180deg); */
+    writing-mode: vertical-rl;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid grey;
+    height: 15ch;
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: transparent;
+    transition: all ease 1s;
+    position: relative;
+}
+
+.about-box .tab::after,
+.about-box-mobile .tab::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--gradient2);
+    z-index: -1;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+
+.about-box div:nth-of-type(1)::after{
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.about-box div:nth-of-type(3)::after{
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.about-box .tab.tabselected::after,
+.about-box-mobile .tab.tabselected::after {
+    /* background: var(--gradient2); */
+    opacity: 1;
+}
+
+.about-box .content-area,
+.about-box-mobile .content-area {
+    border: 1px solid green;
+    width: 70vw;
+    min-height: 60vh;
+    padding: 1rem;
+    border: 1px solid grey;
+    background: rgba(122, 122, 122, 0.2);
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    position: absolute;
+}
+
+.about-box .appear,
+.about-box-mobile .appear {
+    animation: in 0.5s linear forwards;
+}
+.about-box .hide,
+.about-box-mobile .hide {
+    animation: out 0s linear forwards;
+}
+@keyframes in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.about-box-mobile .content-area {
+    height: min-content;
+    top: 10.4rem;
+    width: 90%;
+    /* position: relative; */
+}
+
+.about-box-mobile .tab {
+    writing-mode: horizontal-tb;
+    height: auto;
+    width: 15ch;
+    padding: 10px 0px;
+    border-radius: 0;
+    border-top-left-radius: 5px;;
+    border-top-right-radius: 5px;
+}
+
+.about-box-mobile .tabgroup {
+    position: absolute;
+    top: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-box-mobile .tab::after {
+    border-radius: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+@media only screen and (max-width: 900px) {
+    .about-box {
+        margin-top: 5rem;
+    }
+}

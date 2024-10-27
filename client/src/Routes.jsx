@@ -3,7 +3,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "./screens/Home/Home";
 import Chapterpage from "./screens/Chapterpage/Chapterpage";
 import Chapters from "./screens/Chapters/Chapters";
-import About from "./screens/AboutUs/about";
+import About from "./screens/About/about";
 import Events from "./screens/Events/Events";
 import ComingSoon from "./screens/comingsoon/ComingSoon";
 import CP_LeaderboardPage from "./screens/CP_Leaderboard/CP_LeaderboardPage";

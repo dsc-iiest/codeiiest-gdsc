@@ -3,6 +3,7 @@
 }
 .carousel-container .carousel {
 	/* width: 100%; */
+	/* border: 1px solid red */
 }
 .carousel-container .carousel .carousel-items {
 	transition: all ease 0.3s;
@@ -13,4 +14,10 @@
 .fade-out {
 	opacity: 0;
 	transform: scale(0);
+}
+
+@media only screen and (max-width: 480px) {
+	.carousel-container .bottom-right {
+		position:absolute;
+	}
 }

@@ -1,220 +1,115 @@
-import { React, useState } from "react";
+import { React, useEffect, useRef, useState } from "react";
 
 import PageHeading from "../../components/PageHeading/PageHeading";
 import EventCard from "../../components/EventCard/EventCard";
 import EventTabLabels from "../../components/EventTabLabels/EventTabLabels";
+import EventCardMobile from "../../components/EventCardMobile/EventCardMobile";
 
-import "./Events.css"
+import EventsData from "../../assets/data/events.json";
+import Carousel from "../../components/Carousel/Carousel";
+
+import "./Events.css";
 import EventTabSlider from "../../components/EventTabLabels/EventTabSlider/EventTabSlider";
-const Events = ({
-    EventArr = [
 
-        {
-            title: "Dev Meetup",
-            miniTitle: "Meet our best web developers",
-            description:
-                "gear up for an exciting full stack web development meetup, featuring some of the best web developers of our college kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk k k k k k k   ",
-            imageVariant: "uiux",
-            AvatarSampleData: [
-                { name: "Rishab dugar bhaiya", img: "profile.jpg" },
-                { name: "Rishab dugar bhaiya", img: "profile.jpg" },
-                { name: "Rishab dugar bhaiya", img: "profile.jpg" },
-                { name: "Rishab dugar bhaiya", img: "profile.jpg" },
-                { name: "Rishab dugar bhaiya", img: "profile.jpg" },
-                { name: "Rishab dugar bhaiya", img: "profile.jpg" },
-            ],
-            TagsList: ["shadcn/aceternity", "bootstrap", "guidelines",],
+const items = [];
 
-            sideDetails1: {
-                text1: "date & time",
-                text2: "10th june",
-                text3: "06:00-07:45 pm",
-            },
+for (let i = 0; i < EventsData.length; i += 2) {
+    items.push(
+        <div className="two-in-one">
+            <EventCardMobile />,
+            <EventCardMobile />,
+        </div>
+    );
+}
 
-            sideDetails2: {
-                text1: "venue",
-                text2: "ONLINE",
-                text3: null,
-            },
-        },
-        {
-            title: "Blockchain",
-            miniTitle: "Complete Rust Bootcamp",
-            description:
-                "gear up for an exciting full stack web development bootcamp, featuring some of the best web developers of our college  ",
-            imageVariant: "uiux",
-            AvatarSampleData: [
-                { name: "Rishab dugar bhaiya", img: "profile.jpg" },
-                { name: "Rishab dugar bhaiya", img: "profile.jpg" },
-                { name: "Rishab dugar bhaiya", img: "profile.jpg" },
-                { name: "Rishab dugar bhaiya", img: "profile.jpg" },
-                { name: "Rishab dugar bhaiya", img: "profile.jpg" },
-                { name: "Rishab dugar bhaiya", img: "profile.jpg" },
-            ],
-            TagsList: ["blockchain", "rust", "smart contracts",],
+const MobileEvents = () => {
+    return (
+        <div className="events-mobile">
+            <Carousel items={items} />
+        </div>
+    );
+};
 
-            sideDetails1: {
-                text1: "date & time",
-                text2: "10th june",
-                text3: "06:00-07:45 pm",
-            },
+const Events = () => {
+    const [clickedImage, setClickedImage] = useState(1);
 
-            sideDetails2: {
-                text1: "venue",
-                text2: "ONLINE",
-                text3: null,
-            }
-        },
-        {
-            title: "Blockchain",
-            miniTitle: "Complete Rust Bootcamp",
-            description:
-                "gear up for an exciting full stack web development bootcamp, featuring some of the best web developers of our college  ",
-            imageVariant: "uiux",
-            AvatarSampleData: [
-                { name: "Rishab dugar bhaiya", img: "profile.jpg" },
-                { name: "Rishab dugar bhaiya", img: "profile.jpg" },
-                { name: "Rishab dugar bhaiya", img: "profile.jpg" },
-                { name: "Rishab dugar bhaiya", img: "profile.jpg" },
-                { name: "Rishab dugar bhaiya", img: "profile.jpg" },
-                { name: "Rishab dugar bhaiya", img: "profile.jpg" },
-            ],
-            TagsList: ["blockchain", "rust", "smart contracts",],
+    const [tabNum, setTabNum] = useState(0);
+    const [tabDelta, setTabDelta] = useState(0);
 
-            sideDetails1: {
-                text1: "date & time",
-                text2: "10th june",
-                text3: "06:00-07:45 pm",
-            },
-
-            sideDetails2: {
-                text1: "venue",
-                text2: "ONLINE",
-                text3: null,
-            }
-        },
-        {
-            title: "Blockchain",
-            miniTitle: "Complete Rust Bootcamp",
-            description:
-                "gear up for an exciting full stack web development bootcamp, featuring some of the best web developers of our college  ",
-            imageVariant: "uiux",
-            AvatarSampleData: [
-                { name: "Rishab dugar bhaiya", img: "profile.jpg" },
-                { name: "Rishab dugar bhaiya", img: "profile.jpg" },
-                { name: "Rishab dugar bhaiya", img: "profile.jpg" },
-                { name: "Rishab dugar bhaiya", img: "profile.jpg" },
-                { name: "Rishab dugar bhaiya", img: "profile.jpg" },
-                { name: "Rishab dugar bhaiya", img: "profile.jpg" },
-            ],
-            TagsList: ["blockchain", "rust", "smart contracts",],
-
-            sideDetails1: {
-                text1: "date & time",
-                text2: "10th june",
-                text3: "06:00-07:45 pm",
-            },
-
-            sideDetails2: {
-                text1: "venue",
-                text2: "ONLINE",
-                text3: null,
-            }
-        },
-        {
-            title: "Blockchain",
-            miniTitle: "Complete Rust Bootcamp",
-            description:
-                "gear up for an exciting full stack web development bootcamp, featuring some of the best web developers of our college  ",
-            imageVariant: "uiux",
-            AvatarSampleData: [
-                { name: "Rishab dugar bhaiya", img: "profile.jpg" },
-                { name: "Rishab dugar bhaiya", img: "profile.jpg" },
-                { name: "Rishab dugar bhaiya", img: "profile.jpg" },
-                { name: "Rishab dugar bhaiya", img: "profile.jpg" },
-                { name: "Rishab dugar bhaiya", img: "profile.jpg" },
-                { name: "Rishab dugar bhaiya", img: "profile.jpg" },
-            ],
-            TagsList: ["blockchain", "rust", "smart contracts",],
-
-            sideDetails1: {
-                text1: "date & time",
-                text2: "10th june",
-                text3: "06:00-07:45 pm",
-            },
-
-            sideDetails2: {
-                text1: "venue",
-                text2: "ONLINE",
-                text3: null,
-            }
-        },
-        {
-            title: "Blockchain",
-            miniTitle: "Complete Rust Bootcamp",
-            description:
-                "gear up for an exciting full stack web development bootcamp, featuring some of the best web developers of our college  ",
-            imageVariant: "uiux",
-            AvatarSampleData: [
-                { name: "Rishab dugar bhaiya", img: "profile.jpg" },
-                { name: "Rishab dugar bhaiya", img: "profile.jpg" },
-                { name: "Rishab dugar bhaiya", img: "profile.jpg" },
-                { name: "Rishab dugar bhaiya", img: "profile.jpg" },
-                { name: "Rishab dugar bhaiya", img: "profile.jpg" },
-                { name: "Rishab dugar bhaiya", img: "profile.jpg" },
-            ],
-            TagsList: ["blockchain", "rust", "smart contracts",],
-
-            sideDetails1: {
-                text1: "date & time",
-                text2: "10th june",
-                text3: "06:00-07:45 pm",
-            },
-
-            sideDetails2: {
-                text1: "venue",
-                text2: "ONLINE",
-                text3: null,
-            }
-        }
-    ]
-}) => {
-
-    const [clickedImage, setClickedImage] = useState(1)
+    const [indicators, setIndicators] = useState(0);
     const handleClick = (val) => {
-        setClickedImage(val)
-    }
+        setClickedImage(val);
+    };
 
-    return (<div className="Event-wrapper page">
-        <div className="bg">
-            <img src="/assets/bg/home_bg.png" alt="" />
-        </div>
-        <div className="eventsBox" >
-            <div className="eventCard">
-                <div className="event-header">
-                    <PageHeading text={"EVENTS"} />
-                </div>
-                <EventCard
-                    {...EventArr[clickedImage - 1]}
-                />
+    const containerRef = useRef(null);
+
+    useEffect(() => {
+        const available = containerRef.current.offsetHeight;
+        setTabNum(() => Math.floor(available / 96));
+        console.log(tabNum);
+    }, [containerRef.current]);
+
+    useEffect(() => {
+        setIndicators(() => Math.ceil(EventsData.length / tabNum));
+        console.log(indicators);
+        // setClickedImage(1)
+    }, [tabNum, containerRef.current]);
+
+    return (
+        <div className="Event-wrapper page">
+            <div className="bg">
+                <img src="/assets/bg/home_bg.png" alt="" />
             </div>
-            <div className="eventLabels" >
-                <div className="eventLabelsBoxes" >
-                    {EventArr.map((e, i) =>
-                        < EventTabLabels key={i}
-                            title={e.title}
-                            miniTitle={e.miniTitle}
-                            isClicked={clickedImage === i + 1}
-                            onClick={() => setClickedImage(i + 1)}
-                        />
-                    )}
+            <PageHeading text={"EVENTS"} />
+
+            <div className="eventsBox inner-content">
+                <MobileEvents />
+                <div className="eventCard">
+                    <EventCard {...EventsData[tabDelta + clickedImage - 1]} />
                 </div>
-                <div className="eventLabelsSlider" >
-                    <EventTabSlider onClick={handleClick} imageNumber={clickedImage} totalImages={EventArr.length} />
+                <div ref={containerRef} className="eventLabels">
+                    <div
+                        className="eventLabelsBoxes"
+                        style={
+                            {
+                                // height: `${tabNum*16}px`
+                            }
+                        }
+                    >
+                        {EventsData.slice(0 + tabDelta, tabNum + tabDelta).map((e, i) => (
+                            <EventTabLabels
+                                key={i}
+                                title={e.title}
+                                miniTitle={e.miniTitle}
+                                isClicked={clickedImage === i + 1}
+                                onClick={() => setClickedImage(i + 1)}
+                            />
+                        ))}
+                    </div>
+                    <div className="eventLabelsSlider">
+                        {/* <EventTabSlider
+                            onClick={handleClick}
+                            imageNumber={clickedImage}
+                            totalImages={EventsData.length}
+                        /> */}
+                        {tabNum !== 0 &&
+                            [...Array(Math.ceil(EventsData.length / tabNum))].map((_, index) => (
+                                <div
+                                    className={
+                                        "indicator-bar" + (Math.floor(tabDelta / tabNum) === index ? " selected" : "")
+                                    }
+                                    onClick={() => {
+                                        setTabDelta(index * tabNum)
+                                        setClickedImage(1)
+                                    }}
+                                    key={index}
+                                ></div>
+                            ))}
+                    </div>
                 </div>
             </div>
         </div>
-    </div>)
+    );
 };
 
 export default Events;

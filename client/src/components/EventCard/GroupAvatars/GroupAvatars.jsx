@@ -4,12 +4,14 @@ import { styled } from '@mui/material/styles';
 
 const CustomAvatarGroup = styled(AvatarGroup)(({ theme }) => ({
     '& .MuiAvatarGroup-avatar': {
-        width: 25,
-        height: 25,
+        width: 40,
+        height: 40,
+        border: "none"
     },
     '& .MuiAvatarGroup-add': {
-        width: 25,
-        height: 25,
+        width: 40,
+        height: 40,
+        border: "none"
     },
 }));
 
@@ -18,7 +20,7 @@ export default function GroupAvatars({ peopleDataArray }) {
         <CustomAvatarGroup max={4}  >
             {peopleDataArray.map((people, ind) =>
                 <Avatar
-                    key={ind} alt={people.name} sx={{ width: 30, height: 30 }} src={`/assets/profile-pics/${people.img}`} />
+                    key={ind} alt={people.name} src={`/assets/profile-pics/${people.img}`} />
             )}
         </CustomAvatarGroup>
     );

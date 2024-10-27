@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./about.css";
+import "./Team.css";
 import NamecardV from "../../components/namecard/NameCardV";
 import Carousel from "../../components/Carousel/Carousel";
 import PageHeading from "../../components/PageHeading/PageHeading";
@@ -97,7 +97,7 @@ const About = () => {
 			</div>
 			<PageHeading text="THE TEAM" />
 			{/* <div className="outer-content"> */}
-			{/* <div className="carousel-wrapper"> */}
+			{/* <div className="inner-content"> */}
 				<Carousel items={members} />
 			{/* </div> */}
 			{/* </div> */}

@@ -1,0 +1,212 @@
+[
+    {
+        "title": "Tech Innovators",
+        "miniTitle": "Pioneers in AI",
+        "description": "Join us to explore advancements in AI with industry pioneers.",
+        "imageVariant":"uiux",
+        "AvatarSampleData": [
+            { "name": "Alice Smith", "img":"profile.jpg"},
+            { "name": "Bob Johnson", "img":"profile.jpg"}
+        ],
+        "TagsList": ["AI", "innovation", "machine learning"],
+        "sideDetails1": {
+            "text1": "date & time",
+            "text2": "20th Nov",
+            "text3": "10:00 AM - 12:00 PM"
+        },
+        "sideDetails2": {
+            "text1": "venue",
+            "text2": "Hall 3, Tech Center",
+            "text3": null
+        }
+    },
+    {
+        "title": "Data Science Bootcamp",
+        "miniTitle": "Learn Data Science",
+        "description": "An immersive bootcamp covering the essentials of data science.",
+        "imageVariant":"uiux",
+        "AvatarSampleData": [
+            { "name": "Charlie Nguyen", "img":"profile.jpg"},
+            { "name": "Dana Wu", "img":"profile.jpg"}
+        ],
+        "TagsList": ["data science", "python", "statistics"],
+        "sideDetails1": {
+            "text1": "date & time",
+            "text2": "12th Dec",
+            "text3": "09:00 AM - 4:00 PM"
+        },
+        "sideDetails2": {
+            "text1": "venue",
+            "text2": "Room 401, Science Building",
+            "text3": null
+        }
+    },
+    {
+        "title": "React Mastery Workshop",
+        "miniTitle": "Become a React Pro",
+        "description": "Advanced React workshop covering hooks, context, and state management.",
+        "imageVariant":"uiux",
+        "AvatarSampleData": [
+            { "name": "Emma Stone", "img":"profile.jpg"},
+            { "name": "Frank O'Reilly", "img":"profile.jpg"}
+        ],
+        "TagsList": ["React", "JavaScript", "frontend"],
+        "sideDetails1": {
+            "text1": "date & time",
+            "text2": "5th Jan",
+            "text3": "02:00 PM - 6:00 PM"
+        },
+        "sideDetails2": {
+            "text1": "venue",
+            "text2": "Online",
+            "text3": null
+        }
+    },
+    {
+        "title": "Blockchain for Beginners",
+        "miniTitle": "Understand Blockchain",
+        "description": "Introduction to blockchain technology and its applications.",
+        "imageVariant":"uiux",
+        "AvatarSampleData": [
+            { "name": "Grace Lin", "img":"profile.jpg"},
+            { "name": "Henry Ford", "img":"profile.jpg"}
+        ],
+        "TagsList": ["blockchain", "crypto", "decentralization"],
+        "sideDetails1": {
+            "text1": "date & time",
+            "text2": "15th Feb",
+            "text3": "11:00 AM - 1:00 PM"
+        },
+        "sideDetails2": {
+            "text1": "venue",
+            "text2": "Lab 202, Tech Hub",
+            "text3": null
+        }
+    },
+    {
+        "title": "Cybersecurity 101",
+        "miniTitle": "Stay Safe Online",
+        "description": "Basics of cybersecurity and protecting digital identities.",
+        "imageVariant":"uiux",
+        "AvatarSampleData": [
+            { "name": "Ivy Kapoor", "img":"profile.jpg"},
+            { "name": "James Lee", "img":"profile.jpg"}
+        ],
+        "TagsList": ["cybersecurity", "safety", "hacking"],
+        "sideDetails1": {
+            "text1": "date & time",
+            "text2": "8th Mar",
+            "text3": "01:00 PM - 3:30 PM"
+        },
+        "sideDetails2": {
+            "text1": "venue",
+            "text2": "Room 10, Digital Security Center",
+            "text3": null
+        }
+    },
+    {
+        "title": "AR/VR Experience",
+        "miniTitle": "Augmented Reality in Action",
+        "description": "A hands-on session to explore AR and VR technologies.",
+        "imageVariant":"uiux",
+        "AvatarSampleData": [
+            { "name": "Kelly Martin", "img":"profile.jpg"},
+            { "name": "Luke Fisher", "img":"profile.jpg"}
+        ],
+        "TagsList": ["AR", "VR", "immersive tech"],
+        "sideDetails1": {
+            "text1": "date & time",
+            "text2": "25th Apr",
+            "text3": "03:00 PM - 5:00 PM"
+        },
+        "sideDetails2": {
+            "text1": "venue",
+            "text2": "Innovation Lab",
+            "text3": null
+        }
+    },
+    {
+        "title": "Python for Everyone",
+        "miniTitle": "Intro to Python",
+        "description": "Learn the basics of Python programming, from variables to functions.",
+        "imageVariant":"uiux",
+        "AvatarSampleData": [
+            { "name": "Mason Bell", "img":"profile.jpg"},
+            { "name": "Nina Long", "img":"profile.jpg"}
+        ],
+        "TagsList": ["python", "programming", "beginners"],
+        "sideDetails1": {
+            "text1": "date & time",
+            "text2": "30th May",
+            "text3": "10:30 AM - 12:30 PM"
+        },
+        "sideDetails2": {
+            "text1": "venue",
+            "text2": "Room 150, Comp Sci Block",
+            "text3": null
+        }
+    },
+    {
+        "title": "DevOps Deep Dive",
+        "miniTitle": "Mastering DevOps",
+        "description": "Detailed exploration of DevOps tools, CI/CD, and deployment strategies.",
+        "imageVariant":"uiux",
+        "AvatarSampleData": [
+            { "name": "Olivia Patel", "img":"profile.jpg"},
+            { "name": "Paul Yang", "img":"profile.jpg"}
+        ],
+        "TagsList": ["devops", "ci/cd", "automation"],
+        "sideDetails1": {
+            "text1": "date & time",
+            "text2": "7th Jun",
+            "text3": "01:00 PM - 4:00 PM"
+        },
+        "sideDetails2": {
+            "text1": "venue",
+            "text2": "Hall B, Conference Center",
+            "text3": null
+        }
+    },
+    {
+        "title": "JavaScript Essentials",
+        "miniTitle": "JavaScript from Scratch",
+        "description": "Beginner workshop covering core JavaScript concepts.",
+        "imageVariant":"uiux",
+        "AvatarSampleData": [
+            { "name": "Quincy Brown", "img":"profile.jpg"},
+            { "name": "Ruby Diaz", "img":"profile.jpg"}
+        ],
+        "TagsList": ["javascript", "web development", "basics"],
+        "sideDetails1": {
+            "text1": "date & time",
+            "text2": "10th Jul",
+            "text3": "09:00 AM - 1:00 PM"
+        },
+        "sideDetails2": {
+            "text1": "venue",
+            "text2": "Main Hall, Web Dev Building",
+            "text3": null
+        }
+    },
+    {
+        "title": "UI/UX Design Principles",
+        "miniTitle": "Enhancing User Experience",
+        "description": "Interactive session on core UI/UX design principles and trends.",
+        "imageVariant":"uiux",
+        "AvatarSampleData": [
+            { "name": "Sam Thompson", "img":"profile.jpg"},
+            { "name": "Tina Ray", "img":"profile.jpg"}
+        ],
+        "TagsList": ["UI/UX", "design", "user experience"],
+        "sideDetails1": {
+            "text1": "date & time",
+            "text2": "15th Aug",
+            "text3": "10:00 AM - 12:00 PM"
+        },
+        "sideDetails2": {
+            "text1": "venue",
+            "text2": "Design Studio",
+            "text3": null
+        }
+    }
+]
