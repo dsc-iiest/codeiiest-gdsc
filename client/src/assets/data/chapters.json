@@ -7,14 +7,14 @@
                 "leads": [
                     {
                         "name": "Abhijit Karmakar",
-                        "role": "Chapter Lead",
+                        "role": "Frontend Lead",
                         "email": "abhijit.k@example.com",
                         "image": "path/to/image.jpg",
                         "url": "https://www.example.com"
                     },
                     {
-                        "name": "Rishabh Dugar",
-                        "role": "Chapter Lead",
+                        "name": "Tejas Pawar",
+                        "role": "Backend Lead",
                         "email": "rishabh.d@example.com",
                         "image": "path/to/image.jpg",
                         "url": "https://www.example.com"
