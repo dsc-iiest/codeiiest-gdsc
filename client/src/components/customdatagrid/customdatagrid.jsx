@@ -133,52 +133,54 @@ function CustomDataGrid({ rows, columns, toshow, provideSearch, parentHeight }) 
                     <UserFound user={idx >= 0 ? rows[idx] : -1} />
                 </ThemeProvider>
             )}
-            <DataGrid
-                sx={{
-                    "& .MuiDataGrid-cell:": {
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                    },
-                    "& .numbers": {
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                    },
-                    "& .MuiDataGrid-row:hover": {
-                        backgroundColor: "#23292d", // Or 'transparent' or whatever color you'd like
-                    },
-                    // marginTop: "1rem",
-                }}
-                columns={columns}
-                rows={rows}
-                initialState={{
-                    pagination: {
-                        paginationModel: {
-                            pageSize: numRows,
+            
+                <DataGrid
+                    sx={{
+                        "& .MuiDataGrid-cell:": {
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
                         },
-                    },
-                }}
-                disableRowSelectionOnClick
-                pageSizeOptions={[5]}
-                disableColumnMenu
-                disableColumnFilter
-                disableColumnSelector
-                disableEval
-                getRowClassName={() => {
-                    return "row";
-                }}
-                getCellClassName={(params) => {
-                    if (params.field && params.field.length <= 2 && params.field !== "id") {
-                        return "q-solve-status";
-                    }
-                    return params.field;
-                }}
-                // density="compact"
-                rowHeight={40}
-                getRowSpacing={getRowSpacing}
-                columnHeaderHeight={40}
-            />
+                        "& .numbers": {
+                            display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                        },
+                        "& .MuiDataGrid-row:hover": {
+                            backgroundColor: "#23292d", // Or 'transparent' or whatever color you'd like
+                        },
+                        // marginTop: "1rem",
+                    }}
+                    columns={columns}
+                    rows={rows}
+                    initialState={{
+                        pagination: {
+                            paginationModel: {
+                                pageSize: numRows,
+                            },
+                        },
+                    }}
+                    disableRowSelectionOnClick
+                    pageSizeOptions={[5]}
+                    disableColumnMenu
+                    disableColumnFilter
+                    disableColumnSelector
+                    disableEval
+                    getRowClassName={() => {
+                        return "row";
+                    }}
+                    getCellClassName={(params) => {
+                        if (params.field && params.field.length <= 2 && params.field !== "id") {
+                            return "q-solve-status";
+                        }
+                        return params.field;
+                    }}
+                    // density="compact"
+                    rowHeight={40}
+                    getRowSpacing={getRowSpacing}
+                    columnHeaderHeight={40}
+                />
+            
         </Box>
     );
 }

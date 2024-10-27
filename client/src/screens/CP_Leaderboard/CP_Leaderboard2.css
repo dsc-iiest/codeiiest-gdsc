@@ -13,6 +13,9 @@
 .cp-leaderboard-2 .content-container .top-coders {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+  transform-origin: top left;
+  padding-top: 1.2em;
 }
 
 .cp-leaderboard-2 .title .title-container {

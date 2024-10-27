@@ -148,7 +148,6 @@
 
 .css-yrdy0g-MuiDataGrid-columnHeaderRow,
 .MuiDataGrid-row--borderBottom {
-    border: 1px solid hsla(0, 0%, 100%, 0.5) !important;
+    border: 1px solid hsla(0, 0%, 100%, 0) !important;
     margin-bottom: 2px;
 }
-

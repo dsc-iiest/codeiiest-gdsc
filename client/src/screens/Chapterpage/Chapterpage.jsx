@@ -7,6 +7,7 @@ import PageHeading from "../../components/PageHeading/PageHeading";
 import NameCardM from "../../components/namecard/NameCardM";
 import NameCardH from "../../components/namecard/NameCardH";
 import NameCardV from "../../components/namecard/NameCardV";
+import { useRef, useState, useEffect } from "react";
 
 const Chapterdata = {
     development: {
@@ -203,6 +204,14 @@ const Chapterpage = () => {
     const { id } = useParams();
     const data = Chapterdata[id];
     const {innerWidth} = window;
+    const contentRef = useRef(null);
+    const [height, setHeight] = useState(0)
+    useEffect(() => {
+        setHeight(contentRef.current.offsetHeight - 3);
+
+    }, [])
+    const scaling = (height/408) <= 1 ? (height/408) : 1;
+
 
     return (
         <div className="chapter-page page">
@@ -211,8 +220,8 @@ const Chapterpage = () => {
             <div className="bg chapter">
                 <img src={`/assets/bg/${id}.png`} alt="" />
             </div>
-            <div className="content outer-content">
-                <div className="body">
+            <div className="content outer-content" ref={contentRef}>
+                <div className="body" style={{transform: `scale(${scaling})`}}>
                     <NameCardH
                         name={"Rishab Dugar"}
                         codeiiest={"Dev Lead & Treasurer"}
