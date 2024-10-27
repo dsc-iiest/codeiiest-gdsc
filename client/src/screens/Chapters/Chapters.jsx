@@ -34,6 +34,9 @@ const variants = [
 const Chapters = () => {
     return (
         <div className="chapters-wrapper page">
+            <div className="bg">
+                <img src="/assets/bg/home_bg.png" alt="" />
+            </div>
             <PageHeading text={"CHAPTERS"} />
             <div className="inner-content">
                 <Carousel items={variants} />

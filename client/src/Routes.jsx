@@ -11,6 +11,7 @@ import Events from "./screens/Events/Events";
 import ComingSoon from "./screens/comingsoon/ComingSoon";
 import CP_Leaderboard2 from "./screens/CP_Leaderboard/CP_Leaderboard2";
 import About from "./screens/About/About";
+import EventCardMobile from "./components/EventCardMobile/EventCardMobile";
 
 const AllRoutes = () => {
     const location = useLocation();
@@ -30,6 +31,7 @@ const AllRoutes = () => {
             <Route exact path="/events" element={<Events />}></Route>
             <Route exact path="/about" element={<About />}></Route>
             <Route exact path="/leaderboard" element={<CP_Leaderboard2 /> }></Route>
+            {/* <Route exact path="/test" element={<EventCardMobile /> }></Route> */}
         </Routes>
     );
 };
