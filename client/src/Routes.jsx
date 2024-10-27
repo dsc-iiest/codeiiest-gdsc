@@ -2,16 +2,11 @@ import React, { useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "./screens/Home/Home";
 import Chapterpage from "./screens/Chapterpage/Chapterpage";
-// import LeaderboardMUI from "./components/leaderboard/LeaderboardMUI";
 import Chapters from "./screens/Chapters/Chapters";
-import Team from "./screens/Team/Team";
-// import Coder from "./components/Codercard/coder";
-import Codercard from "./components/Codercard/Codercard";
+import About from "./screens/About/about";
 import Events from "./screens/Events/Events";
 import ComingSoon from "./screens/comingsoon/ComingSoon";
-import CP_Leaderboard2 from "./screens/CP_Leaderboard/CP_Leaderboard2";
-import About from "./screens/About/About";
-import EventCardMobile from "./components/EventCardMobile/EventCardMobile";
+import CP_LeaderboardPage from "./screens/CP_Leaderboard/CP_LeaderboardPage";
 
 const AllRoutes = () => {
     const location = useLocation();
@@ -30,8 +25,7 @@ const AllRoutes = () => {
             </Route>
             <Route exact path="/events" element={<Events />}></Route>
             <Route exact path="/about" element={<About />}></Route>
-            <Route exact path="/leaderboard" element={<CP_Leaderboard2 /> }></Route>
-            {/* <Route exact path="/test" element={<EventCardMobile /> }></Route> */}
+            <Route exact path="/leaderboard" element={<CP_LeaderboardPage /> }></Route>
         </Routes>
     );
 };

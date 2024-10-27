@@ -30,7 +30,7 @@ const EventCard = ({
             </span>
 
             <div className="tabLabels-wrapper">
-                <div style={{ background: "var(--gradient1)" }} className="section1">
+                <div style={{ background: "var(--gradient2)" }} className="section1">
                     <div className="title">
                         <h1>{title}</h1>
                         <h4>{miniTitle}</h4>

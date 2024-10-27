@@ -33,7 +33,7 @@
     bottom: 0%;
     left: 0%;
     right: 0%;
-    background: var(--gradient1);
+    /* background: var(--gradient1); */
     animation: animateTitle 1s forwards;
 }
 
@@ -272,7 +272,7 @@
 }
 
 .EventCardMain .section2 .lower-left .know-more {
-    background-color: var(--red);
+    background-color: var(--g-red);
     font-size: 1rem;
     border-radius: 5px;
     border: 0px;

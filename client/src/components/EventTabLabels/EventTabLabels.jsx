@@ -22,7 +22,7 @@ export default function EventTabLabels(
             <img src={`/assets/thumbnail/${imageVariant}.png`} />
             <div className="tabLabels-wrapper">
                 <div
-                    style={isClicked ? { "background": "var(--gradient1)" } : { "background": "linear-gradient(135deg, rgba(239, 231, 231, 0.18), rgba(211, 204, 204, 0.185))" }}
+                    style={isClicked ? { "background": "var(--gradient2)" } : { "background": "linear-gradient(135deg, rgba(239, 231, 231, 0.18), rgba(211, 204, 204, 0.185))" }}
                     className="section1">
                     <div className="title">
                         <h1>{title}</h1>

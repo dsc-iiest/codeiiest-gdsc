@@ -14,7 +14,7 @@ const EventCardMobile = () => {
 
     return (
         <div className="event-card-container">
-            <div className="content-container">
+            <div className="content-container-ecm">
                 {/* Intersect Image */}
                 <img className="intersect-image" src={intersect} alt="Intersect" />
 

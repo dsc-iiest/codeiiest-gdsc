@@ -1,4 +1,4 @@
-.content-container {
+.content-container-ecm {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -8,7 +8,7 @@
   /* border: 1px solid red; */
 }
 
-.content-container * {
+.content-container-ecm * {
   /* border: 1px solid greenyellow */
 }
 
@@ -81,8 +81,8 @@
 }
 
 .know-more-button {
-  background: #D54A5A !important;
-  color: white !important;
+  /* background: #D54A5A !important; */
+  /* color: white !important; */
   /* font-family: 'Chakra Petch', sans-serif !important;
   font-weight: 700 !important;
   font-size: 19px !important;

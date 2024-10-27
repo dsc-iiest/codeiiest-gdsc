@@ -1,9 +1,9 @@
 import React from 'react'
-import './Codercard.css';
+import './CoderCardAK.css';
 
 const Codercard = ({coderData}) => {
   return (
-    <div className="coder-card">
+    <div className="coder-card" >
         <div className="top-section">
             <div className="left-section">
                 <h2 className='left-section-experience-text chakra-petch-regular'>{coderData.experience}</h2>
