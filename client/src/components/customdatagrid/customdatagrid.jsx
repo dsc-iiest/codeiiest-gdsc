@@ -69,8 +69,8 @@ function CustomDataGrid({ rows, columns, toshow, provideSearch, parentHeight }) 
         row.id = index + 1;
     });
 
-    const numRows = Math.ceil(parentHeight / 40) - 3;
-    // console.log(height);
+    const numRows = Math.ceil(parentHeight / 46) - 3;
+    console.log(parentHeight);
 
     const [idx, setIdx] = useState(-1);
     const [successfulFind, setSuccessfulFind] = useState(1);
