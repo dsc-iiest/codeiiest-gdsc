@@ -197,8 +197,8 @@
     display: -webkit-box;
     font-size: 1rem;
     font-weight: 100;
-    line-clamp: 5;
-    -webkit-line-clamp: 5;
+    line-clamp: 4;
+    -webkit-line-clamp: 4;
     -moz-box-orient: vertical;
     -webkit-box-orient: vertical;
     overflow: hidden;

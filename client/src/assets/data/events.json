@@ -1,33 +1,35 @@
 [
     {
-        "title": "Tech Innovators",
-        "miniTitle": "Pioneers in AI",
-        "description": "Join us to explore advancements in AI with industry pioneers.",
-        "imageVariant":"uiux",
+        "title": "WebGame Challenge",
+        "miniTitle": "website game development",
+        "description": "Calling all web-dev Enthusiasts! Get ready to dive into the world of browser-based game development with WebGame Challenge hosted by GDG development and UI-UX team, in collaboration with CodeIIEST. Whether you're just starting out or looking to sharpen your skills, this competition is your chance to create fun, innovative browser-based games. It's time to show off your coding creativity!",
+        "imageVariant": "development",
         "AvatarSampleData": [
-            { "name": "Alice Smith", "img":"profile.jpg"},
-            { "name": "Bob Johnson", "img":"profile.jpg"}
+            { "name": "Abhijit Karmakar", "img": "profile.jpg" },
+            { "name": "Soumyajit Karmakar", "img": "profile.jpg" }
         ],
-        "TagsList": ["AI", "innovation", "machine learning"],
+        "TagsList": ["Web development", "creativity", "UIUX"],
         "sideDetails1": {
-            "text1": "date & time",
-            "text2": "20th Nov",
-            "text3": "10:00 AM - 12:00 PM"
+            "text1": "Deadline",
+            "text2": "5th Nov, 2024",
+            "text3": "11:59 PM"
         },
         "sideDetails2": {
             "text1": "venue",
-            "text2": "Hall 3, Tech Center",
+            "text2": "Online",
             "text3": null
-        }
+        },
+        "completionStatus": 50,
+        "moreInfo": "https://drive.google.com/file/d/1Y9Sc9rilMJvH1hVr0hIOy_jZwUOXepSQ/view"
     },
     {
         "title": "Data Science Bootcamp",
         "miniTitle": "Learn Data Science",
         "description": "An immersive bootcamp covering the essentials of data science.",
-        "imageVariant":"uiux",
+        "imageVariant": "uiux",
         "AvatarSampleData": [
-            { "name": "Charlie Nguyen", "img":"profile.jpg"},
-            { "name": "Dana Wu", "img":"profile.jpg"}
+            { "name": "Abhijit Karmakar", "img": "profile.jpg" },
+            { "name": "Soumyajit Karmakar", "img": "profile.jpg" }
         ],
         "TagsList": ["data science", "python", "statistics"],
         "sideDetails1": {
@@ -45,10 +47,10 @@
         "title": "React Mastery Workshop",
         "miniTitle": "Become a React Pro",
         "description": "Advanced React workshop covering hooks, context, and state management.",
-        "imageVariant":"uiux",
+        "imageVariant": "uiux",
         "AvatarSampleData": [
-            { "name": "Emma Stone", "img":"profile.jpg"},
-            { "name": "Frank O'Reilly", "img":"profile.jpg"}
+            { "name": "Emma Stone", "img": "profile.jpg" },
+            { "name": "Frank O'Reilly", "img": "profile.jpg" }
         ],
         "TagsList": ["React", "JavaScript", "frontend"],
         "sideDetails1": {
@@ -66,10 +68,10 @@
         "title": "Blockchain for Beginners",
         "miniTitle": "Understand Blockchain",
         "description": "Introduction to blockchain technology and its applications.",
-        "imageVariant":"uiux",
+        "imageVariant": "uiux",
         "AvatarSampleData": [
-            { "name": "Grace Lin", "img":"profile.jpg"},
-            { "name": "Henry Ford", "img":"profile.jpg"}
+            { "name": "Grace Lin", "img": "profile.jpg" },
+            { "name": "Henry Ford", "img": "profile.jpg" }
         ],
         "TagsList": ["blockchain", "crypto", "decentralization"],
         "sideDetails1": {
@@ -87,10 +89,10 @@
         "title": "Cybersecurity 101",
         "miniTitle": "Stay Safe Online",
         "description": "Basics of cybersecurity and protecting digital identities.",
-        "imageVariant":"uiux",
+        "imageVariant": "uiux",
         "AvatarSampleData": [
-            { "name": "Ivy Kapoor", "img":"profile.jpg"},
-            { "name": "James Lee", "img":"profile.jpg"}
+            { "name": "Ivy Kapoor", "img": "profile.jpg" },
+            { "name": "James Lee", "img": "profile.jpg" }
         ],
         "TagsList": ["cybersecurity", "safety", "hacking"],
         "sideDetails1": {
@@ -108,10 +110,10 @@
         "title": "AR/VR Experience",
         "miniTitle": "Augmented Reality in Action",
         "description": "A hands-on session to explore AR and VR technologies.",
-        "imageVariant":"uiux",
+        "imageVariant": "uiux",
         "AvatarSampleData": [
-            { "name": "Kelly Martin", "img":"profile.jpg"},
-            { "name": "Luke Fisher", "img":"profile.jpg"}
+            { "name": "Kelly Martin", "img": "profile.jpg" },
+            { "name": "Luke Fisher", "img": "profile.jpg" }
         ],
         "TagsList": ["AR", "VR", "immersive tech"],
         "sideDetails1": {
@@ -129,10 +131,10 @@
         "title": "Python for Everyone",
         "miniTitle": "Intro to Python",
         "description": "Learn the basics of Python programming, from variables to functions.",
-        "imageVariant":"uiux",
+        "imageVariant": "uiux",
         "AvatarSampleData": [
-            { "name": "Mason Bell", "img":"profile.jpg"},
-            { "name": "Nina Long", "img":"profile.jpg"}
+            { "name": "Mason Bell", "img": "profile.jpg" },
+            { "name": "Nina Long", "img": "profile.jpg" }
         ],
         "TagsList": ["python", "programming", "beginners"],
         "sideDetails1": {
@@ -150,10 +152,10 @@
         "title": "DevOps Deep Dive",
         "miniTitle": "Mastering DevOps",
         "description": "Detailed exploration of DevOps tools, CI/CD, and deployment strategies.",
-        "imageVariant":"uiux",
+        "imageVariant": "uiux",
         "AvatarSampleData": [
-            { "name": "Olivia Patel", "img":"profile.jpg"},
-            { "name": "Paul Yang", "img":"profile.jpg"}
+            { "name": "Olivia Patel", "img": "profile.jpg" },
+            { "name": "Paul Yang", "img": "profile.jpg" }
         ],
         "TagsList": ["devops", "ci/cd", "automation"],
         "sideDetails1": {
@@ -171,10 +173,10 @@
         "title": "JavaScript Essentials",
         "miniTitle": "JavaScript from Scratch",
         "description": "Beginner workshop covering core JavaScript concepts.",
-        "imageVariant":"uiux",
+        "imageVariant": "uiux",
         "AvatarSampleData": [
-            { "name": "Quincy Brown", "img":"profile.jpg"},
-            { "name": "Ruby Diaz", "img":"profile.jpg"}
+            { "name": "Quincy Brown", "img": "profile.jpg" },
+            { "name": "Ruby Diaz", "img": "profile.jpg" }
         ],
         "TagsList": ["javascript", "web development", "basics"],
         "sideDetails1": {
@@ -192,10 +194,10 @@
         "title": "UI/UX Design Principles",
         "miniTitle": "Enhancing User Experience",
         "description": "Interactive session on core UI/UX design principles and trends.",
-        "imageVariant":"uiux",
+        "imageVariant": "uiux",
         "AvatarSampleData": [
-            { "name": "Sam Thompson", "img":"profile.jpg"},
-            { "name": "Tina Ray", "img":"profile.jpg"}
+            { "name": "Sam Thompson", "img": "profile.jpg" },
+            { "name": "Tina Ray", "img": "profile.jpg" }
         ],
         "TagsList": ["UI/UX", "design", "user experience"],
         "sideDetails1": {

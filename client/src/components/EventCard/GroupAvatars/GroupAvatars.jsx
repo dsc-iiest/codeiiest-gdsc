@@ -1,3 +1,4 @@
+import { Tooltip } from '@mui/material';
 import Avatar from '@mui/material/Avatar';
 import AvatarGroup from '@mui/material/AvatarGroup';
 import { styled } from '@mui/material/styles';
@@ -19,8 +20,9 @@ export default function GroupAvatars({ peopleDataArray }) {
     return (
         <CustomAvatarGroup max={4}  >
             {peopleDataArray.map((people, ind) =>
+                <Tooltip placement='top' title={<span style={{ fontSize: '0.9rem' }}>{people.name}</span>} arrow >
                 <Avatar
-                    key={ind} alt={people.name} src={`/assets/profile-pics/${people.img}`} />
+                    key={ind} alt={people.name} src={`/assets/profile-pics/${people.img}`} /></Tooltip>
             )}
         </CustomAvatarGroup>
     );

@@ -12,6 +12,8 @@ const EventCard = ({
     TagsList,
     sideDetails1,
     sideDetails2,
+    completionStatus,
+    moreInfo
 }) => {
     //taking sample values for datas which we willl get via props
 
@@ -21,6 +23,8 @@ const EventCard = ({
     const AvatarLen = AvatarSampleData.length;
     if (AvatarLen <= 3) percentageValue = 100;
     else percentageValue = Math.floor(parseFloat(3 / AvatarLen) * 100);
+
+    const completed = Math.round(5 * completionStatus/100);
 
     return (
         <div key={`${title}+${miniTitle}+${Math.random() * 1e9}`} className="EventCardMain">
@@ -67,6 +71,7 @@ const EventCard = ({
                             animate={{ y: 0 }}
                             transition={{ duration: 0.5 }}
                             className="know-more"
+                            onClick={()=>window.open(moreInfo || "#", "_blank")}
                         >
                             Know more
                         </motion.button>
@@ -74,13 +79,13 @@ const EventCard = ({
                     <div className="lower-right">
                         <GroupAvatars peopleDataArray={AvatarSampleData} />
                         <div className="progressDiv">
-                            <ProgressBar total={5} progress={2} size="small" />
+                            <ProgressBar total={5} progress={completed} size="small" />
                             <motion.p
                                 initial={{ opacity: 0.6, y: -20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5 }}
                             >
-                                {percentageValue}%
+                                {completionStatus}%
                             </motion.p>
                         </div>
                     </div>
