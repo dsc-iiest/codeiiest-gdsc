@@ -10,6 +10,7 @@ const Slots = ({ filled, total, size="normal"}) => {
 	while (i <= filled) {
 		slots.push(
 			<div
+				key={i}
 				className="slot"
 				style={{
 					backgroundSize,
@@ -24,7 +25,7 @@ const Slots = ({ filled, total, size="normal"}) => {
 	while (i <= total) {
 		slots.push(
 			<div
-				
+				key={i}
 				className="slot outlined"
 				style={{
 					backgroundSize,

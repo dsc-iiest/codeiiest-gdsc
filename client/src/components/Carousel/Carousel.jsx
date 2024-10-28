@@ -77,7 +77,7 @@ const Carousel = ({ items }) => {
 
     var numOfCards = (Math.floor(carouselWidth / delta));
     if(items.length<numOfCards)numOfCards = items.length;
-    console.log(carouselWidth, cardWidth, numOfCards);
+    // console.log(carouselWidth, cardWidth, numOfCards);
 
     const maxNext = delta * (items.length - numOfCards);
 

@@ -2,8 +2,8 @@ import * as React from "react";
 import { Box, ThemeProvider, createTheme } from "@mui/material";
 import { DataGrid, GridToolbar } from "@mui/x-data-grid";
 import { styled } from "@mui/material/styles";
-import searchFail from '../../../src/assets/fail.svg'
-import './Error.css'
+import noRows from '../../../src/assets/null.svg'
+// import './Error.css'
 
 const darkTheme = createTheme({
     palette: {
@@ -11,21 +11,20 @@ const darkTheme = createTheme({
     },
 });
 
-function CustomNoResultsOverlay({code, message}) {
+function NoRowsOverlay() {
     return (
-        <Box sx={{width: "100%", display: "flex", justifyContent: "center", alignItems: "center", gap: "1rem"}}>
+        <Box sx={{width: "100%", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column"}}>
             <div className="fail-image">
-                <img src={searchFail} alt="search fail" style={{width: 200}}/>
+                <img src={noRows} alt="search fail" style={{width: 200}}/>
             </div>
-            <div className="message">
-                <div className="message-code">{code}</div>
-                <div className="message-text">{message}</div>
-            </div>
+            <span>
+                No Rows Here
+            </span>
         </Box>
     )
 }
 
-export default function Error({ cols, error_code, message }) {
+export default function CustomNoRowsOverlay({ cols }) {
     return (
         <ThemeProvider theme={darkTheme}>
             <div style={{ height: 300, width: "100%" }}>
@@ -33,7 +32,7 @@ export default function Error({ cols, error_code, message }) {
                     rows={[]}
                     columns={cols}
                     slots={{
-                        noRowsOverlay: () => (<CustomNoResultsOverlay code={error_code} message={message}/>),
+                        noRowsOverlay: () => (<NoRowsOverlay/>),
                     }}
                     hideFooter
                     hideFooterPagination

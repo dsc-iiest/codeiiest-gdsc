@@ -49,6 +49,9 @@ const CP_Leaderboard2 = () => {
 
     return (
         <div className="cp-leaderboard-page page">
+            <div className="bg">
+                <img src="/assets/bg/home_bg.png" alt="" />
+            </div>
             <PageHeading text="CP Stats" />
             <div ref={contentRef} className="content-container inner-content">
                 <div className="top-coders-scaler">

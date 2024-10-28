@@ -1,18 +1,11 @@
-.error-container {
+.message {
     display: flex;
-    align-items: center;
     justify-content: center;
-    width: 30ch;
-}
-
-.error-container .error-card{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: start;
     flex-direction: column;
 }
 
-.error-container .error-card h3, .error-container .error-card p{
-    color: var(--normal-text);
-    text-align: center
+.message .message-code {
+    font-size: 1.5rem;
+    font-weight: 600;
 }

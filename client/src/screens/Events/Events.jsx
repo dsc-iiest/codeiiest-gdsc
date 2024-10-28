@@ -46,12 +46,12 @@ const Events = () => {
     useEffect(() => {
         const available = containerRef.current.offsetHeight;
         setTabNum(() => Math.floor(available / 96));
-        console.log(tabNum);
+        // console.log(tabNum);
     }, [containerRef.current]);
 
     useEffect(() => {
         setIndicators(() => Math.ceil(EventsData.length / tabNum));
-        console.log(indicators);
+        // console.log(indicators);
         // setClickedImage(1)
     }, [tabNum, containerRef.current]);
 
