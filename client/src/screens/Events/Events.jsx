@@ -32,6 +32,7 @@ const MobileEvents = () => {
 
 const Events = () => {
     const [clickedImage, setClickedImage] = useState(1);
+    const [height, setHeight] = useState(0);
 
     const [tabNum, setTabNum] = useState(0);
     const [tabDelta, setTabDelta] = useState(0);
@@ -45,6 +46,7 @@ const Events = () => {
 
     useEffect(() => {
         const available = containerRef.current.offsetHeight;
+        setHeight(available);
         setTabNum(() => Math.floor(available / 96));
         // console.log(tabNum);
     }, [containerRef.current]);
@@ -54,6 +56,7 @@ const Events = () => {
         // console.log(indicators);
         // setClickedImage(1)
     }, [tabNum, containerRef.current]);
+    const scaling = ((height - 20)/357);
 
     return (
         <div className="Event-wrapper page">
@@ -64,7 +67,7 @@ const Events = () => {
 
             <div className="eventsBox inner-content">
                 <MobileEvents />
-                <div className="eventCard">
+                <div className="eventCard" style={{transform: `scale(${scaling})`, paddingTop: "2rem", transformOrigin: "left"}}>
                     <EventCard {...EventsData[tabDelta + clickedImage - 1]} />
                 </div>
                 <div ref={containerRef} className="eventLabels">
