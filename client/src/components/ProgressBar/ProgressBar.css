@@ -37,3 +37,11 @@
 	background: var(--gradient1);
 	/* mix-blend-mode: ; */
 }
+
+@keyframes loadup {
+	from{
+		opacity: 0
+	}to {
+		opacity: 1
+	}
+}
