@@ -71,9 +71,19 @@
     flex-direction: column;
 }
 
+@media only screen and (max-width: 1000px) {
+    .eventsBox .eventCard {
+        transform: scale(1) !important;
+    }
+}
+
 @media only screen and (max-width: 900px) {
     .Event-wrapper {
         padding: 0px 1rem
+    }
+
+    .eventsBox {
+        padding: 0 1em 0 1em;
     }
 }
 
