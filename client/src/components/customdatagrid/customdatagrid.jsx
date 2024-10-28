@@ -4,6 +4,7 @@ import { DataGrid } from "@mui/x-data-grid";
 import "./customdatagrid.css";
 import { useState } from "react";
 import { GridSearchIcon } from "@mui/x-data-grid";
+import CustomNoRowsOverlay from "../NoRows/NoRows";
 
 const darkTheme = createTheme({
     palette: {
@@ -65,6 +66,10 @@ function UserFound({ user }) {
 }
 
 function CustomDataGrid({ rows, columns, toshow, provideSearch, parentHeight }) {
+    if (rows.length === 0) {
+        return <CustomNoRowsOverlay cols={columns} />
+    }
+
     rows.forEach((row, index) => {
         row.id = index + 1;
     });

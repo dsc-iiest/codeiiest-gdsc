@@ -193,31 +193,12 @@ const LeaderboardMUI = ({ parentHeight, style }) => {
             {!loading && !error ? <div className="notification">{isCached}</div> : null}
             <Box className="datagrid-wrapper">
                 {loading ? (
-                    <ThemeProvider theme={darkTheme}>
-                        <Box height={450}>
-                            <DataGrid
-                                sx={{ width: "100%" }}
-                                rows={[]}
-                                columns={cfcolumns}
-                                loading
-                                slotProps={{
-                                    loadingOverlay: {
-                                        variant: "skeleton",
-                                        noRowsVariant: "skeleton",
-                                    },
-                                }}
-                                initialState={{
-                                    pinnedColumns: {
-                                        left: ["desk"],
-                                    },
-                                }}
-                            />
-                        </Box>
-                    </ThemeProvider>
+                    <Loading cols={cfcolumns} height={parentHeight}/>
                 ) : error ? (
                     <Error
                         message={"API Fetching Failed. Please try again later"}
-                        error_code={error.response?.request.status}
+                        error_code={(error && error.response?.request.status) || 404}
+                        cols={cfcolumns}
                     />
                 ) : (
                     <ThemeProvider theme={darkTheme}>
