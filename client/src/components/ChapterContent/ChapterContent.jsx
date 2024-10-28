@@ -10,7 +10,13 @@ const Icon = ({ iconName, byline }) => {
     );
 };
 
-const ChapterContent = ({ Content }) => {
+const ChapterContent = ({ data }) => {
+    console.log("Yahoo");
+    
+    console.log(data);
+    const Content = data.chapterContent
+    console.log(Content);
+    
     const width = Content.title === "FUSION FORCE" ? 9 : 4.5;
     return (
         <div className="chapter-content">
