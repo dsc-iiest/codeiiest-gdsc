@@ -6,13 +6,13 @@ import ProgressBar from "../../components/ProgressBar/ProgressBar";
 const EventsProgress = () => {
     const events = [
         {
-            name: "ML March",
+            name: "Webgame Challenge",
             progress: 1,
             total: 4,
         },
         {
-            name: "Flutter Bootcamp",
-            progress: 3,
+            name: "CodeConnect",
+            progress: 6,
             total: 6,
         },
     ];
@@ -38,8 +38,8 @@ const NewEvents = () => {
                 <strong>New Event Alert</strong>
             </div>
             <div className="line">
-                <div className="name">Code Connect</div>
-                &nbsp; starting 19/5/24
+                <div className="name">Induction</div>
+                &nbsp; starting 04/11/24
             </div>
         </div>
     );
