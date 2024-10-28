@@ -12,6 +12,15 @@
     justify-content: space-between;
     /* padding-top: 2rem; */
 }
+
+.chapter-page .content .meet-route {
+    color: gold;
+    position:absolute;
+    right: 0;
+    bottom: -2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
 .chapter-page .content .body {
     /* width: calc(50% - 25px); */
     /* border: 1px solid red; */
@@ -54,6 +63,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 1rem
 }
 .chapter-page .events-progress {
     /* border: 1px solid yellow; */
@@ -115,6 +125,14 @@
         gap: 7rem;
     }
 
+    .chapter-page .content .chapter-leads .lead-cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
     .chapter-content .section-3 .typography {
         margin: 2em 0em;
     }
@@ -127,9 +145,11 @@
         display: flex;
         flex-direction: column;
     }
-    
 }
-/* 
-@media only screen and (max-width: 480px) {
 
-} */
+@media only screen and (max-width: 520px) {
+    .chapter-page .content .chapter-leads .lead-cards {
+        gap: 7rem
+    }
+
+}

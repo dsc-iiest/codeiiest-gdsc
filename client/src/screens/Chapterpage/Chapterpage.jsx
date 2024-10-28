@@ -1,13 +1,14 @@
 import React from "react";
 import ChapterContent from "../../components/ChapterContent/ChapterContent";
 import "./Chapterpage.css";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import ProgressBar from "../../components/ProgressBar/ProgressBar";
 import PageHeading from "../../components/PageHeading/PageHeading";
 import NameCardM from "../../components/namecard/NameCardM";
 import NameCardH from "../../components/namecard/NameCardH";
 import NameCardV from "../../components/namecard/NameCardV";
 import { useRef, useState, useEffect } from "react";
+import { Button } from "@mui/material";
 
 const Chapterdata = {
     development: {
@@ -203,25 +204,23 @@ const EventsProgress = () => {
 const Chapterpage = () => {
     const { id } = useParams();
     const data = Chapterdata[id];
-    const {innerWidth} = window;
+    const { innerWidth } = window;
     const contentRef = useRef(null);
-    const [height, setHeight] = useState(0)
+    const [height, setHeight] = useState(0);
     useEffect(() => {
         setHeight(contentRef.current.offsetHeight - 3);
-
-    }, [])
-    const scaling = (height/408) <= 1 ? (height/408) : 1;
-
+    }, []);
+    const scaling = height / 408 <= 1 ? height / 408 : 1;
 
     return (
         <div className="chapter-page page">
-            {innerWidth>900 && <PageHeading text={idMap[id]} />}
+            {innerWidth > 900 && <PageHeading text={idMap[id]} />}
 
             <div className="bg chapter">
                 <img src={`/assets/bg/${id}.png`} alt="" />
             </div>
             <div className="content outer-content" ref={contentRef}>
-                <div className="body" style={{transform: `scale(${scaling})`}}>
+                <div className="body" style={{ transform: `scale(${scaling})` }}>
                     <NameCardH
                         name={"Rishab Dugar"}
                         codeiiest={"Dev Lead & Treasurer"}
@@ -244,39 +243,80 @@ const Chapterpage = () => {
                     />
                 </div>
                 <ChapterContent Content={data} />
+                {innerWidth <= 1150 && innerWidth > 900 && (
+                    <Link className="meet-route" to="team">
+                        <p>meet the team</p>
+                    </Link>
+                )}
                 <div className="chapter-leads">
                     <div className="heading">Leads</div>
-                    <NameCardV
-                        name={"Rishab Dugar"}
-                        codeiiest={"Dev Lead & Treasurer"}
-                        gdsc={"Dev Lead & Treasurer"}
-                        profilepic={"profilepic"}
-                        descrip={"Building the future, one component at a time"}
-                        customCSS={{
-                            transform: "scale(1)",
-                        }}
-                    />
-                    <NameCardV
-                        name={"Rishab Dugar"}
-                        codeiiest={"Dev Lead & Treasurer"}
-                        gdsc={"Dev Lead & Treasurer"}
-                        profilepic={"profilepic"}
-                        descrip={"Building the future, one component at a time"}
-                        customCSS={{
-                            transform: "scale(1)",
-                        }}
-                    />
+                    <div className="lead-cards">
+                        <NameCardV
+                            name={"Rishab Dugar"}
+                            codeiiest={"Dev Lead & Treasurer"}
+                            gdsc={"Dev Lead & Treasurer"}
+                            profilepic={"profilepic"}
+                            descrip={"Building the future, one component at a time"}
+                            customCSS={{
+                                transform: "scale(1)",
+                            }}
+                        />
+                        <NameCardV
+                            name={"Rishab Dugar"}
+                            codeiiest={"Dev Lead & Treasurer"}
+                            gdsc={"Dev Lead & Treasurer"}
+                            profilepic={"profilepic"}
+                            descrip={"Building the future, one component at a time"}
+                            customCSS={{
+                                transform: "scale(1)",
+                            }}
+                        />
+                    </div>
                 </div>
                 <div className="chapter-ev">
                     <div className="sub-heading">Events</div>
                     <EventsProgress></EventsProgress>
                 </div>
+                {innerWidth <= 900 && (
+                    <Link to={`team`}>
+                        <Button
+                            sx={{
+                                background: "var(--g-red)",
+                                color: "#fff",
+                                fontSize: "1.5rem",
+                                textTransform: "none",
+                                "&:hover": {
+                                    background: "var(--g-red)",
+                                },
+                            }}
+                        >
+                            Meet The Team
+                        </Button>
+                    </Link>
+                )}
             </div>
             <div className="center">
                 <div className="container">
                     <div className="sub-heading">Events</div>
                     <EventsProgress></EventsProgress>
                 </div>
+                <Link to={`team`}>
+                    <Button
+                        sx={{
+                            background: "rgba(255, 255, 255, 0.2)",
+                            border: "1px solid #fff",
+                            fontSize: "1.3rem",
+                            padding: "1rem",
+                            color: "#fff",
+                            textTransform: "none",
+                            "&:hover": {
+                                background: "var(--g-red)",
+                            },
+                        }}
+                    >
+                        Meet The Team
+                    </Button>
+                </Link>
             </div>
         </div>
     );

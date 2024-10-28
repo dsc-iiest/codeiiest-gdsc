@@ -1,0 +1,170 @@
+{
+    "development":[
+        {
+            "name": "Abhijit Karmakar",
+            "codeiiest": "Frontend lead",
+            "gdsc": "UI/UX lead",
+            "profilepic": "profilepic",
+            "description":"Some cheesy lines instead of lorem",
+            "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
+
+        },
+        {
+            "name": "Soumyajit Karmakar",
+            "codeiiest": "core member",
+            "gdsc": "Development lead",
+            "profilepic": "profilepic",
+            "description":"Some cheesy lines instead of lorem",
+            "website": "https://www.linkedin.com/in/soumyajit-karmakar-68362526b/"
+
+        },
+        {
+            "name": "Tejas Pawar",
+            "codeiiest": "Backend lead",
+            "gdsc": "core member",
+            "profilepic": "profilepic",
+            "description":"Some cheesy lines instead of lorem",
+            "website": "https://www.linkedin.com/in/tejaspawar429/"
+        }
+    ],
+    "cybersecurity":[
+        {
+            "name": "Abhijit Karmakar",
+            "codeiiest": "Frontend lead",
+            "gdsc": "UI/UX lead",
+            "profilepic": "profilepic",
+            "description":"Some cheesy lines instead of lorem",
+            "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
+
+        },
+        {
+            "name": "Soumyajit Karmakar",
+            "codeiiest": "core member",
+            "gdsc": "Development lead",
+            "profilepic": "profilepic",
+            "description":"Some cheesy lines instead of lorem",
+            "website": "https://www.linkedin.com/in/soumyajit-karmakar-68362526b/"
+
+        },
+        {
+            "name": "Tejas Pawar",
+            "codeiiest": "Backend lead",
+            "gdsc": "core member",
+            "profilepic": "profilepic",
+            "description":"Some cheesy lines instead of lorem",
+            "website": "https://www.linkedin.com/in/tejaspawar429/"
+        }
+    ],
+    "aiml":[
+        {
+            "name": "Abhijit Karmakar",
+            "codeiiest": "Frontend lead",
+            "gdsc": "UI/UX lead",
+            "profilepic": "profilepic",
+            "description":"Some cheesy lines instead of lorem",
+            "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
+
+        },
+        {
+            "name": "Soumyajit Karmakar",
+            "codeiiest": "core member",
+            "gdsc": "Development lead",
+            "profilepic": "profilepic",
+            "description":"Some cheesy lines instead of lorem",
+            "website": "https://www.linkedin.com/in/soumyajit-karmakar-68362526b/"
+
+        },
+        {
+            "name": "Tejas Pawar",
+            "codeiiest": "Backend lead",
+            "gdsc": "core member",
+            "profilepic": "profilepic",
+            "description":"Some cheesy lines instead of lorem",
+            "website": "https://www.linkedin.com/in/tejaspawar429/"
+        }
+    ],
+    "cpdsa":[
+        {
+            "name": "Abhijit Karmakar",
+            "codeiiest": "Frontend lead",
+            "gdsc": "UI/UX lead",
+            "profilepic": "profilepic",
+            "description":"Some cheesy lines instead of lorem",
+            "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
+
+        },
+        {
+            "name": "Soumyajit Karmakar",
+            "codeiiest": "core member",
+            "gdsc": "Development lead",
+            "profilepic": "profilepic",
+            "description":"Some cheesy lines instead of lorem",
+            "website": "https://www.linkedin.com/in/soumyajit-karmakar-68362526b/"
+
+        },
+        {
+            "name": "Tejas Pawar",
+            "codeiiest": "Backend lead",
+            "gdsc": "core member",
+            "profilepic": "profilepic",
+            "description":"Some cheesy lines instead of lorem",
+            "website": "https://www.linkedin.com/in/tejaspawar429/"
+        }
+    ],
+    "media":[
+        {
+            "name": "Abhijit Karmakar",
+            "codeiiest": "Frontend lead",
+            "gdsc": "UI/UX lead",
+            "profilepic": "profilepic",
+            "description":"Some cheesy lines instead of lorem",
+            "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
+
+        },
+        {
+            "name": "Soumyajit Karmakar",
+            "codeiiest": "core member",
+            "gdsc": "Development lead",
+            "profilepic": "profilepic",
+            "description":"Some cheesy lines instead of lorem",
+            "website": "https://www.linkedin.com/in/soumyajit-karmakar-68362526b/"
+
+        },
+        {
+            "name": "Tejas Pawar",
+            "codeiiest": "Backend lead",
+            "gdsc": "core member",
+            "profilepic": "profilepic",
+            "description":"Some cheesy lines instead of lorem",
+            "website": "https://www.linkedin.com/in/tejaspawar429/"
+        }
+    ],
+    "diversity":[
+        {
+            "name": "Abhijit Karmakar",
+            "codeiiest": "Frontend lead",
+            "gdsc": "UI/UX lead",
+            "profilepic": "profilepic",
+            "description":"Some cheesy lines instead of lorem",
+            "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
+
+        },
+        {
+            "name": "Soumyajit Karmakar",
+            "codeiiest": "core member",
+            "gdsc": "Development lead",
+            "profilepic": "profilepic",
+            "description":"Some cheesy lines instead of lorem",
+            "website": "https://www.linkedin.com/in/soumyajit-karmakar-68362526b/"
+
+        },
+        {
+            "name": "Tejas Pawar",
+            "codeiiest": "Backend lead",
+            "gdsc": "core member",
+            "profilepic": "profilepic",
+            "description":"Some cheesy lines instead of lorem",
+            "website": "https://www.linkedin.com/in/tejaspawar429/"
+        }
+    ]
+}

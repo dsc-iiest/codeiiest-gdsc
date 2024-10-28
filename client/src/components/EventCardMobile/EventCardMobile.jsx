@@ -43,7 +43,7 @@ const EventCardMobile = () => {
                     <Button
                         variant="outlined"
                         size="small"
-                        innerHtml="Know More"
+                        text="Know More"
                         onClick={handleSubmit}
                         className="know-more-button"
                     />
