@@ -1,12 +1,8 @@
 import * as React from "react";
 import "./LeaderboardMUI.css";
 import {
-    Button,
     Tooltip,
-    ButtonGroup,
     Box,
-    Typography,
-    SvgIcon,
     Avatar,
     ThemeProvider,
     createTheme,
@@ -14,11 +10,10 @@ import {
 import CustomDataGrid from "../../components/customdatagrid/customdatagrid";
 
 import userData from "../../../public/assets/data/data.json";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Loading from "../../components/loading/Loading";
 import Error from "../../components/error/Error";
 import useFetchCF from "../../hooks/useFetchCF";
-import { DataGrid } from "@mui/x-data-grid";
 
 const darkTheme = createTheme({
     palette: {
@@ -113,7 +108,7 @@ const cfcolumns = [
             <Tooltip title={<Msg msg={`${params.row.rank}, ${params.row.name}`} />} arrow placement="right">
                 <a className="usr_name" href={`https://codeforces.com/profile/${params.value}`}>
                     <div className="usr">
-                        <Avatar sx={{ width: 28, height: 28, bgcolor: "#653D63" }} src={`${params.row.avatar}`}>
+                        <Avatar sx={{ width: 28, height: 28, bgcolor: "rgb(244, 110, 110)" }} src={`${params.row.avatar}`}>
                             {params.value[0].toUpperCase()}
                         </Avatar>
                         {params.value}
