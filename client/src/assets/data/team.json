@@ -57,13 +57,12 @@
     ],
     "aiml":[
         {
-            "name": "Abhijit Karmakar",
-            "codeiiest": "Frontend lead",
-            "gdsc": "UI/UX lead",
+            "name": "Angshuman Roy",
+            "codeiiest": "ML Lead",
+            "gdsc": "ML core team member",
             "profilepic": "profilepic",
-            "description":"Some cheesy lines instead of lorem",
-            "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
-
+            "description":"カナヅチでも船から落ちなきゃいいじゃないか！",
+            "website": "https://www.linkedin.com/in/angshuman-roy-91620022a/"
         },
         {
             "name": "Soumyajit Karmakar",
@@ -85,31 +84,29 @@
     ],
     "cpdsa":[
         {
-            "name": "Abhijit Karmakar",
-            "codeiiest": "Frontend lead",
-            "gdsc": "UI/UX lead",
+            "name": "Suraj Kashyap",
+            "codeiiest": "Treasurer",
+            "gdsc": "CP lead",
             "profilepic": "profilepic",
-            "description":"Some cheesy lines instead of lorem",
-            "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
-
+            "description":"In CP, the journey is as important as the destination.",
+            "website": "https://www.linkedin.com/in/kashyapsuraj/"
+        },        
+        {
+            "name": "Mohak Singh",
+            "codeiiest": "CP Lead",
+            "gdsc": "CP core member",
+            "profilepic": "profilepic",
+            "description":"Intuition in coding is like a GPS without signal: A Wild Guess!",
+            "website": "https://www.linkedin.com/in/mohak-singh-572745252/"
         },
         {
-            "name": "Soumyajit Karmakar",
-            "codeiiest": "core member",
-            "gdsc": "Development lead",
+            "name": "Samyajit Das",
+            "codeiiest": "Secretary",
+            "gdsc": "Co-Lead",
             "profilepic": "profilepic",
-            "description":"Some cheesy lines instead of lorem",
-            "website": "https://www.linkedin.com/in/soumyajit-karmakar-68362526b/"
-
-        },
-        {
-            "name": "Tejas Pawar",
-            "codeiiest": "Backend lead",
-            "gdsc": "core member",
-            "profilepic": "profilepic",
-            "description":"Some cheesy lines instead of lorem",
-            "website": "https://www.linkedin.com/in/tejaspawar429/"
-        }
+            "description":"Solving problems faster than you can say 'syntax error'",
+            "website": "https://www.linkedin.com/in/samyajit-das/"
+        }        
     ],
     "media":[
         {
