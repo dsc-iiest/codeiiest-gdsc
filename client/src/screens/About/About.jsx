@@ -112,7 +112,7 @@ const about = () => {
             <div className="bg">
                 <img src="/assets/bg/home_bg.png" alt="" />
             </div>
-            <PageHeading text="About Us" />
+            <PageHeading text="ABOUT US" />
             <Box
                 sx={{
                     display: "flex",

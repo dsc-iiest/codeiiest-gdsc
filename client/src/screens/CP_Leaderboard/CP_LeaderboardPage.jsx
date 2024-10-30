@@ -52,13 +52,15 @@ const CP_Leaderboard2 = () => {
       <div className="bg">
         <img src="/assets/bg/home_bg.png" alt="" />
       </div>
-      <motion.div
+      <PageHeading text="CP LEADERBOARD" />
+
+      {/* <motion.div
         initial={{ opacity: 0, y: -380 }}
         animate={{ opacity: 1, y: -378 }}
         transition={{ duration: 1 }}
       >
-        <PageHeading text="CP Stats" />
-      </motion.div>
+        <PageHeading text="CP LEADERBOARD" />
+      </motion.div> */}
       <div ref={contentRef} className="content-container inner-content">
         {/* <motion.div */}
         {/*   initial={{ opacity: 0, y: 50 }} */}
@@ -71,25 +73,25 @@ const CP_Leaderboard2 = () => {
             style={{ transform: `scale(${scaling})` }}
           >
             {topCodersData.map((coder, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3 }}
-              >
+              // <motion.div
+              //   key={i}
+              //   initial={{ opacity: 0, y: 50 }}
+              //   animate={{ opacity: 1, y: 0 }}
+              //   transition={{ duration: 0.3 }}
+              // >
                 <Codercard coderData={coder} key={i} />
-              </motion.div>
+              // </motion.div>
             ))}
           </div>
         </div>
         {/* </motion.div> */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.5 }}
-        >
+        > */}
           <LeaderboardMUI parentHeight={height} />
-        </motion.div>
+        {/* </motion.div> */}
       </div>
     </div>
   );

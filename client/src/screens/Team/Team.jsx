@@ -34,7 +34,7 @@ const About = () => {
             <div className="bg">
                 <img src="/assets/bg/home_bg.png" alt="" />
             </div>
-            <PageHeading text="THE TEAM" />
+            <PageHeading text={ "THE TEAM"} />
             {/* <div className="outer-content"> */}
             {/* <div className="inner-content"> */}
             <Carousel items={list.slice(0, TeamsData[id].length)} />
