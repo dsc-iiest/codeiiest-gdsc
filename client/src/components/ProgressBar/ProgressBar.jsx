@@ -16,7 +16,10 @@ const Slots = ({ filled, total, size="normal"}) => {
 					backgroundSize,
 					backgroundPosition: 10 + 30 * i + 25 + "px", 
 					height: `${size === "small" ? "20px" : "30px"}`,
-					width: `${size === "small" ? "12px" : "20px"}`
+					width: `${size === "small" ? "12px" : "20px"}`,
+					animation: `loadup 0.5s linear forwards`,
+					animationDelay: `${i/10}s`,
+					opacity: 0
 				}}
 			></div>
 		);
@@ -31,7 +34,10 @@ const Slots = ({ filled, total, size="normal"}) => {
 					backgroundSize,
 					backgroundPosition: 10 + 30 * i + "px",
 					height: `${size==="small"? "20px" : "30px"}`,
-					width: `${size === "small" ? "12px" : "20px"}`
+					width: `${size === "small" ? "12px" : "20px"}`,
+					animation: `loadup 0.5s linear forwards`,
+					animationDelay: `${i/10}s`,
+					opacity: 0
 				}}
 			></div>
 		);
