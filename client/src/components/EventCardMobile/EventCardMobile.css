@@ -38,6 +38,8 @@
   align-self: end;
   z-index: 15;
   padding-top: 10px;
+  opacity: 0;
+  animation: in 1s ease 0.5s 1 normal forwards;
 }
 
 .title-text {
@@ -49,7 +51,14 @@
   line-height: 1em;
 
   border-bottom: 1.4px solid #fff;
-  padding-bottom: 10px
+  padding-bottom: 10px;
+  cursor: pointer;
+  transition: all ease 0.3s;
+  opacity: 0;
+	animation: enter-left 1s ease 0.2s 1 normal forwards;
+}
+.title-text:hover {
+  color: gold
 }
 
 .divider {
@@ -67,9 +76,11 @@
   margin-top: 5px;
 }
 
-.icon {
+.icon-text-container .icon {
   width: 30px;
   height: 30px;
+  opacity: 0;
+  animation: in 1s ease 0.2s 1 normal forwards; 
 }
 
 .info-text {
@@ -78,6 +89,9 @@
   font-family: 'Chakra Petch', sans-serif;
   font-weight: 400;
   word-wrap: break-word;
+  opacity: 0;
+  animation: in 1.2s ease 0.5s 1 normal forwards; 
+
 }
 
 .know-more-button {

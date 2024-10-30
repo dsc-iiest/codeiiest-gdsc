@@ -3,14 +3,21 @@ import ProgressBar from "../ProgressBar/ProgressBar";
 import Button from "../Button/Button";
 import "./EventCardMobile.css";
 
-const intersect = "/assets/thumbnail/uiux.png";
 const calendar = "/assets/icons/Calendar.png";
 const clock = "/assets/icons/Time.png";
 
-const EventCardMobile = () => {
+const EventCardMobile = ({data}) => {
     const handleSubmit = () => {
         console.log("Button clicked");
     };
+
+    const intersect = `/assets/thumbnail/${data.imageVariant}.png`;
+    const status = (data.completionStatus || 50)*0.05;
+
+    const Redirect = ()=> {
+        window.open(data.moreInfo, "_blank")
+    }
+
 
     return (
         <div className="event-card-container">
@@ -20,23 +27,23 @@ const EventCardMobile = () => {
 
                 <div className="text-section">
                     <div className="progress-container">
-                        <ProgressBar total={5} progress={2} size="small" className="progress-bar" />
-                        <div className="percentage-text">30%</div>
+                        <ProgressBar total={5} progress={status} size="small" className="progress-bar" />
+                        <div className="percentage-text">{data.completionStatus || 50}%</div>
                     </div>
 
-                    <div className="title-text">AI/ML Bootcamp</div>
+                    <div onClick={()=>Redirect()} className="title-text">{data.title}</div>
                     {/* <div className="divider"></div> */}
 
                     {/* Clock Icon */}
                     <div className="icon-text-container clock">
                         <img className="icon clock-icon" src={clock} alt="clock-icon" />
-                        <div className="info-text">06:00-07:45 pm</div>
+                        <div className="info-text">{data.sideDetails1.text3}</div>
                     </div>
 
                     {/* Calendar Icon */}
                     <div className="icon-text-container calendar">
                         <img className="icon calendar-icon" src={calendar} alt="calendar-icon" />
-                        <div className="info-text">10th June</div>
+                        <div className="info-text">{data.sideDetails1.text2}</div>
                     </div>
 
                     {/* Know More Button */}

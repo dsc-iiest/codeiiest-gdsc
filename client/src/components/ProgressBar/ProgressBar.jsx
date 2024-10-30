@@ -18,7 +18,7 @@ const Slots = ({ filled, total, size="normal"}) => {
 					height: `${size === "small" ? "20px" : "30px"}`,
 					width: `${size === "small" ? "12px" : "20px"}`,
 					animation: `loadup 0.5s linear forwards`,
-					animationDelay: `${i/10}s`,
+					animationDelay: `${0.3+i/10}s`,
 					opacity: 0
 				}}
 			></div>
@@ -36,7 +36,7 @@ const Slots = ({ filled, total, size="normal"}) => {
 					height: `${size==="small"? "20px" : "30px"}`,
 					width: `${size === "small" ? "12px" : "20px"}`,
 					animation: `loadup 0.5s linear forwards`,
-					animationDelay: `${i/10}s`,
+					animationDelay: `${0.3+i/10}s`,
 					opacity: 0
 				}}
 			></div>
