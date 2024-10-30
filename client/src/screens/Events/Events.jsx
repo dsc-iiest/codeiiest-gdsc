@@ -16,8 +16,8 @@ const items = [];
 for (let i = 0; i < EventsData.length; i += 2) {
     items.push(
         <div className="two-in-one">
-            <EventCardMobile />,
-            <EventCardMobile />,
+            <EventCardMobile data = {EventsData[i]} />,
+            {i+1<EventsData.length && <EventCardMobile data = {EventsData[i+1]} />},
         </div>
     );
 }
@@ -106,6 +106,11 @@ const Events = () => {
                                         setClickedImage(1)
                                     }}
                                     key={index}
+                                    style = {{
+                                        opacity: 0,
+                                        animation: "enter-left 1s ease 0s 1 normal forwards",
+                                        animationDelay: `${index*0.1}s`
+                                    }}
                                 ></div>
                             ))}
                     </div>
