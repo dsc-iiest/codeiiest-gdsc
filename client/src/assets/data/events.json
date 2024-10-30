@@ -23,6 +23,29 @@
         "moreInfo": "https://drive.google.com/file/d/1Y9Sc9rilMJvH1hVr0hIOy_jZwUOXepSQ/view"
     },
     {
+        "title": "Cp/DSA Introduction to STL",
+        "miniTitle": "Intro to CP",
+        "description": "Calling all Cp-Dsa Enthusiasts! Let's Begin the Chapter of CP'24",
+        "imageVariant": "dsa",
+        "AvatarSampleData": [
+            { "name": "Mohak Singh", "img": "profile.jpg" },
+            { "name": "Suraj Kashyap", "img": "profile.jpg" }
+        ],
+        "TagsList": ["CP", "DSA"],
+        "sideDetails1": {
+            "text1": "Deadline",
+            "text2": "11th Nov, 2024",
+            "text3": "17:00 PM"
+        },
+        "sideDetails2": {
+            "text1": "CSD205",
+            "text2": "Offline",
+            "text3": null
+        },
+        "completionStatus": 0,
+        "moreInfo": "null"
+    },
+    {
         "title": "Data Science Bootcamp",
         "miniTitle": "Learn Data Science",
         "description": "An immersive bootcamp covering the essentials of data science.",
