@@ -84,6 +84,7 @@ const Events = () => {
                                 key={i}
                                 title={e.title}
                                 miniTitle={e.miniTitle}
+                                imageVariant={e.imageVariant}
                                 isClicked={clickedImage === i + 1}
                                 onClick={() => setClickedImage(i + 1)}
                             />
