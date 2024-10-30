@@ -19,7 +19,7 @@
             "text2": "Online",
             "text3": null
         },
-        "completionStatus": 50,
+        "completionStatus": 80,
         "moreInfo": "https://drive.google.com/file/d/1Y9Sc9rilMJvH1hVr0hIOy_jZwUOXepSQ/view"
     },
     {
@@ -44,149 +44,254 @@
         }
     },
     {
-        "title": "React Mastery Workshop",
-        "miniTitle": "Become a React Pro",
-        "description": "Advanced React workshop covering hooks, context, and state management.",
+        "title": "Data Science Bootcamp",
+        "miniTitle": "Learn Data Science",
+        "description": "An immersive bootcamp covering the essentials of data science.",
         "imageVariant": "uiux",
         "AvatarSampleData": [
-            { "name": "Emma Stone", "img": "profile.jpg" },
-            { "name": "Frank O'Reilly", "img": "profile.jpg" }
+            { "name": "Abhijit Karmakar", "img": "profile.jpg" },
+            { "name": "Soumyajit Karmakar", "img": "profile.jpg" }
         ],
-        "TagsList": ["React", "JavaScript", "frontend"],
+        "TagsList": ["data science", "python", "statistics"],
         "sideDetails1": {
             "text1": "date & time",
-            "text2": "5th Jan",
-            "text3": "02:00 PM - 6:00 PM"
+            "text2": "12th Dec",
+            "text3": "09:00 AM - 4:00 PM"
         },
         "sideDetails2": {
             "text1": "venue",
-            "text2": "Online",
+            "text2": "Room 401, Science Building",
             "text3": null
         }
     },
     {
-        "title": "Blockchain for Beginners",
-        "miniTitle": "Understand Blockchain",
-        "description": "Introduction to blockchain technology and its applications.",
+        "title": "Data Science Bootcamp",
+        "miniTitle": "Learn Data Science",
+        "description": "An immersive bootcamp covering the essentials of data science.",
         "imageVariant": "uiux",
         "AvatarSampleData": [
-            { "name": "Grace Lin", "img": "profile.jpg" },
-            { "name": "Henry Ford", "img": "profile.jpg" }
+            { "name": "Abhijit Karmakar", "img": "profile.jpg" },
+            { "name": "Soumyajit Karmakar", "img": "profile.jpg" }
         ],
-        "TagsList": ["blockchain", "crypto", "decentralization"],
+        "TagsList": ["data science", "python", "statistics"],
         "sideDetails1": {
             "text1": "date & time",
-            "text2": "15th Feb",
-            "text3": "11:00 AM - 1:00 PM"
+            "text2": "12th Dec",
+            "text3": "09:00 AM - 4:00 PM"
         },
         "sideDetails2": {
             "text1": "venue",
-            "text2": "Lab 202, Tech Hub",
+            "text2": "Room 401, Science Building",
             "text3": null
         }
     },
     {
-        "title": "Cybersecurity 101",
-        "miniTitle": "Stay Safe Online",
-        "description": "Basics of cybersecurity and protecting digital identities.",
+        "title": "Data Science Bootcamp",
+        "miniTitle": "Learn Data Science",
+        "description": "An immersive bootcamp covering the essentials of data science.",
         "imageVariant": "uiux",
         "AvatarSampleData": [
-            { "name": "Ivy Kapoor", "img": "profile.jpg" },
-            { "name": "James Lee", "img": "profile.jpg" }
+            { "name": "Abhijit Karmakar", "img": "profile.jpg" },
+            { "name": "Soumyajit Karmakar", "img": "profile.jpg" }
         ],
-        "TagsList": ["cybersecurity", "safety", "hacking"],
+        "TagsList": ["data science", "python", "statistics"],
         "sideDetails1": {
             "text1": "date & time",
-            "text2": "8th Mar",
-            "text3": "01:00 PM - 3:30 PM"
+            "text2": "12th Dec",
+            "text3": "09:00 AM - 4:00 PM"
         },
         "sideDetails2": {
             "text1": "venue",
-            "text2": "Room 10, Digital Security Center",
+            "text2": "Room 401, Science Building",
             "text3": null
         }
     },
     {
-        "title": "AR/VR Experience",
-        "miniTitle": "Augmented Reality in Action",
-        "description": "A hands-on session to explore AR and VR technologies.",
+        "title": "Data Science Bootcamp",
+        "miniTitle": "Learn Data Science",
+        "description": "An immersive bootcamp covering the essentials of data science.",
         "imageVariant": "uiux",
         "AvatarSampleData": [
-            { "name": "Kelly Martin", "img": "profile.jpg" },
-            { "name": "Luke Fisher", "img": "profile.jpg" }
+            { "name": "Abhijit Karmakar", "img": "profile.jpg" },
+            { "name": "Soumyajit Karmakar", "img": "profile.jpg" }
         ],
-        "TagsList": ["AR", "VR", "immersive tech"],
+        "TagsList": ["data science", "python", "statistics"],
         "sideDetails1": {
             "text1": "date & time",
-            "text2": "25th Apr",
-            "text3": "03:00 PM - 5:00 PM"
+            "text2": "12th Dec",
+            "text3": "09:00 AM - 4:00 PM"
         },
         "sideDetails2": {
             "text1": "venue",
-            "text2": "Innovation Lab",
+            "text2": "Room 401, Science Building",
             "text3": null
         }
     },
     {
-        "title": "Python for Everyone",
-        "miniTitle": "Intro to Python",
-        "description": "Learn the basics of Python programming, from variables to functions.",
+        "title": "Data Science Bootcamp",
+        "miniTitle": "Learn Data Science",
+        "description": "An immersive bootcamp covering the essentials of data science.",
         "imageVariant": "uiux",
         "AvatarSampleData": [
-            { "name": "Mason Bell", "img": "profile.jpg" },
-            { "name": "Nina Long", "img": "profile.jpg" }
+            { "name": "Abhijit Karmakar", "img": "profile.jpg" },
+            { "name": "Soumyajit Karmakar", "img": "profile.jpg" }
         ],
-        "TagsList": ["python", "programming", "beginners"],
+        "TagsList": ["data science", "python", "statistics"],
         "sideDetails1": {
             "text1": "date & time",
-            "text2": "30th May",
-            "text3": "10:30 AM - 12:30 PM"
+            "text2": "12th Dec",
+            "text3": "09:00 AM - 4:00 PM"
         },
         "sideDetails2": {
             "text1": "venue",
-            "text2": "Room 150, Comp Sci Block",
+            "text2": "Room 401, Science Building",
             "text3": null
         }
     },
     {
-        "title": "DevOps Deep Dive",
-        "miniTitle": "Mastering DevOps",
-        "description": "Detailed exploration of DevOps tools, CI/CD, and deployment strategies.",
+        "title": "Data Science Bootcamp",
+        "miniTitle": "Learn Data Science",
+        "description": "An immersive bootcamp covering the essentials of data science.",
         "imageVariant": "uiux",
         "AvatarSampleData": [
-            { "name": "Olivia Patel", "img": "profile.jpg" },
-            { "name": "Paul Yang", "img": "profile.jpg" }
+            { "name": "Abhijit Karmakar", "img": "profile.jpg" },
+            { "name": "Soumyajit Karmakar", "img": "profile.jpg" }
         ],
-        "TagsList": ["devops", "ci/cd", "automation"],
+        "TagsList": ["data science", "python", "statistics"],
         "sideDetails1": {
             "text1": "date & time",
-            "text2": "7th Jun",
-            "text3": "01:00 PM - 4:00 PM"
+            "text2": "12th Dec",
+            "text3": "09:00 AM - 4:00 PM"
         },
         "sideDetails2": {
             "text1": "venue",
-            "text2": "Hall B, Conference Center",
+            "text2": "Room 401, Science Building",
             "text3": null
         }
     },
     {
-        "title": "JavaScript Essentials",
-        "miniTitle": "JavaScript from Scratch",
-        "description": "Beginner workshop covering core JavaScript concepts.",
+        "title": "Data Science Bootcamp",
+        "miniTitle": "Learn Data Science",
+        "description": "An immersive bootcamp covering the essentials of data science.",
         "imageVariant": "uiux",
         "AvatarSampleData": [
-            { "name": "Quincy Brown", "img": "profile.jpg" },
-            { "name": "Ruby Diaz", "img": "profile.jpg" }
+            { "name": "Abhijit Karmakar", "img": "profile.jpg" },
+            { "name": "Soumyajit Karmakar", "img": "profile.jpg" }
         ],
-        "TagsList": ["javascript", "web development", "basics"],
+        "TagsList": ["data science", "python", "statistics"],
         "sideDetails1": {
             "text1": "date & time",
-            "text2": "10th Jul",
-            "text3": "09:00 AM - 1:00 PM"
+            "text2": "12th Dec",
+            "text3": "09:00 AM - 4:00 PM"
         },
         "sideDetails2": {
             "text1": "venue",
-            "text2": "Main Hall, Web Dev Building",
+            "text2": "Room 401, Science Building",
+            "text3": null
+        }
+    },
+    {
+        "title": "Data Science Bootcamp",
+        "miniTitle": "Learn Data Science",
+        "description": "An immersive bootcamp covering the essentials of data science.",
+        "imageVariant": "uiux",
+        "AvatarSampleData": [
+            { "name": "Abhijit Karmakar", "img": "profile.jpg" },
+            { "name": "Soumyajit Karmakar", "img": "profile.jpg" }
+        ],
+        "TagsList": ["data science", "python", "statistics"],
+        "sideDetails1": {
+            "text1": "date & time",
+            "text2": "12th Dec",
+            "text3": "09:00 AM - 4:00 PM"
+        },
+        "sideDetails2": {
+            "text1": "venue",
+            "text2": "Room 401, Science Building",
+            "text3": null
+        }
+    },
+    {
+        "title": "Data Science Bootcamp",
+        "miniTitle": "Learn Data Science",
+        "description": "An immersive bootcamp covering the essentials of data science.",
+        "imageVariant": "uiux",
+        "AvatarSampleData": [
+            { "name": "Abhijit Karmakar", "img": "profile.jpg" },
+            { "name": "Soumyajit Karmakar", "img": "profile.jpg" }
+        ],
+        "TagsList": ["data science", "python", "statistics"],
+        "sideDetails1": {
+            "text1": "date & time",
+            "text2": "12th Dec",
+            "text3": "09:00 AM - 4:00 PM"
+        },
+        "sideDetails2": {
+            "text1": "venue",
+            "text2": "Room 401, Science Building",
+            "text3": null
+        }
+    },
+    {
+        "title": "Data Science Bootcamp",
+        "miniTitle": "Learn Data Science",
+        "description": "An immersive bootcamp covering the essentials of data science.",
+        "imageVariant": "uiux",
+        "AvatarSampleData": [
+            { "name": "Abhijit Karmakar", "img": "profile.jpg" },
+            { "name": "Soumyajit Karmakar", "img": "profile.jpg" }
+        ],
+        "TagsList": ["data science", "python", "statistics"],
+        "sideDetails1": {
+            "text1": "date & time",
+            "text2": "12th Dec",
+            "text3": "09:00 AM - 4:00 PM"
+        },
+        "sideDetails2": {
+            "text1": "venue",
+            "text2": "Room 401, Science Building",
+            "text3": null
+        }
+    },
+    {
+        "title": "Data Science Bootcamp",
+        "miniTitle": "Learn Data Science",
+        "description": "An immersive bootcamp covering the essentials of data science.",
+        "imageVariant": "uiux",
+        "AvatarSampleData": [
+            { "name": "Abhijit Karmakar", "img": "profile.jpg" },
+            { "name": "Soumyajit Karmakar", "img": "profile.jpg" }
+        ],
+        "TagsList": ["data science", "python", "statistics"],
+        "sideDetails1": {
+            "text1": "date & time",
+            "text2": "12th Dec",
+            "text3": "09:00 AM - 4:00 PM"
+        },
+        "sideDetails2": {
+            "text1": "venue",
+            "text2": "Room 401, Science Building",
+            "text3": null
+        }
+    },
+    {
+        "title": "Data Science Bootcamp",
+        "miniTitle": "Learn Data Science",
+        "description": "An immersive bootcamp covering the essentials of data science.",
+        "imageVariant": "uiux",
+        "AvatarSampleData": [
+            { "name": "Abhijit Karmakar", "img": "profile.jpg" },
+            { "name": "Soumyajit Karmakar", "img": "profile.jpg" }
+        ],
+        "TagsList": ["data science", "python", "statistics"],
+        "sideDetails1": {
+            "text1": "date & time",
+            "text2": "12th Dec",
+            "text3": "09:00 AM - 4:00 PM"
+        },
+        "sideDetails2": {
+            "text1": "venue",
+            "text2": "Room 401, Science Building",
             "text3": null
         }
     },

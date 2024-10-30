@@ -2,6 +2,13 @@
 	--bw: 0px;
 }
 
+.paused-animation *{
+	animation-play-state: paused !important;
+}
+.run-animation *{
+	animation-play-state: running !important ;
+}
+
 .bg{
 	width: 100vw;
 	height: 100vh;

@@ -53,10 +53,10 @@ const Home = () => {
             </div>
             <div className="heading">
                 <div className="title">
-                    <div className="line line1">
-                        <div className="red">{"<"}</div>
-                        CODE TOGETHER,
-                    </div>
+                        <div className="line line1">
+                            <div className="red">{"<"}</div>
+                            CODE TOGETHER,
+                        </div>
                     <div className="line line2">
                         GROW TOGETHER
                         <div className="red">{">"}</div>
