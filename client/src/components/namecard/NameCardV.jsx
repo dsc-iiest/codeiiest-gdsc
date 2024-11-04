@@ -15,10 +15,10 @@ export default function NamecardV({ profilepic, name, codeiiest, gdsc, descrip, 
                         <img src="/assets/logo/codeiiest-logo.png" alt="codeiiest" className="post-icon" />
                         {codeiiest}
                     </div>
-                    <div className="post">
+                    {gdsc && (<div className="post">
                         <img src="/assets/logo/gdsc-logo.png" alt="gdsc" className="post-icon" />
                         {gdsc}
-                    </div>
+                    </div>)}
                 </div>
             </div>
             <div className="divider"></div>
