@@ -9,7 +9,7 @@ import Header from "./components/header/Header.jsx";
 // import { AnimationProvider } from "../AnimationContext.jsx";
 
 const App = () => {
-    const [Loading, setLoading] = useState(false);
+    const [Loading, setLoading] = useState(true);
 
     useEffect(() => {
         if (Loading) {
