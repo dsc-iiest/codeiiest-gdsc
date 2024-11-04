@@ -1,216 +1,235 @@
 .EventCardMain .tabLabels-wrapper {
-  cursor: pointer;
-  font-size: 8.2px !important;
-  position: relative;
-  width: 24rem !important; 
-  height: 7rem !important;
-  z-index: 1 !important;
-  clip-path: polygon(0 0, 60% 0, 90% 40%, 98% 39%, 100% 46%, 100% 100%, 0 100%);
+    cursor: pointer;
+    /* font-size: 8.2px !important; */
+    position: relative;
+    width: 24rem !important;
+    height: 7.5rem ;
+    z-index: 1 ;
+    clip-path: polygon(0 0, 60% 0, 90% 40%, 98% 39%, 100% 46%, 100% 100%, 0 100%);
 }
 
-
-.EventCardMain{
-  width: 24rem !important;
-  position: relative;
+.EventCardMain {
+    width: 24rem;
+    position: relative;
 }
-
 
 @keyframes animateTitle {
-  0% {
-    left: 0%;
-    opacity: 1;
-    right: 0%;
- 
-  }
-  100% {
-    left: 40%;
-    opacity: 0;
-    right: -140%;
-    
-  }
+    0% {
+        left: 0%;
+        opacity: 1;
+        right: 0%;
+    }
+    100% {
+        left: 40%;
+        opacity: 0;
+        right: -140%;
+    }
 }
 
-.EventCardMain .tabLabels-wrapper .section1::after{
-  content: "";
-  position: absolute;
-  top: 0%;
-  bottom: 0%;
-  left: 0%;
-  right: 0%;
-  background: var(--gradient1);
-  animation: animateTitle 1s forwards;
+.EventCardMain .tabLabels-wrapper .section1::after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    /* background: var(--gradient1); */
+    animation: animateTitle 1s forwards;
 }
 
 .EventCardMain .tabLabels-wrapper .section1 {
-  backdrop-filter: blur(19px);
-  mix-blend-mode: screen;
-  border: 0.12rem solid rgb(157, 151, 151);
-  width: 100%;
-  height: 100%;
-  border-radius: 0.5rem;
-
+    /* backdrop-filter: blur(19px); */
+    mix-blend-mode: screen;
+    border: 1px solid rgb(157, 151, 151);
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
 }
 
- .EventCardMain .tabLabels-wrapper .section1 .title {
-  width: 55%;
-  height: 100%;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  font-size: x-small;
-  padding: 0.5rem 1rem;
-} 
+.EventCardMain .tabLabels-wrapper .section1 .title {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 0.5rem 1rem;
+}
+
+.EventCardMain .tabLabels-wrapper .section1 .title h1 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1em;
+    padding-bottom: 5px
+}
+
+.EventCardMain .tabLabels-wrapper .section1 .title h4 {
+    font-size: 1.1rem;
+    font-weight: 100;
+    line-height: 1em;
+}
 
 @keyframes animateImg {
-  from {
-    transform: rotate(0deg);
-    opacity: 1;
-  }
-  to{
-    transform: rotate(200deg);
-    opacity: 1;
-  }
+    from {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    to {
+        transform: rotate(200deg);
+        opacity: 1;
+    }
 }
 
-
 @keyframes animateImg2 {
-  from {
-    scale: 0.85;
-  }
-  to{
-    scale: 1.02;
-  }
+    from {
+        scale: 0.85;
+    }
+    to {
+        scale: 1;
+    }
 }
 
 .EventCardMain #eventMainImg {
-  overflow: hidden;
-  position: absolute;
-  border-radius: 50%;
-  width: 7.3rem;
-  aspect-ratio: 1;
-  top:-10%;
-  right: 3%;
+    overflow: hidden;
+    position: absolute;
+    border-radius: 50%;
+    width: 8rem;
+    aspect-ratio: 1;
+    top: -7%;
+    right: 3%;
 }
-
 
 .EventCardMain #eventMainImg img {
     position: relative;
-    width: 7.3rem;
+    width: 8rem;
     aspect-ratio: 1;
     border-radius: 50%;
-    z-index: 15 !important;  
+    z-index: 15 !important;
     animation: animateImg2 1s forwards;
 }
 
-.EventCardMain #eventMainImg span{
-  position: absolute;
-  top:30%;
-  height: 4rem;
-  left: -20%;
-  right: -20%;
-  background-color: lightgreen;
-  z-index: 10 !important;
-  animation: animateImg 1s forwards ;
-}
- 
-.EventCardMain .section2 {
-  position: relative;
-  z-index: 0;
-  padding-top: 30px;
-  top:-30px;
-  font-size: 8px;
-  background: linear-gradient(36deg, #342f2f72, rgba(76, 69, 69, 0.696));
-  backdrop-filter: blur(36px);
-  -webkit-backdrop-filter: blur(36px);
-  width: 100%;
-  border-radius: 0.7rem;
-  border: 0.12rem solid rgb(157, 151, 151);
+.EventCardMain #eventMainImg span {
+    position: absolute;
+    top: 30%;
+    height: 4rem;
+    left: -20%;
+    right: -20%;
+    background-color: rgba(255, 217, 0, 0.486);
+    z-index: 10 !important;
+    animation: animateImg 1s forwards;
 }
 
+.EventCardMain .section2 {
+    position: relative;
+    z-index: 0;
+    padding-top: 30px;
+    top: -25px;
+    font-size: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    /* backdrop-filter: blur(36px); */
+    /* -webkit-backdrop-filter: blur(36px); */
+    width: 100%;
+    border-radius: 0.7rem;
+    border: 1px solid rgb(157, 151, 151);
+}
 
 .EventCardMain .section2 .upper {
-  display: flex;
-  width: 100%;
-  height: 40%;
-  background-color: transparent;
+    display: flex;
+    width: 100%;
+    /* height: 40%; */
+    background-color: transparent;
 }
 
 .EventCardMain .section2 .upper .left {
-  width: 70%;
-  height: 100%;
+    width: 70%;
+    height: 100%;
 }
 
 .EventCardMain .section2 .upper .right {
-  display: flex;
-  gap: 0.5rem;
-  flex-direction: column;
-  width: 30%;
-  height: 100%;
-  justify-content: space-around;
-  align-items: center;
-  background-color: transparent;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
 }
 
-
 .EventCardMain .section2 .upper .right .detail {
-  background: linear-gradient(36deg, #928b8b3e, rgba(183, 177, 177, 0.326));
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
-  display: flex;
-  flex-direction: column;
-  gap: 0.1rem;
-  width: 100%;
-  border-top-left-radius: 0.5rem;
-  border-bottom-left-radius: 0.5rem;
-  padding: 0.4rem 0.5rem;
-  justify-content: center;
-  align-items: start;
-  font-size: xx-small !important;
+    /* background: linear-gradient(36deg, #928b8b3e, rgba(183, 177, 177, 0.326)); */
+    /* backdrop-filter: blur(18px); */
+    /* -webkit-backdrop-filter: blur(18px); */
+
+    background: rgba(125, 125, 125, 0.5);
+    display: flex;
+    flex-direction: column;
+    /* gap: 0.1rem; */
+    width: 100%;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    padding: 0.4rem 0.5rem;
+    justify-content: center;
+    align-items: start;
+    /* font-size: xx-small !important; */
 }
 
 .EventCardMain .section2 .upper .right .detail .label {
-  font-weight: 300;
-  font-size: 10.2px ;
+    font-weight: 300;
+    font-size: 1rem;
+    padding-bottom: 5px
 }
 
-.EventCardMain .section2 .upper .left .description  {
-  padding: 0rem 1.5rem 0rem 0.5rem;
-   display: -webkit-box;
-   font-size: 12.5px;
-      -webkit-line-clamp: 3; 
-      line-clamp: 3;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      line-height: 1.9; 
-      max-height: 10rem; /
-  
+.EventCardMain .section2 .upper .right .detail h4 {
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 1em;
+}
+
+.EventCardMain .section2 .upper .right .detail .time {
+    font-size:  0.8rem;
+    font-weight: 100;
+}
+
+.EventCardMain .section2 .upper .left .description {
+    padding: 0rem 1.5rem 0rem 0.5rem;
+    display: -webkit-box;
+    font-size: 1rem;
+    font-weight: 100;
+    line-clamp: 4;
+    -webkit-line-clamp: 4;
+    -moz-box-orient: vertical;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.3em;
+    max-height: 10rem;
 }
 
 .EventCardMain .section2 .upper .left .TagWrapper {
-  display: flex;
-  gap: 0.35rem;
-  padding: 0.5rem;
-  max-width: 100%;
-  overflow-x: scroll;
+    display: flex;
+    gap: 0.2rem;
+    padding: 0.5rem;
+    width: 95%;
+    flex-wrap: wrap;
 }
 
 .EventCardMain .section2 .upper .left .TagWrapper .tag {
-  font-weight: 300 !important;
-  font-size: 8px;
-  border-radius: 0.4rem;
-  background-color: white;
-  color: black;
-  padding: 0.2rem 0.8rem;
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 1.8em;
+    border-radius: 3px;
+    background-color: white;
+    color: black;
+    padding: 0rem 0.2rem;
 }
 
 .EventCardMain .section2 .lower {
-  display: flex;
-  height: 25%;
-  justify-content: space-around;
-  align-items: center;
+    display: flex;
+    height: 25%;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .EventCardMain .section2 .lower-right {
@@ -219,9 +238,8 @@
     justify-content: center;
     align-items: end;
     height: 100%;
-  
-    padding:1rem 1rem 0.5rem 0.2rem;
 
+    padding: 1rem 1rem 0.5rem 0.2rem;
 }
 
 .EventCardMain .section2 .lower-left {
@@ -229,46 +247,46 @@
     gap: 0.5rem;
     height: 50%;
     justify-content: start;
-    align-items: end;
+    align-self: end;
     width: 100%;
-    padding-left: 1.5rem;
+    height: 100%;
+    padding-left: 0.5rem;
+    padding-bottom: 1rem;
 }
 
-
-.EventCardMain .section2 .lower .progressDiv{
+.EventCardMain .section2 .lower .progressDiv {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.3rem;
-    
-}
- 
-.EventCardMain .section2 .lower img {  
-  height: 100%;
-  z-index: 10;
-  position: relative;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
 }
 
+.EventCardMain .section2 .lower img {
+    height: 100%;
+    z-index: 10;
+    position: relative;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
 
-.EventCardMain .section2 .lower-left .know-more{
-  background-color: var(--red);
-  border-radius: 0.5rem;
-  border: 0px;
-  padding: 0.5rem 0.4rem;
-  width: 6rem;
-  position: relative;
-  z-index: 30;
-  cursor: pointer;
-  transition: 100ms ease all;
+.EventCardMain .section2 .lower-left .know-more {
+    background-color: var(--g-red);
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 0px;
+    padding: 0.5rem 0.4rem;
+    width: max-content;
+    position: relative;
+    /* z-index: 30; */
+    cursor: pointer;
+    transition: 100ms ease all;
 }
 
 .EventCardMain .section2 .lower-left .know-more:hover {
-  scale: 1.05;
-  }
+    scale: 1.05;
+}
 .EventCardMain .section2 .lower-left .know-more:active {
-  scale: 0.98;
-  }
+    scale: 0.98;
+}

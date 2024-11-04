@@ -1,0 +1,136 @@
+[
+    {
+        "title": "WebGame Challenge",
+        "miniTitle": "website game development",
+        "description": "Calling all web-dev Enthusiasts! Get ready to dive into the world of browser-based game development with WebGame Challenge hosted by GDG development and UI-UX team, in collaboration with CodeIIEST. Whether you're just starting out or looking to sharpen your skills, this competition is your chance to create fun, innovative browser-based games. It's time to show off your coding creativity!",
+        "imageVariant": "development",
+        "AvatarSampleData": [
+            { "name": "Abhijit Karmakar", "img": "profile.jpg" },
+            { "name": "Soumyajit Karmakar", "img": "profile.jpg" }
+        ],
+        "TagsList": ["Web development", "creativity", "UIUX"],
+        "sideDetails1": {
+            "text1": "Deadline",
+            "text2": "5th Nov, 2024",
+            "text3": "11:59 PM"
+        },
+        "sideDetails2": {
+            "text1": "venue",
+            "text2": "Online",
+            "text3": null
+        },
+        "completionStatus": 80,
+        "moreInfo": "#"
+    },
+    {
+        "title": "Introduction to Git and Github",
+        "miniTitle": "Git and Github session",
+        "description": "A beginner friendly session introducing the powers of git and github for seamless collaboration.",
+        "imageVariant": "development",
+        "AvatarSampleData": [
+            { "name": "Abhijit Karmakar", "img": "profile.jpg" },
+            { "name": "Soumyajit Karmakar", "img": "profile.jpg" }
+        ],
+        "TagsList": ["git", "github", "Version control", "collaboration"],
+        "sideDetails1": {
+            "text1": "date & time",
+            "text2": "tbd",
+            "text3": "tbd"
+        },
+        "sideDetails2": {
+            "text1": "venue",
+            "text2": "CSD205",
+            "text3": "OFFLINE"
+        },
+        "completionStatus": 0,
+        "moreInfo": "#"
+    },
+    {
+        "title": "Introduction to CP with STL",
+        "miniTitle": "Intro to STL",
+        "description": "Calling all Cp-Dsa Enthusiasts! Let's Begin the Chapter of CP'24 with the introduction to STL!",
+        "imageVariant": "cpdsa",
+        "AvatarSampleData": [
+            { "name": "Mohak Singh", "img": "profile.jpg" },
+            { "name": "Suraj Kashyap", "img": "profile.jpg" }
+        ],
+        "TagsList": ["CP", "DSA", "programming"],
+        "sideDetails1": {
+            "text1": "date & time",
+            "text2": "11th Nov, 2024",
+            "text3": "17:00 PM"
+        },
+        "sideDetails2": {
+            "text1": "Venue",
+            "text2": "CSD205",
+            "text3": "OFFLINE"
+        },
+        "completionStatus": 0,
+        "moreInfo": "null"
+    },
+    {
+        "title": "Introduction to ML",
+        "miniTitle": "Introduction to ML",
+        "description": "An immersive bootcamp covering the essentials of data science.",
+        "imageVariant": "uiux",
+        "AvatarSampleData": [
+            { "name": "Abhijit Karmakar", "img": "profile.jpg" },
+            { "name": "Soumyajit Karmakar", "img": "profile.jpg" }
+        ],
+        "TagsList": ["data science", "python", "statistics"],
+        "sideDetails1": {
+            "text1": "date & time",
+            "text2": "tbd",
+            "text3": "tbd"
+        },
+        "sideDetails2": {
+            "text1": "venue",
+            "text2": "CSD205",
+            "text3": "OFFLINE"
+        },
+        "completionStatus": 0,
+        "moreInfo": "#"
+    },
+    {
+        "title": "Data Science Bootcamp",
+        "miniTitle": "Learn Data Science",
+        "description": "An immersive bootcamp covering the essentials of data science.",
+        "imageVariant": "uiux",
+        "AvatarSampleData": [
+            { "name": "Abhijit Karmakar", "img": "profile.jpg" },
+            { "name": "Soumyajit Karmakar", "img": "profile.jpg" }
+        ],
+        "TagsList": ["data science", "python", "statistics"],
+        "sideDetails1": {
+            "text1": "date & time",
+            "text2": "12th Dec",
+            "text3": "09:00 AM - 4:00 PM"
+        },
+        "sideDetails2": {
+            "text1": "venue",
+            "text2": "Room 401, Science Building",
+            "text3": null
+        }
+    },
+    {
+        "title": "Data Science Bootcamp",
+        "miniTitle": "Learn Data Science",
+        "description": "An immersive bootcamp covering the essentials of data science.",
+        "imageVariant": "uiux",
+        "AvatarSampleData": [
+            { "name": "Abhijit Karmakar", "img": "profile.jpg" },
+            { "name": "Soumyajit Karmakar", "img": "profile.jpg" }
+        ],
+        "TagsList": ["data science", "python", "statistics"],
+        "sideDetails1": {
+            "text1": "date & time",
+            "text2": "12th Dec",
+            "text3": "09:00 AM - 4:00 PM"
+        },
+        "sideDetails2": {
+            "text1": "venue",
+            "text2": "Room 401, Science Building",
+            "text3": null
+        }
+    }
+]

@@ -1,14 +1,22 @@
-.content-container {
+.content-container-ecm {
   display: flex;
   align-items: center;
-  gap: 20px;
-  max-width: 300px;
+  gap: 5px;
+  width: min(85vw, 400px);
+  /* max-width: 300px; */
   padding: 20px;
+  /* border: 1px solid red; */
+}
+
+.content-container-ecm * {
+  /* border: 1px solid greenyellow */
 }
 
 .intersect-image {
-  width: 60%;
-  height: auto;
+  width: 45%;
+  /* height: auto; */
+  border-radius: 50%;
+  object-position: bottom;
 }
 
 .text-section {
@@ -26,10 +34,12 @@
   color: white;
   font-size: 17px;
   font-weight: 100;
-  font-family: 'Chakra Petch', sans-serif;
+  /* font-family: 'Chakra Petch', sans-serif; */
   align-self: end;
   z-index: 15;
   padding-top: 10px;
+  opacity: 0;
+  animation: in 1s ease 0.5s 1 normal forwards;
 }
 
 .title-text {
@@ -38,7 +48,17 @@
   font-family: 'Chakra Petch', sans-serif;
   font-weight: 700;
   word-wrap: break-word;
-  line-height: 1.5em;
+  line-height: 1em;
+
+  border-bottom: 1.4px solid #fff;
+  padding-bottom: 10px;
+  cursor: pointer;
+  transition: all ease 0.3s;
+  opacity: 0;
+	animation: enter-left 1s ease 0.2s 1 normal forwards;
+}
+.title-text:hover {
+  color: gold
 }
 
 .divider {
@@ -56,9 +76,11 @@
   margin-top: 5px;
 }
 
-.icon {
+.icon-text-container .icon {
   width: 30px;
-  height: auto;
+  height: 30px;
+  opacity: 0;
+  animation: in 1s ease 0.2s 1 normal forwards; 
 }
 
 .info-text {
@@ -67,22 +89,26 @@
   font-family: 'Chakra Petch', sans-serif;
   font-weight: 400;
   word-wrap: break-word;
-}
+  opacity: 0;
+  animation: in 1.2s ease 0.5s 1 normal forwards; 
 
-.calendar-icon {
-  width: 30px;
-  height: 20px;
 }
 
 .know-more-button {
-  background: #D54A5A !important;
-  color: white !important;
-  font-family: 'Chakra Petch', sans-serif !important;
+  /* background: #D54A5A !important; */
+  /* color: white !important; */
+  /* font-family: 'Chakra Petch', sans-serif !important;
   font-weight: 700 !important;
   font-size: 19px !important;
   border-radius: 21.97px;
   margin-top: 10px;
   cursor: pointer;
   width: 150px !important;
-  height: 20px;
+  height: 20px; */
+  width: max-content;
+  height: 2em;
+  line-height: 1em;
+  font-weight: 100;
+  font-size: 1rem;
+  justify-self: end;
 }

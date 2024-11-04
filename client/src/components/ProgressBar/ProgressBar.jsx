@@ -10,12 +10,16 @@ const Slots = ({ filled, total, size="normal"}) => {
 	while (i <= filled) {
 		slots.push(
 			<div
+				key={i}
 				className="slot"
 				style={{
 					backgroundSize,
 					backgroundPosition: 10 + 30 * i + 25 + "px", 
 					height: `${size === "small" ? "20px" : "30px"}`,
-					width: `${size === "small" ? "12px" : "20px"}`
+					width: `${size === "small" ? "12px" : "20px"}`,
+					animation: `loadup 0.5s linear forwards`,
+					animationDelay: `${0.3+i/10}s`,
+					opacity: 0
 				}}
 			></div>
 		);
@@ -24,13 +28,16 @@ const Slots = ({ filled, total, size="normal"}) => {
 	while (i <= total) {
 		slots.push(
 			<div
-				
+				key={i}
 				className="slot outlined"
 				style={{
 					backgroundSize,
 					backgroundPosition: 10 + 30 * i + "px",
 					height: `${size==="small"? "20px" : "30px"}`,
-					width: `${size === "small" ? "12px" : "20px"}`
+					width: `${size === "small" ? "12px" : "20px"}`,
+					animation: `loadup 0.5s linear forwards`,
+					animationDelay: `${0.3+i/10}s`,
+					opacity: 0
 				}}
 			></div>
 		);

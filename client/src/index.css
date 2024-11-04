@@ -40,17 +40,21 @@ div::-webkit-scrollbar {
 
 	color-scheme: light dark;
 	color: rgba(255, 255, 255, 1);
-	background-color: #171717;
+	background-color: #000;
 
 	--red: #FF0101;
 	--blue: #000AFF;
 	--teal: #32b3c1;
+	--g-red: rgb(213, 73, 90);
+	--g-blue: rgba(38, 50, 111, 0.78);
 
-	--primary: var(--red);
+	--primary: var(--g-red);
 	--secondary: var(--blue);
 	--accent: var(--teal);
 	--bg: #171717;
+	
 	--gradient1: linear-gradient(to left, var(--red), var(--blue));
+	--gradient2: linear-gradient(to left, var(--g-blue), var(--g-red));
 
 	margin: 0;
 	padding: 0;
@@ -94,9 +98,7 @@ a{
   /* display: none; */
 }
 
-@media only screen and (max-width: 1500px){
-	:root{
-		font-size: 14px
-	}
-	
+
+:root{
+	font-size: 14px
 }

@@ -75,8 +75,9 @@ const Carousel = ({ items }) => {
     const gap = 32;
     const delta = cardWidth + gap;
 
-    const numOfCards = Math.floor(carouselWidth / delta);
-    console.log(carouselWidth, cardWidth, numOfCards);
+    var numOfCards = (Math.floor(carouselWidth / delta));
+    if(items.length<numOfCards)numOfCards = items.length;
+    // console.log(carouselWidth, cardWidth, numOfCards);
 
     const maxNext = delta * (items.length - numOfCards);
 

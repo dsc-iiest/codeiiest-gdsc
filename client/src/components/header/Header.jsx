@@ -23,111 +23,129 @@ import CodeIIEST from "/assets/logo/codeiiest-logo.png";
 
 import { Link, NavLink } from "react-router-dom";
 
-const Menubutton = () => {
-    const [anchorElm, setAnchorElm] = useState(null);
-    const [open, setOpen] = useState(false);
+// const Menubutton = () => {
+//     const [anchorElm, setAnchorElm] = useState(null);
+//     const [open, setOpen] = useState(false);
 
-    const handleClose = () => {
-        setAnchorElm(null);
-        setOpen(false);
-    };
-    const handleClick = (e) => {
-        setAnchorElm(e.currentTarget);
-        setOpen(true);
-    };
+//     const handleClose = () => {
+//         setAnchorElm(null);
+//         setOpen(false);
+//     };
+//     const handleClick = (e) => {
+//         setAnchorElm(e.currentTarget);
+//         setOpen(true);
+//     };
 
-    return (
-        <Box sx={{ paddingRight: 1 }}>
-            <IconButton onClick={handleClick} className="icon-button" aria-label="delete" size="large">
-                <Menuicon cls={"cls"} color={"#fff"} />
-            </IconButton>
-            <Menu anchorEl={anchorElm} open={open} onClose={handleClose}>
-                <NavLink style={{ textDecoration: "none" }} to="/home">
-                    <MenuItem sx={{ textDecoration: "none", color: "black" }} onClick={handleClose}>
-                        Home
-                    </MenuItem>
-                </NavLink>
-                <NavLink style={{ textDecoration: "none" }} to="/chapters">
-                    <MenuItem sx={{ textDecoration: "none", color: "black" }} onClick={handleClose}>
-                        Chapters
-                    </MenuItem>
-                </NavLink>
-                <NavLink style={{ textDecoration: "none" }} to="/leaderboard">
-                    <MenuItem sx={{ textDecoration: "none", color: "black" }} onClick={handleClose}>
-                        Leaderboard
-                    </MenuItem>
-                </NavLink>
-                <NavLink style={{ textDecoration: "none" }} to="/about">
-                    <MenuItem sx={{ textDecoration: "none", color: "black" }} onClick={handleClose}>
-                        About us
-                    </MenuItem>
-                </NavLink>
-            </Menu>
-        </Box>
-    );
-};
+//     return (
+//         <Box sx={{ paddingRight: 1 }}>
+//             <IconButton onClick={handleClick} className="icon-button" aria-label="delete" size="large">
+//                 <Menuicon cls={"cls"} color={"#fff"} />
+//             </IconButton>
+//             <Menu anchorEl={anchorElm} open={open} onClose={handleClose}>
+//                 <NavLink style={{ textDecoration: "none" }} to="/home">
+//                     <MenuItem sx={{ textDecoration: "none", color: "black" }} onClick={handleClose}>
+//                         Home
+//                     </MenuItem>
+//                 </NavLink>
+//                 <NavLink style={{ textDecoration: "none" }} to="/events">
+//                     <MenuItem sx={{ textDecoration: "none", color: "black" }} onClick={handleClose}>
+//                         Home
+//                     </MenuItem>
+//                 </NavLink>
+//                 <NavLink style={{ textDecoration: "none" }} to="/chapters">
+//                     <MenuItem sx={{ textDecoration: "none", color: "black" }} onClick={handleClose}>
+//                         Chapters
+//                     </MenuItem>
+//                 </NavLink>
+//                 <NavLink style={{ textDecoration: "none" }} to="/leaderboard">
+//                     <MenuItem sx={{ textDecoration: "none", color: "black" }} onClick={handleClose}>
+//                         Leaderboard
+//                     </MenuItem>
+//                 </NavLink>
+//                 <NavLink style={{ textDecoration: "none" }} to="/about">
+//                     <MenuItem sx={{ textDecoration: "none", color: "black" }} onClick={handleClose}>
+//                         About us
+//                     </MenuItem>
+//                 </NavLink>
+//             </Menu>
+//         </Box>
+//     );
+// };
 
-const HeaderTabs = () => {
-    return (
-        <ButtonGroup sx={{ textDecoration: "none", marginRight: 1 }}>
-            <NavLink className="navlink" to="/home">
-                <Button
-                    sx={{
-                        border: "0",
-                        color: "white",
-                        fontWeight: 600,
-                        textDecoration: "none",
-                    }}
-                    color="inherit"
-                >
-                    Home
-                </Button>
-            </NavLink>
-            <NavLink className="navlink" to="/chapters">
-                <Button
-                    sx={{
-                        border: 0,
-                        color: "white",
-                        backgroundColor: "inherit",
-                        fontWeight: 600,
-                        textDecoration: "none",
-                    }}
-                    color="inherit"
-                >
-                    Chapters
-                </Button>
-            </NavLink>
-            <NavLink className="navlink" to="/about">
-                <Button
-                    sx={{
-                        border: 0,
-                        color: "white",
-                        backgroundColor: "none",
-                        fontWeight: 600,
-                        textDecoration: "none",
-                    }}
-                    color="inherit"
-                >
-                    About us
-                </Button>
-            </NavLink>
-            <NavLink className="navlink" to="/leaderboard">
-                <Button
-                    sx={{
-                        border: 0,
-                        color: "white",
-                        backgroundColor: "none",
-                        fontWeight: 600,
-                        textDecoration: "none",
-                    }}
-                    color="inherit"
-                >
-                    Leaderboard
-                </Button>
-            </NavLink>
-        </ButtonGroup>
-    );
-};
+// const HeaderTabs = () => {
+//     return (
+//         <ButtonGroup sx={{ textDecoration: "none", marginRight: 1 }}>
+//             <NavLink className="navlink" to="/home">
+//                 <Button
+//                     sx={{
+//                         border: "0",
+//                         color: "white",
+//                         fontWeight: 600,
+//                         textDecoration: "none",
+//                     }}
+//                     color="inherit"
+//                 >
+//                     Home
+//                 </Button>
+//             </NavLink>
+//             <NavLink className="navlink" to="/events">
+//                 <Button
+//                     sx={{
+//                         border: "0",
+//                         color: "white",
+//                         fontWeight: 600,
+//                         textDecoration: "none",
+//                     }}
+//                     color="inherit"
+//                 >
+//                     Home
+//                 </Button>
+//             </NavLink>
+//             <NavLink className="navlink" to="/chapters">
+//                 <Button
+//                     sx={{
+//                         border: 0,
+//                         color: "white",
+//                         backgroundColor: "inherit",
+//                         fontWeight: 600,
+//                         textDecoration: "none",
+//                     }}
+//                     color="inherit"
+//                 >
+//                     Chapters
+//                 </Button>
+//             </NavLink>
+//             <NavLink className="navlink" to="/about">
+//                 <Button
+//                     sx={{
+//                         border: 0,
+//                         color: "white",
+//                         backgroundColor: "none",
+//                         fontWeight: 600,
+//                         textDecoration: "none",
+//                     }}
+//                     color="inherit"
+//                 >
+//                     About us
+//                 </Button>
+//             </NavLink>
+//             <NavLink className="navlink" to="/leaderboard">
+//                 <Button
+//                     sx={{
+//                         border: 0,
+//                         color: "white",
+//                         backgroundColor: "none",
+//                         fontWeight: 600,
+//                         textDecoration: "none",
+//                     }}
+//                     color="inherit"
+//                 >
+//                     Leaderboard
+//                 </Button>
+//             </NavLink>
+//         </ButtonGroup>
+//     );
+// };
 
 const MenuDrawer = () => {
     const [open, setOpen] = useState(false);
@@ -143,6 +161,7 @@ const MenuDrawer = () => {
         { text: "Home", link: "/" },
         { text: "About", link: "/about" },
         { text: "Chapters", link: "/chapters" },
+        { text: "Events", link: "/events" },
         { text: "Leaderboard", link: "/leaderboard" },
     ];
 

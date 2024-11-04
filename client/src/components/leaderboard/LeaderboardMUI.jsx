@@ -1,15 +1,25 @@
 import * as React from "react";
 import "./LeaderboardMUI.css";
-import { Button, Tooltip, ButtonGroup, Box, Typography, SvgIcon, Avatar } from "@mui/material";
+import {
+    Tooltip,
+    Box,
+    Avatar,
+    ThemeProvider,
+    createTheme,
+} from "@mui/material";
 import CustomDataGrid from "../../components/customdatagrid/customdatagrid";
 
 import userData from "../../../public/assets/data/data.json";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Loading from "../../components/loading/Loading";
 import Error from "../../components/error/Error";
 import useFetchCF from "../../hooks/useFetchCF";
 
-// 🥇🥈🥉
+const darkTheme = createTheme({
+    palette: {
+        mode: "dark",
+    },
+});
 
 function CFTag(rating) {
     if (rating < 1200) {
@@ -98,7 +108,7 @@ const cfcolumns = [
             <Tooltip title={<Msg msg={`${params.row.rank}, ${params.row.name}`} />} arrow placement="right">
                 <a className="usr_name" href={`https://codeforces.com/profile/${params.value}`}>
                     <div className="usr">
-                        <Avatar sx={{ width: 28, height: 28, bgcolor: "#653D63" }} src={`${params.row.avatar}`}>
+                        <Avatar sx={{ width: 28, height: 28, bgcolor: "rgb(244, 110, 110)" }} src={`${params.row.avatar}`}>
                             {params.value[0].toUpperCase()}
                         </Avatar>
                         {params.value}
@@ -125,7 +135,7 @@ const cfcolumns = [
     {
         field: "rating",
         headerName: "Rating",
-        width: 70,
+        width: 100,
         renderCell: ratingTag,
         headerClassName: "lb-header",
         resizable: false,
@@ -134,7 +144,7 @@ const cfcolumns = [
     {
         field: "maxrating",
         headerName: "Best",
-        width: 70,
+        width: 100,
         renderCell: ratingTag,
         headerClassName: "lb-header",
         resizable: false,
@@ -142,7 +152,7 @@ const cfcolumns = [
     },
 ];
 
-const LeaderboardMUI = ({ parentHeight }) => {
+const LeaderboardMUI = ({ parentHeight, style }) => {
     const [show, setShow] = useState(1);
     const [reload, setReload] = useState(false);
     const cfUsers = {};
@@ -174,60 +184,33 @@ const LeaderboardMUI = ({ parentHeight }) => {
     }
 
     return (
-        <div className="lb-page">
-            {!loading && !error ? <div className="notification">{isCached}</div> : null}
-            {/* <div className="heading">
-                Know where you <span className="gradient-text">Stand</span>
-            </div>
-            <div className="content">
-                Discover the top coders, track your progress, and compete for the top spot on our dynamic competitive
-                programming leaderboard!
-            </div> */}
-            {/* <ButtonGroup
-                size="large"
-                aria-label="coding website"
-                className="button-group"
-                orientation={width < 340 ? "vertical" : "horizontal"}
-            >
-                <Button
-                    className={"table-swap " + (show ? "active" : "")}
-                    size="large"
-                    onClick={getData}
-                    startIcon={<GridLoadIcon />}
-                >
-                    Refresh table
-                </Button>
-                <Button
-                    className={"table-swap " + (!show ? "active" : "")}
-                    size="large"
-                    onClick={() => setShow(0)}
-                    endIcon={<img src={leetcode} className="cf-img" />}
-                >
-                    LeetCode
-                </Button>
-            </ButtonGroup> */}
+        <div className="leaderboard-mui" style={{ style }}>
+            {/* {!loading && !error ? <div className="notification">{isCached}</div> : null} */}
             <Box className="datagrid-wrapper">
                 {loading ? (
-                    <Loading />
+                    <Loading cols={cfcolumns} height={parentHeight}/>
                 ) : error ? (
                     <Error
                         message={"API Fetching Failed. Please try again later"}
-                        error_code={error.response?.request.status}
+                        error_code={(error && error.response?.request.status) || 404}
+                        cols={cfcolumns}
                     />
                 ) : (
-                    <CustomDataGrid
-                        rows={data}
-                        columns={cfcolumns}
-                        toshow={show}
-                        provideSearch={false}
-                        parentHeight={parentHeight}
-                    />
+                    <ThemeProvider theme={darkTheme}>
+                        <CustomDataGrid
+                            rows={data}
+                            columns={cfcolumns}
+                            toshow={show}
+                            provideSearch={false}
+                            parentHeight={parentHeight}
+                        />
+                    </ThemeProvider>
                 )}
-                {!loading && (
-                    <Typography sx={{ textAlign: "right" }} variant="body1">
+                {/* {!loading && (
+                    <Typography sx={{ textAlign: "right", position: "relative", top: '-2rem' }}>
                         {isCached}
                     </Typography>
-                )}
+                )} */}
             </Box>
         </div>
     );
