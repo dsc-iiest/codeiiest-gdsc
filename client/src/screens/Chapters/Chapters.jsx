@@ -17,15 +17,12 @@ const variants = [
     <Link key="aiml" to="/chapters/aiml">
         <ChapterCard name={"AI & ML"} />
     </Link>,
-    <Link key="uiux" to="/chapters/uiux">
-        <ChapterCard name={"UI/UX"} />
-    </Link>,
     <Link key="cpdsa" to="/chapters/cpdsa">
         <ChapterCard name={"CP/DSA"} />
     </Link>,
-    <Link key="media" to="/chapters/media">
-        <ChapterCard name={"Media"} />
-    </Link>,
+    // <Link key="media" to="/chapters/media">
+    //     <ChapterCard name={"Media"} />
+    // </Link>,
     <Link key="diversity" to="/chapters/diversity">
         <ChapterCard name={"Diversity"} />
     </Link>,

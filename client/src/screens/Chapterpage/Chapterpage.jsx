@@ -214,6 +214,8 @@ const Chapterpage = () => {
         setHeight(contentRef.current.offsetHeight - 3);
     }, []);
     const scaling = height / 408 <= 1 ? height / 408 : 1;
+    console.log(data.chapterContent);
+    
 
     return (
         <div className="chapter-page page">
@@ -225,25 +227,25 @@ const Chapterpage = () => {
             <div className="content outer-content" ref={contentRef}>
                 <div className="body" style={{ transform: `scale(${scaling})` }}>
                     <NameCardH
-                        name={"Rishab Dugar"}
-                        codeiiest={"Dev Lead & Treasurer"}
-                        gdsc={"Dev Lead & Treasurer"}
+                        name={data.chapterContent.leads[0].name}
+                        codeiiest={data.chapterContent.leads[0].codeiiest}
+                        gdsc={data.chapterContent.leads[0].gdsc}
                         profilepic={"profilepic"}
-                        descrip={"Building the future, one component at a time"}
+                        descrip={data.chapterContent.leads[0].description}
                         customCSS={{
                             transform: "scale(1)",
                         }}
                     />
-                    <NameCardH
-                        name={"Nafis Adnan Mondal"}
-                        codeiiest={"Dev Lead & Treasurer"}
-                        gdsc={"Dev Lead & Treasurer"}
+                    {data.chapterContent.leads.length>1 && <NameCardH
+                        name={data.chapterContent.leads[1].name}
+                        codeiiest={data.chapterContent.leads[1].codeiiest}
+                        gdsc={data.chapterContent.leads[1].gdsc}
                         profilepic={"profilepic"}
-                        descrip={"Building the future, one component at a time"}
+                        descrip={data.chapterContent.leads[1].description}
                         customCSS={{
                             transform: "scale(1)",
                         }}
-                    />
+                    />}
                 </div>
                 {data && <ChapterContent data={data} />}
                 {innerWidth <= 1150 && innerWidth > 900 && (
@@ -255,25 +257,25 @@ const Chapterpage = () => {
                     <div className="heading">Leads</div>
                     <div className="lead-cards">
                         <NameCardV
-                            name={"Rishab Dugar"}
-                            codeiiest={"Dev Lead & Treasurer"}
-                            gdsc={"Dev Lead & Treasurer"}
+                            name={data.chapterContent.leads[0].name}
+                            codeiiest={data.chapterContent.leads[0].codeiiest}
+                            gdsc={data.chapterContent.leads[0].gdsc}
                             profilepic={"profilepic"}
                             descrip={"Building the future, one component at a time"}
                             customCSS={{
                                 transform: "scale(1)",
                             }}
                         />
-                        <NameCardV
-                            name={"Rishab Dugar"}
-                            codeiiest={"Dev Lead & Treasurer"}
-                            gdsc={"Dev Lead & Treasurer"}
+                        {data.chapterContent.leads.length>1 && <NameCardV
+                            name={data.chapterContent.leads[1].name}
+                            codeiiest={data.chapterContent.leads[1].codeiiest}
+                            gdsc={data.chapterContent.leads[0].gdsc}
                             profilepic={"profilepic"}
                             descrip={"Building the future, one component at a time"}
                             customCSS={{
                                 transform: "scale(1)",
                             }}
-                        />
+                        />}
                     </div>
                 </div>
                 <div className="chapter-ev">

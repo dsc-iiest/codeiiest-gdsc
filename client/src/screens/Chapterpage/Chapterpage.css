@@ -26,9 +26,10 @@
     /* border: 1px solid red; */
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     flex-direction: column;
     padding-top: 1em;
+    height: 100%;
 }
 .chapter-page .center .container {
     display: flex;

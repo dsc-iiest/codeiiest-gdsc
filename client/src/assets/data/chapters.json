@@ -1,42 +1,76 @@
 {
     "development": {
-        "bgImg": "path/to/development_bg.jpg",
         "chapterContent": {
             "leads": [
                 {
                     "name": "Abhijit Karmakar",
-                    "role": "Chapter Lead",
-                    "email": "abhijit.k@example.com",
-                    "image": "path/to/image.jpg",
-                    "url": "https://www.example.com"
+                    "codeiiest": "Frontend lead",
+                    "gdsc": "UI/UX lead",
+                    "profilepic": "profilepic",
+                    "description":"Some cheesy and tasty jhal misti lines instead of lorem",
+                    "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
+        
                 },
                 {
-                    "name": "Rishabh Dugar",
-                    "role": "Chapter Lead",
-                    "email": "rishabh.d@example.com",
-                    "image": "path/to/image.jpg",
-                    "url": "https://www.example.com"
+                    "name": "Tejas pawar",
+                    "codeiiest": "Backend lead",
+                    "gdsc": "Development core member",
+                    "profilepic": "profilepic",
+                    "description":"Some more exciting and delicious cheesy lines instead of lorem",
+                    "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
+        
                 }
             ],
             "coreMembers": [
                 {
-                    "name": "Soumyajit Karmakar",
-                    "role": "Frontend Developer",
-                    "email": "soumyajit.k@example.com",
-                    "image": "path/to/image.jpg",
-                    "url": "https://www.example.com"
+                    "name": "Tejas pawar",
+                    "codeiiest": "Backend lead",
+                    "gdsc": "Development core member",
+                    "profilepic": "profilepic",
+                    "description":"Some more exciting and delicious cheesy lines instead of lorem",
+                    "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
+        
                 },
                 {
-                    "name": "Rishabh Dugar",
-                    "role": "Backend Developer",
-                    "email": "rishabh.d@example.com",
-                    "image": "path/to/image.jpg",
-                    "url": "https://www.example.com"
+                    "name": "Tejas pawar",
+                    "codeiiest": "Backend lead",
+                    "gdsc": "Development core member",
+                    "profilepic": "profilepic",
+                    "description":"Some more exciting and delicious cheesy lines instead of lorem",
+                    "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
+        
+                },
+                {
+                    "name": "Tejas pawar",
+                    "codeiiest": "Backend lead",
+                    "gdsc": "Development core member",
+                    "profilepic": "profilepic",
+                    "description":"Some more exciting and delicious cheesy lines instead of lorem",
+                    "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
+        
+                },
+                {
+                    "name": "Tejas pawar",
+                    "codeiiest": "Backend lead",
+                    "gdsc": "Development core member",
+                    "profilepic": "profilepic",
+                    "description":"Some more exciting and delicious cheesy lines instead of lorem",
+                    "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
+        
+                },
+                {
+                    "name": "Tejas pawar",
+                    "codeiiest": "Backend lead",
+                    "gdsc": "Development core member",
+                    "profilepic": "profilepic",
+                    "description":"Some more exciting and delicious cheesy lines instead of lorem",
+                    "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
+        
                 }
             ],
             "events": [
                 {
-                    "eventName": "Hackathon",
+                    "eventName": "Webgame CHallenge",
                     "date": "2024-06-15",
                     "location": "Online",
                     "description": "Annual coding competition",
@@ -48,7 +82,7 @@
                     "date": "2024-07-10",
                     "location": "Institute Hall",
                     "description": "Learn the fundamentals of React",
-                    "total": 2,
+                    "total": 5,
                     "progress": 1
                 }
             ],
@@ -83,56 +117,46 @@
         }
     },
     "cybersecurity": {
-        "bgImg": "path/to/cybersecurity_bg.jpg",
         "chapterContent": {
             "leads": [
                 {
-                    "name": "Rishabh Dugar",
-                    "role": "Chapter Lead",
-                    "email": "rishabh.d@example.com",
-                    "image": "path/to/image.jpg",
-                    "url": "https://www.example.com"
-                },
-                {
-                    "name": "Abhijit Karmakar",
-                    "role": "Chapter Lead",
-                    "email": "abhijit.k@example.com",
-                    "image": "path/to/image.jpg",
-                    "url": "https://www.example.com"
+                    "name": "Soham Haldar",
+                    "codeiiest": "Cybersecurity Lead",
+                    "gdsc": "ML core member",
+                    "profilepic": "sohamhaldar.webp",
+                    "description":"The quieter you become, the more you are able to hear.",
+                    "website": "http://www.linkedin.com/in/soham-haldar-a088a529a"
+        
                 }
             ],
             "coreMembers": [
                 {
-                    "name": "Soumyajit Karmakar",
-                    "role": "Frontend Developer",
-                    "email": "soumyajit.k@example.com",
-                    "image": "path/to/image.jpg",
-                    "url": "https://www.example.com"
+                    "name": "Soham Haldar",
+                    "codeiiest": "Cybersecurity Lead",
+                    "gdsc": "ML core member",
+                    "profilepic": "sohamhaldar.webp",
+                    "description":"The quieter you become, the more you are able to hear.",
+                    "website": "http://www.linkedin.com/in/soham-haldar-a088a529a"
+        
                 },
                 {
-                    "name": "Abhijit Karmakar",
-                    "role": "Backend Developer",
-                    "email": "abhijit.k@example.com",
-                    "image": "path/to/image.jpg",
-                    "url": "https://www.example.com"
+                    "name": "Angshuman Roy",
+                    "codeiiest": "AI/ML Lead",
+                    "gdsc": "AI/ML core member",
+                    "profilepic": "sohamhaldar.webp",
+                    "description":"If you want to shine like a sun, first burn like a sun.",
+                    "website": "https://www.linkedin.com/in/angshuman-roy-91620022a/"
+        
                 }
             ],
             "events": [
                 {
-                    "eventName": "Hackathon",
-                    "date": "2024-06-15",
-                    "location": "Online",
-                    "description": "Annual coding competition",
+                    "eventName": "Intro to Cybersecurity",
+                    "date": "tbd",
+                    "location": "OFFLINE",
+                    "description": "Cybersecurity induction meet",
                     "total": 5,
-                    "progress": 3
-                },
-                {
-                    "eventName": "Workshop: React Basics",
-                    "date": "2024-07-10",
-                    "location": "College Auditorium",
-                    "description": "Learn the fundamentals of React",
-                    "total": 2,
-                    "progress": 1
+                    "progress": 0
                 }
             ],
             "iconset": [
@@ -166,47 +190,73 @@
         }
     },
     "aiml": {
-        "bgImg": "path/to/aiml_bg.jpg",
         "chapterContent": {
-            "leads": {
-                "name": "Abhijit Karmakar",
-                "role": "Chapter Lead",
-                "email": "abhijit.k@example.com",
-                "image": "path/to/image.jpg",
-                "url": "https://www.example.com"
-            },
+            "leads": [
+                {
+                    "name": "Angshuman Roy",
+                    "codeiiest": "AI/ML Lead",
+                    "gdsc": "AI/ML core member",
+                    "profilepic": "sohamhaldar.webp",
+                    "description":"If you want to shine like a sun, first burn like a sun.",
+                    "website": "https://www.linkedin.com/in/angshuman-roy-91620022a/"
+        
+                }
+            ],
             "coreMembers": [
                 {
-                    "name": "Rishabh Dugar",
-                    "role": "Frontend Developer",
-                    "email": "rishabh.d@example.com",
-                    "image": "path/to/image.jpg",
-                    "url": "https://www.example.com"
+                    "name": "Tejas pawar",
+                    "codeiiest": "Backend lead",
+                    "gdsc": "Development core member",
+                    "profilepic": "profilepic",
+                    "description":"Some more exciting and delicious cheesy lines instead of lorem",
+                    "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
+        
                 },
                 {
-                    "name": "Soumyajit Karmakar",
-                    "role": "Backend Developer",
-                    "email": "soumyajit.k@example.com",
-                    "image": "path/to/image.jpg",
-                    "url": "https://www.example.com"
+                    "name": "Tejas pawar",
+                    "codeiiest": "Backend lead",
+                    "gdsc": "Development core member",
+                    "profilepic": "profilepic",
+                    "description":"Some more exciting and delicious cheesy lines instead of lorem",
+                    "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
+        
+                },
+                {
+                    "name": "Tejas pawar",
+                    "codeiiest": "Backend lead",
+                    "gdsc": "Development core member",
+                    "profilepic": "profilepic",
+                    "description":"Some more exciting and delicious cheesy lines instead of lorem",
+                    "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
+        
+                },
+                {
+                    "name": "Tejas pawar",
+                    "codeiiest": "Backend lead",
+                    "gdsc": "Development core member",
+                    "profilepic": "profilepic",
+                    "description":"Some more exciting and delicious cheesy lines instead of lorem",
+                    "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
+        
+                },
+                {
+                    "name": "Tejas pawar",
+                    "codeiiest": "Backend lead",
+                    "gdsc": "Development core member",
+                    "profilepic": "profilepic",
+                    "description":"Some more exciting and delicious cheesy lines instead of lorem",
+                    "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
+        
                 }
             ],
             "events": [
                 {
-                    "eventName": "Hackathon",
-                    "date": "2024-06-15",
-                    "location": "Online",
-                    "description": "Annual coding competition",
+                    "eventName": "AI/ML induction",
+                    "date": "tbd",
+                    "location": "tbd",
+                    "description": "AI/ML induction",
                     "total": 5,
-                    "progress": 3
-                },
-                {
-                    "eventName": "Workshop: React Basics",
-                    "date": "2024-07-10",
-                    "location": "College Auditorium",
-                    "description": "Learn the fundamentals of React",
-                    "total": 2,
-                    "progress": 1
+                    "progress": 0
                 }
             ],
             "iconset": [
@@ -239,140 +289,74 @@
             "byline": "When the computer asks “Are you a robot ?” Maybe he just wants to find his family ?"
         }
     },
-    "uiux": {
-        "bgImg": "path/to/uiux_bg.jpg",
-        "chapterContent": {
-            "leads": [
-                {
-                    "name": "Soumyajit Karmakar",
-                    "role": "Chapter Lead",
-                    "email": "soumyajit.k@example.com",
-                    "image": "path/to/image.jpg",
-                    "url": "https: //www.example.com"
-                },
-                {
-                    "name": "Abhijit Karmakar",
-                    "role": "Chapter Lead",
-                    "email": "abhijit.k@example.com",
-                    "image": "path/to/image.jpg",
-                    "url": "https://www.example.com"
-                }
-            ],
-            "coreMembers": [
-                {
-                    "name": "Rishabh Dugar",
-                    "role": "Frontend Developer",
-                    "email": "rishabh.d@example.com",
-                    "image": "path/to/image.jpg",
-                    "url": "https://www.example.com"
-                },
-                {
-                    "name": "Soumyajit Karmakar",
-                    "role": "Backend Developer",
-                    "email": "soumyajit.k@example.com",
-                    "image": "path/to/image.jpg",
-                    "url": "https://www.example.com"
-                }
-            ],
-            "events": [
-                {
-                    "eventName": "Hackathon",
-                    "date": "2024-06-15",
-                    "location": "Online",
-                    "description": "Annual coding competition",
-                    "total": 5,
-                    "progress": 3
-                },
-                {
-                    "eventName": "Workshop: React Basics",
-                    "date": "2024-07-10",
-                    "location": "College Auditorium",
-                    "description": "Learn the fundamentals of React",
-                    "total": 2,
-                    "progress": 1
-                }
-            ],
-            "iconset": [
-                {
-                    "icon": "Crop",
-                    "byline": "Knows good margins"
-                },
-                {
-                    "icon": "Bold",
-                    "byline": "Prefers italic"
-                },
-                {
-                    "icon": "User",
-                    "byline": "Their best buddy is user"
-                },
-                {
-                    "icon": "Nurse",
-                    "byline": "Nursing the ugly designs"
-                }
-            ],
-            "title": "DESIGN GENIES",
-            "highlight": {
-                "heading": "AIM",
-                "byline": "If it looks ugly, it means it can be done.",
-                "icon": "Giraffe",
-                "iconheading": "",
-                "iconbyline": "Innovative designs"
-            },
-            "description": "Welcome to the realm of the UI/UX Virtuosos of CodeIIEST, where aesthetics meet functionality in perfect harmony. Our team of Design Maestros crafts interfaces that are not just visually appealing but also intuitively usable. From wireframes to final product, we're the artists behind the screen, ensuring every click, swipe, and scroll is a delight. Dive into our world where creativity meets technology and user satisfaction is our masterpiece!",
-            "byline": "Can a design be perfect? Well, ours can be."
-        }
-    },
     "cpdsa": {
-        "bgImg": "path/to/uiux_bg.jpg",
         "chapterContent": {
             "leads": [
                 {
-                    "name": "Soumyajit Karmakar",
-                    "role": "Chapter Lead",
-                    "email": "soumyajit.k@example.com",
-                    "image": "path/to/image.jpg",
-                    "url": "https: //www.example.com"
-                },
-                {
-                    "name": "Abhijit Karmakar",
-                    "role": "Chapter Lead",
-                    "email": "abhijit.k@example.com",
-                    "image": "path/to/image.jpg",
-                    "url": "https://www.example.com"
+                    "name": "Mohak Singh",
+                    "codeiiest": "CP/DSA Lead",
+                    "gdsc": "CP core member",
+                    "profilepic": "mohaksingh.webp",
+                    "description":"Intuition in coding is like a GPS without signal: A Wild Guess!",
+                    "website": "https://www.linkedin.com/in/mohak-singh-572745252/"
+        
                 }
             ],
             "coreMembers": [
                 {
-                    "name": "Rishabh Dugar",
-                    "role": "Frontend Developer",
-                    "email": "rishabh.d@example.com",
-                    "image": "path/to/image.jpg",
-                    "url": "https://www.example.com"
+                    "name": "Tejas pawar",
+                    "codeiiest": "Backend lead",
+                    "gdsc": "Development core member",
+                    "profilepic": "profilepic",
+                    "description":"Some more exciting and delicious cheesy lines instead of lorem",
+                    "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
+        
                 },
                 {
-                    "name": "Soumyajit Karmakar",
-                    "role": "Backend Developer",
-                    "email": "soumyajit.k@example.com",
-                    "image": "path/to/image.jpg",
-                    "url": "https://www.example.com"
+                    "name": "Tejas pawar",
+                    "codeiiest": "Backend lead",
+                    "gdsc": "Development core member",
+                    "profilepic": "profilepic",
+                    "description":"Some more exciting and delicious cheesy lines instead of lorem",
+                    "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
+        
+                },
+                {
+                    "name": "Tejas pawar",
+                    "codeiiest": "Backend lead",
+                    "gdsc": "Development core member",
+                    "profilepic": "profilepic",
+                    "description":"Some more exciting and delicious cheesy lines instead of lorem",
+                    "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
+        
+                },
+                {
+                    "name": "Tejas pawar",
+                    "codeiiest": "Backend lead",
+                    "gdsc": "Development core member",
+                    "profilepic": "profilepic",
+                    "description":"Some more exciting and delicious cheesy lines instead of lorem",
+                    "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
+        
+                },
+                {
+                    "name": "Tejas pawar",
+                    "codeiiest": "Backend lead",
+                    "gdsc": "Development core member",
+                    "profilepic": "profilepic",
+                    "description":"Some more exciting and delicious cheesy lines instead of lorem",
+                    "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
+        
                 }
             ],
             "events": [
                 {
-                    "eventName": "Hackathon",
-                    "date": "2024-06-15",
-                    "location": "Online",
-                    "description": "Annual coding competition",
+                    "eventName": "CP contest",
+                    "date": "tbd",
+                    "location": "OFFLINE",
+                    "description": "CP contest for freshers",
                     "total": 5,
-                    "progress": 3
-                },
-                {
-                    "eventName": "Workshop: React Basics",
-                    "date": "2024-07-10",
-                    "location": "College Auditorium",
-                    "description": "Learn the fundamentals of React",
-                    "total": 2,
-                    "progress": 1
+                    "progress": 0
                 }
             ],
             "iconset": [
@@ -395,7 +379,6 @@
         }
     },
     "media": {
-        "bgImg": "path/to/uiux_bg.jpg",
         "chapterContent": {
             "leads": [
                 {
@@ -466,56 +449,73 @@
         }
     },
     "diversity": {
-        "bgImg": "path/to/uiux_bg.jpg",
         "chapterContent": {
             "leads": [
                 {
-                    "name": "Soumyajit Karmakar",
-                    "role": "Chapter Lead",
-                    "email": "soumyajit.k@example.com",
-                    "image": "path/to/image.jpg",
-                    "url": "https: //www.example.com"
-                },
-                {
-                    "name": "Abhijit Karmakar",
-                    "role": "Chapter Lead",
-                    "email": "abhijit.k@example.com",
-                    "image": "path/to/image.jpg",
-                    "url": "https://www.example.com"
+                    "name": "Swastika Kar",
+                    "codeiiest": "Diversity lead",
+                    "gdsc": "GDG lead",
+                    "profilepic": "swastikakar.webp",
+                    "description":"Just Code It—With Google as My Sidekick",
+                    "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
+        
                 }
             ],
             "coreMembers": [
                 {
-                    "name": "Rishabh Dugar",
-                    "role": "Frontend Developer",
-                    "email": "rishabh.d@example.com",
-                    "image": "path/to/image.jpg",
-                    "url": "https://www.example.com"
+                    "name": "Tejas pawar",
+                    "codeiiest": "Backend lead",
+                    "gdsc": "Development core member",
+                    "profilepic": "profilepic",
+                    "description":"Some more exciting and delicious cheesy lines instead of lorem",
+                    "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
+        
                 },
                 {
-                    "name": "Soumyajit Karmakar",
-                    "role": "Backend Developer",
-                    "email": "soumyajit.k@example.com",
-                    "image": "path/to/image.jpg",
-                    "url": "https://www.example.com"
+                    "name": "Tejas pawar",
+                    "codeiiest": "Backend lead",
+                    "gdsc": "Development core member",
+                    "profilepic": "profilepic",
+                    "description":"Some more exciting and delicious cheesy lines instead of lorem",
+                    "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
+        
+                },
+                {
+                    "name": "Tejas pawar",
+                    "codeiiest": "Backend lead",
+                    "gdsc": "Development core member",
+                    "profilepic": "profilepic",
+                    "description":"Some more exciting and delicious cheesy lines instead of lorem",
+                    "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
+        
+                },
+                {
+                    "name": "Tejas pawar",
+                    "codeiiest": "Backend lead",
+                    "gdsc": "Development core member",
+                    "profilepic": "profilepic",
+                    "description":"Some more exciting and delicious cheesy lines instead of lorem",
+                    "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
+        
+                },
+                {
+                    "name": "Tejas pawar",
+                    "codeiiest": "Backend lead",
+                    "gdsc": "Development core member",
+                    "profilepic": "profilepic",
+                    "description":"Some more exciting and delicious cheesy lines instead of lorem",
+                    "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
+        
                 }
             ],
             "events": [
                 {
-                    "eventName": "Hackathon",
-                    "date": "2024-06-15",
-                    "location": "Online",
-                    "description": "Annual coding competition",
+                    "eventName": "tbd",
+                    "date": "tbd",
+                    "location": "tbd",
+                    "description": "tbd",
                     "total": 5,
-                    "progress": 3
-                },
-                {
-                    "eventName": "Workshop: React Basics",
-                    "date": "2024-07-10",
-                    "location": "College Auditorium",
-                    "description": "Learn the fundamentals of React",
-                    "total": 2,
-                    "progress": 1
+                    "progress": 0
                 }
             ],
             "iconset": [
