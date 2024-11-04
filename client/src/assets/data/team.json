@@ -4,8 +4,8 @@
             "name": "Abhijit Karmakar",
             "codeiiest": "Frontend lead",
             "gdsc": "UI/UX lead",
-            "profilepic": "profilepic",
-            "description":"Some cheesy lines instead of lorem lorem lorem lorem lorem lorem",
+            "profilepic": "abhijitkarmakar.webp",
+            "description":"The feel is more important than the code behind it",
             "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
 
         },
@@ -13,8 +13,8 @@
             "name": "Soumyajit Karmakar",
             "codeiiest": "core member",
             "gdsc": "Development lead",
-            "profilepic": "profilepic",
-            "description":"Some cheesy lines instead of lorem",
+            "profilepic": "soumyajitkarmakar.webp",
+            "description":"Eliminating bugs without sprays",
             "website": "https://www.linkedin.com/in/soumyajit-karmakar-68362526b/"
 
         },
@@ -22,37 +22,38 @@
             "name": "Tejas Pawar",
             "codeiiest": "Backend lead",
             "gdsc": "core member",
-            "profilepic": "profilepic",
-            "description":"Some cheesy lines instead of lorem",
+            "profilepic": "tejaspawar.webp",
+            "description":"Building what you don't see, powering what you can't ignore",
             "website": "https://www.linkedin.com/in/tejaspawar429/"
+        },
+        {
+            "name": "Siddharth Sen",
+            "codeiiest": "Core Team of Dev Chapter",
+            "gdg": "AI & ML Core Team",
+            "profilepic": "siddharthsen.jpeg",
+            "description": "Just like in test cricket, every line of code and every decision matters.",
+            "team": "Dev",
+            "website": ""
         }
     ],
     "cybersecurity":[
         {
-            "name": "Abhijit Karmakar",
-            "codeiiest": "Frontend lead",
-            "gdsc": "UI/UX lead",
-            "profilepic": "profilepic",
-            "description":"Some cheesy lines instead of lorem",
-            "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
+            "name": "Soham Haldar",
+            "codeiiest": "Cybersecurity Lead",
+            "gdsc": "ML core member",
+            "profilepic": "sohamhaldar.webp",
+            "description":"The quieter you become, the more you are able to hear.",
+            "website": "http://www.linkedin.com/in/soham-haldar-a088a529a"
 
         },
         {
-            "name": "Soumyajit Karmakar",
-            "codeiiest": "core member",
-            "gdsc": "Development lead",
-            "profilepic": "profilepic",
-            "description":"Some cheesy lines instead of lorem",
-            "website": "https://www.linkedin.com/in/soumyajit-karmakar-68362526b/"
+            "name": "Angshuman Roy",
+            "codeiiest": "AI/ML Lead",
+            "gdsc": "AI/ML core member",
+            "profilepic": "angshumanroy.png",
+            "description":"カナヅチでも船から落ちなきゃいいじゃないか！",
+            "website": "https://www.linkedin.com/in/angshuman-roy-91620022a/"
 
-        },
-        {
-            "name": "Tejas Pawar",
-            "codeiiest": "Backend lead",
-            "gdsc": "core member",
-            "profilepic": "profilepic",
-            "description":"Some cheesy lines instead of lorem",
-            "website": "https://www.linkedin.com/in/tejaspawar429/"
         }
     ],
     "aiml":[
@@ -60,26 +61,27 @@
             "name": "Angshuman Roy",
             "codeiiest": "ML Lead",
             "gdsc": "ML core team member",
-            "profilepic": "profilepic",
+            "profilepic": "angshumanroy.png",
             "description":"カナヅチでも船から落ちなきゃいいじゃないか！",
             "website": "https://www.linkedin.com/in/angshuman-roy-91620022a/"
         },
         {
-            "name": "Soumyajit Karmakar",
-            "codeiiest": "core member",
-            "gdsc": "Development lead",
-            "profilepic": "profilepic",
-            "description":"Some cheesy lines instead of lorem",
-            "website": "https://www.linkedin.com/in/soumyajit-karmakar-68362526b/"
-
+            "name": "Sarah Jane Topno",
+            "codeiiest": "ML Team core member",
+            "gdg": "ML lead",
+            "profilepic": "sarahjane.webp",
+            "description": "Data whisperer by day, algorithm wrangler by night.",
+            "team": "AI & ML",
+            "website": "https://www.linkedin.com/in/sarah-jane-topno"
         },
         {
-            "name": "Tejas Pawar",
-            "codeiiest": "Backend lead",
-            "gdsc": "core member",
-            "profilepic": "profilepic",
-            "description":"Some cheesy lines instead of lorem",
-            "website": "https://www.linkedin.com/in/tejaspawar429/"
+            "name": "Subhrajit Deb",
+            "codeiiest": "AI & ML Team Member",
+            "gdg": "ML/AI Team Member",
+            "profilepic": "subhrajitdeb.webp",
+            "description": "Let it Be or Make it Happen!",
+            "team": "AI & ML",
+            "website": "www.linkedin.com/in/subhrajit-deb2"
         }
     ],
     "cpdsa":[
@@ -87,7 +89,7 @@
             "name": "Suraj Kashyap",
             "codeiiest": "Treasurer",
             "gdsc": "CP lead",
-            "profilepic": "profilepic",
+            "profilepic": "surajkashyap.webp",
             "description":"In CP, the journey is as important as the destination.",
             "website": "https://www.linkedin.com/in/kashyapsuraj/"
         },        
@@ -95,7 +97,7 @@
             "name": "Mohak Singh",
             "codeiiest": "CP Lead",
             "gdsc": "CP core member",
-            "profilepic": "profilepic",
+            "profilepic": "mohaksingh.webp",
             "description":"Intuition in coding is like a GPS without signal: A Wild Guess!",
             "website": "https://www.linkedin.com/in/mohak-singh-572745252/"
         },
@@ -103,9 +105,18 @@
             "name": "Samyajit Das",
             "codeiiest": "Secretary",
             "gdsc": "Co-Lead",
-            "profilepic": "profilepic",
+            "profilepic": "samyajitdas.webp",
             "description":"Solving problems faster than you can say 'syntax error'",
             "website": "https://www.linkedin.com/in/samyajit-das/"
+        },
+        {
+            "name": "Hanzala Sharique",
+            "codeiiest": "CP Core Team Member",
+            "gdg": "CP Team Core Member",
+            "profilepic": "hanzalasharique.webp",
+            "description": "Burnerace at the crease: smashing code challenges for six!",
+            "team": "CP/DSA",
+            "website": "https://www.linkedin.com/in/hanzala-sharique-944b69286"
         }        
     ],
     "media":[
@@ -126,42 +137,17 @@
             "description":"Some cheesy lines instead of lorem",
             "website": "https://www.linkedin.com/in/soumyajit-karmakar-68362526b/"
 
-        },
-        {
-            "name": "Tejas Pawar",
-            "codeiiest": "Backend lead",
-            "gdsc": "core member",
-            "profilepic": "profilepic",
-            "description":"Some cheesy lines instead of lorem",
-            "website": "https://www.linkedin.com/in/tejaspawar429/"
         }
     ],
     "diversity":[
         {
-            "name": "Abhijit Karmakar",
-            "codeiiest": "Frontend lead",
-            "gdsc": "UI/UX lead",
-            "profilepic": "profilepic",
-            "description":"Some cheesy lines instead of lorem",
+            "name": "Swastika Kar",
+            "codeiiest": "Diversity lead",
+            "gdsc": "GDG lead",
+            "profilepic": "swastikakar.jpeg",
+            "description":"Just Code It—With Google as My Sidekick",
             "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
 
-        },
-        {
-            "name": "Soumyajit Karmakar",
-            "codeiiest": "core member",
-            "gdsc": "Development lead",
-            "profilepic": "profilepic",
-            "description":"Some cheesy lines instead of lorem",
-            "website": "https://www.linkedin.com/in/soumyajit-karmakar-68362526b/"
-
-        },
-        {
-            "name": "Tejas Pawar",
-            "codeiiest": "Backend lead",
-            "gdsc": "core member",
-            "profilepic": "profilepic",
-            "description":"Some cheesy lines instead of lorem",
-            "website": "https://www.linkedin.com/in/tejaspawar429/"
         }
     ]
 }

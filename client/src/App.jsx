@@ -9,21 +9,21 @@ import Header from "./components/header/Header.jsx";
 // import { AnimationProvider } from "../AnimationContext.jsx";
 
 const App = () => {
-    const [Loading, setLoading] = useState(true);
+    const [Loading, setLoading] = useState(false);
 
-    useEffect(() => {
-        if (Loading) {
-            setTimeout(() => {
-                console.log("hello");
-                console.log(Loading);
-                setLoading(false);
-            }, 4000);
-        }
-    }, []);
+    // useEffect(() => {
+    //     if (Loading) {
+    //         setTimeout(() => {
+    //             console.log("hello");
+    //             console.log(Loading);
+    //             setLoading(false);
+    //         }, 4000);
+    //     }
+    // }, []);
     return (
         <div className="app">
             <Router>
-                <IconLoader />
+                {/* <IconLoader /> */}
                 <div className={"animate" + (Loading?" paused-animation":" run-animation")}>
                     <Navbar></Navbar>
                     <Header />

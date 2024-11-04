@@ -230,7 +230,7 @@ const Chapterpage = () => {
                         name={data.chapterContent.leads[0].name}
                         codeiiest={data.chapterContent.leads[0].codeiiest}
                         gdsc={data.chapterContent.leads[0].gdsc}
-                        profilepic={"profilepic"}
+                        profilepic={data.chapterContent.leads[0].profilepic}
                         descrip={data.chapterContent.leads[0].description}
                         customCSS={{
                             transform: "scale(1)",
@@ -240,7 +240,7 @@ const Chapterpage = () => {
                         name={data.chapterContent.leads[1].name}
                         codeiiest={data.chapterContent.leads[1].codeiiest}
                         gdsc={data.chapterContent.leads[1].gdsc}
-                        profilepic={"profilepic"}
+                        profilepic={data.chapterContent.leads[1].profilepic}
                         descrip={data.chapterContent.leads[1].description}
                         customCSS={{
                             transform: "scale(1)",

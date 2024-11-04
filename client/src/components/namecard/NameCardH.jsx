@@ -7,7 +7,7 @@ export default function NamecardH({ profilepic, name, codeiiest, gdsc, descrip }
             <div className="intro">
                 <div className="profile-pic">
                     <img className="fakeborder" src="/assets/mask.svg" />
-                    <img className={"hexagon"} src={`/assets/profilepic/${profilepic}.png`} alt="" />
+                    <img className={"hexagon"} src={`/assets/profile-pics/${profilepic}`} alt="" />
                 </div>
                 <div className="details">
                     <div className="name">{name}</div>
