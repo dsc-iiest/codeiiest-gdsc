@@ -22,18 +22,112 @@
                 ],
                 "coreMembers": [
                     {
-                        "name": "Soumyajit Karmakar",
-                        "role": "Frontend Developer",
-                        "email": "soumyajit.k@example.com",
-                        "image": "path/to/image.jpg",
-                        "url": "https://www.example.com"
+                        "name": "Abhijit Karmakar",
+                        "role_in_codeiiest": "Frontend Lead",
+                        "role_in_gdg": "UI-UX Lead",
+                        "image": "profile-pics/abhijitkarmakar.webp",
+                        "tagline": "The feel is more important than the code behind it",
+                        "team": "Dev",
+                        "website_url": "https://abhijit-karmakar.vercel.app/"
                     },
                     {
-                        "name": "Rishabh Dugar",
-                        "role": "Backend Developer",
-                        "email": "rishabh.d@example.com",
-                        "image": "path/to/image.jpg",
-                        "url": "https://www.example.com"
+                        "name": "Soham Haldar",
+                        "role_in_codeiiest": "Cybersecurity Lead",
+                        "role_in_gdg": "ML core team member",
+                        "image": "profile-pics/sohamhaldar.webp",
+                        "tagline": "The quieter you become, the more you are able to hear.",
+                        "team": "Cybersecurity",
+                        "website_url": "http://www.linkedin.com/in/soham-haldar-a088a529a"
+                    },
+                    {
+                        "name": "MOHAK SINGH",
+                        "role_in_codeiiest": "CP Lead",
+                        "role_in_gdg": "CP Core Member",
+                        "image": "profile-pics/mohaksingh.webp",
+                        "tagline": "Intuition in coding is like a GPS without signal: A Wild Guess!",
+                        "team": "CP/DSA",
+                        "website_url": "https://www.linkedin.com/in/mohak-singh-572745252"
+                    },
+                    {
+                        "name": "Hanzala Sharique",
+                        "role_in_codeiiest": "CP Core Team Member",
+                        "role_in_gdg": "CP Team Core Member",
+                        "image": "profile-pics/hanzalasharique.webp",
+                        "tagline": "Burnerace at the crease: smashing code challenges for six!",
+                        "team": "CP/DSA",
+                        "website_url": "https://www.linkedin.com/in/hanzala-sharique-944b69286"
+                    },
+                    {
+                        "name": "Tejas Pawar",
+                        "role_in_codeiiest": "Backend Lead",
+                        "role_in_gdg": "Development Team Core Member",
+                        "image": "profile-pics/tejaspawar.webp",
+                        "tagline": "Building what you don’t see, powering what you can’t ignore",
+                        "team": "Dev",
+                        "website_url": "https://www.linkedin.com/in/tejas-pawar"
+                    },
+                    {
+                        "name": "Subhrajit Deb",
+                        "role_in_codeiiest": "AI & ML Team Member",
+                        "role_in_gdg": "ML/AI Team Member",
+                        "image": "profile-pics/subhrajitdeb.webp",
+                        "tagline": "Let it Be or Make it Happen!",
+                        "team": "AI & ML",
+                        "website_url": "www.linkedin.com/in/subhrajit-deb2"
+                    },
+                    {
+                        "name": "Suraj Kashyap",
+                        "role_in_codeiiest": "Treasurer",
+                        "role_in_gdg": "CP Lead",
+                        "image": "profile-pics/surajkashyap.webp",
+                        "tagline": "In CP, the journey is as important as the destination.",
+                        "team": "CP/DSA",
+                        "website_url": "https://www.linkedin.com/in/kashyap"
+                    },
+                    {
+                        "name": "Sarah Jane Topno",
+                        "role_in_codeiiest": "ML Team core member",
+                        "role_in_gdg": "ML lead",
+                        "image": "profile-pics/sarahjane.webp",
+                        "tagline": "Data whisperer by day, algorithm wrangler by night.",
+                        "team": "AI & ML",
+                        "website_url": "https://www.linkedin.com/in/sarah-jane-topno"
+                    },
+                    {
+                        "name": "Siddharth Sen",
+                        "role_in_codeiiest": "Core Team of Dev Chapter",
+                        "role_in_gdg": "AI & ML Core Team",
+                        "image": "profile-pics/siddharthsen.jpeg",
+                        "tagline": "Just like in test cricket, every line of code and every decision matters.",
+                        "team": "Dev",
+                        "website_url": ""
+                    },
+                    {
+                        "name": "Samyajit Das",
+                        "role_in_codeiiest": "General Secretary",
+                        "role_in_gdg": "Co-Lead",
+                        "image": "profile-pics/samyajitdas.webp",
+                        "tagline": "Coding the Future, One Challenge at a Time",
+                        "team": "CP/DSA",
+                        "website_url": "https://www.linkedin.com/in/samyajit"
+                    },
+                    {
+                        "name": "Angshuman Roy",
+                        "role_in_codeiiest": "AI & ML Lead",
+                        "role_in_gdg": "AI & ML Core Team Member",
+                        "image": "profile-pics/angshumanroy.png",
+                        "tagline": "If you want to shine like a sun, first burn like a sun.",
+                        "team": "AI & ML",
+                        "website_url": "https://www.linkedin.com/in/angshuman"
+                    },
+                    {
+                        "name": "Swastika Kar",
+                        "role_in_codeiiest": "Diversity Lead",
+                        "role_in_gdg": "Lead",
+                        "image": "profile-pics/swastikakar.jpeg",
+                        "tagline": "Just Code It—With Google as My Sidekick",
+                        "team": "Diversity",
+                        "website_url": "https://www.linkedin.com/in/swas-kar"
                     }
                 ],
                 "events": [
