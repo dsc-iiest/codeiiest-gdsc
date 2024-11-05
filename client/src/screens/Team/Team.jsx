@@ -7,12 +7,11 @@ import { useParams } from "react-router-dom";
 import TeamsData from "../../assets/data/team.json";
 // import { Box } from "@mui/material";
 
-const list = [];
-
 const About = () => {
     const { id } = useParams();
     console.log(id);
-
+    const list = [];
+    
 	for (let member of TeamsData[id]) {
 		list.push(
 			<NamecardV
