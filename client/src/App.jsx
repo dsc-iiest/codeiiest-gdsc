@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar/Navbar";
 import IconLoader from "./components/iconloader/IconLoader.jsx";
 import Header from "./components/header/Header.jsx";
 // import { AnimationProvider } from "../AnimationContext.jsx";
+import { Analytics } from "@vercel/analytics/react"
 
 const App = () => {
     const [Loading, setLoading] = useState(true);
@@ -22,6 +23,7 @@ const App = () => {
     }, []);
     return (
         <div className="app">
+            <Analytics />
             <Router>
                 <IconLoader />
                 <div className={"animate" + (Loading?" paused-animation":" run-animation")}>
