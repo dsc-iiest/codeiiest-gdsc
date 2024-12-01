@@ -1,7 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./IconLoader.css"
+export let delayForLeaderBoardsPage = 3;
 
 const IconLoader = () => {
+
+    useEffect(() => {
+        setTimeout(() => {
+            delayForLeaderBoardsPage = 0;
+        }, 3000);
+    }, []);
+    
     return (
         <div className="logo-wrapper">
             <svg width="257.58" height="300" viewBox="0 0 425 495" fill="none" xmlns="http://www.w3.org/2000/svg">
