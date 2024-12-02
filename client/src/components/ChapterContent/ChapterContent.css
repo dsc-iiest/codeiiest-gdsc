@@ -24,6 +24,7 @@
     grid-template-rows: auto auto;
     grid-template-columns: 1fr;
     justify-items: center;
+    margin-bottom: 1rem;
 }
 
 .icon-wrapper p {
@@ -34,7 +35,8 @@
 }
 
 .icon-wrapper img {
-    width: 4.2em;
+    width: 4.2em; 
+    margin-bottom: 0.5rem;
 }
 
 .chapter-content .section-2 {

@@ -10,6 +10,7 @@ import NameCardV from "../../components/namecard/NameCardV";
 import { useRef, useState, useEffect } from "react";
 import { Button } from "@mui/material";
 import Chapterdata from "../../../src/assets/data/chapters.json"
+import { delay, motion } from "framer-motion";
 
 // const Chapterdata = {
 //     development: {
@@ -206,7 +207,7 @@ const Chapterpage = () => {
     const { id } = useParams();
     const data = Chapterdata[id];
     // console.log(data);
-    
+
     const { innerWidth } = window;
     const contentRef = useRef(null);
     const [height, setHeight] = useState(0);
@@ -215,7 +216,7 @@ const Chapterpage = () => {
     }, []);
     const scaling = height / 408 <= 1 ? height / 408 : 1;
     console.log(data.chapterContent);
-    
+
 
     return (
         <div className="chapter-page page">
@@ -236,7 +237,7 @@ const Chapterpage = () => {
                             transform: "scale(1)",
                         }}
                     />
-                    {data.chapterContent.leads.length>1 && <NameCardH
+                    {data.chapterContent.leads.length > 1 && <NameCardH
                         name={data.chapterContent.leads[1].name}
                         codeiiest={data.chapterContent.leads[1].codeiiest}
                         gdsc={data.chapterContent.leads[1].gdsc}
@@ -249,9 +250,19 @@ const Chapterpage = () => {
                 </div>
                 {data && <ChapterContent data={data} />}
                 {innerWidth <= 1150 && innerWidth > 900 && (
+
                     <Link className="meet-route" to="team">
-                        <p>meet the team</p>
+                        <motion.span
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.3 }}
+                        >
+
+                            Meet The Team
+                        </motion.span>
+
                     </Link>
+
                 )}
                 <div className="chapter-leads">
                     <div className="heading">Leads</div>
@@ -266,7 +277,7 @@ const Chapterpage = () => {
                                 transform: "scale(1)",
                             }}
                         />
-                        {data.chapterContent.leads.length>1 && <NameCardV
+                        {data.chapterContent.leads.length > 1 && <NameCardV
                             name={data.chapterContent.leads[1].name}
                             codeiiest={data.chapterContent.leads[1].codeiiest}
                             gdsc={data.chapterContent.leads[0].gdsc}
@@ -278,12 +289,20 @@ const Chapterpage = () => {
                         />}
                     </div>
                 </div>
-                <div className="chapter-ev">
-                    <div className="sub-heading">Events</div>
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{duration: 0.2, type: "spring", stiffness: 200, mass: 1, damping: 10 }}
+                    className="chapter-ev">
+                    <motion.div
+
+                        className="sub-heading">Events</motion.div>
                     <EventsProgress></EventsProgress>
-                </div>
+                </motion.div>
                 {innerWidth <= 900 && (
                     <Link to={`team`}>
+
+
                         <Button
                             sx={{
                                 background: "var(--g-red)",
@@ -295,32 +314,54 @@ const Chapterpage = () => {
                                 },
                             }}
                         >
-                            Meet The Team
+
+                            <motion.span
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.3 }}
+                            >
+
+                                Meet The Team
+                            </motion.span>
                         </Button>
                     </Link>
                 )}
             </div>
             <div className="center">
-                <div className="container">
-                    <div className="sub-heading">Events</div>
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.2, type: "spring", stiffness: 200, mass: 1, damping: 10 }}
+                    className="container">
+                    <motion.div
+
+                        className="sub-heading">Events</motion.div>
                     <EventsProgress></EventsProgress>
-                </div>
+                </motion.div>
                 <Link to={`team`}>
+
                     <Button
                         sx={{
-                            background: "rgba(255, 255, 255, 0.2)",
-                            border: "1px solid #fff",
-                            fontSize: "1.3rem",
-                            padding: "1rem",
+                            background: "var(--g-red)",
                             color: "#fff",
+                            fontSize: "1.5rem",
                             textTransform: "none",
                             "&:hover": {
                                 background: "var(--g-red)",
                             },
                         }}
                     >
-                        Meet The Team
+
+                        <motion.span
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.3 }}
+                        >
+
+                            Meet The Team
+                        </motion.span>
                     </Button>
+
                 </Link>
             </div>
         </div>
