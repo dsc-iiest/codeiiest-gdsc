@@ -1,4 +1,5 @@
 const calculateTopCoders = async (data) => {
+  if(!data) return []
   let year1MaxRatin = 0,
     year1TopCoder = "",
     year2MaxRatin = 0,
