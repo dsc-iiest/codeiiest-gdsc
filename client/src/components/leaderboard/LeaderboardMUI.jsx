@@ -152,7 +152,7 @@ const cfcolumns = [
     },
 ];
 
-const LeaderboardMUI = ({ parentHeight, style }) => {
+const LeaderboardMUI = ({ parentHeight, style, setData }) => {
     const [show, setShow] = useState(1);
     const [reload, setReload] = useState(false);
     const cfUsers = {};
@@ -171,7 +171,7 @@ const LeaderboardMUI = ({ parentHeight, style }) => {
     }
     const v = Object.keys(cfUsers);
     const { data, loading, error, isCached, getData } = useFetchCF(v);
-
+    if(data) setData(data)
     if (!loading && !error) {
         for (let user of data) {
             try {
