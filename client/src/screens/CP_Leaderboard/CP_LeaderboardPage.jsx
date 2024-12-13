@@ -46,7 +46,7 @@ const CP_Leaderboard2 = () => {
     setHeight(contentRef.current.offsetHeight);
   }, []);
   const scaling = height / 540 <= 1 ? height / 540 : 1;
-  console.log("time",startAnimateTimeLeft)
+
   return (
     <div className="cp-leaderboard-page page">
       <div className="bg">
