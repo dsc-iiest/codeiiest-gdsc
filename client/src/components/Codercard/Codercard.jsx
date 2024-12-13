@@ -18,7 +18,7 @@ const Codercard = ({ coderData }) => {
                     <h2 className="left-section-experience-text chakra-petch-regular">
                         {coderData.experience || <LabelLoading />}
                     </h2>
-                    <Avatar sx= {{width: 75, height: 75}} alt="Remy Sharp" src={coderData.avatar || "/assets/profile-pics/profile.jpg"} />
+                    <Avatar sx= {{color: "#000", fontWeight: 400, fontSize: "2rem",width: 75, height: 75 , bgcolor: "rgb(244, 110, 110)"}} alt="Remy Sharp" src={coderData.avatar}>{coderData.name?.slice(0,1) || "*_*"}</Avatar>
                 </div>
                 <div className="right-section">
                     <h1 className="right-section-text chakra-petch-regular">Coder of the Month</h1>
