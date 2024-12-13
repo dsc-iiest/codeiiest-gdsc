@@ -1,4 +1,12 @@
+const INTERVAL = 5000
 const calculateTopCoders = async (data) => {
+  const topCoderCache = localStorage.getItem('topCoders')
+  const topCoderCacheTime = localStorage.getItem('topCoderTime')
+  const currentTime = new Date().getTime();
+
+  if(topCoderCache == null || currentTime - JSON.parse(topCoderCacheTime) > INTERVAL ){}
+  else return JSON.parse(topCoderCache)
+
   if(!data) return []
   let year1MaxRatin = 0,
     year1TopCoder = "",
@@ -104,7 +112,6 @@ const calculateTopCoders = async (data) => {
 
   for (const coder of topCoderYearWise) {
     const { handle } = coder;
-    console.log(handle);
     const response = await fetch(
       `https://codeforces.com/api/user.rating?handle=${handle}`
     );
@@ -115,7 +122,10 @@ const calculateTopCoders = async (data) => {
     coder.changeInRating = ratingChange;
     coder.contestsGiven = contestsGiven;
   }
-  console.log(topCoderYearWise);
+  
+  const curTime = new Date().getTime()
+  localStorage.setItem("topCoders", JSON.stringify(topCoderYearWise))
+  localStorage.setItem('topCoderTime', JSON.stringify(curTime))
   return topCoderYearWise;
 };
 
