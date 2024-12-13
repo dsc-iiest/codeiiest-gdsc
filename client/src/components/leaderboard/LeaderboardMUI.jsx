@@ -162,14 +162,17 @@ const LeaderboardMUI = ({ parentHeight, style, setData, delayT }) => {
     const width = window.innerWidth;
 
     var res = 0;
+    const currYear = new Date().getFullYear();
     for (let user of userData) {
-        const h = user["Codeforce  Handle "].trim();
+        const h = user["CodeForces handle"].trim();
         if (!h || h.includes(" ")) {
             // console.log("removed this user(left empty) "+h);
             res += 1;
             continue;
         }
-        cfUsers[h.toLowerCase()] = [user.Name, user["Year (1/2/3/4)"]];
+        var joined = user["Email Address"].slice(0, 5);
+
+        cfUsers[h.toLowerCase()] = [user["Full Name"], currYear-parseInt(joined)+1];
     }
     const v = Object.keys(cfUsers);
     const { data, loading, error, isCached, getData } = useFetchCF(v);

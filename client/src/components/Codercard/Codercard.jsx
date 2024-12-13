@@ -3,7 +3,11 @@ import "./CoderCardAK.css";
 import { Avatar } from "@mui/material";
 
 const LabelLoading = () => {
-    return <div className="label-loader">...</div>;
+    return <div className="label-loader">
+        <div className="dot"></div>
+        <div className="dot"></div>
+        <div className="dot"></div>
+    </div>;
 };
 
 const Codercard = ({ coderData }) => {
