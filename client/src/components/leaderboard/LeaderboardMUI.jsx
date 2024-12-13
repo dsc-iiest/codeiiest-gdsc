@@ -14,6 +14,8 @@ import { useState } from "react";
 import Loading from "../../components/loading/Loading";
 import Error from "../../components/error/Error";
 import useFetchCF from "../../hooks/useFetchCF";
+import { delayForLeaderBoardsPage } from "../iconloader/IconLoader";
+import { motion } from "framer-motion";
 
 const darkTheme = createTheme({
     palette: {
@@ -152,7 +154,7 @@ const cfcolumns = [
     },
 ];
 
-const LeaderboardMUI = ({ parentHeight, style, setData }) => {
+const LeaderboardMUI = ({ parentHeight, style, setData, delayT }) => {
     const [show, setShow] = useState(1);
     const [reload, setReload] = useState(false);
     const cfUsers = {};
@@ -184,7 +186,11 @@ const LeaderboardMUI = ({ parentHeight, style, setData }) => {
     }
 
     return (
-        <div className="leaderboard-mui" style={{ style }}>
+        <motion.div 
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: delayForLeaderBoardsPage + delayT * 0.2, duration: 0.5 }}
+        className="leaderboard-mui" style={{ style }}>
             {/* {!loading && !error ? <div className="notification">{isCached}</div> : null} */}
             <Box className="datagrid-wrapper">
                 {loading ? (
@@ -212,7 +218,7 @@ const LeaderboardMUI = ({ parentHeight, style, setData }) => {
                     </Typography>
                 )} */}
             </Box>
-        </div>
+        </motion.div>
     );
 };
 
