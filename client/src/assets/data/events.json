@@ -1,5 +1,51 @@
 [
     {
+        "title": "Fresher's Contest", 
+        "miniTitle": "Competitive Programming Event",
+        "description": "🌟 Calling All Freshers! Ready to Challenge Yourself? 💻 Get a taste of the competitive programming world with an exciting contest! Whether you're a seasoned coder or just starting, this is the perfect chance to test your skills and learn.",
+        "imageVariant": "cpdsa",
+        "AvatarSampleData": [
+            { "name": "Abhijit Karmakar", "img": "profile.jpg" },
+            { "name": "Soumyajit Karmakar", "img": "profile.jpg" }
+        ],
+        "TagsList": ["CP", "CP Contest", "Problem Solving", "Codeforces"],
+        "sideDetails1": {
+            "text1": "Deadline",
+            "text2": "16th Dec, 2024",
+            "text3": "7:00 pm"
+        },
+        "sideDetails2": {
+            "text1": "venue",
+            "text2": "Online",
+            "text3": null
+        },
+        "completionStatus": 0,
+        "moreInfo": "#"
+    },
+    {
+        "title": "Winter of Open Source", 
+        "miniTitle": "Open source event",
+        "description": "Are you ready to code, collaborate, and create? This December, dive into the Winter of Open Source, our 2-month long open-source contribution event! 🖥",
+        "imageVariant": "development",
+        "AvatarSampleData": [
+            { "name": "Abhijit Karmakar", "img": "profile.jpg" },
+            { "name": "Soumyajit Karmakar", "img": "profile.jpg" }
+        ],
+        "TagsList": ["Web development", "OpenSource", "Collaboration"],
+        "sideDetails1": {
+            "text1": "Deadline",
+            "text2": "31st Jan, 2025",
+            "text3": "11:59 PM"
+        },
+        "sideDetails2": {
+            "text1": "venue",
+            "text2": "Online",
+            "text3": null
+        },
+        "completionStatus": 15,
+        "moreInfo": "https://winterofopensource.super.site/"
+    },
+    {
         "title": "WebGame Challenge",
         "miniTitle": "website game development",
         "description": "Calling all web-dev Enthusiasts! Get ready to dive into the world of browser-based game development with WebGame Challenge hosted by GDG development and UI-UX team, in collaboration with CodeIIEST. Whether you're just starting out or looking to sharpen your skills, this competition is your chance to create fun, innovative browser-based games. It's time to show off your coding creativity!",
