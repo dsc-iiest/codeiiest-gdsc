@@ -14,6 +14,8 @@ import { useState } from "react";
 import Loading from "../../components/loading/Loading";
 import Error from "../../components/error/Error";
 import useFetchCF from "../../hooks/useFetchCF";
+import { delayForLeaderBoardsPage } from "../iconloader/IconLoader";
+import { motion } from "framer-motion";
 
 const darkTheme = createTheme({
     palette: {
@@ -152,7 +154,7 @@ const cfcolumns = [
     },
 ];
 
-const LeaderboardMUI = ({ parentHeight, style, setData }) => {
+const LeaderboardMUI = ({ parentHeight, style, setData, delayT }) => {
     const [show, setShow] = useState(1);
     const [reload, setReload] = useState(false);
     const cfUsers = {};
@@ -160,14 +162,17 @@ const LeaderboardMUI = ({ parentHeight, style, setData }) => {
     const width = window.innerWidth;
 
     var res = 0;
+    const currYear = new Date().getFullYear();
     for (let user of userData) {
-        const h = user["Codeforce  Handle "].trim();
+        const h = user["CodeForces handle"].trim();
         if (!h || h.includes(" ")) {
             // console.log("removed this user(left empty) "+h);
             res += 1;
             continue;
         }
-        cfUsers[h.toLowerCase()] = [user.Name, user["Year (1/2/3/4)"]];
+        var joined = user["Email Address"].slice(0, 5);
+
+        cfUsers[h.toLowerCase()] = [user["Full Name"], currYear-parseInt(joined)+1];
     }
     const v = Object.keys(cfUsers);
     const { data, loading, error, isCached, getData } = useFetchCF(v);
@@ -184,7 +189,11 @@ const LeaderboardMUI = ({ parentHeight, style, setData }) => {
     }
 
     return (
-        <div className="leaderboard-mui" style={{ style }}>
+        <motion.div 
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: delayForLeaderBoardsPage + delayT * 0.2, duration: 0.5 }}
+        className="leaderboard-mui" style={{ style }}>
             {/* {!loading && !error ? <div className="notification">{isCached}</div> : null} */}
             <Box className="datagrid-wrapper">
                 {loading ? (
@@ -212,7 +221,7 @@ const LeaderboardMUI = ({ parentHeight, style, setData }) => {
                     </Typography>
                 )} */}
             </Box>
-        </div>
+        </motion.div>
     );
 };
 

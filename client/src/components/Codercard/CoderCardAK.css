@@ -1,51 +1,47 @@
 .coder-card {
-  width: min(100%, 320px);
-  height: 250px;
-  /* margin: 20px; */
-  border-radius: 20px;
-  border: 1px solid #d0cfcf;
-  background: rgba(63, 60, 60, 0.5);
-  padding: 1px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    width: min(100%, 320px);
+    height: 250px;
+    /* margin: 20px; */
+    border-radius: 20px;
+    border: 1px solid #d0cfcf;
+    background: rgba(63, 60, 60, 0.5);
+    padding: 1px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .coder-card:hover {
-  transform: translateY(-3px) scale(1.001);
-  transition: ease 0.3s;
+    transform: translateY(-3px) scale(1.001);
+    transition: ease 0.3s;
 }
 
 .top-section {
-  display: flex;
-  background: linear-gradient(
-    135deg,
-    rgba(0, 0, 0, 0.8),
-    rgba(26, 26, 26, 0.8)
-  );
-  justify-content: space-around;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  height: 40%;
-  font-size: large;
-  align-items: center;
-  margin-bottom: 20px;
+    display: flex;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(26, 26, 26, 0.8));
+    justify-content: space-around;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 40%;
+    font-size: large;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .top-section .left-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-left: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0.8rem;
 }
 
 .top-section .left-section-experience-text {
-  margin-top: 1.5rem;
-  font-size: 1.3rem;
-  font-weight: medium;
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: medium;
 
-  color: #c4bfbf;
+    color: #c4bfbf;
 }
 
-.top-section .coder-profile-image {
+/* .top-section .coder-profile-image {
   margin-top: 5px;
   width: 80px;
   height: 80px;
@@ -59,73 +55,106 @@
   align-items: center;
   font-size: 20px;
   color: #fff;
-}
+} */
 
 .top-section .right-section-text {
-  font-size: 20px;
-  font-weight: bold;
-  text-align: right;
-  color: #f6a200;
-  width: 10ch;
-  padding: 0.3em;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+    color: #f6a200;
+    width: 10ch;
+    padding: 0.3em;
 }
 
 /* Mid Section */
 .mid-section {
-  text-align: center;
-  margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .mid-section .mid-section-container {
-  background: inherit;
-  border-radius: 20px;
-  color: #ffffff;
+    background: inherit;
+    border-radius: 20px;
+    color: #ffffff;
 }
 
 .mid-section .mid-section-container .coder-name-text {
-  margin-top: 1.8rem;
-  font-size: 20px;
-  text-align: left;
-  font-weight: normal;
-  padding-left: 10px;
+    margin-top: 1.8rem;
+    font-size: 20px;
+    text-align: left;
+    font-weight: normal;
+    padding-left: 10px;
+    line-height: 1em;
 }
 
 .bottom-section {
-  display: flex;
-  border-radius: 20px;
-  background: transparent;
-  justify-content: center;
+    display: flex;
+    border-radius: 20px;
+    background: transparent;
+    justify-content: center;
 }
 
 .contests-given,
 .change-in-rating,
 .questions-solved,
 .highest-rating {
-  flex: 1;
-  font-size: 22px;
-  font-weight: bold;
-  text-align: center;
+    flex: 1;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
 }
 
 .contests-given h4,
 .change-in-rating h4,
 .questions-solved h4,
 .highest-rating h4 {
-  margin: 3.5px;
-  font-size: 12px;
-  font-weight: lighter;
-  color: #ffffff;
-  flex-wrap: wrap;
+    margin: 3.5px;
+    font-size: 12px;
+    font-weight: lighter;
+    color: #ffffff;
+    flex-wrap: wrap;
 }
 
 .red {
-  color: #ff5c5c;
+    color: #ff5c5c;
 }
 
 .green {
-  color: rgb(82, 255, 82);
+    color: rgb(82, 255, 82);
 }
 
 .bottom-section * {
-  line-height: 1em;
+    line-height: 1em;
+}
+
+.label-loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    
+}
+
+.label-loader .dot {
+    width: 7px;
+    height: 7px;
+    background: #fff;
+    border-radius: 7px;
+    animation: glow 1s infinite
+}
+
+@keyframes glow {
+    50% {
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1)
+    }
+}
+
+.label-loader .dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.label-loader .dot:nth-child(3) {
+    animation-delay: 0.3s;
 }
