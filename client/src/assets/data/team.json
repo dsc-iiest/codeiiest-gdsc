@@ -154,22 +154,28 @@
     ],
     "media":[
         {
-            "name": "No name",
-            "codeiiest": "Frontend lead",
-            "gdsc": "UI/UX lead",
-            "profilepic": "profilepic",
-            "description":"Some cheesy lines instead of lorem",
-            "website": "#"
-
+            "name": "Harsh Ranjan",
+            "codeiiest": "Media lead",
+            "gdsc": "",
+            "profilepic": "harshranjan.webp",
+            "description":"Decoding strings of soul.",
+            "website": "https://www.linkedin.com/in/harshrjn/"
         },
         {
-            "name": "No name",
-            "codeiiest": "core member",
-            "gdsc": "Development lead",
-            "profilepic": "profilepic",
-            "description":"Some cheesy lines instead of lorem",
-            "website": "#"
-
+            "name": "Sarah Jane Topno",
+            "codeiiest": "Diversity lead",
+            "gdsc": "ML lead",
+            "profilepic": "sarahjane.webp",
+            "description":"Data whisperer by day, algorithm wrangler by night.",
+            "website": "https://www.linkedin.com/in/sarah-jane-topno-32419025a/"
+        },
+        {
+            "name": "Suraj Kashyap",
+            "codeiiest": "Treasurer",
+            "gdsc": "CP lead",
+            "profilepic": "surajkashyap.webp",
+            "description":"In CP, the journey is as important as the destination.",
+            "website": "https://www.linkedin.com/in/kashyapsuraj/"
         }
     ],
     "diversity":[

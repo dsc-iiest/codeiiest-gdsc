@@ -445,18 +445,12 @@
         "chapterContent": {
             "leads": [
                 {
-                    "name": "Soumyajit Karmakar",
-                    "role": "Chapter Lead",
-                    "email": "soumyajit.k@example.com",
-                    "image": "path/to/image.jpg",
-                    "url": "https: //www.example.com"
-                },
-                {
-                    "name": "Abhijit Karmakar",
-                    "role": "Chapter Lead",
-                    "email": "abhijit.k@example.com",
-                    "image": "path/to/image.jpg",
-                    "url": "https://www.example.com"
+                    "name": "Harsh Ranjan",
+                    "codeiiest": "Media lead",
+                    "gdsc": "",
+                    "profilepic": "harshranjan.webp",
+                    "description":"Decoding strings of soul.",
+                    "website": "https://www.linkedin.com/in/harshrjn/"
                 }
             ],
             "coreMembers": [
