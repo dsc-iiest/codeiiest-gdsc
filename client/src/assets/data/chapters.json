@@ -515,13 +515,12 @@
         "chapterContent": {
             "leads": [
                 {
-                    "name": "Swastika Kar",
+                    "name": "Sarah Jane Topno",
                     "codeiiest": "Diversity lead",
-                    "gdsc": "GDG lead",
-                    "profilepic": "swastikakar.jpeg",
-                    "description":"Just Code It—With Google as My Sidekick",
-                    "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
-        
+                    "gdsc": "ML lead",
+                    "profilepic": "sarahjane.webp",
+                    "description":"Data whisperer by day, algorithm wrangler by night.",
+                    "website": "https://www.linkedin.com/in/sarah-jane-topno-32419025a/"
                 }
             ],
             "coreMembers": [

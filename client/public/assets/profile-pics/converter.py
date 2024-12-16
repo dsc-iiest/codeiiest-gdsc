@@ -26,7 +26,7 @@ async def convert_images():
         files = os.listdir(input_dir)
         print(files)
         for file in files:
-            if file.lower().endswith('.jpg'):
+            if file.lower().endswith('.jpeg'):
                 input_path = os.path.join(input_dir, file)
                 output_path = os.path.join(output_dir, file.rsplit('.', 1)[0] + '.webp')
                 print(f"Processing {input_path}")

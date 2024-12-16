@@ -72,6 +72,7 @@ const CP_Leaderboard2 = () => {
 
                 <LeaderboardMUI delayT={topCoders.length} setData={setData} parentHeight={height} />
             </div>
+            
         </div>
     );
 };

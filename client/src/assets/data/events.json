@@ -2,16 +2,17 @@
     {
         "title": "Fresher's Contest", 
         "miniTitle": "Competitive Programming Event",
-        "description": "🌟 Calling All Freshers! Ready to Challenge Yourself? 💻 Get a taste of the competitive programming world with an exciting contest! Whether you're a seasoned coder or just starting, this is the perfect chance to test your skills and learn.",
+        "description": "Calling All Freshers! Ready to Challenge Yourself? Get a taste of the competitive programming world with an exciting contest! Whether you're a seasoned coder or just starting, this is the perfect chance to test your skills and learn.",
         "imageVariant": "cpdsa",
         "AvatarSampleData": [
-            { "name": "Abhijit Karmakar", "img": "profile.jpg" },
-            { "name": "Soumyajit Karmakar", "img": "profile.jpg" }
+            { "name": "Suraj Kashyap", "img": "surajkashyap.webp" },
+            { "name": "Mohak Singh", "img": "mohaksingh.webp" },
+            { "name": "Samyajit Das", "img": "samyajitdas.webp" }
         ],
-        "TagsList": ["CP", "CP Contest", "Problem Solving", "Codeforces"],
+        "TagsList": ["CP", "DSA", "Programming", "Codeforces"],
         "sideDetails1": {
             "text1": "Deadline",
-            "text2": "16th Dec, 2024",
+            "text2": "17th Dec, 2024",
             "text3": "7:00 pm"
         },
         "sideDetails2": {
@@ -20,22 +21,22 @@
             "text3": null
         },
         "completionStatus": 0,
-        "moreInfo": "#"
+        "moreInfo": "https://codeforces.com/group/Bm2GlT8MYu/blog/entry/14914"
     },
     {
         "title": "Winter of Open Source", 
-        "miniTitle": "Open source event",
-        "description": "Are you ready to code, collaborate, and create? This December, dive into the Winter of Open Source, our 2-month long open-source contribution event! 🖥",
+        "miniTitle": "Opensource contribution",
+        "description": "Are you ready to code, collaborate, and create? This December, dive into the Winter of Open Source, our 2-month long open-source contribution event!",
         "imageVariant": "development",
         "AvatarSampleData": [
-            { "name": "Abhijit Karmakar", "img": "profile.jpg" },
-            { "name": "Soumyajit Karmakar", "img": "profile.jpg" }
+            { "name": "Abhijit Karmakar", "img": "abhijitkarmakar.webp" },
+            { "name": "Soumyajit Karmakar", "img": "soumyajitkarmakar.webp" }
         ],
-        "TagsList": ["Web development", "OpenSource", "Collaboration"],
+        "TagsList": ["opensource", "git", "github", "contribution"],
         "sideDetails1": {
-            "text1": "Deadline",
-            "text2": "31st Jan, 2025",
-            "text3": "11:59 PM"
+            "text1": "Duration",
+            "text2": "12th Dec, 2024 to",
+            "text3": "31st Jan, 2025"
         },
         "sideDetails2": {
             "text1": "venue",
@@ -51,13 +52,13 @@
         "description": "Calling all web-dev Enthusiasts! Get ready to dive into the world of browser-based game development with WebGame Challenge hosted by GDG development and UI-UX team, in collaboration with CodeIIEST. Whether you're just starting out or looking to sharpen your skills, this competition is your chance to create fun, innovative browser-based games. It's time to show off your coding creativity!",
         "imageVariant": "development",
         "AvatarSampleData": [
-            { "name": "Abhijit Karmakar", "img": "profile.jpg" },
-            { "name": "Soumyajit Karmakar", "img": "profile.jpg" }
+            { "name": "Abhijit Karmakar", "img": "abhijitkarmakar.webp" },
+            { "name": "Soumyajit Karmakar", "img": "soumyajitkarmakar.webp" }
         ],
-        "TagsList": ["Web development", "creativity", "UIUX"],
+        "TagsList": ["Web development", "creativity", "UIUX", "animations", "Design"],
         "sideDetails1": {
             "text1": "Deadline",
-            "text2": "5th Nov, 2024",
+            "text2": "10th Nov, 2024",
             "text3": "11:59 PM"
         },
         "sideDetails2": {
@@ -65,8 +66,8 @@
             "text2": "Online",
             "text3": null
         },
-        "completionStatus": 80,
-        "moreInfo": "#"
+        "completionStatus": 100,
+        "moreInfo": "https://www.linkedin.com/posts/codeiiest-iiest_calling-all-web-dev-enthusiasts-get-ready-activity-7254556901860913153-u2gL?utm_source=share&utm_medium=member_desktop"
     },
     {
         "title": "Introduction to Git and Github",
@@ -74,14 +75,14 @@
         "description": "A beginner friendly session introducing the powers of git and github for seamless collaboration.",
         "imageVariant": "development",
         "AvatarSampleData": [
-            { "name": "Abhijit Karmakar", "img": "profile.jpg" },
-            { "name": "Soumyajit Karmakar", "img": "profile.jpg" }
+            { "name": "Abhijit Karmakar", "img": "abhijitkarmakar.webp" },
+            { "name": "Soumyajit Karmakar", "img": "soumyajitkarmakar.webp" }
         ],
         "TagsList": ["git", "github", "Version control", "collaboration"],
         "sideDetails1": {
             "text1": "date & time",
-            "text2": "tbd",
-            "text3": "tbd"
+            "text2": "6th Nov, 2024",
+            "text3": "5:00 PM"
         },
         "sideDetails2": {
             "text1": "venue",
@@ -97,8 +98,10 @@
         "description": "Calling all Cp-Dsa Enthusiasts! Let's Begin the Chapter of CP'24 with the introduction to STL!",
         "imageVariant": "cpdsa",
         "AvatarSampleData": [
-            { "name": "Mohak Singh", "img": "profile.jpg" },
-            { "name": "Suraj Kashyap", "img": "profile.jpg" }
+            { "name": "Hanzala Sharique", "img": "hanzalasharique.webp" },
+            { "name": "Mohak Singh", "img": "mohaksingh.webp" },
+            { "name": "Suraj Kashyap", "img": "surajkashyap.webp" },
+            { "name": "Samyajit Das", "img": "samyajitdas.webp" }
         ],
         "TagsList": ["CP", "DSA", "programming"],
         "sideDetails1": {
@@ -118,16 +121,17 @@
         "title": "Introduction to ML",
         "miniTitle": "Introduction to ML",
         "description": "An immersive bootcamp covering the essentials of data science.",
-        "imageVariant": "uiux",
+        "imageVariant": "aiml",
         "AvatarSampleData": [
-            { "name": "Abhijit Karmakar", "img": "profile.jpg" },
-            { "name": "Soumyajit Karmakar", "img": "profile.jpg" }
+            { "name": "Angshuman Roy", "img": "angshumanroy.webp" },
+            { "name": "Sarah Jane Topno", "img": "sarahjane.webp" },
+            { "name": "Subhrajit Deb", "img": "subhrajitdeb.webp" }
         ],
-        "TagsList": ["data science", "python", "statistics"],
+        "TagsList": ["AI", "ML", "Beginner"],
         "sideDetails1": {
             "text1": "date & time",
-            "text2": "tbd",
-            "text3": "tbd"
+            "text2": "8th Nov, 2024",
+            "text3": "5:00 PM"
         },
         "sideDetails2": {
             "text1": "venue",
@@ -136,47 +140,5 @@
         },
         "completionStatus": 0,
         "moreInfo": "#"
-    },
-    {
-        "title": "Data Science Bootcamp",
-        "miniTitle": "Learn Data Science",
-        "description": "An immersive bootcamp covering the essentials of data science.",
-        "imageVariant": "uiux",
-        "AvatarSampleData": [
-            { "name": "Abhijit Karmakar", "img": "profile.jpg" },
-            { "name": "Soumyajit Karmakar", "img": "profile.jpg" }
-        ],
-        "TagsList": ["data science", "python", "statistics"],
-        "sideDetails1": {
-            "text1": "date & time",
-            "text2": "12th Dec",
-            "text3": "09:00 AM - 4:00 PM"
-        },
-        "sideDetails2": {
-            "text1": "venue",
-            "text2": "Room 401, Science Building",
-            "text3": null
-        }
-    },
-    {
-        "title": "Data Science Bootcamp",
-        "miniTitle": "Learn Data Science",
-        "description": "An immersive bootcamp covering the essentials of data science.",
-        "imageVariant": "uiux",
-        "AvatarSampleData": [
-            { "name": "Abhijit Karmakar", "img": "profile.jpg" },
-            { "name": "Soumyajit Karmakar", "img": "profile.jpg" }
-        ],
-        "TagsList": ["data science", "python", "statistics"],
-        "sideDetails1": {
-            "text1": "date & time",
-            "text2": "12th Dec",
-            "text3": "09:00 AM - 4:00 PM"
-        },
-        "sideDetails2": {
-            "text1": "venue",
-            "text2": "Room 401, Science Building",
-            "text3": null
-        }
     }
 ]

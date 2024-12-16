@@ -3,14 +3,26 @@ import "./CoderCardAK.css";
 import { Avatar } from "@mui/material";
 
 const LabelLoading = () => {
-    return <div className="label-loader">
-        <div className="dot"></div>
-        <div className="dot"></div>
-        <div className="dot"></div>
-    </div>;
+    return (
+        <div className="label-loader">
+            <div className="dot"></div>
+            <div className="dot"></div>
+            <div className="dot"></div>
+        </div>
+    );
 };
 
+function toTitleCase(str) {
+    return str
+        ?.toLowerCase() // Ensure the rest of the letters are lowercase
+        .split(" ") // Split the string into words
+        .map((word) => word.charAt(0).toUpperCase() + word.slice(1)) // Capitalize first letter
+        .join(" "); // Join words back into a string
+}
+
 const Codercard = ({ coderData }) => {
+    console.log(coderData);
+
     return (
         <div className="coder-card">
             <div className="top-section">
@@ -18,7 +30,20 @@ const Codercard = ({ coderData }) => {
                     <h2 className="left-section-experience-text chakra-petch-regular">
                         {coderData.experience || <LabelLoading />}
                     </h2>
-                    <Avatar sx= {{color: "#000", fontWeight: 400, fontSize: "2rem",width: 75, height: 75 , bgcolor: "rgb(244, 110, 110)"}} alt="Remy Sharp" src={coderData.avatar}>{coderData.name?.slice(0,1) || "*_*"}</Avatar>
+                    <Avatar
+                        sx={{
+                            color: "#000",
+                            fontWeight: 400,
+                            fontSize: "2rem",
+                            width: 75,
+                            height: 75,
+                            bgcolor: "rgb(244, 110, 110)",
+                        }}
+                        alt="Remy Sharp"
+                        src={coderData.avatar}
+                    >
+                        {coderData.name?.slice(0, 1) || "*_*"}
+                    </Avatar>
                 </div>
                 <div className="right-section">
                     <h1 className="right-section-text chakra-petch-regular">Coder of the Month</h1>
@@ -26,7 +51,16 @@ const Codercard = ({ coderData }) => {
             </div>
             <div className="mid-section">
                 <div className="mid-section-container">
-                    <h3 className="coder-name-text chakra-petch-regular">{coderData.name || <LabelLoading />}</h3>
+                    <h3 className="coder-name-text chakra-petch-regular">
+                        <a
+                            className="usernames"
+                            href={coderData.handle ? `https://codeforces.com/profile/${coderData.handle}` : "#"}
+                            rel={"noopener noreferrer"}
+                            target="_blank"
+                        >
+                            {toTitleCase(coderData.name) || <LabelLoading />}
+                        </a>
+                    </h3>
                 </div>
             </div>
             <div className="bottom-section chakra-petch-regular">

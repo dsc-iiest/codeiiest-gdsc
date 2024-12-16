@@ -122,16 +122,14 @@ const cfcolumns = [
     },
     {
         field: "year",
-        headerName: "Year",
+        headerName: "Batch",
         width: 70,
         sortable: false,
         headerClassName: "lb-header",
         resizable: false,
         headerAlign: "center",
         renderCell: (params) =>
-            `${params.value}${
-                params.value === 1 ? "st" : params.value === 2 ? "nd" : params.value === 3 ? "rd" : "th"
-            }`,
+            `${params.value}`,
     },
 
     {
@@ -162,7 +160,6 @@ const LeaderboardMUI = ({ parentHeight, style, setData, delayT }) => {
     const width = window.innerWidth;
 
     var res = 0;
-    const currYear = new Date().getFullYear();
     for (let user of userData) {
         const h = user["CodeForces handle"].trim();
         if (!h || h.includes(" ")) {
@@ -172,7 +169,7 @@ const LeaderboardMUI = ({ parentHeight, style, setData, delayT }) => {
         }
         var joined = user["Email Address"].slice(0, 5);
 
-        cfUsers[h.toLowerCase()] = [user["Full Name"], currYear-parseInt(joined)+1];
+        cfUsers[h.toLowerCase()] = [user["Full Name"], parseInt(joined)+4];
     }
     const v = Object.keys(cfUsers);
     const { data, loading, error, isCached, getData } = useFetchCF(v);

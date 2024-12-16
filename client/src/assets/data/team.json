@@ -21,19 +21,34 @@
         {
             "name": "Tejas Pawar",
             "codeiiest": "Backend lead",
-            "gdsc": "core member",
+            "gdsc": "Dev core member",
             "profilepic": "tejaspawar.webp",
             "description":"Building what you don't see, powering what you can't ignore",
             "website": "https://www.linkedin.com/in/tejaspawar429/"
         },
         {
             "name": "Siddharth Sen",
-            "codeiiest": "Core Team of Dev Chapter",
-            "gdg": "AI & ML Core Team",
-            "profilepic": "siddharthsen.jpeg",
+            "codeiiest": "Core member",
+            "gdg": "AI & ML Core member",
+            "profilepic": "siddharthsen.webp",
             "description": "Just like in test cricket, every line of code and every decision matters.",
-            "team": "Dev",
             "website": ""
+        },
+        {
+            "name": "Aitijhya Modak",
+            "codeiiest": "Core member",
+            "gdg": "Dev Core member",
+            "profilepic": "aitijhyamodak.webp",
+            "description": "Chasing Excellence, One Line of Code at a Time.",
+            "website": "https://www.linkedin.com/in/aitijhya-modak-358b2b28a/"
+        },
+        {
+            "name": "Siddharth Kolipaka",
+            "codeiiest": "Core member",
+            "gdg": "Dev Core member",
+            "profilepic": "siddharthkolipaka.webp",
+            "description": "Crafting code with creativity, precision, and purpose.",
+            "website": "https://siddharthkolipaka.netlify.app/"
         }
     ],
     "cybersecurity":[
@@ -54,20 +69,29 @@
             "description":"カナヅチでも船から落ちなきゃいいじゃないか！",
             "website": "https://www.linkedin.com/in/angshuman-roy-91620022a/"
 
+        },
+        {
+            "name": "Om Singh",
+            "codeiiest": "Core member",
+            "gdsc": "Cyber core member",
+            "profilepic": "omsingh.webp",
+            "description":"Shielding What Matters Most.",
+            "website": "https://portrep.onrender.com/"
+
         }
     ],
     "aiml":[
         {
             "name": "Angshuman Roy",
             "codeiiest": "ML Lead",
-            "gdsc": "ML core team member",
+            "gdsc": "ML core member",
             "profilepic": "angshumanroy.png",
             "description":"カナヅチでも船から落ちなきゃいいじゃないか！",
             "website": "https://www.linkedin.com/in/angshuman-roy-91620022a/"
         },
         {
             "name": "Sarah Jane Topno",
-            "codeiiest": "ML Team core member",
+            "codeiiest": "Diversity Lead",
             "gdg": "ML lead",
             "profilepic": "sarahjane.webp",
             "description": "Data whisperer by day, algorithm wrangler by night.",
@@ -76,8 +100,17 @@
         },
         {
             "name": "Subhrajit Deb",
-            "codeiiest": "AI & ML Team Member",
-            "gdg": "ML/AI Team Member",
+            "codeiiest": "Core Member",
+            "gdg": "ML Core Member",
+            "profilepic": "subhrajitdeb.webp",
+            "description": "Let it Be or Make it Happen!",
+            "team": "AI & ML",
+            "website": "www.linkedin.com/in/subhrajit-deb2"
+        },
+        {
+            "name": "Subhranil Nandy",
+            "codeiiest": "Core Member",
+            "gdg": "ML Core Member",
             "profilepic": "subhrajitdeb.webp",
             "description": "Let it Be or Make it Happen!",
             "team": "AI & ML",
@@ -111,8 +144,8 @@
         },
         {
             "name": "Hanzala Sharique",
-            "codeiiest": "CP Core Team Member",
-            "gdg": "CP Team Core Member",
+            "codeiiest": "Core Member",
+            "gdg": "CP Core Member",
             "profilepic": "hanzalasharique.webp",
             "description": "Burnerace at the crease: smashing code challenges for six!",
             "team": "CP/DSA",
@@ -121,33 +154,32 @@
     ],
     "media":[
         {
-            "name": "Abhijit Karmakar",
+            "name": "No name",
             "codeiiest": "Frontend lead",
             "gdsc": "UI/UX lead",
             "profilepic": "profilepic",
             "description":"Some cheesy lines instead of lorem",
-            "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
+            "website": "#"
 
         },
         {
-            "name": "Soumyajit Karmakar",
+            "name": "No name",
             "codeiiest": "core member",
             "gdsc": "Development lead",
             "profilepic": "profilepic",
             "description":"Some cheesy lines instead of lorem",
-            "website": "https://www.linkedin.com/in/soumyajit-karmakar-68362526b/"
+            "website": "#"
 
         }
     ],
     "diversity":[
         {
-            "name": "Swastika Kar",
+            "name": "Sarah Jane Topno",
             "codeiiest": "Diversity lead",
-            "gdsc": "GDG lead",
-            "profilepic": "swastikakar.jpeg",
-            "description":"Just Code It—With Google as My Sidekick",
-            "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
-
+            "gdsc": "ML lead",
+            "profilepic": "sarahjane.webp",
+            "description":"Data whisperer by day, algorithm wrangler by night.",
+            "website": "https://www.linkedin.com/in/sarah-jane-topno-32419025a/"
         }
     ]
 }

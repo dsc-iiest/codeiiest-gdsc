@@ -17,7 +17,7 @@ const About = () => {
 			<NamecardV
 				name={member.name}
 				codeiiest={member.codeiiest}
-				gdsc={member.gdsc}
+				gdsc={member.gdg|| member.gdsc}
 				profilepic={member.profilepic}
 				descrip={member.description}
 				website={member.website}

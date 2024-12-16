@@ -66,6 +66,28 @@ body{
 
 a{
 	text-decoration: none;
+	color: #fff;
+	transition: all ease 0.2s;
+	font-weight: 500;
+	position:relative;
+}
+
+
+
+a.usernames::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 1.5px;
+	background: gold;
+	transform: scaleX(0);
+	transition: all ease 0.2s;
+	transform-origin: left;
+}
+
+a.usernames:hover::before {
+	transform: scaleX(1);
 }
 
 ::-webkit-scrollbar {
