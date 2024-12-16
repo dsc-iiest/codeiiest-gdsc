@@ -17,6 +17,8 @@
   /* height: auto; */
   border-radius: 50%;
   object-position: bottom;
+  opacity: 0;
+  animation: in 1s ease 0.5s 1 normal forwards;
 }
 
 .text-section {
