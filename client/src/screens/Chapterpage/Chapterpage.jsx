@@ -230,7 +230,7 @@ const Chapterpage = () => {
                     <NameCardH
                         name={data.chapterContent.leads[0].name}
                         codeiiest={data.chapterContent.leads[0].codeiiest}
-                        gdsc={data.chapterContent.leads[0].gdsc}
+                        gdg={data.chapterContent.leads[0].gdg}
                         profilepic={data.chapterContent.leads[0].profilepic}
                         descrip={data.chapterContent.leads[0].description}
                         customCSS={{
@@ -240,7 +240,7 @@ const Chapterpage = () => {
                     {data.chapterContent.leads.length > 1 && <NameCardH
                         name={data.chapterContent.leads[1].name}
                         codeiiest={data.chapterContent.leads[1].codeiiest}
-                        gdsc={data.chapterContent.leads[1].gdsc}
+                        gdg={data.chapterContent.leads[1].gdg}
                         profilepic={data.chapterContent.leads[1].profilepic}
                         descrip={data.chapterContent.leads[1].description}
                         customCSS={{
@@ -270,8 +270,8 @@ const Chapterpage = () => {
                         <NameCardV
                             name={data.chapterContent.leads[0].name}
                             codeiiest={data.chapterContent.leads[0].codeiiest}
-                            gdsc={data.chapterContent.leads[0].gdsc}
-                            profilepic={"profilepic"}
+                            gdg={data.chapterContent.leads[0].gdg}
+                            profilepic={data.chapterContent.leads[0].profilepic}
                             descrip={"Building the future, one component at a time"}
                             customCSS={{
                                 transform: "scale(1)",
@@ -280,8 +280,8 @@ const Chapterpage = () => {
                         {data.chapterContent.leads.length > 1 && <NameCardV
                             name={data.chapterContent.leads[1].name}
                             codeiiest={data.chapterContent.leads[1].codeiiest}
-                            gdsc={data.chapterContent.leads[0].gdsc}
-                            profilepic={"profilepic"}
+                            gdg={data.chapterContent.leads[1].gdg}
+                            profilepic={data.chapterContent.leads[1].profilepic}
                             descrip={"Building the future, one component at a time"}
                             customCSS={{
                                 transform: "scale(1)",

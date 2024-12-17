@@ -70,9 +70,28 @@ const CP_Leaderboard2 = () => {
                     </div>
                 </div>
 
+                {innerWidth <= 900 && (
+                    <div style={{ 
+                        display: "flex", 
+                        flexWrap: "wrap", 
+                        alignItems: "center",
+                        justifyContent: "center",
+                        gap: "1rem",
+                        }}>
+                        {topCoders.map((coder, i) => (
+                            <motion.div
+                                key={i}
+                                initial={{ opacity: 0, y: 50 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5, delay: i * 0.2 }}
+                            >
+                                <Codercard coderData={coder} key={i} />
+                            </motion.div>
+                        ))}
+                    </div>
+                )}
                 <LeaderboardMUI delayT={topCoders.length} setData={setData} parentHeight={height} />
             </div>
-            
         </div>
     );
 };

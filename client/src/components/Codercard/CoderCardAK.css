@@ -108,8 +108,9 @@
 .change-in-rating h4,
 .questions-solved h4,
 .highest-rating h4 {
-    margin: 3.5px;
+    /* margin: 3.5px; */
     font-size: 12px;
+    width: 10ch;
     font-weight: lighter;
     color: #ffffff;
     flex-wrap: wrap;

@@ -3,7 +3,7 @@
         {
             "name": "Abhijit Karmakar",
             "codeiiest": "Frontend lead",
-            "gdsc": "UI/UX lead",
+            "gdg": "UI/UX lead",
             "profilepic": "abhijitkarmakar.webp",
             "description":"The feel is more important than the code behind it",
             "website": "https://www.linkedin.com/in/abhijit-karmakar-009ab026b/"
@@ -12,7 +12,7 @@
         {
             "name": "Soumyajit Karmakar",
             "codeiiest": "core member",
-            "gdsc": "Development lead",
+            "gdg": "Development lead",
             "profilepic": "soumyajitkarmakar.webp",
             "description":"Eliminating bugs without sprays",
             "website": "https://www.linkedin.com/in/soumyajit-karmakar-68362526b/"
@@ -21,7 +21,7 @@
         {
             "name": "Tejas Pawar",
             "codeiiest": "Backend lead",
-            "gdsc": "Dev core member",
+            "gdg": "Dev core member",
             "profilepic": "tejaspawar.webp",
             "description":"Building what you don't see, powering what you can't ignore",
             "website": "https://www.linkedin.com/in/tejaspawar429/"
@@ -55,7 +55,7 @@
         {
             "name": "Soham Haldar",
             "codeiiest": "Cybersecurity Lead",
-            "gdsc": "ML core member",
+            "gdg": "ML core member",
             "profilepic": "sohamhaldar.webp",
             "description":"The quieter you become, the more you are able to hear.",
             "website": "http://www.linkedin.com/in/soham-haldar-a088a529a"
@@ -64,7 +64,7 @@
         {
             "name": "Angshuman Roy",
             "codeiiest": "AI/ML Lead",
-            "gdsc": "AI/ML core member",
+            "gdg": "AI/ML core member",
             "profilepic": "angshumanroy.png",
             "description":"カナヅチでも船から落ちなきゃいいじゃないか！",
             "website": "https://www.linkedin.com/in/angshuman-roy-91620022a/"
@@ -73,7 +73,7 @@
         {
             "name": "Om Singh",
             "codeiiest": "Core member",
-            "gdsc": "Cyber core member",
+            "gdg": "Cyber core member",
             "profilepic": "omsingh.webp",
             "description":"Shielding What Matters Most.",
             "website": "https://portrep.onrender.com/"
@@ -84,7 +84,7 @@
         {
             "name": "Angshuman Roy",
             "codeiiest": "ML Lead",
-            "gdsc": "ML core member",
+            "gdg": "ML core member",
             "profilepic": "angshumanroy.png",
             "description":"カナヅチでも船から落ちなきゃいいじゃないか！",
             "website": "https://www.linkedin.com/in/angshuman-roy-91620022a/"
@@ -121,7 +121,7 @@
         {
             "name": "Suraj Kashyap",
             "codeiiest": "Treasurer",
-            "gdsc": "CP lead",
+            "gdg": "CP lead",
             "profilepic": "surajkashyap.webp",
             "description":"In CP, the journey is as important as the destination.",
             "website": "https://www.linkedin.com/in/kashyapsuraj/"
@@ -129,7 +129,7 @@
         {
             "name": "Mohak Singh",
             "codeiiest": "CP Lead",
-            "gdsc": "CP core member",
+            "gdg": "CP core member",
             "profilepic": "mohaksingh.webp",
             "description":"Intuition in coding is like a GPS without signal: A Wild Guess!",
             "website": "https://www.linkedin.com/in/mohak-singh-572745252/"
@@ -137,7 +137,7 @@
         {
             "name": "Samyajit Das",
             "codeiiest": "Secretary",
-            "gdsc": "Co-Lead",
+            "gdg": "Co-Lead",
             "profilepic": "samyajitdas.webp",
             "description":"Solving problems faster than you can say 'syntax error'",
             "website": "https://www.linkedin.com/in/samyajit-das/"
@@ -156,7 +156,7 @@
         {
             "name": "Harsh Ranjan",
             "codeiiest": "Media lead",
-            "gdsc": "",
+            "gdg": "",
             "profilepic": "harshranjan.webp",
             "description":"Decoding strings of soul.",
             "website": "https://www.linkedin.com/in/harshrjn/"
@@ -164,7 +164,7 @@
         {
             "name": "Sarah Jane Topno",
             "codeiiest": "Diversity lead",
-            "gdsc": "ML lead",
+            "gdg": "ML lead",
             "profilepic": "sarahjane.webp",
             "description":"Data whisperer by day, algorithm wrangler by night.",
             "website": "https://www.linkedin.com/in/sarah-jane-topno-32419025a/"
@@ -172,7 +172,7 @@
         {
             "name": "Suraj Kashyap",
             "codeiiest": "Treasurer",
-            "gdsc": "CP lead",
+            "gdg": "CP lead",
             "profilepic": "surajkashyap.webp",
             "description":"In CP, the journey is as important as the destination.",
             "website": "https://www.linkedin.com/in/kashyapsuraj/"
@@ -182,7 +182,7 @@
         {
             "name": "Sarah Jane Topno",
             "codeiiest": "Diversity lead",
-            "gdsc": "ML lead",
+            "gdg": "ML lead",
             "profilepic": "sarahjane.webp",
             "description":"Data whisperer by day, algorithm wrangler by night.",
             "website": "https://www.linkedin.com/in/sarah-jane-topno-32419025a/"

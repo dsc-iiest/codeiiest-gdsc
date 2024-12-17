@@ -39,7 +39,7 @@ const Codercard = ({ coderData }) => {
                             height: 75,
                             bgcolor: "rgb(244, 110, 110)",
                         }}
-                        alt="Remy Sharp"
+                        alt="*_*"
                         src={coderData.avatar}
                     >
                         {coderData.name?.slice(0, 1) || "*_*"}

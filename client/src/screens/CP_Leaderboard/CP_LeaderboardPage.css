@@ -20,12 +20,12 @@
     margin-top: 2rem;
 }
 
-.cp-leaderboard-page .content-container .top-coders-scaler {
+.top-coders-scaler {
     min-width: 423px;
     max-width: 650px;
 }
 
-.cp-leaderboard-page .content-container .top-coders-scaler .top-coders {
+.top-coders-scaler .top-coders {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1em;
@@ -61,3 +61,17 @@
         width: min(100%, 525px);
     }
 }
+
+@media only screen and (max-width: 900px) {
+    .cp-leaderboard-page {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cp-leaderboard-page .content-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: start ;
+    }
+} 
