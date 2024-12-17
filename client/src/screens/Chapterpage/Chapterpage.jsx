@@ -178,13 +178,13 @@ const idMap = {
 const EventsProgress = () => {
     const events = [
         {
-            name: "ML March",
-            progress: 1,
+            name: "Fresher's contest",
+            progress:1,
             total: 4,
         },
         {
-            name: "Flutter Bootcamp",
-            progress: 3,
+            name: "Winter of Opensource",
+            progress: 1,
             total: 6,
         },
     ];
@@ -195,7 +195,7 @@ const EventsProgress = () => {
                     <ProgressBar progress={event.progress} total={event.total}></ProgressBar>
                     <div className="name">
                         {event.name}
-                        <div className="progress">{(event.progress / event.total) * 100}%</div>
+                        <div className="progress">{Math.ceil((event.progress / event.total) * 100)}%</div>
                     </div>
                 </div>
             ))}

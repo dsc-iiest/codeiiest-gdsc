@@ -6,13 +6,13 @@ import ProgressBar from "../../components/ProgressBar/ProgressBar";
 const EventsProgress = () => {
     const events = [
         {
-            name: "Webgame Challenge",
-            progress: 1,
+            name: "Fresher's Contest",
+            progress: 3,
             total: 4,
         },
         {
-            name: "CodeConnect",
-            progress: 6,
+            name: "Winter of Opensource",
+            progress: 1,
             total: 6,
         },
     ];
@@ -23,7 +23,7 @@ const EventsProgress = () => {
                     <ProgressBar progress={event.progress} total={event.total}></ProgressBar>
                     <div className="name">
                         {event.name}
-                        <div className="progress">{(event.progress / event.total) * 100}%</div>
+                        <div className="progress">{Math.ceil((event.progress / event.total) * 100)}%</div>
                     </div>
                 </div>
             ))}
