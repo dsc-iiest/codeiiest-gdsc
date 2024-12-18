@@ -157,7 +157,7 @@ const LeaderboardMUI = ({ parentHeight, style, setData, delayT }) => {
     const [reload, setReload] = useState(false);
     const cfUsers = {};
 
-    const width = window.innerWidth;
+    const width = screen.width;
 
     var res = 0;
     for (let user of userData) {

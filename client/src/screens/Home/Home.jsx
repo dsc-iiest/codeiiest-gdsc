@@ -46,6 +46,8 @@ const NewEvents = () => {
 };
 
 const Home = () => {
+
+    const width = screen.width;
     return (
         <div className="home page">
             <div className="bg">
@@ -53,10 +55,10 @@ const Home = () => {
             </div>
             <div className="heading">
                 <div className="title">
-                        <div className="line line1">
-                            <div className="red">{"<"}</div>
-                            CODE TOGETHER,
-                        </div>
+                    <div className="line line1">
+                        <div className="red">{"<"}</div>
+                        CODE TOGETHER,
+                    </div>
                     <div className="line line2">
                         GROW TOGETHER
                         <div className="red">{">"}</div>
@@ -72,7 +74,7 @@ const Home = () => {
                     </div>
                     <div className="x">X</div>
                     <div className="item">
-                        GDG IIESTS
+                        GDG IIESTS{width}
                         <img src={"/assets/logo/gdsc-logo.png"} />
                     </div>
                     <div className="minified">
