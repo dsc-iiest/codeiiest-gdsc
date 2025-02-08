@@ -31,7 +31,7 @@ const calculateTopCoders = async (data) => {
         year4Av = "";
 
     const curr = new Date();
-    const currYear = curr.getFullYear();
+    var currYear = curr.getFullYear();
     const currMonth = curr.getMonth();
     if(currMonth<4)currYear-=1; // the year has not yet ended for us!
 
