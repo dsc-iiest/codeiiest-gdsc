@@ -6,13 +6,13 @@ import ProgressBar from "../../components/ProgressBar/ProgressBar";
 const EventsProgress = () => {
     const events = [
         {
-            name: "Fresher's Contest",
-            progress: 3,
+            name: "Fresher's Contest 2.0",
+            progress: 1,
             total: 4,
         },
         {
             name: "Winter of Opensource",
-            progress: 1,
+            progress: 6,
             total: 6,
         },
     ];
@@ -38,8 +38,8 @@ const NewEvents = () => {
                 <strong>New Event Alert</strong>
             </div>
             <div className="line">
-                <div className="name">Induction</div>
-                &nbsp; starting 04/11/24
+                <div className="name">Freshers' Contest 2.0</div>
+                &nbsp; starting 10th Feb
             </div>
         </div>
     );
