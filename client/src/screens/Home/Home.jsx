@@ -3,19 +3,21 @@ import "./Home.css";
 import ProgressBar from "../../components/ProgressBar/ProgressBar";
 // import News from "../../components/News/News";
 
+export const events = [
+    {
+        name: "Fresher's Contest 2.0",
+        progress: 1,
+        total: 4,
+    },
+    {
+        name: "Winter of Opensource",
+        progress: 6,
+        total: 6,
+    },
+];
+
 const EventsProgress = () => {
-    const events = [
-        {
-            name: "Fresher's Contest 2.0",
-            progress: 1,
-            total: 4,
-        },
-        {
-            name: "Winter of Opensource",
-            progress: 6,
-            total: 6,
-        },
-    ];
+    
     return (
         <div className="events-progress bottom-left">
             {events.map((event, index) => (
