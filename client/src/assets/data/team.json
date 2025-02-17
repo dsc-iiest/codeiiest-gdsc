@@ -49,6 +49,14 @@
             "profilepic": "siddharthkolipaka.webp",
             "description": "Crafting code with creativity, precision, and purpose.",
             "website": "https://siddharthkolipaka.netlify.app/"
+        },
+        {
+            "name": "Arkapravo Das",
+            "codeiiest": "Core member",
+            "gdg": "Dev Core member",
+            "profilepic": "arkapravodas.webp",
+            "description": "Making Life easier with Computers.",
+            "website": "https://www.linkedin.com/in/arkapravo-das-981995318/"
         }
     ],
     "cybersecurity":[
@@ -77,6 +85,15 @@
             "profilepic": "omsingh.webp",
             "description":"Shielding What Matters Most.",
             "website": "https://portrep.onrender.com/"
+
+        },
+        {
+            "name": "Harsh Raj Sahu",
+            "codeiiest": "Core member",
+            "gdg": "Cyber core member",
+            "profilepic": "harshrajsahu.webp",
+            "description":"Love handling SIEM tools and Analyse Data packets.",
+            "website": "https://www.linkedin.com/in/harshrajsahu07?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
 
         }
     ],
@@ -115,6 +132,15 @@
             "description": "Teaching machines, training models and learning from life",
             "team": "AI & ML",
             "website": "https://www.linkedin.com/in/subhranil-nandy"
+        },
+        {
+            "name": "Suchana Hazra",
+            "codeiiest": "Core Member",
+            "gdg": "ML Core Member",
+            "profilepic": "suchanahazra.webp",
+            "description": "Neural networks are powerful, but human intuition is priceless!",
+            "team": "AI & ML",
+            "website": "https://suchana16-portfolio.netlify.app/"
         }
     ],
     "cpdsa":[
@@ -176,6 +202,14 @@
             "profilepic": "surajkashyap.webp",
             "description":"In CP, the journey is as important as the destination.",
             "website": "https://www.linkedin.com/in/kashyapsuraj/"
+        },
+        {
+            "name": "Avishikta Das ",
+            "codeiiest": "Media Core member",
+            "gdg": "Design and Content lead",
+            "profilepic": "avishiktadas.webp",
+            "description":"Sometimes we win and sometimes we learn ",
+            "website": "https://www.linkedin.com/in/avishikta-das-a12812272?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
         }
     ],
     "diversity":[

@@ -76,7 +76,7 @@ const Home = () => {
                     </div>
                     <div className="x">X</div>
                     <div className="item">
-                        GDG IIESTS{width}
+                        GDG IIESTS
                         <img src={"/assets/logo/gdsc-logo.png"} />
                     </div>
                     <div className="minified">
