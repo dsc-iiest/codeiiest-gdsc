@@ -33,10 +33,12 @@ const calculateTopCoders = async (data) => {
     const curr = new Date();
     var currYear = curr.getFullYear();
     const currMonth = curr.getMonth();
-    if(currMonth<4)currYear-=1; // the year has not yet ended for us!
+    if (currMonth <= 4) currYear -= 1; // the year has not yet ended for us!
 
+    console.log("DEBUG PHASE TOPCODERS");
     for (const user of data) {
         const { rating, handle, year, maxrating, name, avatar } = user;
+
         switch (year) {
             case currYear + 4:
                 if (rating > year1MaxRatin) {
@@ -45,8 +47,9 @@ const calculateTopCoders = async (data) => {
                     year1highestRating = maxrating;
                     year1TcName = name;
                     year1Av = avatar;
-                    break;
+                    if (handle === "SM_Raj") console.log(user.year);
                 }
+                break;
             case currYear + 3:
                 if (rating > year2MaxRatin) {
                     year2MaxRatin = rating;
@@ -54,8 +57,12 @@ const calculateTopCoders = async (data) => {
                     year2highestRating = maxrating;
                     year2TcName = name;
                     year2Av = avatar;
-                    break;
+                    if (handle === "ROHITDAScr7"){
+                         console.log(user.year);
+                         console.log(currYear+3)
+                    }
                 }
+                break;
             case currYear + 2:
                 if (rating > year3MaxRatin) {
                     year3MaxRatin = rating;
@@ -63,8 +70,8 @@ const calculateTopCoders = async (data) => {
                     year3highestRating = maxrating;
                     year3TcName = name;
                     year3Av = avatar;
-                    break;
                 }
+                break;
             case currYear + 1:
                 if (rating > year4MaxRatin) {
                     year4MaxRatin = rating;
@@ -73,6 +80,7 @@ const calculateTopCoders = async (data) => {
                     year4TcName = name;
                     year4Av = avatar;
                 }
+                break;
         }
     }
 
