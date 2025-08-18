@@ -175,12 +175,14 @@ const LeaderboardMUI = ({ parentHeight, style, setData, delayT }) => {
     const { data, loading, error, isCached, getData } = useFetchCF(v);
     if(data) setData(data)
     if (!loading && !error && data) {
+        console.log(isCached);
         for (let user of data) {
             try {
                 [user.name, user.year] = cfUsers[user.handle.toLowerCase()];
             } catch (err) {
-                console.log(err);
-                console.log(user);
+                // console.log(err);
+                // console.log(user);
+                continue;
             }
         }
     }

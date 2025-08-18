@@ -21,7 +21,8 @@ function toTitleCase(str) {
 }
 
 const Codercard = ({ coderData }) => {
-    console.log(coderData);
+    // console.log(JSON.stringify(coderData));
+    const valid = coderData?.handle;
 
     return (
         <div className="coder-card">
@@ -65,19 +66,19 @@ const Codercard = ({ coderData }) => {
             </div>
             <div className="bottom-section chakra-petch-regular">
                 <div className="contests-given chakra-petch-regular">
-                    {coderData.contestsGiven || <LabelLoading />}
+                    {valid?coderData.contestsGiven:<LabelLoading />}
                     <h4>contests given</h4>
                 </div>
                 <div className={`change-in-rating ${coderData.changeInRating < 0 ? "red" : "green"}`}>
-                    {coderData.changeInRating || <LabelLoading />}
+                    {valid?coderData.changeInRating:<LabelLoading />}
                     <h4>change in rating</h4>
                 </div>
                 <div className="questions-solved chakra-petch-regular">
-                    {coderData.rating || <LabelLoading />}
+                    {valid?coderData.rating:<LabelLoading />}
                     <h4>current rating</h4>
                 </div>
                 <div className="highest-rating chakra-petch-regular">
-                    {coderData.highestRating || <LabelLoading />}
+                    {valid?coderData.highestRating:<LabelLoading />}
                     <h4>highest rating</h4>
                 </div>
             </div>

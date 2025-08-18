@@ -12,7 +12,6 @@ const CP_Leaderboard2 = () => {
     const [data, setData] = useState(null);
     const [height, setHeight] = useState(0);
     const [topCoders, setTopCoders] = useState(["", "", "", ""]);
-    const [loading, setLoading] = useState(true);
 
     const [startAnimateTimeLeft, setStartAnimateTimeLeft] = useState(delayForLeaderBoardsPage * 1000);
     useEffect(() => {
@@ -20,7 +19,9 @@ const CP_Leaderboard2 = () => {
             const topCoderArr = await calculateTopCoders(data);
             if (topCoderArr.length > 0) {
                 setTopCoders(topCoderArr);
-                setLoading(false);
+                // console.log("got top coders");
+            }else{
+                // console.log("No top coders found");
             }
         };
         getTopCoders();

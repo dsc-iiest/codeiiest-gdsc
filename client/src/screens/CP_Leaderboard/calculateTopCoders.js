@@ -35,7 +35,6 @@ const calculateTopCoders = async (data) => {
     const currMonth = curr.getMonth();
     if (currMonth <= 4) currYear -= 1; // the year has not yet ended for us!
 
-    console.log("DEBUG PHASE TOPCODERS");
     for (const user of data) {
         const { rating, handle, year, maxrating, name, avatar } = user;
 
@@ -47,7 +46,6 @@ const calculateTopCoders = async (data) => {
                     year1highestRating = maxrating;
                     year1TcName = name;
                     year1Av = avatar;
-                    if (handle === "SM_Raj") console.log(user.year);
                 }
                 break;
             case currYear + 3:
@@ -57,10 +55,6 @@ const calculateTopCoders = async (data) => {
                     year2highestRating = maxrating;
                     year2TcName = name;
                     year2Av = avatar;
-                    if (handle === "ROHITDAScr7"){
-                         console.log(user.year);
-                         console.log(currYear+3)
-                    }
                 }
                 break;
             case currYear + 2:
@@ -125,6 +119,15 @@ const calculateTopCoders = async (data) => {
 
     for (const coder of topCoderYearWise) {
         const { handle } = coder;
+        if (!handle) {
+            coder.changeInRating = 0;
+            coder.contestsGiven = 0;
+            coder.handle = "Coming soon";
+            coder.rating = 0;  
+            coder.highestRating = 0;
+            coder.name = "Coming soon";
+            continue; // Skip if handle is not available
+        }
         const response = await fetch(`https://codeforces.com/api/user.rating?handle=${handle}`);
         const resData = await response.json();
         const contestsGiven = resData.result.length;
@@ -137,6 +140,7 @@ const calculateTopCoders = async (data) => {
     const curTime = new Date().getTime();
     localStorage.setItem("topCoders", JSON.stringify(topCoderYearWise));
     localStorage.setItem("topCoderTime", JSON.stringify(curTime));
+    // console.log("Top Coders Calculated:", topCoderYearWise);
     return topCoderYearWise;
 };
 
