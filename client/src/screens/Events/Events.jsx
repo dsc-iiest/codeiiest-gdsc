@@ -67,19 +67,19 @@ const Events = () => {
 
             <div className="eventsBox inner-content">
                 <MobileEvents />
-                <div className="eventCard" style={{transform: `scale(${scaling})`, paddingTop: "2rem", transformOrigin: "left"}}>
-                    <EventCard {...EventsData[tabDelta + clickedImage - 1]} />
+                <div className="eventCard">
+                    <EventCard {...EventsData[clickedImage - 1]} />
                 </div>
                 <div ref={containerRef} className="eventLabels">
                     <div
                         className="eventLabelsBoxes"
-                        style={
-                            {
-                                // height: `${tabNum*16}px`
-                            }
-                        }
+                        style={{
+                            scrollBehavior: 'smooth',
+                            overflowY: 'auto',
+                            maxHeight: `${height}px`
+                        }}
                     >
-                        {EventsData.slice(0 + tabDelta, tabNum + tabDelta).map((e, i) => (
+                        {EventsData.map((e, i) => (
                             <EventTabLabels
                                 key={i}
                                 title={e.title}
