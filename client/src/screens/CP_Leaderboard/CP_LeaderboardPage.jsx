@@ -12,16 +12,18 @@ const CP_Leaderboard2 = () => {
     const [data, setData] = useState(null);
     const [height, setHeight] = useState(0);
     const [topCoders, setTopCoders] = useState(["", "", "", ""]);
+    const [loading, setLoading] = useState(false);
 
     const [startAnimateTimeLeft, setStartAnimateTimeLeft] = useState(delayForLeaderBoardsPage * 1000);
     useEffect(() => {
         const getTopCoders = async () => {
+            console.log("I am called")
             const topCoderArr = await calculateTopCoders(data);
             if (topCoderArr.length > 0) {
                 setTopCoders(topCoderArr);
                 // console.log("got top coders");
             }else{
-                // console.log("No top coders found");
+                console.log("No top coders found");
             }
         };
         getTopCoders();
@@ -65,7 +67,7 @@ const CP_Leaderboard2 = () => {
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5, delay: i * 0.2 }}
                             >
-                                <Codercard coderData={coder} key={i} />
+                                <Codercard coderData={coder} key={i} loading={loading} />
                             </motion.div>
                         ))}
                     </div>
@@ -91,7 +93,7 @@ const CP_Leaderboard2 = () => {
                         ))}
                     </div>
                 )}
-                <LeaderboardMUI delayT={topCoders.length} setData={setData} parentHeight={height} />
+                <LeaderboardMUI delayT={topCoders.length} setData={setData} setLoading={setLoading} parentHeight={height} />
             </div>
         </div>
     );

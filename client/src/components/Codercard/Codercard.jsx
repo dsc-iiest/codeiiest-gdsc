@@ -20,16 +20,16 @@ function toTitleCase(str) {
         .join(" "); // Join words back into a string
 }
 
-const Codercard = ({ coderData }) => {
+const Codercard = ({ coderData, loading }) => {
     // console.log(JSON.stringify(coderData));
     const valid = coderData?.handle;
-
+    
     return (
         <div className="coder-card">
             <div className="top-section">
                 <div className="left-section">
                     <h2 className="left-section-experience-text chakra-petch-regular">
-                        {coderData.experience || <LabelLoading />}
+                        {valid&& !loading ? coderData.experience:<LabelLoading />}
                     </h2>
                     <Avatar
                         sx={{
@@ -43,7 +43,7 @@ const Codercard = ({ coderData }) => {
                         alt="*_*"
                         src={coderData.avatar}
                     >
-                        {coderData.name?.slice(0, 1) || "*_*"}
+                        {valid && !loading?coderData.name?.slice(0, 1): "*_*"}
                     </Avatar>
                 </div>
                 <div className="right-section">
@@ -59,26 +59,26 @@ const Codercard = ({ coderData }) => {
                             rel={"noopener noreferrer"}
                             target="_blank"
                         >
-                            {toTitleCase(coderData.name) || <LabelLoading />}
+                            {valid && !loading?toTitleCase(coderData.name): <LabelLoading />}
                         </a>
                     </h3>
                 </div>
             </div>
             <div className="bottom-section chakra-petch-regular">
                 <div className="contests-given chakra-petch-regular">
-                    {valid?coderData.contestsGiven:<LabelLoading />}
+                    {valid&& !loading?coderData.contestsGiven:<LabelLoading />}
                     <h4>contests given</h4>
                 </div>
                 <div className={`change-in-rating ${coderData.changeInRating < 0 ? "red" : "green"}`}>
-                    {valid?coderData.changeInRating:<LabelLoading />}
+                    {valid && !loading?coderData.changeInRating:<LabelLoading />}
                     <h4>change in rating</h4>
                 </div>
                 <div className="questions-solved chakra-petch-regular">
-                    {valid?coderData.rating:<LabelLoading />}
+                    {valid && !loading?coderData.rating:<LabelLoading />}
                     <h4>current rating</h4>
                 </div>
                 <div className="highest-rating chakra-petch-regular">
-                    {valid?coderData.highestRating:<LabelLoading />}
+                    {valid && !loading?coderData.highestRating:<LabelLoading />}
                     <h4>highest rating</h4>
                 </div>
             </div>

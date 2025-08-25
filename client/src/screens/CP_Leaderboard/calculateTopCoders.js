@@ -1,4 +1,12 @@
 const INTERVAL = 5000;
+const template = {
+    changeInRating: 0,
+    contestsGiven: 0,
+    handle: "Coming soon",
+    rating: 0,
+    highestRating: 0,
+    name: "Coming soon",
+};
 const calculateTopCoders = async (data) => {
     const topCoderCache = localStorage.getItem("topCoders");
     const topCoderCacheTime = localStorage.getItem("topCoderTime");
@@ -7,7 +15,11 @@ const calculateTopCoders = async (data) => {
     if (topCoderCache == null || currentTime - JSON.parse(topCoderCacheTime) > INTERVAL) {
     } else return JSON.parse(topCoderCache);
 
-    if (!data) return [];
+    if (!data) {
+        console.log("Data to calculate function empty");
+        if(topCoderCache) return JSON.parse(topCoderCache);
+        return [template, template, template, template];
+    }
     let year1MaxRatin = 0,
         year1TopCoder = "",
         year2MaxRatin = 0,
@@ -123,11 +135,12 @@ const calculateTopCoders = async (data) => {
             coder.changeInRating = 0;
             coder.contestsGiven = 0;
             coder.handle = "Coming soon";
-            coder.rating = 0;  
+            coder.rating = 0;
             coder.highestRating = 0;
             coder.name = "Coming soon";
             continue; // Skip if handle is not available
         }
+        //assuming if data fetch is successful then others also work
         const response = await fetch(`https://codeforces.com/api/user.rating?handle=${handle}`);
         const resData = await response.json();
         const contestsGiven = resData.result.length;

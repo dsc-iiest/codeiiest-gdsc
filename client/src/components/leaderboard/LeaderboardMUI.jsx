@@ -152,7 +152,7 @@ const cfcolumns = [
     },
 ];
 
-const LeaderboardMUI = ({ parentHeight, style, setData, delayT }) => {
+const LeaderboardMUI = ({ parentHeight, style, setData, setLoading, delayT }) => {
     const [show, setShow] = useState(1);
     const [reload, setReload] = useState(false);
     const cfUsers = {};
@@ -173,19 +173,27 @@ const LeaderboardMUI = ({ parentHeight, style, setData, delayT }) => {
     }
     const v = Object.keys(cfUsers);
     const { data, loading, error, isCached, getData } = useFetchCF(v);
-    if(data) setData(data)
-    if (!loading && !error && data) {
-        console.log(isCached);
-        for (let user of data) {
-            try {
-                [user.name, user.year] = cfUsers[user.handle.toLowerCase()];
-            } catch (err) {
-                // console.log(err);
-                // console.log(user);
-                continue;
-            }
+    
+    // Use useEffect to handle loading state changes
+    React.useEffect(() => {
+        setLoading(loading);
+    }, [loading, setLoading]);
+
+    // Use useEffect to handle data changes
+    React.useEffect(() => {
+        if (data && !loading && !error) {
+            const processedData = data.map(user => {
+                try {
+                    const [name, year] = cfUsers[user.handle.toLowerCase()];
+                    return { ...user, name, year };
+                } catch (err) {
+                    console.error(`Error processing user ${user.handle}:`, err);
+                    return user;
+                }
+            });
+            setData(processedData);
         }
-    }
+    }, [data, loading, error, setData]);
 
     return (
         <motion.div 
