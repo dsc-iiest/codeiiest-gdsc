@@ -1,28 +1,30 @@
 .outerDivTab {
     position: relative;
     transform: translateX(0);
-    transition: all 0.3s ease-out;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     margin: 0.5rem 0;
-    width: 100%;
+    cursor: pointer;
+    opacity: 0.8;
 }
 
 .outerDivTab:hover {
     transform: translateX(-8px);
+    opacity: 0.9;
 }
 
 .outerDivTab.active {
     transform: translateX(-12px);
+    opacity: 1;
     margin: 1rem 0;
 }
 
 .outerDivTab .tabLabels-wrapper {
-    cursor: pointer;
     position: relative;
     width: 20rem;
     height: 6rem;
     border-radius: 0.5rem;
     clip-path: polygon(0 0, 60% 0, 90% 40%, 98% 39%, 100% 46%, 100% 100%, 0 100%);
-    transition: all 0.3s ease-out;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .outerDivTab .tabLabels-wrapper .section1 {
@@ -33,7 +35,12 @@
     width: 100%;
     height: 100%;
     border-radius: 0.5rem;
-    transition: all 0.3s ease-out;
+    background: linear-gradient(135deg, rgba(239, 231, 231, 0.18), rgba(211, 204, 204, 0.185));
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.outerDivTab .tabLabels-wrapper .section1.active {
+    background: var(--gradient2);
 }
 
 .outerDivTab .tabLabels-wrapper .section1 .title {
@@ -59,7 +66,7 @@
     line-height: 1.2em
 }
 
-.outerDivTab img {
+.outerDivTab img.event-thumbnail {
     width: 6rem;
     aspect-ratio: 1;
     background-color: white;
@@ -67,14 +74,14 @@
     position: absolute;
     top: -13%;
     right: 4%;
-    transition: transform 0.3s ease-out;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);  
 }
 
-.outerDivTab:hover img {
+.outerDivTab:hover img.event-thumbnail {
     transform: rotate(10deg) scale(1.05);
 }
 
-.outerDivTab.active img {
+.outerDivTab.active img.event-thumbnail {
     transform: rotate(15deg) scale(1.1);
     z-index: 5 !important;
 }
