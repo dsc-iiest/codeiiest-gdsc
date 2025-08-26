@@ -1,12 +1,6 @@
 import * as React from "react";
 import "./LeaderboardMUI.css";
-import {
-    Tooltip,
-    Box,
-    Avatar,
-    ThemeProvider,
-    createTheme,
-} from "@mui/material";
+import { Tooltip, Box, Avatar, ThemeProvider, createTheme } from "@mui/material";
 import CustomDataGrid from "../../components/customdatagrid/customdatagrid";
 
 import userData from "../../../public/assets/data/data.json";
@@ -110,7 +104,10 @@ const cfcolumns = [
             <Tooltip title={<Msg msg={`${params.row.rank}, ${params.row.name}`} />} arrow placement="right">
                 <a className="usr_name" href={`https://codeforces.com/profile/${params.value}`}>
                     <div className="usr">
-                        <Avatar sx={{ width: 28, height: 28, bgcolor: "rgb(244, 110, 110)" }} src={`${params.row.avatar}`}>
+                        <Avatar
+                            sx={{ width: 28, height: 28, bgcolor: "rgb(244, 110, 110)" }}
+                            src={`${params.row.avatar}`}
+                        >
                             {params.value[0].toUpperCase()}
                         </Avatar>
                         {params.value}
@@ -128,8 +125,7 @@ const cfcolumns = [
         headerClassName: "lb-header",
         resizable: false,
         headerAlign: "center",
-        renderCell: (params) =>
-            `${params.value}`,
+        renderCell: (params) => `${params.value}`,
     },
 
     {
@@ -155,7 +151,16 @@ const cfcolumns = [
 const LeaderboardMUI = ({ parentHeight, style, setData, setLoading, delayT }) => {
     const [show, setShow] = useState(1);
     const [reload, setReload] = useState(false);
-    const cfUsers = {};
+    const cfUsers = React.useMemo(() => {
+        const users = {};
+        for (let user of userData) {
+            const h = user["CodeForces handle"].trim();
+            if (!h || h.includes(" ")) continue;
+            const joined = user["Email Address"].slice(0, 5);
+            users[h.toLowerCase()] = [user["Full Name"], parseInt(joined) + 4];
+        }
+        return users;
+    }, {});
 
     const width = screen.width;
 
@@ -169,42 +174,37 @@ const LeaderboardMUI = ({ parentHeight, style, setData, setLoading, delayT }) =>
         }
         var joined = user["Email Address"].slice(0, 5);
 
-        cfUsers[h.toLowerCase()] = [user["Full Name"], parseInt(joined)+4];
+        cfUsers[h.toLowerCase()] = [user["Full Name"], parseInt(joined) + 4];
     }
+
     const v = Object.keys(cfUsers);
     const { data, loading, error, isCached, getData } = useFetchCF(v);
-    
-    // Use useEffect to handle loading state changes
-    React.useEffect(() => {
-        setLoading(loading);
-    }, [loading, setLoading]);
-
-    // Use useEffect to handle data changes
-    React.useEffect(() => {
-        if (data && !loading && !error) {
-            const processedData = data.map(user => {
-                try {
-                    const [name, year] = cfUsers[user.handle.toLowerCase()];
-                    return { ...user, name, year };
-                } catch (err) {
-                    console.error(`Error processing user ${user.handle}:`, err);
-                    return user;
-                }
-            });
-            setData(processedData);
+    if (data) setData(data);
+    if (!loading && !error && data) {
+        console.log(isCached);
+        for (let user of data) {
+            try {
+                [user.name, user.year] = cfUsers[user.handle.toLowerCase()];
+            } catch (err) {
+                // console.log(err);
+                // console.log(user);
+                continue;
+            }
         }
-    }, [data, loading, error, setData]);
+    }
 
     return (
-        <motion.div 
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: delayForLeaderBoardsPage + delayT * 0.2, duration: 0.5 }}
-        className="leaderboard-mui" style={{ style }}>
+        <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: delayForLeaderBoardsPage + delayT * 0.2, duration: 0.5 }}
+            className="leaderboard-mui"
+            style={{ style }}
+        >
             {/* {!loading && !error ? <div className="notification">{isCached}</div> : null} */}
             <Box className="datagrid-wrapper">
                 {loading ? (
-                    <Loading cols={cfcolumns} height={parentHeight}/>
+                    <Loading cols={cfcolumns} height={parentHeight} />
                 ) : error ? (
                     <Error
                         message={"API Fetching Failed. Please try again later"}
