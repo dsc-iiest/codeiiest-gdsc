@@ -11,8 +11,8 @@ import { Analytics } from "@vercel/analytics/react";
 
 import { createClient } from "@supabase/supabase-js";
 
-const SUPABASE_URL = process.env.VITE_SUPABASE_URL;
-const SUPABASE_ANON_KEY = process.env.VITE_SUPABASE_SERVICE_ROLE_KEY;
+const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
+const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_SERVICE_ROLE_KEY;;
 
 // create a safe supabase client: real client if envs present, otherwise a stub that returns a predictable error object
 function makeSupabaseClient(url, key) {
