@@ -13,7 +13,33 @@ import { createClient } from "@supabase/supabase-js";
 
 const SUPABASE_URL = process.env.VITE_SUPABASE_URL;
 const SUPABASE_ANON_KEY = process.env.VITE_SUPABASE_SERVICE_ROLE_KEY;
-const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+// create a safe supabase client: real client if envs present, otherwise a stub that returns a predictable error object
+function makeSupabaseClient(url, key) {
+  if (!url || !key) {
+    console.warn(
+      "Supabase env missing: VITE_SUPABASE_URL or VITE_SUPABASE_SERVICE_ROLE_KEY is empty. Supabase tracking disabled; falling back to beacon if available."
+    );
+    return {
+      from: () => ({
+        insert: async () => ({ error: { message: "Supabase env missing" }, data: null }),
+      }),
+    };
+  }
+
+  try {
+    return createClient(url, key);
+  } catch (e) {
+    console.warn("Failed to create Supabase client.", e);
+    return {
+      from: () => ({
+        insert: async () => ({ error: { message: "Supabase client creation failed" }, data: null }),
+      }),
+    };
+  }
+}
+
+const supabase = makeSupabaseClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 const App = () => {
     const [Loading, setLoading] = useState(true);
