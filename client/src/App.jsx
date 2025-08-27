@@ -26,35 +26,22 @@ try {
   console.info("[ENV-PRESENCE] failed", e);
 }
 
-const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
-const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_SERVICE_ROLE_KEY;;
-
-// create a safe supabase client: real client if envs present, otherwise a stub that returns a predictable error object
+// removed top-level client creation. We'll create the client lazily inside useEffect
 function makeSupabaseClient(url, key) {
   if (!url || !key) {
     console.warn(
-      "Supabase env missing: VITE_SUPABASE_URL or VITE_SUPABASE_SERVICE_ROLE_KEY is empty. Supabase tracking disabled; falling back to beacon if available."
+      "Supabase env missing (or empty). Supabase tracking disabled; will fallback to beacon if available."
     );
-    return {
-      from: () => ({
-        insert: async () => ({ error: { message: "Supabase env missing" }, data: null }),
-      }),
-    };
+    return null;
   }
 
   try {
     return createClient(url, key);
   } catch (e) {
     console.warn("Failed to create Supabase client.", e);
-    return {
-      from: () => ({
-        insert: async () => ({ error: { message: "Supabase client creation failed" }, data: null }),
-      }),
-    };
+    return null;
   }
 }
-
-const supabase = makeSupabaseClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 const App = () => {
     const [Loading, setLoading] = useState(true);
@@ -67,6 +54,7 @@ const App = () => {
                 setLoading(false);
             }, 4000);
         }
+
         function toISTISOString(d = new Date()) {
             const utc = d.getTime() + (d.getTimezoneOffset() * 60000);
             const ist = new Date(utc + 11 * 60 * 60 * 1000);
@@ -78,53 +66,93 @@ const App = () => {
             const m = pad(ist.getMinutes());
             const s = pad(ist.getSeconds());
             return `${Y}-${M}-${D}T${h}:${m}:${s}+05:30`;
-            }
+        }
 
-            (async () => {
+        // wait/poll helper — checks import.meta.env for up to timeoutMs
+        async function waitForEnv(timeoutMs = 10000, intervalMs = 200) {
+          const start = Date.now();
+          while (Date.now() - start < timeoutMs) {
             try {
+              const url = (typeof import.meta !== "undefined" && import.meta.env) ? import.meta.env.VITE_SUPABASE_URL : null;
+              const key = (typeof import.meta !== "undefined" && import.meta.env) ? import.meta.env.VITE_SUPABASE_SERVICE_ROLE_KEY : null;
+              if (url && key) return { url, key };
+            } catch (e) {
+              // ignore
+            }
+            await new Promise((r) => setTimeout(r, intervalMs));
+          }
+          return null;
+        }
+
+        (async () => {
+            try {
+                // wait up to 10s for envs (adjust timeout if you want)
+                const env = await waitForEnv(10000, 200);
+                let supabase = null;
+
+                if (env) {
+                  console.info("[TRACKING] Supabase envs present, creating client.");
+                  supabase = makeSupabaseClient(env.url, env.key);
+                  if (!supabase) {
+                    console.warn("[TRACKING] createClient returned null despite envs present.");
+                  }
+                } else {
+                  // envs never appeared in time
+                  console.warn("[TRACKING] Supabase envs not found within timeout. Falling back to beacon-only path.");
+                }
+
                 const ts = toISTISOString();
                 let ip = null;
 
                 try {
-                const r = await fetch("https://api.ipify.org?format=json");
-                if (r.ok) {
+                  const r = await fetch("https://api.ipify.org?format=json");
+                  if (r.ok) {
                     const json = await r.json();
                     ip = json.ip || null;
-                }
+                  }
                 } catch (e) {
-                // ip fetch failed — we'll proceed without IP
+                  // ip fetch failed — proceed without IP
                 }
 
-                // try direct supabase insert (client-side, using anon key)
                 const payload = { ts: ts, ip: ip };
-                const { error } = await supabase.from("ip_logs").insert([payload]);
 
-                if (error) {
-                    try {
-                        console.warn("[TRACKER] supabase-js insert failed, trying raw fetch to REST endpoint for diagnostics");
-                        const restRes = await fetch(`${SUPABASE_URL}/rest/v1/ip_logs`, {
-                        method: "POST",
-                        headers: {
-                            "Content-Type": "application/json",
-                            // use the same key variable you have in code (you used service-role var name)
-                            "apikey": SUPABASE_ANON_KEY,
-                            "Authorization": `Bearer ${SUPABASE_ANON_KEY}`,
-                            // return representation might help with debugging responses
-                            "Prefer": "return=representation"
-                        },
-                        body: JSON.stringify([payload]),
-                        });
-
-                        const text = await restRes.text();
-                        console.log("[TRACKER] raw REST response:", { status: restRes.status, statusText: restRes.statusText, body: text });
-                    } catch (fetchErr) {
-                        console.error("[TRACKER] raw REST fetch failed:", fetchErr);
+                if (supabase) {
+                  try {
+                    const { error } = await supabase.from("ip_logs").insert([payload]);
+                    if (error) {
+                      console.warn("supabase insert err:", error);
+                      // fallback to beacon below
+                    } else {
+                      // inserted ok
+                      return;
                     }
+                  } catch (e) {
+                    console.warn("supabase insert threw:", e);
+                    // continue to fallback
+                  }
                 }
+
+                // fallback beacon if supabase not available or insert failed
+                try {
+                  const blob = new Blob([JSON.stringify(payload)], { type: "application/json" });
+                  if (navigator.sendBeacon) {
+                    navigator.sendBeacon("/api/tracker", blob);
+                  } else {
+                    await fetch("/api/tracker", {
+                      method: "POST",
+                      headers: { "Content-Type": "application/json" },
+                      body: JSON.stringify(payload),
+                      keepalive: true,
+                    }).catch(()=>{});
+                  }
+                } catch (e) {
+                  console.warn("beacon fallback failed", e);
+                }
+
             } catch (e) {
                 console.warn("tracking failed", e);
             }
-            })();
+        })();
     }, []);
     
     return (
@@ -139,12 +167,12 @@ const App = () => {
                         <img src="/assets/frame.png" alt="" />
                     </div>
                     {/* <div className="page">
-					<div className="outer-content">
-						<div className="inner-content">
-							
-						</div>
-					</div>
-				</div> */}
+                    <div className="outer-content">
+                        <div className="inner-content">
+                            
+                        </div>
+                    </div>
+                </div> */}
                     <AllRoutes></AllRoutes>
                 </div>
             </Router>
