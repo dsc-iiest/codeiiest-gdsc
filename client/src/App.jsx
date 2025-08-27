@@ -10,6 +10,21 @@ import Header from "./components/header/Header.jsx";
 import { Analytics } from "@vercel/analytics/react";
 
 import { createClient } from "@supabase/supabase-js";
+// SAFE DEBUG: do NOT print secrets, only presence booleans
+try {
+  // Vite: import.meta.env
+  const viteUrl = typeof import.meta !== 'undefined' ? !!import.meta.env?.VITE_SUPABASE_URL : false;
+  const viteAnon = typeof import.meta !== 'undefined' ? !!import.meta.env?.VITE_SUPABASE_ANON_KEY : false;
+  const viteRole = typeof import.meta !== 'undefined' ? !!import.meta.env?.VITE_SUPABASE_SERVICE_ROLE_KEY : false;
+
+  // process.env (some people try this)
+  const procUrl = typeof process !== 'undefined' ? !!process.env?.VITE_SUPABASE_URL : false;
+  const procAnon = typeof process !== 'undefined' ? !!process.env?.VITE_SUPABASE_ANON_KEY : false;
+
+  console.info("[ENV-PRESENCE]", { viteUrl, viteAnon, viteRole, procUrl, procAnon });
+} catch (e) {
+  console.info("[ENV-PRESENCE] failed", e);
+}
 
 const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
 const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_SERVICE_ROLE_KEY;;
