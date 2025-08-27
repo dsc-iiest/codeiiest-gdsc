@@ -100,23 +100,26 @@ const App = () => {
                 const { error } = await supabase.from("ip_logs").insert([payload]);
 
                 if (error) {
-                console.warn("supabase insert err:", error);
-                // fallback: try navigator.sendBeacon to a server endpoint if you have one
-                try {
-                    const blob = new Blob([JSON.stringify({ ts, ip })], {
-                    type: "application/json",
-                    });
-                    if (navigator.sendBeacon) {
-                    navigator.sendBeacon("/api/tracker", blob);
-                    } else {
-                    await fetch("/api/tracker", {
+                    try {
+                        console.warn("[TRACKER] supabase-js insert failed, trying raw fetch to REST endpoint for diagnostics");
+                        const restRes = await fetch(`${SUPABASE_URL}/rest/v1/ip_logs`, {
                         method: "POST",
-                        headers: { "Content-Type": "application/json" },
-                        body: JSON.stringify({ ts, ip }),
-                        keepalive: true,
-                    }).catch(() => {});
+                        headers: {
+                            "Content-Type": "application/json",
+                            // use the same key variable you have in code (you used service-role var name)
+                            "apikey": SUPABASE_ANON_KEY,
+                            "Authorization": `Bearer ${SUPABASE_ANON_KEY}`,
+                            // return representation might help with debugging responses
+                            "Prefer": "return=representation"
+                        },
+                        body: JSON.stringify([payload]),
+                        });
+
+                        const text = await restRes.text();
+                        console.log("[TRACKER] raw REST response:", { status: restRes.status, statusText: restRes.statusText, body: text });
+                    } catch (fetchErr) {
+                        console.error("[TRACKER] raw REST fetch failed:", fetchErr);
                     }
-                } catch (e) {}
                 }
             } catch (e) {
                 console.warn("tracking failed", e);
