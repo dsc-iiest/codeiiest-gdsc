@@ -14,19 +14,13 @@ import { createClient } from "@supabase/supabase-js";
 try {
   // Vite: import.meta.env
   const viteUrl = typeof import.meta !== 'undefined' ? !!import.meta.env?.VITE_SUPABASE_URL : false;
-  const viteAnon = typeof import.meta !== 'undefined' ? !!import.meta.env?.VITE_SUPABASE_ANON_KEY : false;
   const viteRole = typeof import.meta !== 'undefined' ? !!import.meta.env?.VITE_SUPABASE_SERVICE_ROLE_KEY : false;
 
-  // process.env (some people try this)
-  const procUrl = typeof process !== 'undefined' ? !!process.env?.VITE_SUPABASE_URL : false;
-  const procAnon = typeof process !== 'undefined' ? !!process.env?.VITE_SUPABASE_ANON_KEY : false;
-
-  console.info("[ENV-PRESENCE]", { viteUrl, viteAnon, viteRole, procUrl, procAnon });
+  console.info("[ENV-PRESENCE]", { viteUrl, viteRole });
 } catch (e) {
   console.info("[ENV-PRESENCE] failed", e);
 }
 
-// removed top-level client creation. We'll create the client lazily inside useEffect
 function makeSupabaseClient(url, key) {
   if (!url || !key) {
     console.warn(
@@ -34,7 +28,6 @@ function makeSupabaseClient(url, key) {
     );
     return null;
   }
-
   try {
     return createClient(url, key);
   } catch (e) {
@@ -42,7 +35,6 @@ function makeSupabaseClient(url, key) {
     return null;
   }
 }
-
 const App = () => {
     const [Loading, setLoading] = useState(true);
 
@@ -68,7 +60,6 @@ const App = () => {
             return `${Y}-${M}-${D}T${h}:${m}:${s}+05:30`;
         }
 
-        // wait/poll helper — checks import.meta.env for up to timeoutMs
         async function waitForEnv(timeoutMs = 10000, intervalMs = 200) {
           const start = Date.now();
           while (Date.now() - start < timeoutMs) {
@@ -77,7 +68,6 @@ const App = () => {
               const key = (typeof import.meta !== "undefined" && import.meta.env) ? import.meta.env.VITE_SUPABASE_SERVICE_ROLE_KEY : null;
               if (url && key) return { url, key };
             } catch (e) {
-              // ignore
             }
             await new Promise((r) => setTimeout(r, intervalMs));
           }
@@ -86,7 +76,6 @@ const App = () => {
 
         (async () => {
             try {
-                // wait up to 10s for envs (adjust timeout if you want)
                 const env = await waitForEnv(10000, 200);
                 let supabase = null;
 
