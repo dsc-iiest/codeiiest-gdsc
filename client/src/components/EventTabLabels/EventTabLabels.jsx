@@ -17,13 +17,29 @@ export default function EventTabLabels(
     //     }
     // }, [isClicked])
 
+    const tabRef = useRef(null);
+
+    useEffect(() => {
+        if (isClicked && tabRef.current) {
+            tabRef.current.scrollIntoView({
+                behavior: 'smooth',
+                block: 'nearest'
+            });
+        }
+    }, [isClicked]);
+
     return (
-        <div onClick={onClick} className="outerDivTab">
-            <img src={`/assets/thumbnail/${imageVariant}.png`} />
+        <div 
+            ref={tabRef}
+            onClick={onClick} 
+            className={`outerDivTab ${isClicked ? 'active' : ''}`}
+        >
+            <img 
+                src={`/assets/thumbnail/${imageVariant}.png`} 
+                className="event-thumbnail"
+            />
             <div className="tabLabels-wrapper">
-                <div
-                    style={isClicked ? { "background": "var(--gradient2)" } : { "background": "linear-gradient(135deg, rgba(239, 231, 231, 0.18), rgba(211, 204, 204, 0.185))" }}
-                    className="section1">
+                <div className={`section1 ${isClicked ? 'active' : ''}`}>
                     <div className="title">
                         <h1>{title}</h1>
                         <h4>{miniTitle}</h4>

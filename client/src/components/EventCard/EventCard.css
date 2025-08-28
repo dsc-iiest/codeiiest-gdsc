@@ -24,7 +24,7 @@
         opacity: 0;
         right: -140%;
     }
-}
+} 
 
 .EventCardMain .tabLabels-wrapper .section1::after {
     content: "";

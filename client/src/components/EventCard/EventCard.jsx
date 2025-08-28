@@ -94,7 +94,7 @@ const EventCard = ({
         </div>
     );
 };
-
+ 
 const Detail = ({ text1, text2, text3 }) => {
     return (
         <div className="detail">
