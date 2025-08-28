@@ -10,11 +10,31 @@ import Header from "./components/header/Header.jsx";
 import { Analytics } from "@vercel/analytics/react";
 
 import { createClient } from "@supabase/supabase-js";
+// SAFE DEBUG: do NOT print secrets, only presence booleans
+try {
+  // Vite: import.meta.env
+  const viteUrl = typeof import.meta !== 'undefined' ? !!import.meta.env?.VITE_SUPABASE_URL : false;
+  const viteRole = typeof import.meta !== 'undefined' ? !!import.meta.env?.VITE_SUPABASE_SERVICE_ROLE_KEY : false;
 
-const SUPABASE_URL = process.env.SUPABASE_URL;
-const SUPABASE_ANON_KEY = process.env.SUPABASE_SERVICE_ROLE_KEY;
-const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+  console.info("[ENV-PRESENCE]", { viteUrl, viteRole });
+} catch (e) {
+  console.info("[ENV-PRESENCE] failed", e);
+}
 
+function makeSupabaseClient(url, key) {
+  if (!url || !key) {
+    console.warn(
+      "Supabase env missing (or empty). Supabase tracking disabled; will fallback to beacon if available."
+    );
+    return null;
+  }
+  try {
+    return createClient(url, key);
+  } catch (e) {
+    console.warn("Failed to create Supabase client.", e);
+    return null;
+  }
+}
 const App = () => {
     const [Loading, setLoading] = useState(true);
 
@@ -26,6 +46,7 @@ const App = () => {
                 setLoading(false);
             }, 4000);
         }
+
         function toISTISOString(d = new Date()) {
             const utc = d.getTime() + (d.getTimezoneOffset() * 60000);
             const ist = new Date(utc + 11 * 60 * 60 * 1000);
@@ -37,50 +58,90 @@ const App = () => {
             const m = pad(ist.getMinutes());
             const s = pad(ist.getSeconds());
             return `${Y}-${M}-${D}T${h}:${m}:${s}+05:30`;
-            }
+        }
 
-            (async () => {
+        async function waitForEnv(timeoutMs = 10000, intervalMs = 200) {
+          const start = Date.now();
+          while (Date.now() - start < timeoutMs) {
             try {
+              const url = (typeof import.meta !== "undefined" && import.meta.env) ? import.meta.env.VITE_SUPABASE_URL : null;
+              const key = (typeof import.meta !== "undefined" && import.meta.env) ? import.meta.env.VITE_SUPABASE_SERVICE_ROLE_KEY : null;
+              if (url && key) return { url, key };
+            } catch (e) {
+            }
+            await new Promise((r) => setTimeout(r, intervalMs));
+          }
+          return null;
+        }
+
+        (async () => {
+            try {
+                const env = await waitForEnv(10000, 200);
+                let supabase = null;
+
+                if (env) {
+                  console.info("[TRACKING] Supabase envs present, creating client.");
+                  supabase = makeSupabaseClient(env.url, env.key);
+                  if (!supabase) {
+                    console.warn("[TRACKING] createClient returned null despite envs present.");
+                  }
+                } else {
+                  // envs never appeared in time
+                  console.warn("[TRACKING] Supabase envs not found within timeout. Falling back to beacon-only path.");
+                }
+
                 const ts = toISTISOString();
                 let ip = null;
 
                 try {
-                const r = await fetch("https://api.ipify.org?format=json");
-                if (r.ok) {
+                  const r = await fetch("https://api.ipify.org?format=json");
+                  if (r.ok) {
                     const json = await r.json();
                     ip = json.ip || null;
-                }
+                  }
                 } catch (e) {
-                // ip fetch failed — we'll proceed without IP
+                  // ip fetch failed — proceed without IP
                 }
 
-                // try direct supabase insert (client-side, using anon key)
                 const payload = { ts: ts, ip: ip };
-                const { error } = await supabase.from("ip_logs").insert([payload]);
 
-                if (error) {
-                console.warn("supabase insert err:", error);
-                // fallback: try navigator.sendBeacon to a server endpoint if you have one
-                try {
-                    const blob = new Blob([JSON.stringify({ ts, ip })], {
-                    type: "application/json",
-                    });
-                    if (navigator.sendBeacon) {
-                    navigator.sendBeacon("/api/tracker", blob);
+                if (supabase) {
+                  try {
+                    const { error } = await supabase.from("ip_logs").insert([payload]);
+                    if (error) {
+                      console.warn("supabase insert err:", error);
+                      // fallback to beacon below
                     } else {
-                    await fetch("/api/tracker", {
-                        method: "POST",
-                        headers: { "Content-Type": "application/json" },
-                        body: JSON.stringify({ ts, ip }),
-                        keepalive: true,
-                    }).catch(() => {});
+                      // inserted ok
+                      return;
                     }
-                } catch (e) {}
+                  } catch (e) {
+                    console.warn("supabase insert threw:", e);
+                    // continue to fallback
+                  }
                 }
+
+                // fallback beacon if supabase not available or insert failed
+                try {
+                  const blob = new Blob([JSON.stringify(payload)], { type: "application/json" });
+                  if (navigator.sendBeacon) {
+                    navigator.sendBeacon("/api/tracker", blob);
+                  } else {
+                    await fetch("/api/tracker", {
+                      method: "POST",
+                      headers: { "Content-Type": "application/json" },
+                      body: JSON.stringify(payload),
+                      keepalive: true,
+                    }).catch(()=>{});
+                  }
+                } catch (e) {
+                  console.warn("beacon fallback failed", e);
+                }
+
             } catch (e) {
                 console.warn("tracking failed", e);
             }
-            })();
+        })();
     }, []);
     
     return (
@@ -95,12 +156,12 @@ const App = () => {
                         <img src="/assets/frame.png" alt="" />
                     </div>
                     {/* <div className="page">
-					<div className="outer-content">
-						<div className="inner-content">
-							
-						</div>
-					</div>
-				</div> */}
+                    <div className="outer-content">
+                        <div className="inner-content">
+                            
+                        </div>
+                    </div>
+                </div> */}
                     <AllRoutes></AllRoutes>
                 </div>
             </Router>
