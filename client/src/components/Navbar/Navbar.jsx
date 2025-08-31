@@ -159,14 +159,6 @@ const Navbar = ({
 							>
 								Chapters
 							</NavLink>
-							{/* <NavLink
-								id="nav-events"
-								className={"item"}
-								to="/events"
-							>
-								Events
-							</NavLink> */}
-
 							<NavLink
 								to="/about"
 								id="nav-sponsorship"
@@ -175,19 +167,19 @@ const Navbar = ({
 								About Us
 							</NavLink>
 							<NavLink
+								to="/projects"
+								id="nav-projects"
+								className={"item"}
+							>
+								Projects
+							</NavLink>
+							<NavLink
 								id="nav-leaderboard"
 								to="/leaderboard"
 								className={"item"}
 							>
 								Leaderboards
 							</NavLink>
-							{/* <NavLink
-								id="nav-projects"
-								to="/projects"
-								className={"item"}
-							>
-								Projects
-							</NavLink> */}
 
 							{/* {user ? (
 								<div

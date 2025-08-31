@@ -1,0 +1,17 @@
+.chapters-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    flex-direction: column;
+}
+/* 
+@keyframes in-out {
+    0%{
+        opacity: 0
+    }
+
+    100%{
+        opacity: 1
+    }
+} */

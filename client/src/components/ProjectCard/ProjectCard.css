@@ -1,0 +1,36 @@
+.projectcard-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    width: 18rem;
+    aspect-ratio: 1/1;
+    text-decoration: none;
+    position: relative;
+    transition: all ease 0.3s;
+    z-index: 4;
+    border-radius: 10px;
+}
+
+.projectcard-wrapper:hover{
+    transform :scale(1.05);
+}
+
+.projectcard-wrapper .name {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    font-size: 1.2rem;
+    z-index: 1;
+    transition: all ease 0.2s
+}
+
+.projectcard-wrapper .name:hover{
+    color: gold;
+}
+
+@media only screen and (max-width: 480px) {
+    .projectcard-wrapper {
+        width: calc(80vw - 24px);
+    }
+}
