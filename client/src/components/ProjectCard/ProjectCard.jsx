@@ -1,18 +1,6 @@
 import PropTypes from "prop-types";
-import React, { useRef, useState } from "react";
 import "./ProjectCard.css";
 import { Box } from "@mui/material";
-
-// const styles = (variant) => ({
-//   background: `url("/assets/thumbnail/${variant}.png")`,
-//   backgroundSize: `contain`,
-//   backgroundRepeat: `no-repeat`,
-//   position: `absolute`,
-//   top: `0`,
-//   width: `100%`,
-//   height: `100%`,
-//   // border: "1px solid white"
-// });
 
 const ProjectCard = ({
   name,
@@ -25,22 +13,19 @@ const ProjectCard = ({
   liveUrl,
   repoUrl,
 }) => {
-  const bodyRef = useRef(null);
-  const [isScrolled, setIsScrolled] = useState(false);
-  
   const displayTitle = title || name;
   const dateText = publishedDate instanceof Date
     ? publishedDate.toLocaleDateString(undefined, { day: "numeric", month: "short" })
     : publishedDate;
 
   return (
-    <Box className={`projectcard-detailed ${isScrolled ? 'scrolled' : ''}`}>
+    <Box className="projectcard-detailed">
       {media && (
         <div className="projectcard-media">
           <img src={media} alt={displayTitle + " preview"} loading="lazy" />
         </div>
       )}
-      <div className="projectcard-body" ref={bodyRef} onMouseLeave={() => bodyRef.current?.scrollTo(0, 0)} onScroll={(e) => setIsScrolled(e.target.scrollTop > 0)}>
+      <div className="projectcard-body">
         <div className="projectcard-header">
         <div className="projectcard-titleblock">
             <h3 className="projectcard-title">{displayTitle}</h3>
@@ -63,13 +48,9 @@ const ProjectCard = ({
             {tags.map((t) => (
               <span className="projectcard-tag" key={t}>{t}</span>
             ))}
-          </div>
-        )}
-        {(liveUrl || repoUrl) && (
-          <div className="projectcard-actions">
             {liveUrl && (
               <a
-                className="projectcard-btn live"
+                className="projectcard-tag projectcard-tag-live"
                 href={liveUrl}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -79,7 +60,7 @@ const ProjectCard = ({
             )}
             {repoUrl && (
               <a
-                className="projectcard-btn repo"
+                className="projectcard-tag projectcard-tag-repo"
                 href={repoUrl}
                 target="_blank"
                 rel="noopener noreferrer"
