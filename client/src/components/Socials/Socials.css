@@ -1,0 +1,40 @@
+a:hover {
+    all: unset;
+    cursor: pointer !important;
+}
+
+.socials {
+    position: absolute;
+    margin: unset;
+    min-width: 100%;
+    max-width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0vh;
+    gap: 18px;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    /* z-index: 999 !important; */
+}
+
+@media only screen and (max-width: 950px) {
+
+    .socials {
+        top: max(55vh, 450px) !important;
+    }
+}
+
+@media only screen and (max-height: 800px) {
+
+    .socials {
+        bottom: min(-1vh, -7px);
+    }
+}
+.socials div:hover{
+    cursor: pointer;
+    scale: 1.4;
+    transition: ease-in-out 0.2s;
+}

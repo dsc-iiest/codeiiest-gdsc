@@ -137,7 +137,7 @@
     }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 950px) {
     .chapter-content {
         width: min(95vw, 30rem);
     }

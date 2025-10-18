@@ -4,7 +4,7 @@ import PageHeading from "../../components/PageHeading/PageHeading";
 import { Box, Button } from "@mui/material";
 
 import { motion } from "framer-motion";
-
+import Socials from "../../components/Socials/Socials";
 const codeIIEST =
     "CodeIIEST is one of the newest clubs of Indian Institute of Engineering Science and Technology, Shibpur. Formed in Nov'14 , the club has been actively involved in cultivating comprehensive skills in computer science among the students. The club consists of various enthusiasts and is a wonderful hub for a plethora of informative and interactive sessions. The students keep themselves updated with the emerging technologies, which further help them strengthen their skills and enhance creativity and innovation.";
 
@@ -19,6 +19,7 @@ const AboutBox = () => {
         setContentWidth(displayRef.current.offsetWidth);
     }, []);
     return (
+    
         <Box
             sx={{
                 display: "flex",
@@ -28,7 +29,9 @@ const AboutBox = () => {
                 gap: `${contentWidth}px`,
             }}
             className="about-box"
+            
         >
+
             <Box
                 className={"tab" + (choice ? " tabselected" : "")}
                 sx={{
@@ -56,8 +59,11 @@ const AboutBox = () => {
                 onClick={() => setChoice(false)}
             >
                 IIEST Shibpur
+                
             </Box>
+            
         </Box>
+
     );
 };
 const AboutBoxMobile = () => {
@@ -101,6 +107,7 @@ const AboutBoxMobile = () => {
             </Box>
             <Box className={"content-area" + (choice ? " appear" : " hide")}>{codeIIEST}</Box>
             <Box className={"content-area" + (!choice ? " appear" : " hide")}>{IIESTS}</Box>
+            
         </Box>
     );
 };
@@ -113,6 +120,7 @@ const about = () => {
                 <img src="/assets/bg/home_bg.png" alt="" />
             </div>
             <PageHeading text="ABOUT US" />
+            
             <Box
                 sx={{
                     display: "flex",
@@ -122,8 +130,9 @@ const about = () => {
                 }}
                 className="inner-content"
             >
-                {innerWidth >= 900 ? <AboutBox /> : <AboutBoxMobile />}
+                {innerWidth >= 950 ? <AboutBox /> : <AboutBoxMobile />}
             </Box>
+            <Socials></Socials>
         </div>
     );
 };
