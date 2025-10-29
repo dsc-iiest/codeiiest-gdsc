@@ -1,10 +1,20 @@
-import { React } from "react";
+import { React, useState, useMemo } from "react";
 import "./Projects.css";
 import ProjectCard from "../../components/ProjectCard/ProjectCard"; // new detailed card
 import Carousel from "../../components/Carousel/Carousel";
 import PageHeading from "../../components/PageHeading/PageHeading";
 // import ProgressBar from "../../components/ProgressBar/ProgressBar";
 // import { Box } from "@mui/material";
+// Category definitions
+const categories = [
+    { id: 'all', label: 'All Projects', tags: [] },
+    { id: 'web', label: 'Web Dev', tags: ['web', 'react'] },
+    { id: 'aiml', label: 'AI/ML', tags: ['ai/ml', 'nlp'] },
+    { id: 'cyber', label: 'Cybersecurity', tags: ['cybersecurity'] },
+    { id: 'cp', label: 'CP/DSA', tags: ['cp', 'leaderboard'] },
+    { id: 'media', label: 'Media', tags: ['media'] },
+];
+
 // TODO: Replace this static data with fetched project list once API available
 const projectData = [
     {
@@ -59,19 +69,53 @@ const projectData = [
     },
 ];
 
-const variants = projectData.map((p, idx) => (
-    <div key={idx}>
-        <ProjectCard {...p} />
-    </div>
-));
-
 const Projects = () => {
+    const [activeCategory, setActiveCategory] = useState('all');
+
+    // Filter projects based on active category
+    const filteredProjects = useMemo(() => {
+        if (activeCategory === 'all') {
+            return projectData;
+        }
+        
+        const selectedCategory = categories.find(cat => cat.id === activeCategory);
+        if (!selectedCategory) return projectData;
+        
+        return projectData.filter(project => 
+            project.tags.some(tag => selectedCategory.tags.includes(tag))
+        );
+    }, [activeCategory]);
+
+    // Generate carousel items from filtered projects
+    const variants = useMemo(() => 
+        filteredProjects.map((p, idx) => (
+            <div key={`${activeCategory}-${idx}`}>
+                <ProjectCard {...p} />
+            </div>
+        )),
+        [filteredProjects, activeCategory]
+    );
+
     return (
         <div className="chapters-wrapper page">
             <div className="bg">
                 <img src="/assets/bg/home_bg.png" alt="" />
             </div>
             <PageHeading text={"PROJECTS"} />
+            
+            {/* Category Filter Tabs */}
+            <div className="project-categories">
+                {categories.map(category => (
+                    <button
+                        key={category.id}
+                        className={`category-tab ${activeCategory === category.id ? 'active' : ''}`}
+                        onClick={() => setActiveCategory(category.id)}
+                    >
+                        {category.label}
+                    </button>
+                ))}
+            </div>
+
             <div className="inner-content">
                 <Carousel items={variants} />
             </div>

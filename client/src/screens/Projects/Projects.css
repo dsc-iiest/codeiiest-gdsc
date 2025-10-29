@@ -3,8 +3,104 @@
     align-items: center;
     justify-content: center;
     padding: 1rem;
+    padding-top: 2rem; /* Space for absolutely positioned PageHeading */
     flex-direction: column;
 }
+
+/* Project Category Tabs */
+.project-categories {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0 0 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-tab {
+    background: rgba(255, 255, 255, 0.1);
+    color: #e6e6e6;
+    border: 1px solid #5a5a5a;
+    padding: 0.7rem 1.5rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.category-tab:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: #ff5d73;
+    transform: translateY(-2px);
+}
+
+.category-tab.active {
+    background: #ff5d73;
+    color: #fff;
+    border-color: #ff5d73;
+    box-shadow: 0 4px 12px rgba(255, 93, 115, 0.3);
+}
+
+/* Mobile responsive */
+@media (max-width: 950px) {
+    /* Adjust wrapper padding when PageHeading becomes centered */
+    .chapters-wrapper {
+        padding-top: 4.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .chapters-wrapper {
+        padding-top: 4.5rem;
+    }
+    
+    .project-categories {
+        gap: 0.6rem;
+        margin: 1.5rem 0 0.5rem 0;
+    }
+    
+    .category-tab {
+        padding: 0.6rem 1rem;
+        font-size: 0.8rem;
+        letter-spacing: 0.3px;
+    }
+    
+    /* Disable hover transform on touch devices */
+    .category-tab:hover {
+        transform: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .chapters-wrapper {
+        padding-top: 4.5rem;
+    }
+    
+    .project-categories {
+        gap: 0.5rem;
+        margin: 2.5rem 0 0 0;
+    }
+    
+    .category-tab {
+        padding: 0.5rem 0.8rem;
+        font-size: 0.7rem;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 360px) {
+    .chapters-wrapper {
+        padding-top: 2rem;
+    }
+    
+    .project-categories {
+        gap: 0.4rem;
+    }
+}
+
 /* 
 @keyframes in-out {
     0%{

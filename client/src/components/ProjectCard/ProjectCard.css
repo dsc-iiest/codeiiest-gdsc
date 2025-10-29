@@ -26,14 +26,14 @@
 .projectcard-detailed .projectcard-media {
   position: relative;
   width: 100%;
-  height: 30%;
+  height: 50%;
   background: #000;
   overflow: hidden;
   transition: height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projectcard-detailed:hover .projectcard-media {
-  height: 20%;
+  height: 30%;
 }
 
 .projectcard-detailed .projectcard-media img {
@@ -48,12 +48,14 @@
   height: 60%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   padding: 1rem;
   transition: height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
 }
 
 .projectcard-detailed:hover .projectcard-body {
+  justify-content: space-between;
   height: 70%;
 }
 
@@ -73,6 +75,7 @@
 
 .projectcard-detailed .projectcard-title {
   margin: 0;
+  max-width: 50%;
   font-size: clamp(1.1rem, 1.5vw, 1.2rem);
   font-weight: 700;
   letter-spacing: .5px;
@@ -83,16 +86,27 @@
   overflow: hidden;
 }
 
+.projectcard-detailed .projectcard-links {
+  display: flex;
+  gap: .5rem;
+  /* margin-top: .5rem; */
+  /* margin-left: auto; */
+  align-items: center;
+  justify-content: flex-end;
+}
+
 .projectcard-detailed .projectcard-date-badge {
   background: rgba(255, 255, 255, 0.08);
   padding: .6rem;
-  border-radius: 10px;
+  border-radius: 10px 0 0 10px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: .25rem;
   max-width: 100px;
   text-align: left;
+  position: absolute;
+  right: 0;
 }
 
 .projectcard-detailed .projectcard-date-badge .label {
@@ -114,24 +128,35 @@
   line-height: 1.4;
   color: #dadada;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
-  line-clamp: 3;
+  line-clamp: 1;
   overflow: hidden;
 }
 
+.projectcard-detailed:hover .projectcard-description p {
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+}
+
 .projectcard-detailed .projectcard-tags {
-  display: flex;
   flex-wrap: wrap;
   gap: .6rem;
   margin-top: .2rem;
+  display: none;
+}
+
+.projectcard-detailed:hover .projectcard-tags {
+  display: flex;
+
 }
 
 .projectcard-detailed .projectcard-tag {
   background: #f2f2f2;
   color: #222;
   font-size: .7rem;
-  padding: .55rem 1rem .5rem;
+  /* padding: .55rem 1rem .5rem; */
+  padding: .4rem .8rem;
   line-height: 1;
   border-radius: 6px;
   font-weight: 500;
@@ -146,15 +171,21 @@
   filter: brightness(1.05);
 }
 
-.projectcard-detailed .projectcard-tag-live {
-  background: #ff5d73;
-  color: #fff;
-}
-
+.projectcard-detailed .projectcard-tag-live,
 .projectcard-detailed .projectcard-tag-repo {
   background: #ff5d73;
+  opacity: 0.7;
   color: #fff;
-  opacity: 0.85;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: .5rem;
+}
+
+.projectcard-detailed .projectcard-tag-live svg,
+.projectcard-detailed .projectcard-tag-repo svg {
+  width: 16px;
+  height: 16px;
 }
 
 .projectcard-detailed .projectcard-actions {
@@ -194,10 +225,43 @@
 }
 
 @media (max-width: 768px) {
+  /* Make hover state permanent on mobile/touch devices */
+  
+  /* Always show expanded media */
+  .projectcard-detailed .projectcard-media {
+    height: 30%;
+  }
+  
+  /* Always show expanded body */
+  .projectcard-detailed .projectcard-body {
+    height: 70%;
+    justify-content: space-between;
+  }
+  
+  /* Always show full description (3 lines) */
   .projectcard-detailed .projectcard-description p {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     line-clamp: 3;
+  }
+  
+  /* Always show tags */
+  .projectcard-detailed .projectcard-tags {
+    display: flex;
+  }
+  
+  /* Remove hover transform effects on mobile */
+  .projectcard-detailed .projectcard-tag:hover {
+    transform: none;
+  }
+  
+  /* Disable hover effects on mobile since they don't apply */
+  .projectcard-detailed:hover .projectcard-media {
+    height: 30%;
+  }
+  
+  .projectcard-detailed:hover .projectcard-body {
+    height: 70%;
   }
 }
