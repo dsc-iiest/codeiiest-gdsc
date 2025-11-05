@@ -30,10 +30,9 @@ const AllRoutes = () => {
             <Route exact path="/events" element={<Events />}></Route>
             <Route exact path="/about" element={<About />}></Route>
             <Route exact path="/leaderboard" element={<CP_LeaderboardPage /> }></Route>
-            <Route exact path="/projects">
+            {/* <Route exact path="/projects">
                 <Route path="" element={<Projects />}></Route>
-                {/* <Route path=":id" element={<Projectpage />}></Route> */}
-            </Route>
+            </Route> */}
             <Route exact path="/test" element={<Codercard coderData={"hello"} /> }></Route>
         </Routes>
     );

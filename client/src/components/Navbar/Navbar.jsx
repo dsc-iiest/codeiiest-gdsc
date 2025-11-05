@@ -166,13 +166,13 @@ const Navbar = ({
 							>
 								About Us
 							</NavLink>
-							<NavLink
+							{/* <NavLink
 								to="/projects"
 								id="nav-projects"
 								className={"item"}
 							>
 								Projects
-							</NavLink>
+							</NavLink> */}
 							<NavLink
 								id="nav-leaderboard"
 								to="/leaderboard"
