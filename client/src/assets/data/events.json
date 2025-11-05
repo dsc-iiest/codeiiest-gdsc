@@ -5,7 +5,7 @@
         "description": "A beginner friendly session introducing the powers of git and github for seamless collaboration.",
         "imageVariant": "development",
         "AvatarSampleData": [
-            { "name": "Name01", "img": "abhijitkarmakar.webp" }
+            { "name": "Subhajit Gorai", "img": "subhajitgorai.jpg" }
         ],
         "TagsList": ["git", "github", "Version control", "collaboration"],
         "sideDetails1": {
@@ -27,13 +27,12 @@
         "description": "In this hackathon, you'll predict Formula 1 race outcomes for the 2025 season, lap by lap, driver by driver. You'll have to curate the dataset, engineer your own features, and model the dynamics of one of the world's most complex sports. Form teams of 2-4 people and showcase your ML skills!",
         "imageVariant": "aiml",
         "AvatarSampleData": [
-            { "name": "Name01", "img": "abhijitkarmakar.webp" }
+            { "name": "Deepon Halder", "img": "deeponhalder.png" }
         ],
         "TagsList": ["Machine Learning", "Data Science", "Kaggle", "Prediction"],
         "sideDetails1": {
             "text1": "date & time",
-            "text2": "4th Nov, 2025",
-            "text3": "5:00 PM"
+            "text2": "4th Nov, 2025"
         },
         "sideDetails2": {
             "text1": "Platform",
