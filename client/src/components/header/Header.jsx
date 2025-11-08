@@ -162,7 +162,7 @@ const MenuDrawer = () => {
         { text: "About", link: "/about" },
         { text: "Chapters", link: "/chapters" },
         { text: "Events", link: "/events" },
-        { text: "Projects", link: "/projects" },
+        // { text: "Projects", link: "/projects" },
         { text: "Leaderboard", link: "/leaderboard" },
     ];
 
