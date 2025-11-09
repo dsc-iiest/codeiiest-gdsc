@@ -1,5 +1,29 @@
 [
     {
+        "title": "Cybersecurity Intro Session",
+        "miniTitle": "Defense, Offense & Beyond",
+        "description": "Get ready soldiers!! Join an energetic Cybersecurity Intro Session packed with practical examples, and quick hands‑on demos to kickstart your journey into defense, offense, and everything in between.",
+        "imageVariant": "cybersecurity",
+        "AvatarSampleData": [
+            { "name": "Abhirup Saha", "img": "abhirupsaha.jpg" },
+            { "name": "Sk Asif Tanvir", "img": "skasiftanvir.jpg" },
+            { "name": "Prayas Sinha", "img": "prayassinha.jpg" }
+        ],
+        "TagsList": ["cybersecurity", "defense", "offense", "ethical hacking", "security"],
+        "sideDetails1": {
+            "text1": "date & time",
+            "text2": "14th Nov, 2025",
+            "text3": "4:45 PM"
+        },
+        "sideDetails2": {
+            "text1": "venue",
+            "text2": "CSD205",
+            "text3": "OFFLINE"
+        },
+        "completionStatus": 100,
+        "moreInfo": "https://gdg.community.dev/events/details/google-gdg-on-campus-indian-institute-of-engineering-science-and-technology-shibpur-howrah-india-presents-getting-started-with-cybersecurity-defense-offense-amp-beyond/"
+    },
+    {
         "title": "Introduction to Git and Github",
         "miniTitle": "Git and Github session",
         "description": "A beginner friendly session introducing the powers of git and github for seamless collaboration.",
